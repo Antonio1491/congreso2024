@@ -1,0 +1,124 @@
+.container {
+  display: grid;
+  grid-template-columns: 40% 60%; 
+  @include telefono{
+    display: block;
+  }
+}
+
+.instrucciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center; 
+
+  figure img{
+    margin-bottom: 20px; 
+    width: 40%;
+    box-shadow: #bdb7b7 5px 5px 10px;
+    border-radius: 50%;
+  }
+
+  h4{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: $blanco;
+    background-color: $colorPrincipal;
+    font-family: $fuenteMedium;
+    // width: 100%;
+  }
+  >div{
+    padding: 0px;
+  }
+  p{
+    margin: 1rem 2rem;
+  }
+}
+
+.elecciones_fechas{
+  h5{
+    color: $colorPrincipal;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
+
+.sobre_sesion{
+  span{
+    font-weight: bold;
+    color: $colorPrincipal;
+  }
+}
+
+.imgBeneficios{
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: auto;
+  gap: 25px;
+  figure{
+    transition: 1s;
+    figcaption{
+      display: none;
+    }
+    &:hover figcaption{
+      display: block;
+      font-size: 10px;
+    }
+  }
+  img{
+    width: 100px;
+    transition: 0.3s;
+    border-radius: 50%;
+    &:hover{
+      box-shadow: $azul 2px 4px 8px 0px;
+      transform: translateY(-10px);
+    }
+  }
+}
+
+.foto_perfil{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  figure img{
+    width: 70%;
+  }
+}
+
+
+//Instrucciones formulario
+.infoAbstract {
+  background-color: rgba($cielo, 0.6);
+  padding: 20px;
+  text-align: justify;
+  font-size: 14px;
+  color: $gris;
+  height: auto;
+  border-radius: 15px;
+
+  strong{
+    color: $colorPrincipal;
+  }
+  
+}
+.formPropuestas{
+  .encabezado {
+    color: $colorPrincipal;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-bottom: 1em;
+    border-bottom: 1px solid $colorPrincipal; 
+  }
+  .avatar{
+    height: 60px;
+  }
+}
+.reveal{
+  padding: 40px !important;
+  text-align: justify;
+  h4{
+    color: $colorPrincipal;
+  }
+}

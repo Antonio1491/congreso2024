@@ -1,0 +1,144 @@
+//================   Hoteles    ================================
+.contenedor_hoteles{
+  background: white;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  figure{
+    border: 1px solid #dbdbdb;
+    box-shadow: 1px 2px 10px #dbdbdb;
+  }
+}
+
+.menu_hoteles figure a:hover img{
+  // border: 1px solid $rojo;
+  // border-radius: 15px;
+  transform: scale(1.2);
+  border: 1px solid #dbdbdb;
+  box-shadow: 1px 2px 10px #dbdbdb;
+  transition: 1s;
+}
+.menu_hoteles figure{
+  padding: 3px;
+}
+.datos_h span{
+  color: $verde;
+  font-weight: bold;
+}
+span.clave_reservacion{
+  color: #595757;
+  font-weight: bold;
+}
+#descripcion_hotel{
+  background-color: white;
+  padding: 40px 40px 30px 40px;
+  justify-content: center;
+}
+
+#descripcion_hotel .tabla ul li{
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  color: #494848;
+}
+.titulo_hoteles, .titulo_tabla h4{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.titulo_tabla{
+  background-color: $verde;
+  color: white;
+}
+.titulo_tabla.habitacion{
+  margin-top: 6px;
+}
+.titulo_tabla h6{
+  padding: 10px 10px;
+  font-weight: bold;
+}
+.precios_hotel{
+  border-bottom: 4px solid $verde;
+}
+.beneficios_hotel h5{
+  color: $verde;
+  font-family: "avenir bold";
+  font-size: 15px;
+  margin-top: 15px;
+}
+.beneficios_hotel ul li{
+  list-style: none;
+  font-size: 12px;
+}
+.beneficios_hotel ul li i{
+  color: $verde;
+}
+.tabla span{
+  color: #696565;
+  font-size: 16px;
+  text-transform: none;
+}
+.nota{
+  color: $verde;
+}
+.img_desc_hotel{
+  height: 230px;
+}
+.impuestos{
+  margin: 0 auto;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 13px;
+  color: #696565;
+}
+
+.biografias {
+
+  img{
+    max-width: 80%;
+  }
+  h6{
+    font-family: $fuenteResaltado;
+    color: $colorPrincipal
+  }
+  h5{
+    font-family: $fuenteResaltado;
+    color: $colorPrincipal;
+    font-size: 1em;
+  }
+  h4{
+    font-family: $fuenteTitulo2;
+    color: $verde
+  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+  grid-template-columns: 30% 70%;
+  -ms-grid-rows: 200px auto;
+  grid-template-rows: 200px auto;
+  grid-column-gap: 40px;
+  grid-auto-rows: auto;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+  @media screen and(max-width: 500px){
+    display: flex;
+  }
+
+  p{
+    margin-bottom: 3rem;
+  }
+
+  .detalles-conferencistas{
+    @media screen and(max-width: 500px){
+      margin-top: 15px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+}
+
+.biografias .izq {
+  text-align: center;
+  margin-top: 120px;
+}

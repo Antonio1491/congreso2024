@@ -1,0 +1,106 @@
+.bgKeynotes {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/fondo_magistral.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1px;
+}
+
+.bgSesiones{
+  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/fondo_sesion educativa.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  padding-left: 7%;
+}
+
+.bgVivencial{
+ background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/fondo_taller_vivencial.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1px;
+}
+
+.bgMaster{
+  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/fondo_taller_curricular.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  padding-left: 7%;
+}
+
+.bgExpo{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/fondo_expo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1px;
+}
+
+.bgSociales{
+  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/fondo_Eventos sociales.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  padding-left: 7%;
+}
+
+
+// ::::: Eventos Sociales ::::::
+
+.bgApertura {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/inauguracion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1px;
+}
+
+.bgBeerparty{
+  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/eventoBeer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  padding-left: 7%;
+}
+
+.bgClausura{
+  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/clausura.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+  display: flex;
+  padding-left: 7%;
+}
+
+.experiencia
+{
+  article{
+    color: $white;
+    p{
+      width: 80%;
+    }
+  }
+}

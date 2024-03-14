@@ -1,0 +1,41 @@
+#seccion_mapa{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #00a493;
+  iframe{
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+}
+
+.contenido_mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.item_contenido_mapa{
+  // border: 1px solid red
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffff;
+  font-size: 18px;
+  h3{
+    color: $azul;
+    text-transform: uppercase;
+    font-family: "Antonio Bold";
+  }
+  span{
+      font-weight: bold;
+      font-size: 21px;
+  }
+  figure a img{
+    height: 100px;
+    position: static;
+    // border: 1px solid red;
+
+  }
+}

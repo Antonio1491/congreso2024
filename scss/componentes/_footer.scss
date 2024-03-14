@@ -1,0 +1,23 @@
+footer{
+  color: $white;
+  background: $backgroundFooter;
+
+  h6{
+    font-family: 'Montserrat Bold';
+  }
+  .iRedes{
+    height: 3rem;
+  }
+  .logoFooter{
+    height: 7rem;  
+  }
+  span{
+    color: $white;
+    font-size: 0.7rem;  
+  }
+  .subtitulo{
+    color: $white;
+    font-family: 'Antonio Bold';
+    letter-spacing: 1px;
+  }
+}

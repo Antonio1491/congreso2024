@@ -1,0 +1,256 @@
+.btnRojo{
+  background-color: $rojo;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px 25px;
+  border-radius: 30px;
+  font-family: $fuenteTitulo2;
+  font-size: 14px;
+  letter-spacing:1px;
+  &:hover{
+    color: white;
+    background-color: $rojoHover;
+  }
+}
+.btn_borde{
+  border: 2px solid $rojo;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2px 20px;
+  border-radius: 20px;
+  color: $rojo;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  transition: 1s;
+  &:hover{
+    background: $rojo;
+    color: white;
+  }
+}
+
+.btn_trans_rojo{
+  color: $rojo;
+  border: 1px solid $rojo;
+  border-radius: 8px;
+  padding: 5px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 1s;
+  &:hover{
+    background: $rojo;
+    color: white;
+  }
+}
+
+.btn_rojo{
+  background-color: $rojo;
+  color: white;
+  font-family: $fuenteTitulo2;
+  border-radius: 20px;
+  padding: 5px 20px;
+  letter-spacing: 0.5px;
+  transition: all 1.2s ease-out;
+  &:hover{
+    color: $rojo;
+    background-color: white;
+    // border: 1px solid white;
+    
+  }
+}
+
+.btn_rojo2{
+  background-color: $rojo;
+  color: white;
+  font-family: $fuenteTitulo2;
+  border-radius: 20px;
+  padding: 5px 40px;
+  letter-spacing: 0.5px;
+  &:hover{
+    color: white;
+    background-color: #610707;
+    // border: 1px solid white;
+    transition: 1s;
+  }
+}
+
+.btn_ver_mas{
+  background-color: $rojo;
+  padding: 7px 50px;
+  border-radius: 15px;
+  color: white;
+  font-family: $fuenteTitulo2;
+  transition: 1s;
+  &:hover{
+    background-color: #88002d;
+    color: white;
+  }
+}
+
+.sud.btn_1{
+  font-family: $fuenteTitulo2;
+    font-size: 1.1em;
+    padding: 2px 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: $aqua;
+    text-transform: uppercase;
+    border: 2px solid $aqua;
+    transition: 1s;
+    &:hover{
+      background-color: $aqua;
+      color: white;
+    }
+  }
+.sud.btn_2{
+  font-family: $fuenteTitulo2;
+    font-size: 1.1em;
+    padding: 2px 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    // background-color: $verde;
+    text-transform: uppercase;
+    border: 2px solid $verde;
+    transition: 1s;
+    &:hover{
+      background-color: $verde;
+      color: white;
+    }
+}
+
+.menu_acerca{
+  margin-top: 80px;
+  margin-bottom:80px;
+  a{
+    color: white;
+    background-color: $colorPrimary;
+    // border: 3px solid $rojo;
+    font-family: $fuenteTitulo2;
+    text-transform: uppercase;
+    padding: 15px 50px;
+    border-radius:25px;
+    &:hover{
+      background-color: $rojo;
+      // border: 3px solid $colorPrimary;
+    }
+  }
+}
+
+.btn_entradas{
+  border: 2px solid #f60f69;
+  border-radius: 10px;
+  padding: 4px 20px;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  color: #ffff;
+  font-family: $fuenteTitulo2;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  // transition: 2s;
+  transition: 500ms;
+  &:hover{
+    background-color: #f60f69;
+    COLOR: WHITE;
+    // border: 2px solid #ffff;
+  }
+}
+
+.btn_pruebadeg{
+  // border: 2px solid #f60f69;
+  background-color: #00a493;
+  background-image: linear-gradient(160deg, #00a493 0%, #8cb746 100%);
+  border: 2px solid #6eb357;
+  border-radius: 30px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  color: #ffff;
+  font-family: $fuenteTitulo2;
+  font-size: 1em;
+  letter-spacing: 1px;
+  transition: 1s;
+  animation-name: ctaPrincipal;
+  &:hover{
+    animation: ease-in;
+    color: white;
+    background-color: #00a493;
+    background-image: linear-gradient(160deg, #8cb746 0%, #00a493 100%);
+  }
+}
+
+@keyframes ctaPrincipal{
+ 0% {
+
+ }
+}
+
+.btn_principal{
+  background-color: #df030c;
+background-image: linear-gradient(160deg, #df030c 0%, #ca8847 88%);
+  // border: 2px solid #6eb357;
+  border-radius: 30px;
+  padding: 8px 30px;
+  text-transform: uppercase;
+  color: #ffff;
+  font-family: $fuenteTitulo2;
+  font-size: 1em;
+  letter-spacing: 1px;
+  transition: 1s;
+}
+
+.btn{
+  text-transform: uppercase;
+  padding: 5px 40px;
+  border-radius: 20px;
+  font-family: $fuenteTitulo2;
+}
+.btn_aqua{
+  border: 2px solid #00a493;
+  color: #00a493;
+}
+
+// BOTONES PROGRAMA
+.btn_programa {
+  margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    background: #D1003E;
+    border-radius: 20px;
+    font-family: $fuenteTitulo2;
+    font-size: 25px;
+    padding: 5px 40px;
+    border: 0;
+    cursor: pointer;
+}
+
+.centrar {
+  margin: auto;
+  text-align: center;
+  margin-top: -20px;
+}
+
+.centrar input{
+  text-transform: uppercase;
+}
+
+input:focus{
+  outline:none !important;
+  outline-width: 0 !important;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+
+.ocultar_dia1{
+  margin: auto;
+  text-align: center;
+}
+.ocultar_dia3{
+  margin: auto;
+  text-align: center;
+}
+.ocultar_dia2{
+  margin: auto;
+  text-align: center;
+}

@@ -1,0 +1,382 @@
+
+#expo{
+    .area_expo{
+      margin: 30px 0px 30px 0px;
+      display: block;
+      p span{
+        font-weight: bold;
+      }
+    }
+    .icon{
+      height: 150px;
+      margin: 0 auto;
+    }
+    #video{
+      // margin: 40px 0px;
+    }
+    .tExpo, .subExpo{
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $fuenteContenido;
+    }
+    .tExpo{
+      margin-bottom: -5px;
+      font-family: $fuenteTitulo2;
+      font-size: 18px;
+      color: #fff;
+
+    }
+    .subExpo{
+      font-size: 14px;
+    }
+    .cinta_aqua{
+      color: white;
+    }
+    .backPrimary{
+      padding: 40px 0px 10px;
+      color: #4b4646;
+
+      p{
+        font-family: $fuenteMedium;
+        font-size: 1.3em;
+      }
+      hr{
+        background-color: $verde;
+        height: 3px;
+        color: $verde;
+        width: 80%;
+        border-bottom: 0px;
+      }
+      span:nth-of-type(1){
+        font-weight: bold;
+        font-size: 18px;
+      }
+      span:nth-of-type(2){
+        font-weight: bold;
+        font-size: 26px;
+        color: $verde;
+        margin-top: -10px !important;
+      }
+    }
+}
+.bg_azul{
+  background-color: $azul;
+}
+#datos_generales_expo{
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  // margin-bottom: 50px;
+  background: $colorPrincipal;
+  h5{
+    font-family: $fuenteTitulo2;
+  }
+}
+#beneficios_expo{
+  background: #fff;
+
+}
+.inscripcion_expo_acceso{
+  h3{
+    color: $colorPrincipal;
+    font-family: $fuenteTitulo2;
+  }
+}
+.comunidad_expo{
+  h4{
+    font-family: $fuenteContenido;
+    color: $colorPrincipal;
+
+  }
+}
+.lista_vineta_play li{
+  list-style: none;
+  i{
+    color: $verde;
+  }
+}
+.inscripcion_expo_acceso{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  figcaption h6{
+    // color: $colorPrimary;
+    font-family: $fuenteTitulo2;
+    text-transform: uppercase;
+    font-size: .8em;
+    text-align: center;
+    margin-top: 15px;
+    border-top: 2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: $colorPrincipal;
+
+  }
+}
+.btn_expo{
+  background-color: white;
+  border: 2px solid $rojo;
+  text-transform: uppercase;
+  color: $rojo;
+  font-family: $fuenteTitulo2;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+hgroup.comunidad_expo{
+  h3{
+    font-family: $fuenteTitulo2;
+    text-transform: uppercase;
+    color: $colorPrincipal;
+
+  }
+}
+.esperar_expo{
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+  margin-bottom: 50px;
+  background: $colorPrincipal;
+  h5{
+    font-family: $fuenteTitulo2;
+  }
+}
+
+.borde_derecho{
+  border-right: 1px solid white;
+  padding-right: 20px;
+}
+
+.informes_expo{
+ margin-top: 50px;
+ justify-content: space-between;
+}
+.cinta_expositores_expo{
+  h1{
+    text-transform: initial;
+    font-family: $fuenteTitulo2;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: $colorPrincipal;
+
+  }
+}
+.list_glassroom li{
+  line-height: initial;
+}
+.plano_expo{
+  display: block;
+  padding-right: 0;
+  .btn_zoom{
+    background-color: $verde;
+    color: white; 
+    text-transform: uppercase;
+    font-family: $fuenteTitulo2;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    transition: .5s all ease;
+    border: 1px $verde solid;
+
+    &:hover{
+      background: transparent;
+      border: 1px $verde solid;
+      transition: .5s all ease;
+      color: $verde;
+    }
+  }
+}
+
+
+
+
+.tAreaExpo{
+  text-transform: uppercase;
+  text-align: center;
+  h1{
+    font-size: 32px;
+    font-family: $fuenteTitulo2;
+    margin-bottom: -6px;
+    // color: $colorPrincipal;
+  }
+  h2{
+    font-size: 20px;
+    font-family: $fuenteResaltado;
+    // color: $colorPrincipal;
+    margin-bottom: -6px;
+    font-family: $fuenteResaltado;
+  }
+  h3{
+    font-size: 15px;
+    // color: $colorPrincipal;
+
+  }
+}
+
+#beneficiosExpo{
+  color: white;
+  .fotoExpo {
+    text-align: center;
+    figure img{
+      height: 350px;
+    }
+  }
+
+}
+
+.lista_vineta{
+  color: $verde;
+}
+.lista_vineta li span{
+  color: #0a0a0a;
+}
+.conocer_talleres{
+  @media screen and (max-width: 500px){
+    margin-top: 10px;
+  }
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: .1px;
+}
+.actividades_expo{
+  height: 180px;
+}
+
+
+
+
+
+.lista_roja li{
+  span{
+    color: white;
+  }
+}
+
+#glass {
+  margin:40px 0px;
+  .fotoExpo {
+    text-align: center;
+    img{
+    height: 280px;
+    }
+  }
+  .lista_roja span{
+    color: #0a0a0a;
+  }
+}
+
+#beer{
+  color: white;
+  .fotoExpo{
+    text-align: center;
+    img{
+      height: 290px;
+    }
+  }
+}
+
+#expositoresMapa{
+  img{
+    height: 250px;
+  }
+}
+
+.secExpo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.sec{
+  background-color: $azul;
+  padding: 20px 10px;
+  width: 180px;
+  // background-color: white;
+  text-align: center;
+  img{
+    height: 100px;
+  }
+  hr{
+    width: 80%;
+  }
+  .boton{
+    margin-top: 10px;
+  }
+  a{
+    text-transform: uppercase;
+    font-size: 12px;
+
+  }
+}
+
+.beneficios__contenedor{
+  padding: 40px 0;
+  .tAreaExpo{
+    color: white;
+  }
+}
+
+
+.centrar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+.titulo{
+  padding-left: 0;
+  margin-bottom: 2.8em;
+  color: $colorPrincipal;
+  h1{
+    font-size: 2.1em;
+    font-family: $fuenteTitulo2;
+  }
+}
+
+}
+
+.costoStand{
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px ;
+  border-left: 1px #bbbbbb solid;
+  border-right: 1px #bbbbbb solid;
+  border-bottom: 1px #bbbbbb solid;
+  padding: 0;
+
+  .header-costo{
+    background: $colorPrincipal;
+    width: 100%;
+    padding: 1.2em 0;
+    text-align: center;
+    color: #fff;
+    h3{
+      font-family: $fuenteBold;
+      font-size: 1.6em;
+
+    }
+  }
+  .contenido-Stand{
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    .negritas{
+      font-family: $fuenteMedium;
+    }
+    h4{
+      font-family: $fuenteContenido;
+    }
+  }
+}
+
+.textoStand{
+  margin-top: 2em;
+  p{
+  line-height: 1.1em;
+  margin-bottom: 0;
+  }
+}

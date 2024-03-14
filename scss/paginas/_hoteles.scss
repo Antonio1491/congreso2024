@@ -1,0 +1,30 @@
+#descripcion_hotel {
+    background-color: white;
+    padding: 40px 40px 30px 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    figure{
+        width: 350px;
+    }
+}
+
+.titulo_tabla {
+    background-color: $verde;
+    color: white;
+    h6{
+        padding: 10px 10px;
+        font-weight: bold;
+    }
+}
+
+
+.img_desc_hotel {
+    height: 230px;
+}
+.tabla{
+    ul{
+        list-style: none;;
+    }
+}

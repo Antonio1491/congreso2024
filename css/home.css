@@ -1,0 +1,202 @@
+body{
+    background-image: url("../img/fondo.jpg");
+    /* border: 5px solid red; */
+}
+header{
+    height: 20vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.row {justify-content: center;}
+hgroup{
+    text-transform: uppercase;
+    text-align: center;
+    color: #004242;
+    font-family: "Antonio Ligera";
+}
+hgroup h1, hgroup h2{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    letter-spacing: 2.5px;
+}
+hgroup h1{
+    margin-top: 0px;
+    font-size: 25px;
+}
+hgroup h2{
+    font-size: 20px;
+}
+
+footer{
+    height: 10vh;
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 35%);
+    color: white;
+    height: 70vh;
+    grid-column-gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+#mexico{
+    background-color: #1D0C65;
+    margin: 0px;
+    padding: 0px;
+}
+
+#sudamerica{
+    background-color: #004242;
+}
+.logo_evento img{
+    height: 150px;
+}
+#mexico,
+#sudamerica{
+    text-align: center;
+    padding: 40px;
+}
+.btn_home{
+    color: white;
+    border: 2px solid #D1003E;
+    border-radius: 12px;
+    text-transform: uppercase;
+    padding: 5px 40px;
+    text-decoration: none;
+    transition: 1s;
+    font-family: "Antonio Bold";
+}
+.btn_home:hover{
+    color: #D1003E;
+    border: 2px solid white;
+}
+.contenedor p{
+    font-family: "Avenir Book";
+}
+.intro{
+    display: flex;
+    justify-content: center;
+}
+.descripcion{
+    width: 80%;
+    font-family: "Avenir"
+}
+
+.in, .port{
+    display: none;
+}
+@font-face {
+    font-family: "Antonio Bold";
+    src : url("../font/Antonio-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: "Antonio Ligera";
+    src: url("../font/Antonio-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: "Avenir Book";
+    src: url("../font/AvenirLTStd-Book.otf");
+  }
+  
+  @font-face {
+    font-family: "Avenir Heavy";
+    src: url("../font/AvenirLTStd-Heavy.otf");
+  }
+
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url("../img/fondo.jpg");
+        /* background: #E2F3FB; */
+        margin: 0px;
+        padding: 0px;
+    }
+    header{
+        height: 15vh;
+        border-bottom: 1px solid #004242;
+        display: flex;
+        align-items: center;
+        align-content: center;
+    }
+    header hgroup{
+        font-family: "Antonio Bold";
+    }
+    hgroup h1{
+        margin-top: 0px;
+        font-size: 18px;
+    }
+    hgroup h2{
+        font-size: 15px;
+    }
+    .contenedor p{
+        display: none !important;
+    }
+    .contenedor a{
+        display: none;
+    }
+    hgroup h1, hgroup h2{
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+    }
+    #mexico{
+        background-color: #1D0C65;
+    }
+    main{
+        height:75vh ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #mexico{
+        background: none;
+    }
+    
+    #sudamerica{
+        background: none;
+    }
+    .logo_evento{
+        padding: 15px 20px;
+        /* border: 1px solid white; */
+        box-shadow: 0px 0px 18px rgba(0, 66, 66, 0.7);
+        background: #E2F3FB;
+        border-radius: 20px;
+    }
+    .logo_evento img{
+        height: 120px;
+        width: 100%;
+        
+    }
+    .logo_evento figcaption{
+        background: #D1003E;
+        font-family: "Antonio Bold";
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+    footer{
+        height: 10vh;
+        background: #004242;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #mexico,
+    #sudamerica{
+        text-align: center;
+        padding: 5px;
+        /* border: solid 4px red; */
+    }
+    
+    figure a{
+        color: white;
+        background: #D1003E;
+    }
+    
+  }

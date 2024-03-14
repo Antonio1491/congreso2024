@@ -1,0 +1,69 @@
+#conectividad{
+    padding: 2rem 0;
+
+    h1{
+        font-family: $fuenteTitulo1;
+        color: $colorPrincipal;
+    }
+
+    .conectividad__bajar{
+        padding: 2em 0;
+    }
+    p{
+        text-align: justify;
+    }
+    .conectivad__texto{
+        font-family: $fuenteNormal;
+        font-size: 1.1em;
+    }
+    h2{
+        font-family: $fuenteTitulo2;
+        color: $colorPrincipal;
+        font-size: 25px;
+        padding-bottom: 2rem;
+    }
+
+    .cinta_aqua{
+        h6{
+            font-family: $fuenteTitulo2;
+        }
+    }
+
+    .bg-dashed {
+    img{
+        width: 150px;
+        margin-top: 2rem;
+    }
+    }
+
+    .conectividad__centrar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        h4{
+            text-align: center;
+            font-family: $fuenteResaltado;
+            font-size: 1em;
+            color: white;
+            background: $colorPrincipal;
+            padding: 4px;
+            margin: 2em 0;
+        }
+
+        p{
+            margin-top: 2em;
+        }
+    }
+
+    .autobuses{
+        img{
+            width:  110px;
+        }
+    }
+}
+
+h1 > .icon_title{
+    height: 40px;
+}

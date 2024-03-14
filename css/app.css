@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "Antonio Bold";
+  src: url("../fonts/Antonio-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold_0.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular_0.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium_0.ttf");
+  font-display: swap;
+}
+span, dt {
+  color: #1d0c65;
+  font-weight: bold;
+}
+
+main, body {
+  font-family: "Montserrat Regular";
+  color: #4b4646;
+}
+
+.seccion {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.subtitulo {
+  color: #1d0c65;
+  font-family: "Montserrat Bold";
+}
+
+ul {
+  list-style-image: url(../img/ul.png);
+}
+
+.primaryBg {
+  background-color: #1d0c65;
+  color: #ffffff;
+}
+.primaryBg .subtitulo {
+  color: #ff00ff;
+}
+.primaryBg span {
+  color: #ffffff;
+}
+
+.btn {
+  font-size: 16px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-family: "Antonio Bold";
+  letter-spacing: 1px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  /* box-shadow: 3px 3px 5px #c1bdbd; */
+}
+.btn__primary {
+  color: #ffffff;
+  background-image: linear-gradient(315deg, #c00ab3, #2837d2);
+  /* border-radius: 30px; */
+  transition: 0.3s;
+  position: relative;
+}
+.btn__primary:hover {
+  color: #ffffff;
+  background-image: linear-gradient(315deg, #2837d2, #c00ab3);
+  /* box-shadow: 3px 3px 8px #828282; */
+}
+.btn:active {
+  top: 2px;
+  color: #d2dd0a;
+}
+
+.btn_registro {
+  background-color: #1d0c65;
+  color: #ffffff;
+  border-radius: 30px;
+  transition: ease 0.3s;
+  animation-name: boton_registro;
+  animation-duration: 0.3s;
+}
+.btn_registro:hover {
+  background-color: #d2dd0a;
+  color: #ffffff !important;
+}
+
+@keyframes boton_registro {
+  from {
+    margin-top: 20px;
+  }
+  to {
+    margin-bottom: 20px;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 30vh;
+  position: relative;
+  box-shadow: 0px 0px 10px #292049;
+}
+.header__titulo {
+  color: #ffffff;
+  font-family: "Montserrat Bold";
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.header img {
+  width: 50%;
+  height: 15px;
+}
+
+nav {
+  background-color: #1d0c65;
+  font-family: "Montserrat Bold";
+  text-transform: uppercase;
+}
+
+nav.navbar ul a {
+  color: #ffffff;
+  font-size: 0.8rem;
+}
+
+nav.navbar ul a:hover,
+.navbar-nav .nav-link.active,
+.dropdown-toggle {
+  color: #d2dd0a;
+}
+
+.dropdown-menu {
+  background-color: #1d0c65;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #d2dd0a;
+  background-color: #1d0c65;
+}
+
+.navbar-nav .nav-link.show {
+  color: #d2dd0a;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #d2dd0a;
+}
+
+button.navbar-toggler {
+  background: #d2dd0a;
+}
+
+.convocatoria__perfil {
+  height: 200px;
+  filter: contrast(0.7);
+}
+
+.iconBeneficio {
+  width: 60%;
+}
+
+.instruccion img {
+  height: 12rem;
+}
+.instruccion h4 {
+  font-family: "Antonio Bold";
+  color: #ffffff;
+  padding: 0.5rem 0rem;
+  background-color: #1d0c65;
+}
+
+footer {
+  color: #ffffff;
+  background: #1f2338;
+}
+footer h6 {
+  font-family: "Montserrat Bold";
+}
+footer .iRedes {
+  height: 3rem;
+}
+footer .logoFooter {
+  height: 7rem;
+}
+footer span {
+  color: #ffffff;
+  font-size: 0.7rem;
+}
+footer .subtitulo {
+  color: #ffffff;
+  font-family: "Antonio Bold";
+  letter-spacing: 1px;
+}/*# sourceMappingURL=app.css.map */
+
+.ocultar 
+{
+  display: none;
+}

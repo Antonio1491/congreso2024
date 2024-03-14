@@ -1,0 +1,39 @@
+.header_cpanel{
+  background: $colorPrincipal;
+  height: 50px;
+  color: $cielo;
+  h4{
+    text-transform: uppercase;
+    line-height: 50px;
+    font-family: $fuenteTitulo2 ;
+    font-weight: 700;
+  }
+}
+.logotipoMenu {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+.menuCpanel{
+  background: $colorPrincipal;
+  height: 100%;
+  min-height: 95vh;
+  ul li a{
+    color: $cielo;
+    font-size: 14px ;
+  }
+
+}
+
+.submenu-toggle::after {
+  display: block;
+  width: 0;
+  height: 0;
+  content: '';
+  border-bottom-width: 0;
+  border-top-style: solid;
+  border-color: $cielo transparent transparent;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}

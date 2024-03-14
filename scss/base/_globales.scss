@@ -1,0 +1,179 @@
+//========= Colores generales ======== //
+
+$primaryColor : #1d0c65;
+$secondaryColor : #d2dd0a;
+
+$complementaryColor1 : #64c9fc;
+$complementaryColor2 : #ff00ff;
+$complementaryColor3 : #00dfbf;
+$backgroundFooter : #1f2338;
+
+$red : #bb0000;
+$gray : #4b4646;
+$white : #ffffff;
+
+$may : uppercase;
+$min : lowercase;
+$capitalize : capitalize;
+$none : none;
+
+.verde{
+color: $secondaryColor;
+}
+.primary{
+color: $primaryColor;
+}
+.azul{
+color: $complementaryColor1;
+}
+.morado{
+  color: $complementaryColor2;
+}
+.white{
+  color: $white;
+}
+
+.bgDegradado{
+  background-image: linear-gradient(315deg, #c00ab3, #2837d2);
+}
+
+.bolded{
+  font-weight: bold;
+  font-family: "Montserrat Bold";
+  }
+//=========== Fuentes ===========//
+
+@font-face {
+  font-family: "Antonio Bold";
+  src: url("../fonts/Antonio-Bold.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url("../fonts/Montserrat-Bold_0.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url("../fonts/Montserrat-Regular_0.ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat Medium";
+  src: url("../fonts/Montserrat-Medium_0.ttf");
+  font-display: swap;
+}
+
+// Media Queries
+$telefono : 480px;
+$tablet : 768px ;
+$desktop: 1200px;
+
+span, dt{
+    color: $primaryColor;
+    font-weight: bold;
+  }
+
+main, body{
+  font-family: 'Montserrat Regular';
+  color: $gray;
+}
+
+
+//============   Títulos   ================
+
+.tituloB{
+  @include tituloPrincipal($white);
+}
+
+.tituloP{
+  @include tituloPrincipal($primaryColor);
+}
+
+.subtituloBMay{
+  @include subtitulo($white, $may);
+}
+  .subtituloBMin{
+  @include subtitulo($white, $none);
+}
+
+.subtituloPMay{
+  @include subtitulo($primaryColor, $may);
+}
+.subtituloPMin{
+  @include subtitulo($primaryColor, $none);
+}
+.subtituloCMin{
+  @include subtitulo($complementaryColor2, $none);
+}
+.subtituloComplementario{
+  font-family: "Montserrat Medium";
+  color: $secondaryColor;
+}
+
+
+ul{
+  // list-style-type: square;
+  list-style-image: url(../img/ul.png);
+  
+}
+
+.primaryBg{
+  background-color: $primaryColor;
+  color: $white;
+  .subtitulo{
+    color: $complementaryColor2;  
+  }
+  span{
+    color: $white;
+  }
+}
+
+.img_300{
+ height: 300px,  
+}
+
+.img_150{
+  height: 150px;
+}
+
+.img_100{
+  height: 100px;
+}
+
+.img_200{
+  height: 200px,  
+}
+
+.img_350{
+  height: 350px,  
+}
+
+a{
+  text-decoration: none;
+}
+
+.icon_title{
+  height: 45px;
+}
+
+.list-none{
+  list-style: none;
+}
+
+.absolute{
+  position: absolute;  
+}
+
+.fh{
+  width: 90% !important;
+  height: auto !important;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+
+
+.slick-prev, .slick-next{
+  display: none !important;
+}

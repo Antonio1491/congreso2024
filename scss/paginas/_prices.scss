@@ -1,0 +1,492 @@
+#prices{
+
+    .ticket-include{
+        margin-top: 60px;
+        margin-bottom: 60px;
+        h1{
+        font-size: 2em;
+        color: $colorPrincipal;
+        font-family: $fuenteTitulo2;
+        margin-bottom: 40px;
+        }
+        ul li{
+            list-style: none;
+            font-weight: bold;
+            margin-bottom: 10px;
+            span{
+                font-size: 0.8em;
+                font-style: italic;
+            }
+            img{
+                height: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .solicita{
+        color: white;
+        font-size: 1em;
+        font-family: $fuenteMedium;
+        margin-bottom: 0;
+    }
+    .incripcion{
+        color:$verde;
+        font-size: 0.7em;
+        font-family: $fuenteBold;
+        margin-bottom: 0;
+        @media screen and (max-width: 500px){
+            font-size: 0.6em;
+            margin-bottom: 2em;
+
+        }
+
+    }
+
+    .descuentos__contenedor{
+        margin-top: 4em;
+        margin-bottom: 4em;
+
+        @media screen and (max-width: 500px){
+            margin-bottom: 2em;
+        }
+
+
+        .azul{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2em;
+           h1{
+            background: $colorPrincipal;
+            color: #fff;
+            width: 45%;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            padding: .4em;
+            font-family: $fuenteBold;
+
+            @media screen and (max-width: 500px){
+                font-size: 1.2em;
+                margin-bottom: 2em;
+
+            }
+           }
+        }
+    }
+    .descuento{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            color: $verde;
+            font-family: $fuenteBold;
+        }
+        h3{
+            color: $colorPrincipal;
+            font-family: $fuenteBold;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+
+        }
+
+        .solicita{
+            color: $colorPrincipal;
+            font-size: 1.4em;
+            font-family: $fuenteMedium;
+            margin-bottom: 0;
+        }
+        .incripcion{
+            color:$verde;
+            font-size: 1.4em;
+            font-family: $fuenteBold;
+            margin-bottom: 0;
+            @media screen and (max-width: 500px){
+                font-size: 1em;
+                margin-bottom: 2em;
+
+            }
+
+        }
+    }
+    .miembro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2{
+            color: $colorPrincipal;
+            font-family: $fuenteBold;
+
+        }
+        
+        
+        img{
+            width: 50%;
+        }
+        .otro{
+            display: flex;
+            justify-content: end;
+            align-items: flex-end;
+            margin-bottom: 2em;
+        }
+        .otro2{
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+        }
+    }
+
+    .queIncluye{
+        padding: 5em 0;
+        @media screen and (max-width: 500px){
+            padding: 1em 0;
+        }
+
+        .espaciado{
+            display: flex;
+            justify-content: space-around;
+            @media screen and (max-width: 500px){
+            flex-direction: column;
+            }
+            
+        }
+        .incluye{
+            background: $colorPrincipal;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-bottom: 2em;
+
+            h3{
+                font-family: $fuenteMedium;
+                margin-bottom: 0;
+                line-height: 1.2em;
+            }
+          
+        }
+        .centrar{
+            display: flex;
+            flex-direction: column;
+            max-width: 45%;
+            @media screen and (max-width: 500px){
+                max-width: 100%;
+            }
+
+            p{
+                font-family: $fuenteBold;
+                font-size: 1.4em;
+                margin-left: 3em;
+                line-height: .7em;
+
+                @media screen and (max-width: 500px){
+                    font-size: 1em;
+                }
+
+                img{
+                    width: 30px;
+                    margin-right: .5em;
+                }
+                span{
+                    font-size: .7em;
+                    margin-left: 3em;
+                    font-style: italic;
+                    font-family: $fuenteMedium;
+                }
+            }
+        }
+    }
+
+    .extras{
+        background: $colorPrincipal;
+        padding: 4em 0 6em 0;
+
+        img{
+            width: 100%;
+            height: 230px;
+        }
+        h1{
+            color: #fff;
+            font-family: $fuenteTitulo2;
+            margin-bottom: .5em;
+        
+        }
+       
+
+        .text{
+            p{
+                color: #fff;
+                margin-bottom: 3em;
+                font-size: 1.2em;
+
+            }
+        }
+        article{
+            border-bottom-left-radius: 25px ;
+            border-bottom-right-radius: 25px;
+            padding-bottom: 4em;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: .6s all ease;
+
+            @media screen and (max-width: 500px){
+            margin-bottom: 2.5em;
+            }
+
+            &:hover{
+                transform: scale(1.03);
+                transition: .6s all ease;
+            }
+
+                h3{
+                    color: $colorPrincipal;
+                    font-family: $fuenteTitulo2;
+                    padding: 1em 0 .6em 0;
+                    font-size: 1.7em;
+                    line-height: 1.2em;
+                }
+                p{
+                    font-size: 1.1em;
+                    margin: 0;
+                    text-align: justify;
+                    width: 85%;
+                    font-family: $fuenteNormal;
+                }
+
+                .obten{
+                    font-style: italic;
+                    margin: 1em 0 2em 0;
+                    color: #232323;
+                    font-family: $fuenteContenido;
+                    text-align: center;
+                    font-size: 1em;
+
+                }
+                .texto {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    min-height: 300px;
+                }
+
+                h2{
+                    color: $verde;
+                    font-family: $fuenteTitulo2;
+                    margin-bottom: 1em;
+
+                    span{
+                        font-size: .8em;
+                        font-family: $fuenteBold;
+
+                    }
+                }
+                
+            
+        }
+
+       
+    }
+    .procesos{
+        padding: 4em 0;
+        .titulo{
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+            img{
+                width: 100px;
+                margin-right: 2em;
+                @media screen and (max-width: 500px){
+                    display: none;
+                    }
+
+            }
+            h1{
+                color: $colorPrincipal;
+                font-family: $fuenteTitulo2;
+            }
+        }
+
+        .pasos{
+            p{
+                span{
+                    font-family: $fuenteTitulo2;
+                    text-transform: uppercase;
+                }
+                font-size: 1.2em;
+                line-height: 1.4em;
+            }
+        }
+        .avisos{
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 500px){
+                align-items: center;
+                }
+
+            img{
+                width: 260px;
+                margin: 1.5em 0;
+                margin-bottom: 1em;
+            }
+            h4{
+                font-size: 1.6em;
+                font-family: $fuenteTitulo2;
+                margin: 1em 0;
+                text-transform: uppercase;
+                color: $colorPrincipal;
+                @media screen and (max-width: 500px){
+                    text-align: center;
+                    }
+            }
+
+            p{
+                font-size: 1.2em;
+                font-family: $fuenteBold;
+                line-height: 1em;
+                @media screen and (max-width: 500px){
+                    text-align: center;
+                    }
+            }
+
+            .btn {
+                width: 180px;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    .promociones{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    .content_descuento{
+        border: 1px solid white;
+        padding: 20px;
+        text-align: center;
+       
+        hgroup{
+            
+            h1, h2{
+                color: $verde;
+                font-family: $fuenteTitulo2;
+            }
+            h1{
+                margin-bottom: -17px;
+            }
+            h3{
+                color: white;
+                font-family: $fuenteTitulo2;
+                border-top: 1px solid white;
+            }
+            
+        }
+
+        h4{
+            color: white;
+            font-family: $fuenteBold;
+            font-size: 1.3em;
+        }
+    }
+
+    .ticket_vertical{
+        background-image: url('../img/ticket-vertical.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        width: 80%;
+        padding: 40px 20px;
+        @media screen and (max-width: 500px){
+            width: 100%;
+        }
+    }
+
+    .ticket_horizontal{
+        background-image: url('../img/ticket-horizontal.svg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 20px 140px;
+        height: 200px;
+
+        @media screen and (max-width: 500px){
+            padding: 20px 25px;
+        }
+        .content_descuento{
+            border: 1px solid white;
+            padding: 5px 20px;
+            text-align: center;
+        }
+
+        hgroup{
+            
+            h1, h2{
+                color: $verde;
+                font-family: $fuenteTitulo2;
+            }
+            h1{
+                margin-bottom: -12px;
+                font-size: 2em;
+                @media screen and (max-width: 500px){
+                    font-size: 1.5em;
+                }
+            }
+            h2{
+                font-size: 1.8em;
+                margin-bottom: 0px;
+                @media screen and (max-width: 500px){
+                    font-size: 1.4em;
+                }
+            }
+            h3{
+                color: white;
+                font-family: $fuenteTitulo2;
+                border-top: 1px solid white;
+                font-size: 1.6em;
+                margin-bottom: -5px;
+                @media screen and (max-width: 500px){
+                    font-size: 1.4em;
+                }
+            }
+            
+        }
+    }
+
+    .ticket_horizontal:nth-child(2){
+        margin-top: 20px;
+        @media screen and (max-width: 500px){
+            margin-top: 10px;
+        }
+    }
+
+    .content_precio{
+        h4{
+            font-size: 1em;
+            color: $colorPrincipal;
+            margin-bottom: -10px;
+        }
+        hr{
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    }
+
+}
+
+.cinta_promocion{
+    background-color: #ffffff;
+    color: #606060;
+    font-size: 0.8em;
+    padding: 0.4em;
+    letter-spacing: 0.1em;
+    // position: absolute;
+    z-index: 100;
+    text-align: center;
+}
+
+.info-tel{
+    color:  white;
+    margin-top: 2em;
+    font-weight: bold;
+
+}

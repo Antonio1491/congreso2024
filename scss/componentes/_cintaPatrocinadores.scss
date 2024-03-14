@@ -1,0 +1,165 @@
+//========== Cinta de patrocinadores ==================
+.cintaPatrocinadores{
+  background-color: #004a808c;
+  // margin-bottom: 0;
+  // height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+
+  }
+  // .item_cinta{
+  //   // align-self: center;
+  // }
+}
+.slick-slide {
+
+  figure {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+  margin: 0 100px;
+
+  @media screen and (max-width: 1367px){
+    margin: 0 40px;
+  }
+}
+
+/* the parent */
+
+
+.slider{
+  // background-color: #a;
+  background: transparent;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  // justify-content: space-around;
+  
+  // border: 1 px solid red;
+ 
+}
+
+.slider figure img{
+  height: 10vh;
+  // border: 1px solid red;
+  @media screen and (max-width: 1024px){
+    height: auto;    
+}
+}
+.slick-prev, .slick-next{
+  display: none !important;
+  margin-left: 0;
+}
+a.slick-slide:nth-child(9){
+  display: none;
+  margin-left: 0;
+
+}
+
+
+// Cinta expositores 
+.cinta_expositores{
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap;
+  padding: 40px 0;
+  width: 100%;
+
+
+
+  .slick-slide {
+    margin: 0;
+ 
+    
+ 
+
+  }
+
+  .slick-slide.slick-active {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+ 
+
+
+
+  figure{
+    width: 200px;
+
+    img{
+      height: 10vh;
+
+    }
+  }
+
+
+}
+.cinta_expositores2{             
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // flex-wrap: wrap;
+  padding: 40px 0;
+  width: 100%;
+
+
+
+  .slick-slide {
+    margin: 0;
+ 
+    
+ 
+
+  }
+
+  .slick-slide.slick-active {
+    display: flex;
+    justify-content: center;
+  }
+ 
+
+
+
+  figure{
+    width: 200px;
+
+    img{
+      height: 10vh;
+
+    }
+  }
+
+
+}
+// .slider_expositores{
+//   // background-color: $azul;
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   align-content: center;
+//   // height: 100%;
+//   // border: 1 px solid red;
+
+
+//   // border: 1px solid red;
+//   @media screen and (max-width: 1024px){
+//     height: auto;    
+// }
+  
+// }
+

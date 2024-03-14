@@ -1,0 +1,102 @@
+.tableroFechas{
+  background-color: #0d1515;
+  opacity: 0.8;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  @media screen and(max-width: 680px){
+    width: 75%;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    }
+    ul li{
+      font-family: Avenir Bold;
+      font-size: 14px;
+      list-style: none;
+      @media screen and(max-width: 680px){
+        font-size: 11px;
+      }
+  }
+  h4{
+    font-size: 22px;
+    font-family: "Antonio Bold";
+    letter-spacing: 1px;
+    color: $verde;
+      @media screen and(max-width: 680px){
+        font-size: 16px;
+      }
+  }
+  
+  }
+  .nota span{
+    font-size: 13px;
+    @media screen and(max-width: 680px){
+      font-size: 10px;
+  }
+}
+
+// .btn_programa {
+//   margin-top: 30px;
+//   margin-bottom: 30px;
+//   color: white;
+//   background: $verde;
+//   border-radius: 0;
+//   font-family: $fuenteTitulo2;
+//   font-size: 25px;
+//   padding: 5px 40px;
+//   text-transform: uppercase;
+//   border: 0;
+// }
+.bajar{
+  margin-bottom: 30px;
+}
+.row.contenido_sede {
+  margin-bottom: 30px;
+  padding: 40px;
+
+  h4{
+    color: $colorPrincipal;
+    font-family: $fuenteTitulo2;
+  }
+
+ 
+}
+.sud.btn_1 {
+  // padding: 8px 30px;
+  // color: $colorPrincipal;
+  // background-image: linear-gradient(315deg, #d2dd0a, #00b936);
+  // border-radius: 30px;
+  // transition: all 0.5s ease;
+  // position: relative;
+  // background-size: 150% auto;
+  // font-family: $fuenteTitulo2;
+  // margin-bottom: 10px;
+  padding: 10px 30px;
+  border: 2px $verde solid;
+  color: $verde;
+  background: transparent;
+  /* border-radius: 30px; */
+  transition: all .5s ease;
+  position: relative;
+  font-family: "Arial Black";
+  background-size: 150% auto;
+  text-transform: uppercase;
+  // box-shadow:  2px 3px 5px rgba(41, 37, 37, 0.5), inset -2px -3px 3px #135728;
+  // @media screen and (max-width: 1280px) {
+  //   padding: 5px 10px;
+  //   font-size: 0.8rem;
+  // }
+  &:hover{
+    // background-position: right;
+    // transform: scale(1.04);
+    // box-shadow: 2px 3px 5px rgba(41, 37, 37, 0.5),
+    // inset -2px -3px 3px #135728;
+    // color: $colorPrincipal;
+    background: $verde;
+    color: #fff;
+  }
+  
+}

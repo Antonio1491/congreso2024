@@ -1,0 +1,147 @@
+.ejes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.ejes .texto__header {
+  width: 100%;
+  flex-direction: column;
+}
+@media screen and (max-width: 1400px) {
+  .ejes .texto__header {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ejes .texto__header {
+    width: 80%;
+  }
+}
+// .ejes .texto__header h1 {
+//   color: $primaryColor;
+//   font-family: "Arial Black";
+//   margin-bottom: 0.6em;
+//   margin-top: 1.5em;
+// }
+.ejes .texto__header p {
+  margin-bottom: 4em;
+}
+@media screen and (max-width: 500px) {
+  .ejes .texto__header p {
+    text-align: center;
+  }
+}
+.ejes .contenedor__cajas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.ejes .contenedor__cajas .linea {
+  width: 100%;
+  margin: 100px 0 50px 0;
+}
+@media screen and (max-width: 1400px) {
+  .ejes .contenedor__cajas .linea {
+    margin: 50px 0 30px 0;
+  }
+}
+
+.box {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  width: 400px;
+  padding: 0;
+  border: 3px #fff solid;
+}
+
+.contenido {
+  position: absolute;
+  bottom: -80%;
+  background: #ffffff;
+  width: 85%;
+  height: 400px;
+  transition: all 0.6s ease-in-out;
+}
+
+.contenido h1 {
+  font-weight: 800;
+  color: $primaryColor;
+  font-family: "Montserrat Bold";
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+  margin-top: 1em;
+  padding: 0 1.1em;
+}
+
+.contenido p {
+  font-weight: 300;
+  color: black;
+  text-align: justify;
+  font-family: "Poppins";
+  padding: 0 2em;
+  font-size: 13px;
+}
+
+.box:hover .contenido {
+  bottom: 0%;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.franja {
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.franja .verde {
+  background: $complementaryColor2;
+  width: 50%;
+}
+
+.franja .azul {
+  background: $primaryColor;
+  width: 50%;
+}
+
+  .box__1 {
+  background: url("../../build/img/medio-ambiente-sostenibilidad.jpg");
+  background-position: bottom;
+}
+
+.box__2 {
+  background: url("../../build/img/diseno-infraestructura-equipamiento.jpg");
+  background-position: bottom;
+}
+
+.box__3 {
+  background: url("../../build/img/equidad-economia-financiacion.jpg");
+  background-position: bottom;
+}
+
+.box__4 {
+  background: url("../../build/img/participacion-inclusion-sociabilidad.jpg");
+  background-position: bottom;
+}
+
+.box__5 {
+  background: url("../../build/img/salud-bienestar.jpg");
+  background-position: bottom;
+}
+
+.box__6 {
+  background: url("../../build/img/salud-bienestar.jpg");
+  background-position: bottom;
+}

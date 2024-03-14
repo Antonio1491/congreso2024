@@ -1,0 +1,358 @@
+.entradas{
+    margin-bottom: 2em;
+}
+
+.imgRedonda{
+    width: 50px;
+    margin-bottom: 0.6em;
+    border-radius: 50px;
+}    
+
+.talleres{
+    // background: #fff;
+    // display: flex;
+    // justify-content: space-around;
+    // padding: 5% 10%;
+
+
+    a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .talleres__tipo{
+        color: $primaryColor;
+        margin-top: 3rem;
+        font-family: "Montserrat Bold";
+        font-size: 1.3rem;
+        text-transform: uppercase;
+
+    }
+
+    figure{
+        
+        img{
+            height: 160px;
+                }
+    }
+}
+
+.talleres__back{
+    padding: 50px 0;
+}
+
+.descripcion_principal{
+    text-align: left;
+}
+
+#talleres{
+    .cinta_aqua {
+        h2{
+            font-family: "Montserrad Medium";
+        }
+
+        p{
+            // font-family: $fuenteMedium;
+            text-align: center;
+        }
+        h5{
+            // font-family: $fuenteContenido;
+            text-align: center;
+            font-size: 17px;
+            span{
+                font-family: "Montserrad Medium";
+
+            }
+        }
+       }
+
+}
+
+
+.talleres__vivenciales{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .descripcion{
+        background: $primaryColor;
+        padding-right: 0;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        @media screen and (max-width: 1367px){
+            height: 70vh;
+        }
+        @media screen and (max-width: 500px){
+            height: max-content;
+        }
+        .texto{
+            width: 70%;
+
+            @media screen and (max-width: 500px){
+                padding: 2em 0;
+            text-align: center;
+                    }
+        
+
+            h1{
+                font-family: "Montserrat Bold";
+            }
+            h3{
+                // font-family: $fuenteMedium;
+                font-size: 1.6em;
+                margin-bottom: 1.5em;
+            }
+            p{
+                font-size: 1.2em;
+                // font-family: $fuenteMedium;
+            }
+
+            @media screen and (max-width: 1367px){
+                width: 85%;
+                h1{
+                    // font-family: $fuenteTitulo2;
+                }
+                h3{
+                    // font-family: $fuenteMedium;
+                    font-size: 1.4em;
+                    margin-bottom: 1.3em;
+                }
+                p{
+                    font-size: 1.1em;
+                    // font-family: $fuenteMedium;
+                }
+            }
+        }
+    }
+    .foto{
+        padding-left: 0;
+        background-image: url('../img/fotos/talleres_vivenciales.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: 500px){
+            height: 300px;
+        }
+
+    }
+    .foto2{
+        padding-left: 0;
+        background-image: url('../img/fotos/talleres_curriculares.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media screen and (max-width: 500px){
+            height: 300px;
+        }
+
+    }
+}
+
+.azul{
+    p{
+        color: $primaryColor;
+        font-size: 1.6em !important;
+        // font-family: $fuenteTitulo2 !important;
+        text-align: center !important;
+    }
+}
+
+.talleres{
+    .contenedor__talleres{
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &--taller{
+            border: 1px #c1c1c1 solid;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 32.5%;
+            margin-left: .5%;
+            margin-bottom: 2em;
+            transition: .5s all ease;
+
+            @media screen and (max-width: 500px){
+                width: 100%;
+
+            }
+
+            &:hover{
+                transform: scale(1.03);
+                transition: .5s all ease;
+                cursor: pointer;
+
+            }
+
+            .contenido__taller{
+                padding: 1em;
+                h3{
+                    color: $primaryColor;
+                    // font-family: $fuenteTitulo2;
+                    font-size: 1.3em;
+                    line-height: 1em;
+                    height: 40px;
+                }
+                h5{
+                    color: $primaryColor;
+                    line-height: 1em;
+                    height: 33px;
+                    font-size: 1.1em;
+                    // font-family: $fuenteMedium;
+                }
+                .desc_taller{
+                    height: 260px;
+
+                    @media screen and (max-width: 500px){
+                        height: 390px;
+        
+                    }
+
+                }
+                p{
+                    text-align: justify;
+                }
+                .iconos__taller{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-size: .9em;
+                    }
+                }
+                .precio{
+                    h3{
+                        color: $secondaryColor;
+                        font-size: 2em;
+                        text-align: center;
+                        // font-family: $fuenteBold;
+                        margin-top: 1.8em;
+                        margin-bottom: .6em;
+
+                        span{
+                            font-size: .8em;
+                            font-family: "Montserrat Bold";
+                            margin-left: .4em;
+
+                        }
+                    }
+                }
+                .verde{
+                    color: $secondaryColor;
+                }
+                .btn__comprar {
+                    display: flex;
+                    flex-direction: row;
+                    padding: 7px 40px;
+                    text-decoration: none;
+                    color: $secondaryColor;
+                    font-weight: 700;
+                    transition: .3s;
+                    border: 2px solid $secondaryColor;
+                    letter-spacing: 1px;
+                    border-radius: 15px;
+                    font-family: "Arial Medium";
+                    font-size: 1.3em;
+                    margin-bottom: 1.5em;
+                    &:hover{
+                        background: $secondaryColor;
+                        color: #fff;
+                    }
+                }
+            }
+        
+         
+        }
+    }
+}
+
+
+
+.informacion__taller{
+    .textoPrincipal{
+        h2{
+            color: $primaryColor;
+            // font-family: $fuenteBold;
+        }
+        h3.aprendiendo{
+            color: $primaryColor;
+            // font-family: $fuenteNormal;
+            font-size: 1.9em;
+            margin-bottom: 1em;
+
+        }
+
+        .descripcion{
+            margin-top: 1em;
+            margin-bottom: .5em;
+            color: $primaryColor;
+            // font-family: $fuenteBold;
+
+        }
+        
+        p{
+            text-align: justify;
+
+        }
+      
+    }
+
+    .cuadroAzul{
+        background: $primaryColor;
+        color: #fff;
+        height: 930px;
+        padding: 2em 3em;
+
+        h1{
+            text-align: center;
+            // font-family: $fuenteBold;
+        }
+        .btn_comprar{
+            background: $secondaryColor;
+            border-radius: 15px;
+            padding: .8em 2em;
+            display: inline-block;
+            margin-left: auto;
+            width: 230px;
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            // font-family: $fuenteBold;
+            font-size: 1.1em;
+        }
+        p.termina{
+            // font-family: $fuenteNormal;
+            font-size: .8em;
+        }
+        p{
+            i{
+                margin-right: 2%;
+            }
+            font-size: 1.1em;
+            // font-family: $fuenteContenido;
+            span{
+                margin-left: 8%;
+            }
+
+
+        }
+    
+        .representante{
+            p{
+                font-size: .8em;
+                line-height: .9em;
+                margin-bottom: .5em;
+
+              
+            }
+            .negritas{
+                // font-family: $fuenteBold;
+                font-size: .8em;
+            }
+        }
+    }
+}

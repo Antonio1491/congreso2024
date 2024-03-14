@@ -1,0 +1,112 @@
+   //============ versión móvil Index =================
+  .header_movil{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+  }
+ .movil{
+   height: 100vh;
+   display: grid;
+   grid-template: 20vh 25vh 25vh 10vh 10vh 10vh/ repeat(3, 1fr);
+   background: $azul;
+   background-image: url('../img/responsive/background_azul.png');
+   background-position: bottom;
+   background-size: cover;
+   grid-gap: 0px 0px;
+   .item_movil:nth-of-type(1),
+   .item_movil:nth-of-type(6),
+   .item_movil:nth-of-type(7),
+   .item_movil:nth-of-type(8),
+   .item_movil:nth-of-type(5){
+     grid-column-start: 1;
+     grid-column-end: 4;
+   }
+   .item_movil{
+
+     text-align: center;
+     figure img{
+       height: 15vh;
+
+     }
+     figcaption h1,
+     figcaption h2{
+       font-family: $fuenteTitulo1;
+       color: $blanco;
+     }
+     figcaption h1{
+       font-size: 13px;
+       // margin-top: -10px;
+     }
+     figcaption h2{
+       font-size: 10px;
+     }
+     hgroup{
+      border: 2px solid $verde;
+      padding: 5px;
+      margin-top: 10px;
+      border-radius: 10px;
+       
+        h1{
+        margin-top: -10px;
+        margin-bottom: 0;
+        }
+      }
+      
+    }
+ }
+ .item_movil.fecha{
+  background-color: $colorPrincipal;
+  display: flex;
+  align-items: center;
+  // padding: 20px;
+  img{
+    height: 10vh;
+  }
+}
+
+.item_movil.redes{
+  background-color: $colorPrincipal;
+  a img{
+    height: 6vh;
+    margin-top: 2vh;
+  }
+}
+
+.item_movil.cinta_responsive .cintaPatrocinadores{
+  height: 10vh;
+  display: flex;
+    align-items: center;
+  .slider{
+    // background-color: $azul;
+    // display: flex;
+    // align-items: center;
+    width: 100%;
+  }
+  .slider figure img{
+    height: 6vh;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+ .icon{
+   background-color: rgba(251, 251, 251, 0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   @media screen and (min-width: 500px){
+    background-color: transparent;
+  }
+ }
+
+
+ //ipad, ipad pro
+ @media screen and (max-width: 1024px){
+  .eventos_anteriores .item_videos_eventos iframe{
+    height: 100px;
+    width: 180px;
+    
+  }
+
+ }
+

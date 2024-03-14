@@ -1,0 +1,26 @@
+.header-registro{
+  background : $colorPrincipal;
+  padding: 20px;
+  display: flex;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+  @include telefono {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  &__titulo h1{
+    @include tituloRegistro($blanco);
+    @include telefono{
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  }
+  
+}
+.logotipo-registro{
+  img{
+    height: 3rem;
+  }
+}
+

@@ -1,0 +1,52 @@
+@mixin tituloPrincipal($color){
+  font-family: 'Antonio Bold';
+  text-transform: uppercase;
+  color: $color;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@mixin subtitulo($color, $transform){
+  color: $color;
+  font-family: 'Montserrat Bold';
+  text-transform: $transform;
+}
+
+// @mixin tituloRegistro($color) {
+//   font-family: $fuenteTitulo1;
+//   font-size: 1.5rem;
+//   letter-spacing: 1px;
+//   text-transform: uppercase;
+//   font-weight: 900;
+//   color: $color;
+//   margin-bottom: 0;
+// }
+
+
+
+// @mixin subtituloTexto($color){
+//   color: $color;
+//   padding: 10px 10px;
+//   // text-transform: uppercase;
+//   font-family: $fuenteSubtitulo;
+//   // width: max-content;
+// }
+
+// @mixin telefono{
+//   @media (max-width: $telefono){
+//     @content;
+//   }
+// }
+
+// @mixin tablet{
+//   @media (min-width: $tablet){
+//     @content;
+//   }
+// }
+
+// @mixin desktop{
+//   @media (min-width: $desktop){
+//     @content;
+//   }
+// }

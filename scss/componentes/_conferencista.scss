@@ -1,0 +1,42 @@
+.seccion_conferencista
+  {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+    h1{
+    font-family: 'Antonio Bold';
+    text-transform: uppercase;
+    }
+    h2{
+      font-family: 'Montserrat Bold';
+      text-transform: uppercase;
+      color: $complementaryColor2;
+      }
+  }
+  .conferencista{
+    &__cargo{
+      font-weight: bold;
+      font-size: .6rem !important;
+      color: $complementaryColor3;
+    }
+  img{
+    margin-bottom: 30px;
+    }
+  h5{
+    text-transform: uppercase;
+    font-family: 'Montserrat Bold';
+    margin-bottom: 0px;
+    font-size: 1.1rem;
+    }
+  h6{
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 2px;
+    }
+  span{
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Montserrat Bold';
+    
+    }
+  }

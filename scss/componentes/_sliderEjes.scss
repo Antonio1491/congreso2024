@@ -1,0 +1,35 @@
+#ejes_slider{
+  // height: 300px;
+  padding-bottom: 10px;
+}
+.orbit-wrapper{
+  padding: 10px 80px;
+}
+.orbit{
+  margin: 0 auto;
+  width: 60%;
+}
+ul.orbit-container{
+  p{
+    font-size: 1.8rem;
+    font-family: $fuenteResaltado;
+  }
+  strong{
+    font-family: "Antonio Regular";
+    text-transform: uppercase;
+    display: block;
+    font-size: 22px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  color: $azul;
+  text-align: center;
+  li img{
+    height: 140px;
+    margin-left: 60px;
+  }
+  li div{
+    display: flex;
+    align-items: center;
+  }
+}

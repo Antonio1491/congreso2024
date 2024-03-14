@@ -1,0 +1,28 @@
+
+/* =======================================
+C H A T
+=========================================*/
+
+#app-messenger{
+position: fixed;
+right: 24px;
+bottom: 25px;
+width: 60px;
+z-index: 1000;
+display: none;
+}
+
+#app-messenger i{
+font-size: 63px;
+}
+#app-messenger i{
+color: #0084ff;	
+}
+@media screen and (max-width: 766px){
+#fb-root{
+display: none;
+}
+#app-messenger{
+display: block;
+}
+}

@@ -1,0 +1,578 @@
+body{
+    overflow-x: hidden;
+}
+
+.monterrey{
+    display: flex;
+    justify-content: center;
+
+    img{
+        width: 300px !important;
+        height: auto !important;
+    }
+}
+
+.row{
+    max-width: 80em !important;
+
+    @media screen and (max-width: 1367px){
+        max-width: 72em !important;
+
+      }
+      @media screen and (max-width: 1200px){
+        max-width: 65em !important;
+
+      }
+      @media screen and (max-width: 850px){
+        max-width: 44em !important;
+
+      }
+
+      @media screen and (max-width: 500px){
+        max-width: 350px !important;
+
+      }
+
+}
+
+
+@media screen and (max-width: 500px){
+    h1{
+
+        
+        text-align: center;
+        font-size: 2em;
+    }
+    h3{
+        text-align: center;
+        
+    }
+}
+
+.objetivo {
+
+    @media screen and (max-width: 500px){
+        p{
+            text-align: center;
+        }
+    }
+    
+
+    margin-bottom: 3em;
+    h1{
+        color: $colorPrincipal;
+        font-family: $fuenteTitulo2;
+        margin-bottom: .6em;
+    }
+
+    img{
+        width: 98%;
+        margin-left: 1em;
+        margin-top: 2em;
+    }
+    .iconos__acerca_de{
+        text-align: center;
+        img{
+            width: 60%;
+        }
+
+        h4{
+            font-family: $fuenteTitulo2;
+            color: $colorPrincipal;
+            margin: 1em 0;
+        }
+
+        p{
+            line-height: 15px;
+            margin-bottom: .5em;
+
+            span{
+                font-family: $fuenteResaltado;
+            }
+        }
+    }
+}
+
+.organizado__por{
+
+    .organizado__por__contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 500px){
+            flex-direction: column;
+          }
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #1e3249;
+    }
+
+    .organizado{
+        padding: 2em 4em;
+        @media screen and (max-width: 500px){
+            padding: 2em 1em;
+
+        }
+
+        img{
+            width: 150px;
+            margin: 1em 1em 1em 0;
+            height: 100px;
+
+        }
+        background: $colorPrincipal;
+        h1{
+            color: #fff;
+            font-family: $fuenteTitulo2;
+            font-size: 2.4em;
+            @media screen and (max-width: 500px){
+            font-size: 2em;
+            }
+        }
+    }
+
+}
+
+.ejes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  
+
+    .texto__header{
+        width: 100%;
+        flex-direction: column;
+
+
+        @media screen and (max-width: 1400px){
+            width: 100%;
+
+          }
+
+          @media screen and (max-width: 500px){
+            width: 80%;
+
+          }
+
+        h1{
+            color: $colorPrincipal;
+            font-family: $fuenteTitulo2;
+            margin-bottom: .6em;
+            margin-top: 1.5em;
+        }
+        p{
+            margin-bottom: 4em;
+            @media screen and (max-width: 500px){
+                text-align: center;    
+            }
+
+        }
+    }
+    display: flex;
+    justify-content: center;
+
+    .contenedor__cajas{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+
+        @media screen and (max-width: 1400px){
+
+          }
+
+          .linea{
+            width: 100%;
+            margin: 100px 0 50px 0;
+
+            @media screen and (max-width: 1400px){
+                margin: 50px 0 30px 0;
+
+            }
+        }
+    }
+}
+
+.experiencia{
+    .texto{
+        color: $colorPrincipal;
+        h1{
+            font-family: $fuenteTitulo1;
+        }
+        h3{
+            font-family: $fuenteResaltado;
+            margin-bottom: 2em;
+        }
+    }
+ 
+    .taller1{
+        background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(30,50,73,1) 90%), url('../img/fondo_magistral.jpg');
+
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,.4) 40%, rgba(30,50,73,.4) 90%), url('../img/fondo_magistral.jpg');
+            height: 58vh;
+
+        }
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       height: 45vh;
+       display: flex;
+        justify-content: flex-end;
+        margin-bottom: -1px;
+    }
+    .taller2{
+        background:  linear-gradient(90deg, rgba(30,50,73,1) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_sesion educativa.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(30,50,73,.4) 0%, rgba(30,50,73,0.3) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_sesion educativa.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+        background-position: center;
+
+        background-size: cover;
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: -1px;
+    }
+    .taller3{
+        background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(30,50,73,1) 90%), url('../img/fondo_taller vivencial.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,.4) 40%, rgba(30,50,73,.4) 90%), url('../img/fondo_taller vivencial.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+
+       height: 45vh;
+       display: flex;
+        justify-content: flex-end;
+        margin-bottom: -1px;
+    }
+    .taller4{
+        background:  linear-gradient(90deg, rgba(30,50,73,1) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_taller curricular.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(30,50,73,.4) 0%, rgba(30,50,73,0.3) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_taller curricular.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: -1px;
+    }
+    .taller5{
+        background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(30,50,73,1) 90%), url('../img/fondo_expo.jpg');
+         @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,.4) 40%, rgba(30,50,73,.4) 90%), url('../img/fondo_expo.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+
+       height: 45vh;
+       display: flex;
+        justify-content: flex-end;
+        margin-bottom: -1px;
+    }
+    .taller6{
+        background:  linear-gradient(90deg, rgba(30,50,73,1) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_Eventos sociales.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(30,50,73,.4) 0%, rgba(30,50,73,0.3) 40%, rgba(255,255,255,0) 100%), url('../img/fondo_sesion educativa.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: -1px;
+    }
+
+    .evento1{
+        background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(30,50,73,1) 90%), url('../img/eventoI.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(30,50,73,.4) 0%, rgba(30,50,73,0.3) 40%, rgba(255,255,255,0) 100%), url('../img/eventoI.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: -1px;
+    }
+
+    .evento2{
+        background:linear-gradient(90deg, rgba(30,50,73,1) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(255,255,255,0) 100%), url('../img/eventoBeer.jpg');
+         @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,.4) 40%, rgba(30,50,73,.4) 90%), url('../img/eventoBeer.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+
+       height: 45vh;
+       display: flex;
+        justify-content: flex-end;
+        margin-bottom: -1px;
+    }
+
+    .evento3{
+        background:  linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(30,50,73,0.6674019949776786) 40%, rgba(30,50,73,1) 90%), url('../img/eventoClausura.jpg');
+        @media screen and (max-width: 500px){
+            background:  linear-gradient(90deg, rgba(30,50,73,.4) 0%, rgba(30,50,73,0.3) 40%, rgba(255,255,255,0) 100%), url('../img/eventoClausura.jpg');
+            height: 58vh;
+
+        }
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        height: 45vh;
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: -1px;
+    }
+
+    .taller1__contenedor {
+        padding: 3em 0;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+
+        .column{
+            @media screen and (max-width: 500px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }    
+        }
+
+        .sud {
+            width: 170px;
+            display: flex;
+            justify-content: center;
+
+        }
+        h2{
+            font-family: $fuenteTitulo2;
+            font-size: 2em;
+            @media screen and (max-width: 500px){
+                font-size: 1.5em;
+
+            }
+
+        }
+        h4{
+            font-family: $fuenteTitulo2;
+            color: $verde;
+            font-size: 1em;
+            margin-bottom: 2em;
+
+        }
+        p{
+            margin-bottom: 4em;
+            font-family: $fuenteNormal;
+            @media screen and (max-width: 1400px){
+                margin-bottom: 1em;
+
+            }
+        }
+    }
+
+    .taller2__contenedor{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .column{
+            @media screen and (max-width: 500px){
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }    
+        }
+      
+        .sud {
+            width: 170px;
+            display: flex;
+            justify-content: center;
+        }
+
+        padding: 3em 0;
+        color: white;
+
+        h2{
+            font-family: $fuenteTitulo2;
+            font-size: 2em;
+
+            @media screen and (max-width: 500px){
+                font-size: 1.5em;
+
+            }
+
+        }
+        h4{
+            font-family: $fuenteTitulo2;
+            color: $verde;
+            font-size: 1em;
+            margin-bottom: 2em;
+
+        }
+        p{
+            margin-bottom: 4em;
+            font-family: $fuenteNormal;
+            @media screen and (max-width: 1400px){
+                margin-bottom: 1em;
+
+            }
+        }
+    
+    }
+}
+
+.viaje{
+    h1{
+        font-family: $fuenteTitulo1;
+        color: $colorPrincipal;
+        margin: 1.5em 0;
+    }
+
+    .bloque{
+
+        @media screen and (max-width: 500px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 2em;
+        }
+        h4{
+            text-align: center;
+            margin: 1em 0;
+            color: $colorPrincipal;
+            font-family: $fuenteTitulo2;
+        }
+        p{
+            text-align: justify;
+            width: 92%;
+            font-family: $fuenteContenido;
+        }
+        img{
+            width: 92%;
+        }
+    }
+    .linea{
+        margin: 3em 0;
+
+        @media screen and (max-width: 500px){
+            margin: 1em 0;
+
+        }
+    }
+}
+.patrocinadores{
+    h1{
+        font-family: $fuenteTitulo1;
+        color: $colorPrincipal;
+        margin: 1em 0;
+    }
+
+    .bloque{
+        
+        img{
+            width: 100%;
+            margin: 1em 0 1em 0;
+        }
+    }
+    .linea{
+        margin: 2em 0;
+    }
+
+    img.efecto{
+        transition: all .4s ease-in-out; 
+
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+.entradas{
+
+    .column{
+        @media screen and (max-width: 500px){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    h1{
+        font-family: $fuenteTitulo1;
+        color: $colorPrincipal;
+        margin: 1.5em 0;
+    }
+    p{
+        font-size: 1.2em;
+        color: $verde;
+        font-family: $fuenteResaltado;
+        text-decoration: underline;
+        margin-left: 3em;
+
+        @media screen and (max-width: 500px){
+            margin-left: 0;
+
+        }
+
+        &::before{
+            content: '\f10b';
+            font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    margin-right: 1em;
+    text-decoration: none;
+        }
+    }
+
+}

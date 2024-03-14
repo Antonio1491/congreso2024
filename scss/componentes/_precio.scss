@@ -1,0 +1,61 @@
+.boleto{
+  background: transparent;
+  color: $white;
+  border: #00dfbf 2px solid;
+  padding: 2rem 2rem;
+  border-radius: 0px 30px;
+  width: 400px;
+  position: relative;
+  overflow: hidden;
+
+  .cinta {
+  background-color: red;
+  min-width: 140px;
+  transform: rotate(40deg);
+  position: absolute;
+  top: 20px;
+  right: -25px;
+  text-align: center;
+  border: 0px;
+  box-shadow: #000b03 2px 2px 10px;
+  }
+
+  .cinta span {
+    letter-spacing: 0px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+  }
+
+  &-btn{
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    text-align: center;
+  }
+
+  &-titulo{
+    font-family: 'Antonio Bold';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &-precio{
+    font-family: 'Montserrat Bold';
+    text-align: center;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  &-descripcion{
+    font-size: 0.7rem;
+    min-height: 240px;
+  }
+  &__active{
+    border: #c00ab3 2px solid;
+  }
+  strong{
+    font-size: 0.7rem;
+    color:#00dfbf;
+      margin-top:-0.5rem;
+  }
+}

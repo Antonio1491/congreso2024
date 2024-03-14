@@ -1,0 +1,155 @@
+.header{
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 50vh;
+  background-color: $azul;
+  margin: 0;
+  position: relative;
+  // border: 1px solid red;
+  @media screen and (max-width: 500px){
+    height: 180px;
+  }
+  
+  .header_home{
+   height: 63vh;  
+  }
+
+  .titulo_pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+    flex-direction: column;
+    hgroup, h1{
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+    }
+    h1, h2{
+      font-family: $fuenteTitulo1 !important;
+    }
+    h2{
+      margin-bottom: -10px;
+      font-size: 25px;
+      @media screen and (max-width: 500px){
+        font-size: 15px;
+        margin-bottom: -7px;
+      }
+    }
+    h1{
+      font-size: 30px;
+      @media screen and (max-width: 500px){
+        font-size: 20px;
+      }
+    }
+  }
+  figure img{
+    height: 100px;
+  }
+  #expo{
+    height: 200px;
+    @media screen and (max-width: 500px){
+      height: 150px;
+    }
+  }
+}
+
+.header:before,
+	.header:after {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    // border: 2px solid red;
+		bottom:15px;
+		left:10px;
+		width:100%;
+		height:20%;
+		max-width:93%;
+		max-height:100px;
+		-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+		   -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+				box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+		-webkit-transform:rotate(-1deg);
+		   -moz-transform:rotate(-1deg);
+			-ms-transform:rotate(-1deg);
+			 -o-transform:rotate(-1deg);
+				transform:rotate(-1deg);
+	}
+
+	.header:after {
+		right:10px;
+		left:auto;
+		-webkit-transform:rotate(1deg);
+		   -moz-transform:rotate(1deg);
+			-ms-transform:rotate(1deg);
+			 -o-transform:rotate(1deg);
+				transform:rotate(1deg);
+	}
+
+.header_covid{
+  background-image: url('../img/bg_1.jpg');
+}
+.header_1{
+  background-image: url('../img/encabezados/headers/header1.jpg');
+}
+.h_acerca_de{
+  background-image: url('../img/bg_1.png');
+}
+.h_temas{
+  background-image: url('../img/encabezados/encabezados-13.jpg');
+}
+.h_ponentes{
+  background-image: url('../img/bg_2.png');
+}
+.h_patrocinadores{
+  background-image: url('../img/bg_3.png');
+}
+.h_educativas{
+  background-image: url('../img/bg_9.png');
+}
+.h_inscripcion{
+  background-image: url('../img/encabezados/encabezados-11.jpg');
+}
+.h_magistral{
+  background-image: url('../img/bg_8.png');
+}
+.h_talleres{
+  background-image: url('../img/bg_10.png');
+}
+.h_expo{
+  background-image: url('../img/encabezados/encabezados-03.jpg');
+}
+.h_eventos{
+  background-image: url('../img/encabezados/encabezados-10.jpg');
+}
+.h_programa{
+  background-image: url('../img/bg_6.png');
+}
+.h_convocatoria{
+  background-image: url('../img/header1.jpg');
+}
+.h_sede{
+  background-image: url('../img/headers/sede.jpg');
+}
+.h_hospedaje{
+  background-image: url('../img/encabezados/encabezados-05.jpg');
+}
+.h_conectividad{
+  background-image: url('../img/encabezados/encabezados-07.jpg');
+}
+.h_comite{
+  background-image: url('../img/bg_5.png');
+}
+.h_preguntas{
+  background-image: url('../img/encabezados/encabezados-06.jpg');
+}
+.h_razones{
+  background-image: url('../img/encabezados/encabezados-08.jpg');
+}
+.h_green_flag{
+  background-image: url('../img/gfa_header.jpg');
+}
+.h_poster{
+  background-image: url('../img/header_poster.png');
+}

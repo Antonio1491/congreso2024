@@ -1,0 +1,13 @@
+
+# Redirecciona una página individual a la raíz de un dominio
+#RedirectMatch 301 ^/registro/RegistroVoluntarios.php$ https://www.congresoparques.com/
+
+# Redirecciona la raíz de un directorio a la raíz de otro directorio
+#RedirectMatch 301 ^/?$ https://www.congresoparques.com/salta/
+
+# Redirecciona una página individual a la raíz de un directorio
+#RedirectMatch 301 ^/salta/registros/sesionesEducativas.php$ https://www.congresoparques.com/salta/
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php

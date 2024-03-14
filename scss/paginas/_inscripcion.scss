@@ -1,0 +1,397 @@
+#contenedor_inscripcion{
+  margin: 40px 0px;
+
+  .cinta_precios{
+    background-color: $azul;
+    padding: 30px 0px;
+    margin: 20px 0px;
+    color: white;
+    .descuentos{
+      text-align: center;
+      // font-style: italic;
+      @media screen and(max-width: 500px){
+        text-align: justify;
+      }
+    }
+    .informes{
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: bold;
+
+    }
+  }
+  ul li{
+    @media screen and(max-width: 500px){
+      text-align: justify;
+    }
+  }
+
+  .terminos{
+    margin-top: 20px;
+    img{
+      height: 250px;
+    }
+  }
+  .condiciones{
+    font-size: 12px;
+  }
+  .agregar_taller{
+    margin-top: 30px;
+    color: #525253;
+    a{
+      color: $rojo;
+      font-weight: bold;
+    }
+  }
+
+}
+#tabla_boletos{
+  background-color: $azul;
+  padding-top: 40px;
+ padding-bottom: 20px;
+ .nota_miembros{
+   color: white;
+   font-weight: bold;
+   a{
+
+   }
+ }
+}
+.contenido_boleto{
+  background-color: white;
+  border: 2.5px solid $verde;
+  border-radius: 8px;
+
+  @media screen and(max-width: 500px){
+    margin-bottom:40px;
+  }
+  .titulo_boleto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    font-size: 30px;
+    height: 80px;
+    font-family: "Antonio Bold";
+    margin-bottom: 5px;
+  }
+
+}
+.aviso{
+  padding-top: 10px;
+  border: 1px solid gray;
+  border-radius: 20px;
+  h5{
+    font-weight: bold;
+  }
+}
+
+.header_boleto{
+  background-color: $verde;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.descripcion_boleto{
+  text-align: center;
+  color: white;
+  margin-top: -20px;
+  padding: 10px;
+  font-size: 12px;
+
+}
+
+.beneficios_boleto,
+.beneficios_boleto p{
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bold;
+  font-size: 13px;
+}
+.beneficios_boleto img{
+  height: 15px;
+}
+
+.beneficios_boleto hr{
+  margin: 4px 50px;
+  border-color: $verde;
+  opacity: 0.3;
+}
+
+.precios_boleto{
+  text-align: center;
+}
+
+.boleto_activo{
+  background: $rojo;
+  color: white;
+  text-align: center;
+  margin: 10px 0px 0px 0;
+}
+
+.boleto_activo h3,
+.precio_final h3{
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  font-family: "Antonio Bold";
+}
+
+.contenido_precios p{
+  color: $verde;
+  font-size: 24px;
+  text-align: center;
+  font-family: "avenir bold";
+  // margin: 0;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.contenido_precios span{
+  font-size: 15px;
+}
+
+.contenido_precios h6{
+  color: $verde;
+  text-transform: uppercase;
+  // font-family: "roboto";
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+.contenido_precios hr{
+  border-color: $verde;
+  margin: 0 12px;
+}
+
+.precio_final{
+  background-color: $verde;
+  color: white;
+}
+
+.contenedor_btn_compra{
+  
+  margin: 30px 0px;
+}
+
+.btn_compra_verde{
+  background-color: $verde;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn_compra_verde:hover{
+  color: $verde;
+}
+
+.cambio{
+  margin-bottom: 30px;
+  h4{
+    color: $verde !important;
+    margin-bottom: 0px;
+  }
+  span{
+    color: $verde;
+  }
+
+  h3{
+    color: #525253;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  table{
+    border: 2px solid #a7a5a5 !important;
+    width: 500px;
+    ul{
+      text-align: left;
+      color: #525253;
+      font-size: 12.5px;
+    }
+  }
+  .nota{
+    font-size: 13px;
+  }
+  
+}
+.enlace_desactivado{
+  pointer-events: none !important;
+  cursor: default !important;
+  background-color: #dadada;
+}
+
+.banner_inscripcion{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.mensaje_preventa{
+  h3{
+    color: $rojo;
+    text-transform: uppercase;
+    font-family: "Avenir bold";
+    margin-bottom:0px;
+  }
+  h4{
+    color: white;
+    font-family: "Antonio Bold";
+    text-transform: uppercase;
+  }
+}
+
+
+.titulo_precios {
+  h2{
+    color: $verde;
+    text-transform: uppercase;
+    font-family: "Antonio bold";
+  }
+  p{
+    color: $verde;
+    font-weight: bold;
+  }
+  .cupo{
+    color: $rojo;
+    text-transform: uppercase;
+    font-family: "Avenir Bold";
+  }
+}
+
+
+.tablas_adicionales{
+  margin: 50px 0px;
+  .tabla_incluye, .tabla_adicionales{
+    border-radius: 15px;
+    padding: 20px 20px;
+    hgroup{
+      text-transform: uppercase;
+      color: white;
+      text-align: center;
+      h5{
+        font-family: "Antonio bold";
+        font-size: 1.5em;
+        line-height: 2em;
+        margin-bottom: 0px;
+      }
+      h4{
+        font-family: "Avenir Bold";
+      }
+    }
+  }
+  ul li:before{
+    content: url("../img/icon_like.png");
+    padding-right: 8px;
+  }
+  
+  .tabla_incluye{
+    border: 2px solid $rojo;
+    background-color: $verde;
+    h5{
+      background-color: $rojo;
+    }
+    ul li{
+      color: white;
+      border-bottom: 1px solid $rojo;
+      // font-weight: bold;
+      list-style: none;
+      margin-top: 2px;
+    }
+  }
+  .tabla_adicionales{
+    border: 2px solid $verde;
+    background-color: white;
+    h5{
+      background-color: $verde;
+    }
+    h4{
+      color: $verde;
+    }
+    ul{
+      margin-bottom: 30px;
+    }
+    ul li{
+      list-style: none;
+      border-bottom: 1px solid $azul;
+      margin-top: 2px;
+      
+      strong{
+        color: $rojo;
+      }
+      span{
+        color: $verde;
+        // font-weight: bold;
+        font-family: "Avenir Bold";
+        margin-left: 20px;
+      }
+    }
+    
+  }
+}
+
+.tablas_descuentos{
+  text-align: center;
+  color:white;
+  .tabla_convenio, .tabla_grupal{
+    padding-top: 20px;
+    background-color: $verde;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    height: 380px;
+  }
+  .tabla_zoologico{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    background-color: white;
+    color: $azul;
+    padding-top: 20px;
+    height: 380px;
+    h4{
+      color: white;
+    }
+    span{
+      text-transform: uppercase;
+    }
+    img{
+      height: 100px;
+    }
+  }
+  h2{
+    color: $rojo;
+
+  }
+  h2, h3{
+    font-family: "Avenir Bold";
+    text-transform: uppercase;
+  }
+  h4{
+    font-family: "Antonio bold";
+    text-transform: uppercase;
+    background-color: $verde;
+  }
+  p{
+    font-weight: bold;
+  }
+}
+
+.barra_informes{
+  padding-top: 40px ;
+  padding-bottom: 40px;
+  h3{
+    color: white;
+  }
+  a{
+    background-color: $verde;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+}

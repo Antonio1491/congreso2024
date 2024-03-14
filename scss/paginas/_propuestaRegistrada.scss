@@ -1,0 +1,28 @@
+
+.registrado {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 10%; 
+  @include telefono{
+    width: 90%;
+  }
+  &__titulo h2{
+    font-size: 3rem;
+    text-align: center;
+    color: $colorPrincipal;
+    margin-bottom: 24px;
+    font-family: $fuenteTitulo2;
+    font-weight: 700;
+  }
+
+  &__mensaje{
+    color: #787878;
+    text-align: center; 
+  }
+  
+  &__nota{
+    font-size: 13px;
+  color: #787878; 
+  }
+  
+}

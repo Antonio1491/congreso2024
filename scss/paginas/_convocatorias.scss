@@ -1,0 +1,175 @@
+.backConvocatorias{
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  .convocatorias{
+    height: 80vh;
+    margin-top: 5vh;
+    margin-left: 10vw;
+  }
+    .logotipoConvocatoria
+    {
+      height: 15vh;
+      margin-bottom: 1.2rem;
+      
+      @media screen and(max-width: 800px) {
+        height: 10vh;
+        margin-bottom: 2rem;
+      }
+    }
+
+    hgroup{
+      text-transform: uppercase;
+      h1,
+      h2,
+      h3{
+        font-family: $fuenteTitulo2;
+        margin-bottom: 0px;
+        padding: 0px;
+      }
+      h1{
+        color: white;
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        text-shadow: 5px 5px 15px #211f24;
+        // font-family: $fuenteTitulo2;
+        // font-weight: 700;
+        span{
+          color: $verde;
+        }
+        @media screen and(max-width: 1200px) {
+          font-size: 3rem;
+          line-height: 3rem;
+        }
+        @media screen and(max-width: 500px) {
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+        }
+      }
+      h2{
+        color: white;
+        font-size: 1.8rem;
+        letter-spacing: 4px;
+        margin-top: -10px;
+        text-shadow: 3px 2px 5px #2e2c35;
+        @media screen and(max-width: 800px) {
+          font-size: 1.3rem;
+        letter-spacing: 1.3px;
+        margin-top: -2px;
+        }
+        @media screen and(max-width: 500px) {
+          font-size: 1.2rem;
+        letter-spacing: 0px;
+        margin-top: -2px;
+        }
+      }
+      h3{
+        color: $verde;
+        font-size: 1.5rem;
+        margin-top: -10px;
+        text-shadow: 3px 2px 5px #2e2c35;
+        @media screen and(max-width: 800px) {
+          font-size: 1.1rem;
+          margin-top: -3px;
+        }
+        @media screen and(max-width: 500px) {
+          font-size: 0.8rem;
+        letter-spacing: 0px;
+        margin-top: -2px;
+        }
+      }
+      
+    }
+
+    .listaConvocatorias{
+      margin-top: 2rem;
+    }
+    .convocatoria{
+      display: flex;
+      img{
+        height: 80px;
+        margin-right: 20px;
+      }
+      h2{
+        color: white;
+        font-family: $fuenteSubtitulo;
+        font-size: 1.5rem;
+        text-shadow: 3px 2px 5px #2e2c35;
+        @media screen and (max-width: 1280px) {
+          font-size: 1.2rem;
+        }
+      }
+      a{
+        margin-top: 0px;
+      }
+    }
+  
+}
+
+.contenedorConvocatorias{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10%;
+}
+.footer_convocatorias{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba($color: $colorPrincipal, $alpha: .6);
+  height: 20vh;
+  img{
+    transition: ease 0.5s;
+    &:hover{
+      filter: drop-shadow(2px 4px 6px black);
+      transform: scale3d(1.5, 1.5, 1.5);
+    }
+  }
+  @media screen and(max-width: 800px) {
+    height: 8vh;
+    width: auto;
+  } 
+   @media screen and(max-width: 500px) {
+    height: 8vh;
+    width: auto;
+  }
+  img{
+    height: 12vh;
+    @media screen and(max-width: 800px) {
+      height: 5vh;
+      width: auto;
+    }
+    @media screen and(max-width: 500px) {
+      height: 3vh;
+    }
+  }
+  
+}
+
+
+
+.line{
+  width: 30vw;
+  margin: 0.4rem 0;
+  display: block;
+}
+.nota{
+  color: $verde;
+  font-family: $fuenteSubtitulo;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  // text-shadow: 3px 2px 5px #2e2c35;
+  @media screen and(max-width: 500px) {
+    font-size: 0.5rem;
+  }
+}
+
+.contenedorTraductor{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 8;
+  }

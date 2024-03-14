@@ -1,0 +1,20 @@
+.iconBeneficio{
+  width: 60%
+}
+.instruccion{
+  img{
+      height: 12rem;
+    }
+  h4{
+    font-family: 'Antonio Bold';
+    color: $white;
+    padding: 0.5rem 0rem;
+    background-color: $primaryColor;
+  }
+  // &:nth-child(even) h4{
+  //     // background-color: $secondaryColor;
+  //   }
+  // &:nth-last-child(odd) h4{
+  //     background-color: $primaryColor;
+  //   }
+}

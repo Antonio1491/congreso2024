@@ -1,0 +1,341 @@
+nav{
+  background-color: $primaryColor;
+  font-family: 'Montserrat Bold';
+  text-transform: uppercase;
+  min-height: 15vh;
+}
+nav.navbar ul a{
+  color: $white;
+  font-size: 0.8rem;
+  // letter-spacing: 0.5px;
+}
+nav.navbar ul a:hover,
+.navbar-nav .nav-link.active,
+.dropdown-toggle{
+  color: $secondaryColor;  
+}
+.dropdown-menu {
+  background-color: $primaryColor;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  color: $secondaryColor;
+  background-color: $primaryColor;
+}
+.navbar-nav .nav-link.show {
+  color: $secondaryColor;
+}
+.dropdown-divider {
+  border-top: 1px solid $secondaryColor;
+}
+
+button.navbar-toggler{
+  background: $secondaryColor;  
+}
+  
+  // .is-dropdown-submenu .is-dropdown-submenu-parent.opens-right>a::after {
+//   display: none !important;
+//   width: 0;
+//   height: 0;
+//   border: inset 6px;
+//   content: '';
+//   border-right-width: 0;
+//   border-left-style: solid;
+//   border-color: transparent transparent transparent #004242;
+// }
+// .is-dropdown-submenu-parent.opens-right>.is-dropdown-submenu {
+//   right: auto;
+//   left: 2%;
+//   top: 111%;
+
+//   &::hover .is-dropdown-submenu{
+//     background: transparent;
+//   } 
+// }
+
+// #submenu{
+//   background: transparent !important;
+//   padding: 0 !important;
+// }
+// #izquierda{
+//   left: 202px;
+//   top: 4%;
+// }
+
+// .burbuja{
+//   width: 250px;
+//   position: absolute;
+//   bottom: 220px;
+//   left: 164px;
+//   @media screen and (max-width: 580px){
+//     // background-image: url('../img/portada.svg');
+//     // background-image: url("../img/paisajeMovil.png");
+//     display: none;
+//   }
+// }
+
+// .circulo{
+//   width: 150px;
+//     position: absolute;
+//     bottom: -70px; 
+//     right: 106px;
+//     z-index: 11;
+//     @media screen and (max-width: 500px){
+//       display: none;
+//     }
+// }
+// .circulo2{
+//   width: 50px;
+//     position: absolute;
+//     bottom: -30px;
+//     left: 106px;
+//     @media screen and (max-width: 500px){
+//     display: none;
+//     }
+// }
+// #encabezado{
+//   font-family: $fuenteResaltado;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   text-align: center;
+//   z-index: 2;
+//   height: 150px;
+//   background-color: rgba($colorPrincipal, .93);
+//   transition: .1s all ease-in-out;
+
+//   .otro{
+//     width: 1200px;
+//   }
+
+//   .logo_menu{
+//     display: flex;
+//     padding-left: 0;
+//     align-items: center;
+//   }
+//   .menu_nav{
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-end;
+//     border-bottom: 2px $verde solid;
+//     padding-left: 0;
+//   }
+
+//   img{
+//     width: 220px;
+//   }
+//   .traduccion{
+//     margin-left: 20px;
+//     font-weight: bold;
+//     color: #A7E83F;
+//     text-shadow: 0px 0px 8px black;
+//     &:hover{
+//       color: #3dd7c5;
+//     }
+//   }
+//   figure img {
+//     height: 12vh;
+//   }
+//   .home{
+//     display: none;
+//   }
+
+// }
+
+// // =====  menú sólido  =====
+// .menu_solido{
+//   transition: .5s all ease-in-out;
+
+//   position: absolute;
+//   width: 100%;
+//   height: 85px !important;
+
+//   img{
+//     width: 106px !important;
+//   }
+//   transition: 1s;
+//   background-color: $verde !important;
+//   height: 60px;
+//   figure img {
+//     height: 50px;
+//   }
+//   .home_block{
+//     display: block;
+//   }
+// }
+// .item_encabezado:nth-of-type(2){
+//   width: 50vw;
+// }
+
+// .item_encabezado:nth-of-type(1),
+// .item_encabezado:nth-of-type(3){
+//   // border: 1px solid red;
+//   // width: 25vw;
+// }
+
+
+
+
+// .data-sticky{
+//   width: 100%;
+//   margin: 0 auto;
+//   box-shadow: 3px 3 5px #535555;
+//   // background-color: $cielo
+//   z-index: 100;
+// }
+
+// .contenedor_redes_principal{
+//   height: 100vh;
+//   display: flex;
+//   position: fixed;
+// z-index: 5;
+// right: 0;
+// flex-direction: column;
+// justify-content: center;
+// .iconos_redes{
+//   background-color: #00b936;
+// }
+
+// @media screen and (max-width: 1367px){
+//   top: 13%;
+//   // right: 10%;
+
+// }
+
+//   .item_icon_redes a img{
+//     height: 25px;
+//     transition: 300ms;
+//     margin: 0.5rem;
+//     &:hover{
+//       transform: scale(1.2);
+//     }
+//   }
+// }
+
+// .contenedor_redes_solido{
+//   top: 2%;
+
+//   @media screen and (max-width: 1367px){
+//     top: 4%;
+  
+//   }
+// }
+
+
+// #menu-central{
+
+//   .sub-menu-central li a{
+
+//     &:hover{
+//       color: $verde !important;
+
+//     }
+//   }
+
+//   li.is-dropdown-submenu-parent.opens-right{
+//     transition: .2s all ease-in-out;
+//     padding: 15px 15px 15px 1px;
+//     &:hover{
+//       background: $verde;
+//       transition: .2s all ease-in;
+
+//     }
+//   }
+
+
+//   padding: 13px 0 13px 0;
+//   border: 0;
+
+//   .nomostrar{
+//     &::after{
+//       display: none;
+//     } 
+//   }
+
+//   .mostrar{
+
+//     &::after{
+//       display: block;
+//       width: 0;
+//       height: 0;
+//       border: inset 6px;
+//       content: '';
+//       border-bottom-width: 0;
+//       border-top-style: solid;
+//       border-color: #ffffff transparent transparent;
+//       right: 5px;
+//       left: 85%;
+//       margin-top: -3px;
+//     }
+//   }
+//   a{
+//     color: white;
+//     text-transform: uppercase;
+//     transition: all .3s ease-in;
+//     background: transparent;
+//     padding: 0.5em 1em;
+
+//     // &:hover{
+//     //   color: $amarillo;
+//     //   background: transparent;
+//     // }
+//   }
+// }
+// .menu li a{
+//   // font-family: "Antonio Bold";
+//   font-size: 14px !important;
+//   letter-spacing: .5px;
+// }
+
+// // ==== Menú desplegable ==== 
+// .sub-menu-central{
+//   background: $colorPrincipal;
+//   text-align: left;
+//   li a{
+//     letter-spacing: 0.8px;
+//     font-size: 14px !important;
+//   }
+// }
+
+
+
+// .is-dropdown-submenu {
+//   border: 0px;
+// }
+// // .dropdown ul li a{
+// //   border-bottom: 0;
+// //   &:hover{
+// //       border-bottom: 1px solid $rojo;
+// //   }
+// // }
+
+// .dropdown.menu > li.is-dropdown-submenu-parent > a::after{
+//   border-color: $cielo transparent transparent;
+//   transition: .5s;
+// }
+// .dropdown.menu > li.is-dropdown-submenu-parent:hover > a::after{
+//   border-color: $amarillo transparent transparent;
+// }
+
+// .menu_sede a img{
+//   height: 160px;
+// }
+
+// #top{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding-top: 30px;
+//   margin-bottom: 30px;
+//   position: relative;
+// }
+// .logo_principal{
+//   height: 120px;
+// }
+// .item_top:nth-of-type(2){
+//   margin-left: 20px;
+//   margin-right: 20px;
+// }
+
+// #link_home>a{
+//   padding: 0;
+// }

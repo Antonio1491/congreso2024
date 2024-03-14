@@ -1,0 +1,29 @@
+.accordion-title {
+    font-size: 1.1rem;
+    font-family: $fuenteResaltado;
+}
+
+.accordion-title {
+    width: 1200px;
+    @media screen and (max-width: 500px) {
+        max-width: 360px;
+    }
+}
+
+.accordion-content{
+    width: 1200px;
+    @media screen and (max-width: 500px) {
+        max-width: 360px;
+    }
+
+}
+
+#preguntas{
+    padding: 20px 0;
+    a{
+        color: $colorPrincipal;
+    }
+    p{
+        color: $colorPrincipal;
+    }
+}

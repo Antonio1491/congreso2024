@@ -1,0 +1,55 @@
+.cintermex_sede{
+    h5{
+        font-family: $fuenteTitulo2;
+        font-size: 16px;
+    }
+
+    p{
+        font-family: $fuenteContenido;
+    }
+
+    .cintermex_sede__contenedor{
+        text-align: center;
+    }
+    .cintermex_sede__informacion{
+        padding-left: 5%;
+
+        h1{
+            font-family: $fuenteTitulo2;
+        }
+    }
+    figure{
+        margin-bottom: 20px;
+    }
+
+}
+
+.subtitulo{
+    padding: 0 0 1em 0;
+
+}
+
+
+.sabias{
+    background: $colorPrincipal;
+    color: #fff;
+    padding: 1em ;
+
+    h4{
+        color: #fff !important;
+         text-align: center !important;
+
+    }
+}
+
+
+.column.medium-4.cintermex_icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img{
+        margin-bottom: 1em;
+    }
+}

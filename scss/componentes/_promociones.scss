@@ -1,0 +1,15 @@
+.head_promocion {
+  background-color: $backgroundFooter;
+  color: $complementaryColor2;
+  font-size: 0.6rem;
+  line-height: 3vh;
+  padding: 0.4em;
+  letter-spacing: 0.1em;
+  z-index: 100;
+  text-align: center;
+  height: 4vh;
+  
+  a{
+    color: $red;
+  }
+}

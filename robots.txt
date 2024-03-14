@@ -1,0 +1,7 @@
+
+User-agent: *
+
+Disallow: /Merida/*
+Disallow: /monterrey/*
+Disallow: /salta/*
+Disallow: /sesiones/*

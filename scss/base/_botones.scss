@@ -1,0 +1,112 @@
+
+.btn{
+  font-size: 16px;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  font-family: "Antonio Bold";
+  letter-spacing: 1px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: $white;
+
+  &__primary{
+    background-image: linear-gradient(315deg, #c00ab3, #2837d2);
+    transition: .3s ;
+    position: relative;
+
+    &:hover{
+      background-image: linear-gradient(315deg,  #2837d2, #c00ab3);
+    }
+  }
+  
+  &__secondary{
+    background-image: linear-gradient(315deg, #00dfbf, #4184e5);
+    transition: .3s ;
+    position: relative;
+
+    &:hover{
+      background-image: linear-gradient(315deg,  #4184e5, #00dfbf);
+    } 
+  }
+  
+  &__register{
+    border: 3px solid transparent; 
+    border-image: linear-gradient(to left, #c00ab3 0%, #2837d2 100%) 1;
+  }
+
+  &:active{
+    top: 2px;
+    color: $secondaryColor;
+  }
+
+  &:hover{
+    color: $white;
+  }
+
+}
+
+
+.btn_registro{
+  background-color: $primaryColor;
+  color: $white;
+  border-radius: 30px;
+  transition: ease .3s;
+  animation-name: boton_registro;
+  animation-duration: .3s;
+
+  &:hover{
+    background-color: $secondaryColor;
+    color: $white !important;
+  }
+}
+
+@keyframes boton_registro{
+  from{
+    margin-top: 20px;
+  }
+  to{
+    margin-bottom: 20px;
+  }
+}
+
+
+.disabled{
+ color: $white !important;
+}
+
+
+#app-whatsapp
+  {
+  position:fixed;
+  // right:24px;
+  left: 20px;
+  bottom:25px;
+  width:40px;
+  z-index:100;
+  display:none
+  }
+#app-messenger{
+  position:fixed;
+  right:44px;
+  // left: 20px;
+  bottom:25px;
+  width:40px;
+  z-index:1000;
+  display:block;
+}
+#app-messenger img, #app-whatsapp img{
+height: 60px;
+}
+#app-whatsapp
+{
+  display:block
+}
+#app-messenger i,#app-whatsapp i
+{
+  font-size:63px;
+}
+#app-messenger i{
+  color:#0084ff;
+}

@@ -1,0 +1,197 @@
+
+body{
+    
+    background: linear-gradient(90deg, rgba(205,241,241,1) 0%, rgba(255,255,255,1) 50%, rgba(220,243,255,1) 100%);
+    height: 100vh;
+    display: flex;
+  flex-direction: column;
+
+
+
+    /* position: relative; */
+}
+
+.content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+
+    
+    .form-control {
+    font-size: 14px;
+    border: 1px solid #cacaca;
+    padding: 10px;
+    border-radius: 2px;
+    color: #495057;
+    font-family: 'Lato', sans-serif;
+}
+
+.d-flex input{
+font-weight: 400;
+}
+
+.d-flex select{
+    height: 42px;
+}
+
+.mid{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.main  {
+    width: 50%;
+    box-shadow: 1px 5px 20px #494949;
+    padding: 20px 0;
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    background-color: #ffffff;
+ 
+
+
+}
+
+
+
+.main select,option {
+    font-weight: 400;
+}
+
+.main label{
+    font-weight: 700;
+}
+
+.main h1{
+    font-weight: 900;
+    color: #004242;
+
+}
+
+
+header{
+    background: linear-gradient(90deg, rgb(195, 234, 255) 0%, rgb(234, 234, 251) 55%, rgb(187, 241, 252) 100%);    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    color: #004242;
+    font-family: 'Open Sans', sans-serif;
+
+
+  
+}
+header figure {
+    width: 150px;
+    max-height: 40px;
+}
+
+header figure img {
+    width: 100%;
+}
+
+header .con-img {
+    width: 170px;
+}
+header .texto-header{
+text-align: center;
+
+}
+
+header h1{
+    font-weight: 800;
+
+}
+
+
+
+footer {
+    background: #004242;
+    background: -webkit-linear-gradient(90deg, rgba(0,66,66,1) 0%, rgba(2,93,93,1) 49%, rgba(0,66,66,1) 100%);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 30px;
+
+
+}
+
+
+footer p {
+    margin: 0;
+}
+
+@media (min-width: 601px) and (max-width: 900.98px) { 
+
+    .mid{
+        margin:  20px auto;
+        height: auto;
+
+    }
+    
+    .main{
+        width: 70%;
+
+    }
+    .bajar{
+        flex-wrap: wrap;
+    }
+
+
+
+ }
+
+
+@media (min-width: 200px) and (max-width: 639px) { 
+
+    .mid{
+        height: auto;
+        margin:  20px auto ;
+
+    }
+    .main{
+        width: 90%;
+        box-shadow: none;
+
+
+    }
+
+    header {
+        height: auto;
+
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 10;
+    }
+
+    header h1{
+        margin-top: 25px;
+    }
+
+    .bajar{
+        flex-wrap: wrap;
+    }
+
+
+
+
+}
+
+
+
+
+
+

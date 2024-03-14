@@ -1,0 +1,30 @@
+.subtituloAvenirA{
+color:$colorPrincipal;
+font-family: $fuenteTitulo2;
+font-size: 3em;
+@media screen and (max-width: 500px){
+    font-size: 2.2rem;
+}
+
+}
+
+.subtituloAvenirB{
+    color:$colorPrincipal;
+    font-family: $fuenteBold;
+    font-size: 1.3em;
+    color: $colorPrincipal;
+    
+    
+    }
+.ponentes__boton{
+    padding: 2rem 0;
+}
+
+#patrocinadores{
+
+
+    .descripcion_principal{
+        font-family: $fuenteContenido;
+
+    }
+}

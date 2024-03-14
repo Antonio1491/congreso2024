@@ -1,0 +1,221 @@
+#portada{
+  overflow: hidden;
+  height: 100vh;
+  background-image: url("../img/backMain.jpg");
+  // background-image: url('../img/portada.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  // background-color: $azul;
+  position: relative;
+  z-index: 3;
+  @media screen and (max-width: 580px){
+    // background-image: url('../img/portada.svg');
+    // background-image: url("../img/paisajeMovil.png");
+    height: 55vh;
+    z-index: 0;
+
+  }
+  @media screen and (max-width: 400px){
+    // background-image: url('../img/portada.svg');
+    // background-image: url("../img/paisajeMovil.png");
+    height: 75vh;
+  }
+
+}
+
+
+video{
+  /* hace que las coordenadas sean relativas a la ventana*/
+  // position: fixed;
+  overflow: hidden;
+  position: relative;
+
+
+	transform: translateX(0%) translateY(-25%);
+	-webkit-transform: translateX(0%) translateY(-25%);
+  -moz-transform: translateX(0%) translateY(-25%);
+  
+//   min-width: 100%;
+//  min-height: 100%;
+//  width: auto;
+//  height: auto;
+
+	z-index:-10;
+	-moz-z-index:-10;
+	-webkit-z-index:-10;
+}
+.contenedorPortada{
+  // position: absolute;
+  // bottom:0;
+  width: 100%;
+  z-index: 1;
+  -moz-z-index: 1;
+  -webkit-z-index:1;
+  display: flex;
+  row-gap: 3rem;
+  justify-content: center;
+  // grid-row: repeat(2, 30vh) ;
+  align-items: center;
+  justify-items: center;
+  // border: 4px colid red;
+  // bottom: 5vh;
+  flex-direction: column;
+  
+  }
+  .resultados{
+    background: rgba(255, 255, 255, 0.6);
+    color: $colorPrincipal;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    // border: 2px solid $aqua;
+    h5{
+      font-family: "Avenir Bold";
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    strong{
+      text-transform: lowercase;
+    }
+    span{
+      text-transform: lowercase;
+      text-align: center;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+.itemContenidoPortada{
+  text-transform: uppercase;
+  color: $colorPrincipal;
+  // border: 3px solid $rojo;
+  align-content: center;
+  justify-content: center;
+  
+}
+// #reproducir img{
+//   height: 100px;
+//   margin-right: 20px;
+// }
+.cta_principal{
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+  @media screen and (max-width: 1367px){
+    margin-top: 1vh;
+
+  }
+  .frase{
+    color: $blanco;
+    font-family: $fuenteResaltado;
+    letter-spacing: 0.5px;
+    text-transform: initial;
+    font-size: 1.4rem;
+    margin: 0 15%;
+    text-shadow: 0px 0px 10px #2c2c2c;
+    margin-bottom: 0;
+    @media screen and (max-width: 1367px){
+      margin: 0;
+
+  
+    }
+    @media screen and (max-width: 500px){
+      margin: 0;
+      text-align: center;
+  
+    }
+    span{
+      color: $verde;
+    }
+    small{
+      font-size: 15px;
+    }
+
+    .frase__pais{
+      font-size: 95px;
+      font-weight: bold;
+      margin-bottom: 0;
+      line-height: 85px;
+      font-family: $fuenteBold;
+      @media screen and (max-width: 1367px){
+        font-size: 70px;
+        text-align: left;
+    
+      }
+      @media screen and (max-width: 500px){
+        margin: 0;
+        text-align: center;
+        font-size: 50px;
+
+      }
+    }
+    .frase__ciudad{
+      margin-top: 0;
+      font-size: 45px ;
+      font-family: $fuenteBold;
+      @media screen and (max-width: 1367px){
+        font-size: 33px;
+        text-align: left;
+
+    
+      }
+      @media screen and (max-width: 500px){
+        margin: 0;
+        text-align: center;
+        font-size: 25px;
+
+      }
+    }
+    .frase_fecha{
+      font-size: 45px ;
+      font-weight: bold;
+      color: $verde;
+      text-align: left;
+      @media screen and (max-width: 1367px){
+        font-size: 35px;
+        text-align: left;
+
+      }
+      @media screen and (max-width: 500px){
+        margin: 0;
+        text-align: center;
+        font-size: 25px;
+
+      }
+    }
+    .frase__contenedorLine{
+      width: 600px;
+      height: 100px;
+      @media screen and (max-width: 1367px){
+        width: 460px;
+
+  
+    
+      }
+    
+
+      img{
+        width: 100%;
+        @media screen and (max-width: 1367px){
+          width: 100%;
+      
+        }
+        @media screen and (max-width: 500px){
+          width: 70%;
+
+  
+        }
+      }
+    }
+    .frase__save{
+      color: #fff;
+      margin: 10px 0;
+      @media screen and (max-width: 1367px){
+        text-align: center;
+
+      }
+    }
+
+}
+}

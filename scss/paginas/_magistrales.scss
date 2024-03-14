@@ -1,0 +1,80 @@
+#conferencias_magistrales{
+  
+  h1{
+    font-family: $fuenteTitulo2;
+    color: $verde;
+  }
+
+  p{
+    text-align: left;
+    font-family: $fuenteContenido;
+  }
+  .descripcion_principal{
+    margin-top: 2em;
+    font-size: 28px;
+    font-family: $fuenteTitulo2;
+    font-size: 2.2em;
+    color: $colorPrincipal;
+  }
+  // margin: 40px 0px 40px 0px;
+  article{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-auto-rows: auto;
+    padding: 10px 0px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    min-width: 100%;
+    // box-shadow: 0px 0px 4px #f1f1f1;
+    @media screen and (max-width: 500px){
+      display: flex;
+      flex-direction: column;
+      border: 0px;
+      border-radius: 0px;
+      border-bottom: 1px solid #eceaec;
+      .item_conf_m{
+        display: flex;
+      }
+    }
+  p{
+    text-align: justify;
+  }
+  .descripcion_conferencia_m{
+    padding: 0px 30px;
+      h1{
+        color: $colorPrincipal;
+        // font-family: ;
+      // color: $gris
+        text-transform: uppercase;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+          @media screen and (max-width: 500px){
+            font-size: 14px;
+          }
+      }
+    }
+
+  }
+}
+.item_conf_m{
+  display: flex;
+  align-items: center;
+  img{
+    height: 140px;
+    width: 140px;
+  }
+}
+.item_conf_m:nth-of-type(1){
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+// ======= sesiones educaticvas ========
+#sesiones{
+  margin-top: 40px;
+  @media screen and (max-width: 500px){
+    text-align: justify;
+  }
+}

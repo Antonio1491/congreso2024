@@ -1,0 +1,81 @@
+#seccion_magistrales{
+  background: $colorPrincipal;
+  padding: 4rem 0;
+  // display: flex;
+  position: relative;
+
+}
+
+.magistrales_icon{
+  display: flex;
+  flex-wrap: wrap;
+  // align-items: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10%;
+  
+  .contenido_conferencista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+
+    @media screen and (max-width: 500px){
+      width: 100%;
+    }
+
+    figcaption{
+      color: $blanco;
+      text-transform: capitalize;
+      text-align: center;
+
+      h1{
+        color: $verde;
+        font-family: $fuenteTitulo2;
+        font-size: 1rem;
+        margin-top: 1em;
+        margin-bottom: 0;
+      }
+      h2{
+        font-family: "Arial Medium";
+        margin: 0;
+        font-size: 0.8rem;
+ 
+      }
+      h3 {
+        font-family: $fuenteContenido;
+        margin: 0;
+        font-size: 0.7rem;
+
+      }
+    }
+    
+    
+  }
+}
+
+
+.contenido_conferencista figcaption {
+
+  h1{
+  font-size: 12px;
+  }
+  h2{
+    font-size: 10px;
+    color: $colorPrincipal;
+
+  }
+  h3{
+    // color: $colorPrincipal !important;
+    font-size: 8px;
+    height: 50px;
+  }
+}
+
+.contenido_conferencista img{
+  height: 160px;
+  margin: 0 auto;
+  // box-shadow: #061d3a 0px 0px 10px;
+  // border-radius: 100%;
+  // border: 3px solid $verde;
+}
