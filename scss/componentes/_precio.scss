@@ -1,8 +1,8 @@
 .boleto{
-  background: transparent;
+  background-image: linear-gradient(315deg, #00dfbf, #4184e5);
   color: $white;
-  border: #00dfbf 2px solid;
-  padding: 2rem 2rem;
+  // border: #00dfbf 2px solid;
+  padding: 2rem 0rem;
   border-radius: 0px 30px;
   width: 400px;
   position: relative;
@@ -27,10 +27,11 @@
   }
 
   &-btn{
-    position: absolute;
+    // position: absolute;
     bottom: 20px;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    // margin-top: 20px;
   }
 
   &-titulo{
@@ -38,20 +39,32 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 1rem;
+    color: $primaryColor;
+    img{
+      margin-right: 0.5rem;
+    }
   }
   &-precio{
     font-family: 'Montserrat Bold';
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.7rem;
     margin: 0 auto;
     margin-bottom: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1rem 0 0;
+  }
+  &_precio_final{
+    opacity: 0.5;
+    scale: 0.6;
+    
   }
   &-descripcion{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     min-height: 240px;
+    padding: 1rem 2rem;
   }
   &__active{
-    border: #c00ab3 2px solid;
+    // border: #c00ab3 2px solid;
   }
   strong{
     font-size: 0.7rem;

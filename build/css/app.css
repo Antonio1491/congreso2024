@@ -136,9 +136,6 @@ ul {
 .img_100 {
   height: 100px;
 }
-.img_110 {
-  height: 110px;
-}
 
 .img_200 {
   height: 200px;
@@ -186,6 +183,8 @@ a {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
+  border-radius: 30px;
+  padding: 8px 30px;
 }
 .btn__primary {
   background-image: linear-gradient(315deg, #c00ab3, #2837d2);
@@ -282,7 +281,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 45vh;
+  height: 30vh;
   position: relative;
   box-shadow: 0px 0px 10px #292049;
 }
@@ -375,10 +374,9 @@ button.navbar-toggler {
 }
 
 .boleto {
-  background: transparent;
+  background-image: linear-gradient(315deg, #00dfbf, #4184e5);
   color: #ffffff;
-  border: #00dfbf 2px solid;
-  padding: 2rem 2rem;
+  padding: 2rem 0rem;
   border-radius: 0px 30px;
   width: 400px;
   position: relative;
@@ -401,9 +399,8 @@ button.navbar-toggler {
   text-transform: uppercase;
 }
 .boleto-btn {
-  position: absolute;
   bottom: 20px;
-  width: 80%;
+  width: 100%;
   text-align: center;
 }
 .boleto-titulo {
@@ -411,20 +408,28 @@ button.navbar-toggler {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
+  color: #1d0c65;
+}
+.boleto-titulo img {
+  margin-right: 0.5rem;
 }
 .boleto-precio {
   font-family: "Montserrat Bold";
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.7rem;
   margin: 0 auto;
   margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 1rem 0 0;
+}
+.boleto_precio_final {
+  opacity: 0.5;
+  scale: 0.6;
 }
 .boleto-descripcion {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   min-height: 240px;
-}
-.boleto__active {
-  border: #c00ab3 2px solid;
+  padding: 1rem 2rem;
 }
 .boleto strong {
   font-size: 0.7rem;
@@ -588,32 +593,32 @@ footer .subtitulo {
 
 .box__1 {
   background: url("../../build/img/medio-ambiente-sostenibilidad.jpg");
-  background-size: cover;
+  background-position: bottom;
 }
 
 .box__2 {
-  background: url("../../build/img/salud-bienestar.jpg");
-  background-size: cover;
+  background: url("../../build/img/diseno-infraestructura-equipamiento.jpg");
+  background-position: bottom;
 }
 
 .box__3 {
-  background: url("../../build/img/eventos.jpg");
-  background-size: cover;
+  background: url("../../build/img/equidad-economia-financiacion.jpg");
+  background-position: bottom;
 }
 
 .box__4 {
-  background: url("../../build/img/Diseño.jpg");
-  background-size: cover;
+  background: url("../../build/img/participacion-inclusion-sociabilidad.jpg");
+  background-position: bottom;
 }
 
 .box__5 {
-  background: url("../../build/img/innovacion_y_tecnologia.jpg");
-  background-size: cover;
+  background: url("../../build/img/salud-bienestar.jpg");
+  background-position: bottom;
 }
 
 .box__6 {
-  background: url("../../build/img/ciudad_y_movilidad.jpg");
-  background-size: cover;
+  background: url("../../build/img/salud-bienestar.jpg");
+  background-position: bottom;
 }
 
 .patrocinadores img {
@@ -826,6 +831,38 @@ footer .subtitulo {
 .seccionExperiencia {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.seccionExperiencia .item_experiencia {
+  box-shadow: #cccccc 0px 0px 25px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: justify;
+  transition: 0.5s all ease-in-out;
+}
+.seccionExperiencia .item_experiencia:hover {
+  background-color: #1d0c65;
+  color: white;
+  position: relative;
+}
+.seccionExperiencia .item_experiencia:hover img {
+  scale: 1.5;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+.seccionExperiencia .item_experiencia:hover h5 {
+  color: #00dfbf !important;
+}
+.seccionExperiencia img {
+  width: 100px;
+  transition: 0.5s all ease-in-out;
+}
+.seccionExperiencia .contenedor_items_experiencia {
+  display: flex;
+  justify-content: space-around;
+}
+.seccionExperiencia .contenedor_items_experiencia .item_experiencia {
+  width: 22%;
 }
 
 .video {

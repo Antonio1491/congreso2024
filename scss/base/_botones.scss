@@ -10,6 +10,8 @@
   display: inline-block;
   cursor: pointer;
   color: $white;
+   border-radius: 30px;
+  padding: 8px 30px;
 
   &__primary{
     background-image: linear-gradient(315deg, #c00ab3, #2837d2);

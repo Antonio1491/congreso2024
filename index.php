@@ -101,8 +101,8 @@
 
   <div class="popup-overlay"></div> -->
 
-  <section class="container-fluid primaryBg pt-5 pb-5">
-  <img src="build/img/f1.png" alt="" class="absolute fh">
+  <!-- <section class="container-fluid primaryBg pt-5 pb-5">
+    <img src="build/img/f1.png" alt="" class="absolute fh">
     <div class="container ">
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -122,42 +122,50 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <section class="seccionExperiencia container-fluid">
     <div class="container">
+      <div class="contenedor_items_experiencia">
+        <div class="item_experiencia">
+          <div class="text-center">
+            <img src="./build/img/magistrales.png" alt="" class="figure-img img-fluid rounded">
+          </div>
+          <h5 class="subtituloPMin mt-3 text-center">Conferencias</h5>
+          <p>Expertos en parques urbanos y espacios públicos; Hablarán de sus experiencias profesionales en temas de interés común para nuestras ciudades.
+          </p>
+        </div>
+        <div class="item_experiencia">
+          <div class="text-center">
+            <img src="./build/img/expo.png" alt="" class="figure-img img-fluid rounded">
+          </div>
+          <h5 class="subtituloPMin mt-3 text-center">Expo Espacio Público</h5>
+          <p>Es el foro de negocios que reúne a empresas líderes del mercado en México y latinoamérica, presentando los mejores productos y servicios para el diseño, construcción y equipamiento
+            del espacio público.</p>
+        </div>
+        <div class="item_experiencia">
+          <div class="text-center">
+            <img src="./build/img/vivenciales.png" alt="" class="figure-img img-fluid rounded">
+          </div>
+          <h5 class="subtituloPMin mt-3 text-center">Talleres</h5>
+          <p>¡Disfruta la ciudad y aprende al mismo tiempo! En los talleres podrás conocer atractivos turísticos y proyectos ciudadanos relacionados con el espacio público de la mano de un especialista.</p>
+        </div>
+        <div class="item_experiencia">
+          <div class="text-center">
+            <img src="./build/img/eventos.png" alt="" class="figure-img img-fluid rounded">
+          </div>
+          <h5 class="subtituloPMin mt-3 text-center">Eventos Sociales</h5>
+          <p >Amplía tu red profesional y disfruta de los eventos realizados especialmente para ti. Reúnase en un ambiente relajado, diviértase y haga networking.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
       <div class="row text-center">
         <h2 class="tituloP">VIVE LA EXPERIENCIA COMPLETA</h2>
         <h2 class="subtituloPMay">Congreso Parques 2024</h2>
       </div>
       <div class="row text-center">
         <p class="lead">El Congreso Parques es un evento especializado en parques urbanos y espacios públicos que tiene como objetivo reunir y capacitar a profesionales, funcionarios públicos, tomadores de decisiones, proveedores de la industria, estudiantes y organizaciones no gubernamentales en un mismo lugar.</p>
-      </div>
-    </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col-sm-12 col-md-3 text-center">
-          <img src="./build/img/magistrales.png" alt="" class="figure-img img-fluid rounded">
-          <h5 class="subtituloPMin mt-3">Conferencias</h5>
-          <p>Expertos en parques urbanos y espacios públicos; Hablarán de sus experiencias profesionales en temas de interés común para nuestras ciudades.
-          </p>
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-          <img src="./build/img/expo.png" alt="" class="figure-img img-fluid rounded">
-          <h5 class="subtituloPMin mt-3">Expo Parques</h5>
-          <p>Es el foro de negocios que reúne a empresas líderes del mercado en México y latinoamérica, presentando los mejores productos y servicios para el diseño, construcción y equipamiento
-            del espacio público.</p>
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-          <img src="./build/img/vivenciales.png" alt="" class="figure-img img-fluid rounded">
-          <h5 class="subtituloPMin mt-3">Talleres</h5>
-          <p>¡Disfruta la ciudad y aprende al mismo tiempo! En los talleres podrás conocer atractivos turísticos y proyectos ciudadanos relacionados con el espacio público de la mano de un especialista.</p>
-        </div>
-        <div class="col-sm-12 col-md-3 text-center">
-          <img src="./build/img/eventos.png" alt="" class="figure-img img-fluid rounded">
-          <h5 class="subtituloPMin mt-3">Eventos Sociales</h5>
-          <p >Amplía tu red profesional y disfruta de los eventos realizados especialmente para ti. Reúnase en un ambiente relajado, diviértase y haga networking.</p>
-        </div>
       </div>
     </div>
   </section>
@@ -174,27 +182,27 @@
       <div class="row slider_conferencistas justify-content-center">
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_hombre.png" alt="" class="img_200">
-          <h5>NOMBRE APELLIDO</h5>
-          <h6>EMPRESA</h6>
-          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
+          <h5>Conferencista</h5>
+          <!-- <h6>EMPRESA</h6> -->
+          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
         </div>
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_mujer.png" alt="" class="img_200">
-          <h5>NOMBRE APELLIDO</h5>
-          <h6>EMPRESA</h6>
-          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
+          <h5>Conferencista</h5>
+          <!-- <h6>EMPRESA</h6> -->
+          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
         </div>
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_hombre.png" alt="" class="img_200">
-          <h5>NOMBRE APELLIDO</h5>
-          <h6>EMPRESA</h6>
-          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
+          <h5>Conferencista</h5>
+          <!-- <h6>EMPRESA</h6> -->
+          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
         </div>
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_mujer.png" alt="" class="img_200">
-          <h5>NOMBRE APELLIDO</h5>
-          <h6>EMPRESA</h6>
-          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
+          <h5>Conferencista</h5>
+          <!-- <h6>EMPRESA</h6> -->
+          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
         </div>
         </div>
     </div>
