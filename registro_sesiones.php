@@ -199,8 +199,8 @@
           </div>
         </fieldset>
         <div class="text-center">
-          <!-- <input type="hidden" name="Evento" value="CPL2023"> -->
-          <input type="submit" name="" value="Registrar Propuesta" class="btn btn__primary disabled">
+           <input type="hidden" name="Evento" value="CPL2023">
+          <input type="submit" name="" value="Registrar Propuesta" class="btn btn__primary ">
         </div>
       </form>
       <!-- Fin de formulario -->

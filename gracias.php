@@ -15,7 +15,7 @@
     <div class="row justify-content-center" >
       <div class="col-sm-12 col-md-6">
           <p class="text-center">Hemos registrado correctamente tu propuesta para participar
-            en el Congreso Internacional de Parques Urbanos León 2023.</p>
+            en el Congreso Internacional de Parques Urbanos Mérida 2024.</p>
           <p class="text-center">
             <strong>
               <small>Para cualquier información: <a href="mailto:contenido@congresoparques.com">contenido@congresoparques.com</a></small>
