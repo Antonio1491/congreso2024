@@ -383,7 +383,7 @@ button.navbar-toggler {
   overflow: hidden;
 }
 .boleto .cinta {
-  background-color: red;
+  background-color: #ff00ff;
   min-width: 140px;
   transform: rotate(40deg);
   position: absolute;
