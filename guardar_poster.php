@@ -37,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $temporal_poster = $_FILES['poster']['tmp_name'];
   $recursos = $_POST['recursos'];
 
-  // $evento = $_POST['Evento'];
+  $evento = $_POST['evento'];
 
   $poster = $registro->savePoster($nombre_proyecto, $tema, $categoria, $documento,
             $temporal_documento, $poster, $temporal_poster, $recursos);

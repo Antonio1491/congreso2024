@@ -58,7 +58,7 @@ class Registro extends Database
   public function saveUsuario($array, $nombre, $apellidoPaterno, $apellidoMaterno, $email,
   $emailAlternativo, $telefono, $telefonoAlternativo, $cargo, $empresa,
   $pais, $estado, $ciudad, $biografia, $nombre_foto,
-  $tipo_foto, $temporal_foto, $id_ponencia)
+  $tipo_foto, $temporal_foto, $id_ponencia, $evento)
   {
 
     for ($i=0; $i < $array ; $i++){
@@ -68,7 +68,7 @@ class Registro extends Database
               fotografia, fecha_registro, estatus, id_categoria, id_evento, modificacion)
               VALUES (null, '$nombre[$i]', '$apellidoPaterno[$i]', '$apellidoMaterno[$i]', '$email[$i]', null, '$emailAlternativo[$i]',
               '$telefono[$i]', '$telefonoAlternativo[$i]', '$cargo[$i]', '$empresa[$i]', '$pais[$i]', '$estado[$i]', '$ciudad[$i]', '$biografia[$i]',
-              '$nombre_foto[$i]', NOW(), 0, 5, 1, NOW())";
+              '$nombre_foto[$i]', NOW(), 0, 5, $evento, NOW())";
               
       $ejecutar =  $this->conexion->query($query);
 
