@@ -3,11 +3,6 @@
 ?>
 
 <style>
-.Siglo-xxi{
-  width: 50%;
-
-}
-
   #popup {
   left: 0;
   position: absolute;
@@ -220,7 +215,7 @@
       </div>
       <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly text-center">
           <div class="col">
-            <img src="./build/img/anpr_logo.png" alt="">
+            <img src="./build/img/anpr_logo.png" alt="" width="220px">
           </div>
           <!--
           <div class="col">
@@ -265,44 +260,44 @@
       <div class="flex-sm-column d-md-flex flex-md-row justify-content-md-evenly">
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_asistentes.png" alt="">
-            <h3 class="subtituloPMay">+5582</h3>
+            <h2 class="subtituloPMay">+8546</h2>
             <h6 class="subtituloPMay">Asistentes</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_ciudades.png" alt="">
-            <h3 class="subtituloPMay">+37</h3>
+            <h2 class="subtituloPMay">+139</h2>
             <h6 class="subtituloPMay">Países</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_conferencistas.png" alt="">
-            <h3 class="subtituloPMay">+490</h3>
+            <h2 class="subtituloPMay">+550</h2>
             <h6 class="subtituloPMay">Conferencistas</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_conferencias.png" alt="">
-            <h3 class="subtituloPMay">+246</h3>
+            <h2 class="subtituloPMay">+273</h2>
             <h6 class="subtituloPMay">Conferencias</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_talleres.png" alt="">
-            <h3 class="subtituloPMay">+67</h3>
+            <h2 class="subtituloPMay">+78</h2>
             <h6 class="subtituloPMay">Talleres</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_expositores.png" alt="">
-            <h3 class="subtituloPMay">+154</h3>
+            <h2 class="subtituloPMay">+229</h2>
             <h6 class="subtituloPMay">Expositores</h6>
           </div>
       </div>
     </div>
   </section>
-  <section class="primaryBg  container-fluid">
+  <section class="primaryBg container-fluid" id="seccionMapa">
     <div class="row align-items-center">
       <div class="col-sm-12 col-md-4 text-center py-5 ">
         <h2 class="tituloB mb-3">Lugar :</h2>
         <!-- <p>Poliforum León<br> -->
-        <img src="build/img/Siglo-XXI.png" alt="" class="Siglo-xxi">
-        <p><strong>Mérida, Yucatán.</strong><br>
+        <img src="build/img/Siglo-XXI.png" alt="" width="30%">
+        <p class="mt-2"><strong>Mérida, Yucatán.</strong><br>
         SIGLO XXI<br>
         Calle 60 Nte 299, Zona <br>Industrial, Revolucion, <br>97118 Mérida, Yuc.
         </p>

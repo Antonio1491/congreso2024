@@ -188,7 +188,7 @@ a {
 }
 .btn__primary {
   background-image: linear-gradient(315deg, #c00ab3, #2837d2);
-  transition: 0.3s;
+  transition: 0.4s ease-in-out;
   position: relative;
 }
 .btn__primary:hover {
@@ -734,6 +734,45 @@ footer .subtitulo {
   width: 150px;
 }
 
+#seccion_mapa {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#seccion_mapa iframe {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.contenido_mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.item_contenido_mapa {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+.item_contenido_mapa h3 {
+  color: #1d0c65;
+  text-transform: uppercase;
+  font-family: "Antonio Bold";
+}
+.item_contenido_mapa span {
+  font-weight: bold;
+  font-size: 21px;
+}
+.item_contenido_mapa figure a img {
+  height: 100px;
+  position: static;
+}
+
 .contador {
   background: linear-gradient(45deg, rgb(192, 10, 179) 0%, rgb(40, 55, 210) 100%);
   height: 14vh;
@@ -851,7 +890,7 @@ footer .subtitulo {
   margin-bottom: 30px;
 }
 .seccionExperiencia .item_experiencia:hover h5 {
-  color: #00dfbf !important;
+  color: white !important;
 }
 .seccionExperiencia img {
   width: 100px;
@@ -876,6 +915,9 @@ footer .subtitulo {
 .seccionLegado img {
   height: 80px;
   margin-bottom: 30px;
+}
+.seccionLegado h6 {
+  font-size: 0.7rem;
 }
 
 .entradas {

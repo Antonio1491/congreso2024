@@ -20,7 +20,7 @@
         </div>
         <div class="boleto-descripcion">
           <ul>
-            <li>Incluye un taller GRATIS</li>
+            <li>Incluye un Taller</li>
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
@@ -51,7 +51,7 @@
         </div>
         <div class="boleto-descripcion">
         <ul>
-            <li style="text-decoration:line-through; ">Incluye un taller GRATIS</li>
+            <li style="text-decoration:line-through; ">Incluye un Taller</li>
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
@@ -83,7 +83,7 @@
         </div>
         <div class="boleto-descripcion">
         <ul>
-            <li style="text-decoration:line-through;">Incluye un taller GRATIS</li>
+            <li style="text-decoration:line-through;">Incluye un Taller</li>
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
