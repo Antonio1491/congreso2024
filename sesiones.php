@@ -2,7 +2,7 @@
 
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Convocatoria Cerrada<br>Sesiones Educativas</h1>
+    <h1 class="header__titulo">Convocatoria<br>Sesiones Educativas</h1>
     <img src="build/img/linea.png" alt="">
     <div class="mt-3">
       <a href="registro_sesiones.php" class="btn btn__primary Disable">Registrar Propuesta</a>

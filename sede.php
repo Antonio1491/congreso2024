@@ -1,7 +1,7 @@
 <?php require 'includes/templates/head.php'; ?>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Sede: León, Guanajuato</h1>
+    <h1 class="header__titulo">Sede: Mérida, Yucatán</h1>
     <img src="build/img/linea.png" alt="">
   </div>
 </header>
@@ -10,7 +10,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 text-center p-md-5">
-        <h3 class="verde bolded">¡Bienvenido a León, Guanajuato!</h3>
+        <h3 class="verde bolded">¡Bienvenido a Mérida, Yucatán!</h3>
         <p class="lead white">Ciudad llena de encanto, historia y cultura que seguramente te cautivará. Conocida como la Perla y Motor del Bajío o la Capital Mundial del Calzado. Es una ciudad llena de contrastes, donde encontrarás historia, cultura, compras y diversión. Ven y descubre esta joya en el corazón de Guanajuato y vivir una experiencia inolvidable. 
         </p> 
       </div>

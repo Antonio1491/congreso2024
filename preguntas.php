@@ -27,8 +27,7 @@
           </h2>
           <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El Congreso Parques es un evento presencial que se realiza anualmente y que tiene como objetivo reunir y capacitar a profesionales, funcionarios públicos, técnicos, tomadores de decisiones, académicos, estudiantes, sociedad civil y proveedores relacionados al espacio público en un mismo lugar, para impulsar la industria de los parques urbanos y la recreación. Es un espacio de cuatro días de capacitación, conferencias, talleres y una muestra comercial con proveedores de México y de todo el mundo.
-              </p>
+              <p>El Congreso Parques es un evento presencial que se realiza anualmente y que tiene como objetivo reunir y capacitar a profesionales, funcionarios públicos, técnicos, tomadores de decisiones, académicos, estudiantes, sociedad civil y proveedores relacionados al espacio público en un mismo lugar, para impulsar la industria de los parques urbanos y la recreación. Es un espacio de cuatro días de capacitación, conferencias, talleres y una muestra comercial con proveedores de México y de todo el mundo.</p>
             </div>
           </div>
         </div>
@@ -40,7 +39,7 @@
           </h2>
           <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El Congreso Parques se llevará a cabo del 22 al 24 de noviembre en León, Guanajuato, México.
+              <p>El Congreso Parques se llevará a cabo del 23 al 25 de octubre en Mérida, Yucatán, México.
               </p>
             </div>
           </div>
@@ -91,11 +90,11 @@
           <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ul>
-                <li>Talleres Vivenciales y Master classes: Miércoles 22 de noviembre</li>
-                <li>Conferencia Magistral: Del 23 al 24 de noviembre</li>
-                <li>Sesiones Educativas: Del 23 al 24 de noviembre</li>
-                <li>Expo Parques: Del 23 al 24 de noviembre</li>
-                <li>Evento social: Del 23 al 24 de noviembre</li>
+                <li>Talleres Vivenciales y Master classes: Miércoles 23 de octubre</li>
+                <li>Conferencias Magistrales: 24 y 25 de octubre</li>
+                <li>Sesiones Educativas: 24 y 25 de octubre</li>
+                <li>Expo Parques: 24 y 25 de octubre</li>
+                <li>Evento social: Del 23 al 25 de octubre</li>
               </ul>
             </div>
           </div>
@@ -184,7 +183,7 @@
           </h2>
           <div id="collapse11" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El Congreso Parques 2023 es un evento especializado con contenido educativo y experiencial dirigido a un público cuyo trabajo repercute en los parques urbanos y recreación; Este contenido se divide en 5 ejes temáticos. Puedes hacer clic aquí para ver cada uno de ellos.</p>
+              <p>El Congreso Parques 2024 es un evento especializado con contenido educativo y experiencial dirigido a un público cuyo trabajo repercute en los parques urbanos y recreación; Este contenido se divide en 6 ejes temáticos. Puedes hacer clic aquí para ver cada uno de ellos.</p>
             </div>
           </div>
         </div>
@@ -221,11 +220,11 @@
           <div id="collapse14" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <ul>
-                <li>Talleres Vivenciales y Master classes: Miércoles 22 de noviembre</li>
-                <li>Conferencia Magistral: Del 23 al 24 de noviembre</li>
-                <li>Sesiones Educativas: Del 23 al 24 de noviembre</li>
-                <li>Expo Parques: Del 23 al 24 de noviembre</li>
-                <li>Evento social: Del 23 al 24 de noviembre</li>
+                <li>Talleres Vivenciales y Master classes: Miércoles 23 de octubre</li>
+                <li>Conferencias Magistrales: 24 y 25 de octubre</li>
+                <li>Sesiones Educativas: 24 y 25 de octubre</li>
+                <li>Expo Parques: 24 y 25 de octubre</li>
+                <li>Evento social: Del 23 al 25 de octubre</li>
               </ul>
             </div>
           </div>
@@ -253,7 +252,7 @@
           </h2>
           <div id="collapse15" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>Al comprar tu entrada al congreso, las conferencias magistrales, las sesiones educativas, la Expo Parques y las actividades sociales ya están incluidas. Los talleres vivenciales y master classes se llevarán a cabo el día 22 de noviembre y se adquieren adicionalmente. No es necesario asistir a los 4 días del Congreso, pero te recomendamos que participes en todas las actividades para maximizar tu experiencia en el congreso. </p>
+              <p>Al comprar tu entrada al congreso, las conferencias magistrales, las sesiones educativas, la Expo Parques y las actividades sociales ya están incluidas. Los talleres vivenciales y master classes se llevarán a cabo el día 23 de octubre y se adquieren adicionalmente. No es necesario asistir a los 3 días del Congreso, pero te recomendamos que participes en todas las actividades para maximizar tu experiencia en el congreso.  </p>
               <p>*Aplican restricciones.</p>
             </div>
           </div>
@@ -374,7 +373,7 @@
           </h2>
           <div id="collapse24" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El transporte desde su ciudad a León, los traslados internos dentro de la ciudad y el alojamiento NO ESTÁN INCLUIDOS	 en el costo del congreso. Esto significa que esos gastos deberán ser contabilizados en tu presupuesto de viaje. Cada participante es responsable de los gastos de alimentación y hospedaje. </p>
+              <p>El transporte desde su ciudad a Mérida , los traslados internos dentro de la ciudad y el alojamiento NO ESTÁN INCLUIDOS	 en el costo del congreso. Esto significa que esos gastos deberán ser contabilizados en tu presupuesto de viaje. Cada participante es responsable de los gastos de alimentación y hospedaje.</p>
             </div>
           </div>
         </div>
@@ -462,8 +461,7 @@
           <div id="collapse30" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
               <p><strong>Vivenciales:</strong> Desde parques urbanos, proyectos ciudadanos y centros recreativos hasta técnicas sobre temas diversos del espacio público. Esta es una gran oportunidad para expandir tus conocimientos.</p>
-              <p><strong>Master Classes:</strong> Obtén conocimientos técnicos sobre un tema especializado, contará con la orientación de un especialista que te ayudará a ampliar tus conocimientos y aprender técnicas sobre diversos temas del espacio público.
-              </p>
+              <p><strong>Master Classes:</strong> Obtén conocimientos técnicos sobre un tema especializado, contará con la orientación de un especialista que te ayudará a ampliar tus conocimientos y aprender técnicas sobre diversos temas del espacio público.</p>
             </div>
           </div>
         </div>
@@ -487,7 +485,7 @@
           </h2>
           <div id="collapse32" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>Talleres Vivenciales y Master classes se llevarán a cabo el día Miércoles 22 de noviembre</p>
+              <p>Talleres Vivenciales y Master classes se llevarán a cabo el día Miércoles 23 de octubre</p>
             </div>
           </div>
         </div>
@@ -676,19 +674,19 @@
           </h2>
           <div id="collapse44" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El congreso Parques se llevará a cabo del 22 al 24 de noviembre de 2023 en León Guanajuato México. Te estaremos esperando en el Poliforum León.</p>
+              <p>El congreso Parques se llevará a cabo del 23 al 25 de Octubre de 2024 en Mérida Yucatán México. Te estaremos esperando en el Siglo XXI</p>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse45" aria-expanded="false" aria-controls="collapseTwo">
-            ¿Cómo llegar a la ciudad anfitrión?
+            ¿Cómo llegar al lugar donde será el congreso?
             </button>
           </h2>
           <div id="collapse45" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>Podrás encontrar información de como llegar dentro de la sección de conectividad en nuestra página web, dando click aquí. </p>
+              <p>El Centro de Convenciones Yucatán Siglo XXI, sede del congreso parques 2024, está ubicado en: <a href=https://maps.app.goo.gl/UdQ2MQgc2u64qQUHA>Click aqui </a>  </p>
             </div>
           </div>
         </div>
@@ -727,7 +725,7 @@
           </h2>
           <div id="collapse47" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>El transporte desde su ciudad a León, los traslados internos dentro de la ciudad y el alojamiento NO ESTÁ INCLUIDOS en el costo del congreso. Esto significa que esos gastos deberán ser contabilizados en tu presupuesto de viaje. Cada participante es responsable de los gastos de alimentación y hospedaje. </p>
+              <p>El transporte desde su ciudad a Mérida, los traslados internos dentro de la ciudad y el alojamiento NO ESTÁ INCLUIDOS en el costo del congreso. Esto significa que esos gastos deberán ser contabilizados en tu presupuesto de viaje. Cada participante es responsable de los gastos de alimentación y hospedaje. </p>
             </div>
           </div>
         </div>
@@ -877,8 +875,7 @@
           </h2>
           <div id="collapse56" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>Expo Parques tiene lugar del 23 al 24 de noviembre y tendrá lugar en León, Guanajuato, México, dentro del Poliforum León.</p>
-            </div>
+              <p>Expo Parques tiene lugar del 24 al 25 de octubre y tendrá lugar en Mérida, Yucatán, México, dentro del Centro de Convenciones Yucatán Siglo XXI.>
           </div>
         </div>
         <div class="accordion-item">
@@ -946,9 +943,9 @@
             <div class="accordion-body">
               <p>Habrán 3 eventos sociales en el Congreso Parques: </p>
               <ul>
-                <li>Evento Apertura el 23 de noviembre</li>
-                <li>Beer Party el 24 de noviembre</li>
-                <li>Evento de Clausura el 24 de noviembre</li>
+                <li>Evento Apertura el 23 de octubre</li>
+                <li>Beer Party el 24 de octubre</li>
+                <li>Evento de Clausura el 25 de octubre</li>
               </ul>
             </div>
           </div>
