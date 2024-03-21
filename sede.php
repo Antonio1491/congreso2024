@@ -11,7 +11,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-12 text-center p-md-5">
         <h3 class="verde bolded">¡Bienvenido a Mérida, Yucatán!</h3>
-        <p class="lead white">Ciudad llena de encanto, historia y cultura que seguramente te cautivará. Conocida como la Perla y Motor del Bajío o la Capital Mundial del Calzado. Es una ciudad llena de contrastes, donde encontrarás historia, cultura, compras y diversión. Ven y descubre esta joya en el corazón de Guanajuato y vivir una experiencia inolvidable. 
+        <p class="lead white">Mérida, la "Ciudad Blanca" de México, te invita a un viaje fascinante por su rica historia y cultura. Fundada en 1542 sobre la antigua ciudad maya de Ichcaanzihó, conserva un legado único que se refleja en sus calles coloniales, imponentes edificios y tradiciones ancestrales. 
         </p> 
       </div>
     </div>
@@ -21,12 +21,18 @@
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-sm-12 col-md-6">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/iDq4IkvY16I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPTeF6d3SiA?si=zfb7a3UlDWk0uwiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
     <div class="col-sm-12 col-md-6">
-      <p class="justify">León mezcla su zona histórica con la modernidad. Sumérgete en la rica historia de la ciudad visitando la impresionante Catedral Basílica de estilo neogótico y explorando el encantador Centro Histórico con sus fachadas coloridas, plazas y calles empedradas. Descubre el arte en el Foro Cultural Guanajuato y asiste a exposiciones, teatro, música y danza en el Poliforum León. Disfruta de la naturaleza en el Parque Metropolitano o visita el Zoológico de León para conocer diversas especies y aprender sobre conservación.
+      <p class="justify">Mérida es un destino que te cautivará con su magia y encanto.
       </p>
-      <p>No olvides probar la deliciosa gastronomía leonesa, desde la birria y el cabrito hasta los tamales y los dulces típicos. Además, podrás disfrutar de cervezas artesanales y mezcal en los bares locales. En León encontrarás una combinación perfecta de historia, cultura, compras y diversión. Ven, conoce, participa y sé parte de esta gran experiencia. 
+      <p>Anímate a visitar esta exquisita ciudad. 
+      <ul>
+      <li>Conoce la cultura Maya: Yucatán es el corazón del mundo Maya.</br></li>
+      <li>Disfruta del clima cálido: Mérida tiene un clima cálido y soleado durante todo el año.</br></li>
+      <li>Vive experiencias únicas: Cenotes, haciendas coloniales, playas paradisíacas.</br></li>
+      <li>Degusta la gastronomía Yucateca: Una explosión de sabores y aromas.</br></li>
+      <li>Descansa y experimenta: Un ambiente tranquilo y seguro.</br></li>
+      </ul>
       </p>
     </div>
   </div>
@@ -35,15 +41,15 @@
 <div class="container-fluid primaryBg pt-5 pb-5">
   <div class="container">
     <div class="row">
-    <h4 class="text-center subtituloBMin mb-5">Poliforum León</h4>
+    <h4 class="text-center subtituloBMin mb-5">Centro de Convenciones Yucatán Siglo XXI</h4>
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <p>Lugar sede de nuestro Congreso Internacional de Parques Urbanos “Congreso Parques” Este centro de convenciones y exposiciones de renombre internacional se encuentra en el Blvd. Adolfo López Mateos, Oriente, a solo 25 minutos del aeropuerto de la ciudad. Aquí disfrutarás de una experiencia única y emocionante.</p>
-        <p>Sus instalaciones son modernas y de primer nivel, con un total de 42 mil metros cuadrados de salones y áreas multifuncionales. Además, su ubicación privilegiada en León, justo en el cruce de las dos principales vías de acceso, lo convierte en un lugar conveniente para explorar. Asimismo, estarás cerca de hoteles, restaurantes y otras atracciones turísticas. Esto garantiza que cada evento se lleve a cabo de manera exitosa y cómoda. El lugar sede del Congreso Parques es el escenario perfecto para reunir a expertos y profesionales en el ámbito de los parques urbanos. Sus amplias y modernas instalaciones brindan el espacio necesario para conferencias, presentaciones y exposiciones. Además, su ubicación estratégica facilita el acceso y ofrece comodidad a los visitantes.</p>
+        <p>Lugar sede de nuestro Congreso Internacional de Parques Urbanos “Congreso Parques” Este centro de convenciones y exposiciones de renombre internacional está ubicado al norte de Mérida, a 20 minutos del centro y a 10 minutos de los principales hoteles. Aquí disfrutarás de una experiencia única y emocionante.</p>
+        <p>Cuenta con varias salas de exposiciones cuyos nombres hacen referencia a sitios arqueológicos mayas como Chichén Itzá, Ek Balam, Uxmal. El lugar sede del Congreso Parques es el escenario perfecto para reunir a expertos y profesionales en el ámbito de los parques urbanos. Sus amplias y modernas instalaciones brindan el espacio necesario para conferencias, presentaciones y exposiciones. Además, su ubicación estratégica facilita el acceso y ofrece comodidad a los visitantes.</p>
       </div>
       <div class="col-sm-12 col-md-6 text-center">
-        <img src="build/img/poliforum_leon.jpg" alt="" class="img_350">
+        <img src="build/img/Siglo-XXI.jpg" alt="" class="img_350">
       </div>
     </div>
   </div>
