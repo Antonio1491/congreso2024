@@ -294,8 +294,8 @@ a {
   letter-spacing: 2px;
 }
 .header img {
-  width: 50%;
-  height: 15px;
+  width: 35%;
+  
 }
 .header p {
   color: #ffffff;
@@ -488,6 +488,9 @@ footer .subtitulo {
   .ejes .texto__header {
     width: 100%;
   }
+  .header_home{
+    height: 40vh !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .ejes .texto__header {
@@ -501,6 +504,9 @@ footer .subtitulo {
 @media screen and (max-width: 500px) {
   .ejes .texto__header p {
     text-align: center;
+  }
+  .header_home{
+    height: 20vh !important;
   }
 }
 .ejes .contenedor__cajas {
@@ -1548,3 +1554,12 @@ section .datosConferencia {
   font-weight: bold;
   color: #d2dd0a;
 }/*# sourceMappingURL=app.css.map */
+
+.container{
+  flex-wrap: wrap;
+  
+}
+.right_center{
+  margin-left: 25%;
+}
+

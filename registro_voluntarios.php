@@ -123,7 +123,7 @@ include ('class/clases.php');
 
           </fieldset>
           <div class="text-center">
-            <input type="hidden" name="evento" value="1">
+            <input type="hidden" name="evento" value="2">
             <input type="submit" name="" value="Registrar" class="btn btn__primary">
           </div>
         </form>

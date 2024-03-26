@@ -96,13 +96,9 @@
 <header class="header header_home">
   <!-- <img src="build/img/logo_semana.png" alt="" class="logo_arquitectura"> -->
   <div class="container">
-    <h1 class="header__titulo">Mérida,<br> Yucatán, MÉXICO</h1>
-    <div class="fecha">
-      <span>23 - 25</span> <span> OCTUBRE</span> <span>2024</span>
-    </div>
-    <p>Congreso Internacional de<br>
-       Parques Urbanos
-    </p>
+    <img  src="img/logotipos/recursomerida.png">
+    <img  src="build/img/recursomerida2.png" class="right_center">
+   
     <div class="cta">
       <!--<a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary" >Inscríbete ahora</a>
     </div>-->

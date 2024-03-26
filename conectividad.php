@@ -9,8 +9,8 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12 col-md-12 text-center p-md-5">
-        <h3 class="subtitulo verde bolded">¿Cómo llegar a León?</h3>
-        <p class="lead white pt-2">Al ser un destino de carácter de ciudad industrial, cosmopolita y, por tanto de progresivo desarrollo económico, hoy, a León Guanajuato no conlleva mayores dificultades, ya que puede accederse tanto por aire como por tierra. 
+        <h3 class="subtitulo verde bolded">¿Cómo llegar a Mérida?</h3>
+        <p class="lead white pt-2">Al ser un destino de carácter de ciudad industrial, cosmopolita y, por tanto de progresivo desarrollo económico, llegar a Mérida no conlleva mayores dificultades, ya que puede accederse tanto por aire como por tierra.  
         </p> 
       </div>
     </div>
@@ -21,7 +21,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2 class="subtituloPMin">Conectividad Aérea: <img src="build/img/avioncito.svg" alt="" class="icon_title"></h2> 
-        <p>El Aeropuerto Internacional Del Bajío o Aeropuerto Internacional de Guanajuato es uno de los más activos de la zona ya que maneja el tráfico aéreo nacional e internacional. </p>
+        <p>El Aeropuerto Internacional Manuel Crescencio Rejón o Aeropuerto Internacional de Mérida controla el tráfico aéreo sobre la parte sureste del país, siendo así uno de los aeropuerto más importantes de México.</p>
       </div>
     </div>
   </div>
@@ -31,23 +31,29 @@
       <div class="col-sm-12 col-md-6">
         <h5 class="subtituloPMin">Vuelos directos internacionales: </h5>
         <ul>
-          <li>Atlanta, GA.</li>
-          <li>Los Ángeles, CA.</li>
-          <li>Chicago, IL.</li>
-          <li>San Francisco, CA.</li>
-          <li>Dallas, TX.</li>
-          <li>Houston, TX.</li>
-          <li>Orlando, FL.</li>
+          <li>Houston, Texas (IAH).</li>
+          <li>Chicago, Illinois (ORD).</li>
+          <li>Dallas/Fort Worth, Texas (DFW).</li>
+          <li>Miami, Florida (MIA).</li>
+          <li>Atlanta, Georgia (ATL).</li>
+          <li>Nueva York, Nueva York (JFK).</li>
+          <li>Ciudad de Guatemala, Guatemala (GUA).</li>
+          <li>Toronto, Ontario (YYZ).</li>
+          <li>Montreal, Quebec (YUL).</li>
         </ul>
       </div>
       <div class="col-sm-12 col-md-6">
         <h5 class="subtituloPMin">Vuelos directos nacionales: </h5>
         <ul>
-          <li>Cd. de México.</li>
-          <li>Cd. Juárez, Chih.</li>
-          <li>Monterrey, N.L.</li>
-          <li>Pto. Vallarta, Jal.</li>
-          <li>Cancún, Qroo.</li>
+          <li>Ciudad de México (MEX).</li>
+          <li>Guadalajara (GDL).</li>
+          <li>Monterrey (MTY).</li>
+          <li>Tuxtla Gutiérrez (TGZ).</li>
+          <li>Villahermosa (VSA).</li>
+          <li>Veracruz (VER).</li>
+          <li>Puebla (PUE).</li>
+          <li>Querétaro (QRO).</li>
+          <li>León/El Bajío (BJX).</li>
         </ul>
       </div>
     </div>
@@ -63,15 +69,15 @@
       <div class="col-sm-12 col-md-2">
         <img src="build/img/aeromexico.png" alt="">
       </div>
-      <div class="col-sm-12 col-md-2">
+      <!-- <div class="col-sm-12 col-md-2">
         <img src="build/img/american-airlines.png" alt="">
-      </div>
-      <div class="col-sm-12 col-md-2">
+      </div> -->
+      <!-- <div class="col-sm-12 col-md-2">
         <img src="build/img/united-airlines.png" alt="">
-      </div>
-      <div class="col-sm-12 col-md-2">
+      </div> -->
+      <!-- <div class="col-sm-12 col-md-2">
         <img src="build/img/united-express.png" alt="">
-      </div>
+      </div> -->
       <div class="col-sm-12 col-md-2">
         <img src="build/img/viva-aerobus.png" alt="">
       </div>
@@ -79,8 +85,9 @@
         <img src="build/img/volaris.png" alt="">
       </div>
     </div>
+    
 
-    <div class="row mt-5 mb-5 aerolineas">
+    <!-- <div class="row mt-5 mb-5 aerolineas">
     <div class="col-sm-12 col-md-2">
         <img src="build/img/tar-aerolineas.png" alt="">
       </div>
@@ -93,7 +100,7 @@
       <div class="col-sm-12 col-md-2">
         <img src="build/img/magni-charters.png" alt="">
       </div>
-    </div>
+    </div> -->
   </div>
 
   <div class="container">
@@ -115,20 +122,17 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <ol class="list-none">
-          <li><img src="build/img/cdmx.png" alt="" class="icon_title mt-2 mb-2"> Ciudad de México | <strong>387.1 km</strong></li>
-          <li><img src="build/img/san-luis-potosi.png" alt="" class="icon_title mt-2 mb-2"> San Luis Potosí, S.L.P. | <strong>181.3 km </strong></li>
-          <li><img src="build/img/guadalajara.png" alt="" class="icon_title mt-2 mb-2"> Guadalajara Jal. | <strong>219.4 km </strong></li>
-          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Manzanillo, Col. <strong>512.8 km </strong></li>
-          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Monterrey, N.L. | <strong>714.1 km </strong></li>
+          <li><img src="build/img/cdmx.png" alt="" class="icon_title mt-2 mb-2"> Campeche | <strong>204 km</strong></li>
+          <li><img src="build/img/san-luis-potosi.png" alt="" class="icon_title mt-2 mb-2"> Quintana Roo. | <strong>287 km </strong></li>
+          <li><img src="build/img/guadalajara.png" alt="" class="icon_title mt-2 mb-2"> Veracruz. | <strong>476 km </strong></li>
+          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Tabasco. <strong>561 km </strong></li>
+          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Chiapas. | <strong>844 km </strong></li>
         </ol>
       </div>
       <div class="col-sm-12 col-md-6">
         <ol class="list-none">
-          <li><img src="build/img/nuevo-laredo.png" alt="" class="icon_title mt-2 mb-2"> Nuevo Laredo, <strong> Tam. 913.3 km</strong> </li>
-          <li><img src="build/img/puerto-altamira.png" alt="" class="icon_title mt-2 mb-2"> Puerto de Altamira, Tam. | <strong>657.7 km</strong> </li>
-          <li><img src="build/img/lazaro-cardenas.png" alt="" class="icon_title mt-2 mb-2"> Lázaro Cárdenas, Mich. | <strong>512.4 km</strong> </li>
-          <li><img src="build/img/puerto-veracruz.png" alt="" class="icon_title mt-2 mb-2"> Puerto de Veracruz, Ver. | <strong>738.9 km</strong> </li>
-          <li><img src="build/img/queretaro.png" alt="" class="icon_title mt-2 mb-2">Santiago de Querétaro, Qro | <strong>119 km </strong></li>
+          <li><img src="build/img/nuevo-laredo.png" alt="" class="icon_title mt-2 mb-2"> Oaxaca | <strong>  1249 km</strong> </li>
+      
         </ol>
       </div>
     </div>

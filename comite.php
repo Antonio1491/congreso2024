@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-8">
         <p>El Congreso Parques, es un evento organizado por la <strong> Asociación Nacional de Parques y Recreación de México</strong>, una organización no gubernamental dedicada a la profesionalización y capacitación de las personas que se dedican al cuidado, administración, planeación y diseño de parques urbanos y espacios públicos en México y América Latina.</p>
-        <p>La suma de sus esfuerzos y sus diversos colaboradores, se reflejan en convertir la información en herramientas y de esta forma ofrecer a sus miembros, diferentes recursos para capacitarse entre ellos: Estudios e investigaciones, webinars mensuales, la Revista Parques, certificaciones, presentaciones y libros así como la organización anual del Congreso Parques</p>
+        <p>La suma de sus esfuerzos y sus diversos colaboradores, se reflejan en convertir la información en herramientas y de esta forma ofrecer a sus miembros, diferentes recursos para capacitarse entre ellos: Estudios e investigaciones, webinars mensuales, la Revista Parques, certificaciones, presentaciones y libros así como la organización anual del Congreso Parques.</p>
         <p>Si deseas conocer más información sobre la ANPR México y los beneficios de obtener una membresía, visita su página web <a href="https://anprm.connectedcommunity.org/home">www.anpr.org.mx</a>
         </p>
       </div>

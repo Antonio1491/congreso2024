@@ -345,7 +345,7 @@ $imagesDir = './build/img/headers/';
 
 $images = glob($imagesDir . '*.{jpg,jpeg,png,gif}', GLOB_BRACE);
 
-$randomImage = $images[array_rand($images)];
+
 
 ?>
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -357,7 +357,7 @@ $randomImage = $images[array_rand($images)];
 
 if(contenedorFondo){
   // background-image: radial-gradient( circle farthest-corner at 0.1% 44.3%,  rgba(29,12,101,1) 0%, rgba(187,187,187,0) 67.4% );
-  contenedorFondo.style.backgroundImage= "linear-gradient(90deg, rgba(29,12,101,1) 25%, rgba(255,255,255,0) 100%), url('<?php echo$randomImage ?>')";
+  contenedorFondo.style.backgroundImage= "url('./build/img/headers/merida.jpg')";
 
 }
   </script>

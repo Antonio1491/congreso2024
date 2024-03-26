@@ -1,5 +1,5 @@
 function countdown(id){
-  var fecha=new Date('2024','04','23','09','00','00')
+  var fecha=new Date('2024','10','23','09','00','00')
   var hoy=new Date()
   var dias=0
   var horas=0

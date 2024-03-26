@@ -2,7 +2,7 @@
 
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Convocatoria Cerrada<br>Sesiones Educativas</h1>
+    <h1 class="header__titulo">Convocatoria<br>Sesiones Educativas</h1>
     <img src="build/img/linea.png" alt="">
     <div class="mt-3">
       <a href="registro_sesiones.php" class="btn btn__primary Disable">Registrar Propuesta</a>
@@ -139,14 +139,18 @@
       <h4 class="mt-3">Espera los resultados</h4>
       <p class="p-3">Recibirás los resultados de la convocatoria en las fechas establecidas.</p>
     </div>
-    <div class="instruccion">
-      <h4 class="mt-3">Sobre los oponentes</h4>
+    
+  </div>
+  <div class="row">
+      <div class="col">
+      <h4 class="subtituloPMin">Sobre los ponentes</h4>
       <p class="p-3">Puedes hacer una propuesta personal o junto con otros participantes. Estos pueden ser colaboradores de la misma organización, pero no limitados a ella. Es importante contar con los datos personales de todos los ponentes que intervienen en la propuesta con un máximo de 2 personas. Esto será considerado para la duración de cada sesión.
 Completa cada uno de los campos para que podamos considerarlos, si la propuesta es seleccionada esta información se utilizará para la sección de ponentes. 
 Te recomendamos escribir con cuidado tu correo y número para que podamos contactarte. De igual manera, la foto que elijas subir debe ser de alta calidad, a color y de cara y hombros.</p>
     </div>
-  </div>
+    </div>
 </div>
+
 <div class="container">
   <div class="row">
     <div class="col">
