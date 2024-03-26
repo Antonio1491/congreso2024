@@ -1,139 +1,132 @@
-@charset "UTF-8";
-@font-face {
-  font-family: "Antonio Bold";
-  src: url("../../../assets/font/Antonio-Bold.ttf");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.tituloSeccion {
+  color: #4b4646;
+  font-size: 25px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
 }
-@font-face {
-  font-family: "Antonio Ligera";
-  src: url("../../../assets/font/Antonio-Light.ttf");
+
+body {
+  font-family: "Inter", sans-serif;
 }
-@font-face {
-  font-family: "Antonio Regular";
-  src: url("../../../assets/font/Antonio-Regular.ttf");
+
+.boleto, .evento {
+  background-color: rgba(243, 239, 204, 0.2);
 }
-@font-face {
-  font-family: "Avenir Bold";
-  src: url("../../../assets/font/AvenirNextLTPro-Bold.ttf");
+
+.logotipoMenu img {
+  height: 13vh;
+  margin: 30px 0 30px 0;
 }
-@font-face {
-  font-family: "Avenir Regular";
-  src: url("../../../assets/font/AvenirNextLTPro-Regular.ttf");
+
+.menuPrincipal {
+  background: #32502e;
+  height: 100%;
+  min-height: 100vh;
 }
-@font-face {
-  font-family: "Avenir Medium";
-  src: url("../../../assets/font/avenirltstd_medium.ttf");
+.menuPrincipal li {
+  padding-left: 10px;
 }
-header {
-  height: 65px;
-  background-color: #1D0C65;
+.menuPrincipal li:hover {
+  background-color: #ffffff;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-left: 10px;
+}
+.menuPrincipal li:hover a {
+  color: #4b4646;
+}
+.menuPrincipal li:hover i {
+  color: #32502e;
+}
+.menuPrincipal a {
   color: #ffffff;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  padding-left: 1em;
-  text-transform: uppercase;
 }
-header figure img {
-  height: 55px;
-}
-header h4 {
-  font-family: "Avenir Bold";
+.menuPrincipal a i {
+  color: #ece7b4;
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
 
-.container {
+header {
+  border-bottom: 1px solid #dad9d9;
+  margin: 10px 0px;
+  padding-bottom: 5px;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 80% 20%;
 }
-.container .item {
-  margin: 20px;
+header .menuTop {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.container .encabezado {
-  color: #1D0C65;
-  text-transform: uppercase;
-  padding: 10px;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #e2dfdf;
+header .menuTop a {
+  color: #32502e;
+  font-size: 22px;
 }
-
-.instrucciones {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: justify;
-  font-size: 14px;
-  color: #595857;
+header img.fotoPerfil {
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px #ebebeb;
 }
-
-.btn {
-  color: white;
-  background-color: #DE2C74;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.ocultar {
-  display: none;
-}
-
-/* página registro concluido */
-.pacifico {
-  font-family: "Pacifico", cursive;
-}
-
-.registrado {
-  width: 40%;
-  margin: 0 auto;
-  margin-top: 20%;
-}
-
-.registrado-titulo {
-  font-size: 35px;
-  text-align: center;
-  color: #00A493;
-  margin-bottom: 24px;
-}
-
-.registrado-mensaje {
-  color: #787878;
-  text-align: center;
-}
-
-.registrado-nota {
+header .nombreUsuario {
   font-size: 13px;
-  color: #787878;
-}
-
-.registrado-nota a,
-.instrucciones a {
-  color: #00A493;
-}
-
-ol.listaTemas li a {
+  color: #406343;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #1D0C65;
-  font-size: 12px;
+  margin-left: 5px;
 }
 
-.descripcionTema h1 {
-  font-size: 20px;
-  color: #6ABF4B;
-  text-transform: uppercase;
+.contenedorEventos {
+  background-color: #f3efcc;
+}
+
+.eventos, .boletos {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.eventos article, .boletos article {
+  position: relative;
+  box-shadow: 5px 5px 20px #dddddd;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.eventos article img, .boletos article img {
+  padding: 20px 0px;
+  height: 150px;
+  margin: 0 auto;
+}
+.eventos article h2, .boletos article h2 {
+  font-size: 16px;
   font-weight: bold;
 }
-.descripcionTema p {
-  font-size: 15px;
-  color: #1D0C65;
-  text-align: justify;
+.eventos article ul, .boletos article ul {
+  margin-bottom: 0;
+  margin-left: 0;
 }
-.descripcionTema img {
-  height: 80px;
+.eventos article ul li, .boletos article ul li {
+  font-size: 11px;
+  list-style: none;
 }
 
-img.perfil {
-  height: 60px;
-}/*# sourceMappingURL=style.css.map */tion: absolute;
+.menuEvento {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 3;
+}
+.menuEvento .menuEvento_icon {
+  font-size: 1rem;
+}
+.menuEvento ul {
+  margin-left: 0px;
+  padding: 5px 10px;
+  background-color: #f3efcc;
+  display: none;
+  list-style: none;
+  position: absolute;
   box-shadow: 2px 2px 7px #cfc2c2;
 }
 .menuEvento li {
@@ -443,327 +436,4 @@ article.programa_bloque .lista_bloque span {
 }
 .datos_conferencia img {
   height: 200px;
-}/*# sourceMappingURL=style.css.map */sapp i {
-  font-size: 63px;
-}
-
-#app-whatsapp i {
-  color: #1ebea5;
-}
-
-#app-messenger i {
-  color: #0084ff;
-}
-
-/*=========================================
-              F O O T E R
-=========================================*/
-footer hgroup h3,
-footer hgroup h2,
-footer hgroup h4 {
-  color: white;
-  font-family: Antonio Bold;
-  margin: 0px;
-  padding: 0px;
-}
-
-footer hgroup h2 {
-  margin-bottom: -5px;
-}
-
-footer hgroup h3 {
-  font-size: 25px;
-  margin-bottom: -10px;
-}
-
-footer hgroup h4 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-footer hgroup h6 {
-  font-size: 13px;
-  font-family: Antonio;
-  text-transform: uppercase;
-  color: white;
-}
-
-footer .redes a img {
-  height: 50px;
-}
-
-.nota {
-  font-size: 13px;
-}
-
-.dato_boleto {
-  color: white;
-  font-family: Avenir Bold;
-}
-
-footer.registro_finalizado {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-footer.registro_finalizado .iconos a img {
-  height: 50px;
-}
-
-footer p {
-  color: #ffffff;
-  font-size: 13px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.open_hause {
-  color: white;
-  text-align: center;
-}
-.open_hause h1 {
-  font-family: "Avenir Bold";
-  text-transform: uppercase;
-  font-size: 80px;
-  letter-spacing: 2px;
-  margin-bottom: 0;
-  line-height: 80px;
-}
-@media screen and (max-width: 600px) {
-  .open_hause h1 {
-    font-size: 40px;
-    letter-spacing: 1px;
-    margin-bottom: 0;
-    line-height: 34px;
-  }
-}
-.open_hause h3 {
-  font-family: "Antonio Bold";
-  text-transform: uppercase;
-  font-size: 32px;
-  letter-spacing: 3px;
-}
-@media screen and (max-width: 600px) {
-  .open_hause h3 {
-    font-size: 20px;
-    letter-spacing: 0px;
-  }
-}
-.open_hause h2 {
-  font-family: "Avenir Bold";
-  letter-spacing: 1px;
-}
-@media screen and (max-width: 600px) {
-  .open_hause h2 {
-    font-size: 18px;
-    letter-spacing: 0px;
-  }
-}
-.open_hause hr {
-  border-color: #d0287f;
-  width: 70%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 600px) {
-  .open_hause hr {
-    width: 90%;
-    margin-top: 0;
-    margin-bottom: 5px;
-  }
-}
-
-.info_open_house {
-  margin-top: 60px;
-}
-.info_open_house p {
-  color: #004242;
-  margin-bottom: 0;
-}
-.info_open_house p span {
-  font-family: "Avenir Bold";
-}
-.info_open_house p ~ p {
-  text-align: justify;
-  margin-top: 15px;
-}
-.info_open_house figure img {
-  width: 90%;
-}
-@media screen and (max-width: 600px) {
-  .info_open_house {
-    margin-bottom: 30px;
-  }
-}
-
-.footer_open_house {
-  color: white;
-}
-.footer_open_house h5 {
-  font-family: "Antonio Bold";
-  text-transform: uppercase;
-}
-.footer_open_house p {
-  font-size: 18px;
-}
-
-@media screen and (max-width: 600px) {
-  .header_open_hause figure img {
-    width: 200px;
-    height: auto;
-  }
-}
-
-#formulario_open_house {
-  background-color: #e2f3fb;
-}
-#formulario_open_house form input[type=submit] {
-  background-color: #ff2877;
-  color: white;
-  font-family: "Antonio Bold";
-  letter-spacing: 1px;
-  padding: 20px 20px;
-  border-radius: 10px;
-  border: 0px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-  font-size: 25px;
-  cursor: pointer;
-}
-@media screen and (max-width: 600px) {
-  #formulario_open_house form input[type=submit] {
-    margin-top: 20px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    letter-spacing: 0px;
-  }
-}
-
-.formulario {
-  background-color: #192b68;
-  padding: 40px 20px 0px 20px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.formulario p {
-  color: white;
-  text-align: justify;
-}
-@media screen and (max-width: 600px) {
-  .formulario {
-    margin-top: 0px;
-  }
-}
-
-form label {
-  color: white;
-  /* font-weight: bold; */
-  font-family: "Avenir Bold";
-  letter-spacing: 1px;
-}
-
-form input[type=submit] {
-  background-color: #c0cd36;
-  color: #192b68;
-  font-family: "Avenir Bold";
-  letter-spacing: 1px;
-  padding: 20px 20px;
-  border-radius: 10px;
-  border: 0px;
-  margin-top: 30px;
-  margin-bottom: 60px;
-  text-transform: uppercase;
-}
-
-.registro_open_house header {
-  background-color: #004242;
-}
-.registro_open_house header figure img {
-  height: 150px;
-  margin-bottom: 30px;
-}
-.registro_open_house header h4 {
-  color: white;
-  font-family: "Avenir Bold";
-}
-.registro_open_house .texto-registrado {
-  width: 60%;
-  margin: 0 auto;
-}
-.registro_open_house .texto-registrado h6 {
-  color: #004242;
-  font-family: "Avenir Bold";
-}
-.registro_open_house .texto-registrado h6 span {
-  font-size: 12px;
-  color: grey;
-}
-.registro_open_house .recurso {
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-color: #E0F2FB;
-}
-.registro_open_house footer {
-  background-color: #004242;
-}
-
-/* =======================================
-          R E S PO N S I V E
-=========================================*/
-@media only screen and (max-width: 600px) {
-  header figure img {
-    height: 120px;
-    margin-bottom: 20px;
-  }
-  header hgroup h4 {
-    font-size: 13px;
-  }
-  .cuadro_informativo {
-    margin-top: 40px;
-  }
-  #asistentes h3 {
-    text-align: center;
-    font-size: 20px;
-  }
-  #asistentes h5 {
-    text-align: center;
-  }
-  #testimonial h4 {
-    font-size: 22px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .contenedor_btn_compra {
-    margin-bottom: 20px;
-  }
-  #socios h4 {
-    text-align: center;
-  }
-  #socios img {
-    height: 70px;
-  }
-}
-@media screen and (max-width: 766px) {
-  #fb-root {
-    display: none;
-  }
-  #app-messenger {
-    display: block;
-  }
-}
-.slider {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  background: none;
-}
-
-.slick-prev, .slick-next {
-  display: none !important;
-}
-
-a.slick-slide:nth-child(9) {
-  display: none;
 }/*# sourceMappingURL=style.css.map */

@@ -53,7 +53,8 @@ class Propuesta extends Conexion{
       LEFT JOIN ponencias 
       ON conferencias.id_ponencia = ponencias.id
       lEFT JOIN temas 
-      ON ponencias.id_tema = temas.id");
+      ON ponencias.id_tema = temas.id
+      WHERE ponencias.id_evento = $evento");
       $respuesta = $resultado->fetch_all(MYSQLI_ASSOC);
       return $respuesta;
     }
@@ -97,7 +98,7 @@ class Propuesta extends Conexion{
     //Muestra el número de conferencias registradas en la convocatoria (valor null en la tabla)
     public function totalPropuestas($evento)
     {
-      $consulta = $this->conexion_db->query("SELECT count(id) AS totalRegistros FROM ponencias WHERE estatus  = '0' ");
+      $consulta = $this->conexion_db->query("SELECT count(id) AS totalRegistros FROM ponencias WHERE estatus  = '0' AND id_evento = '$evento' ");
       // $consulta = $this->conexion_db->query("SELECT count(id_conferencia) AS totalRegistros FROM conferencias WHERE status IS NULL AND id_congreso = '$evento' ");
       $respuesta = $consulta->fetch_all(MYSQLI_ASSOC);
       foreach ($respuesta as $value) {

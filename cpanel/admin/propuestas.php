@@ -22,6 +22,7 @@ $propuestas = new Propuesta();
       <h1 class="tituloSeccion">Propuestas</h1>
       <section class="column medium-12">
         <?php
+        
           $formateo = '%A %d %B %Y ';
           setlocale(LC_ALL, "es_ES");
           // $mex = strftime($formateo);

@@ -21,7 +21,7 @@ $logo = json_decode($logo -> logoById($_SESSION['evento']));
       <li><a href="poster.php"><i class="fi-bookmark"></i> Posters</a></li>
       </ul> 
     </li>
-    <li><a href="temas.php"><i class="fi-lightbulb"></i> Ejes Temáticos</a></li>
+    <!-- <li><a href="temas.php"><i class="fi-lightbulb"></i> Ejes Temáticos</a></li> -->
     <li><a href="conferencias.php"><i class="fi-projection-screen"></i> Conferencias</a></li>
     <li><a href="conferencista.php"><i class="fi-torsos-all"></i> Conferencistas</a></li>
     <li><a href="talleres.php"><i class="fi-megaphone"></i> Talleres</a></li>
