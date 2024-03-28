@@ -1,7 +1,12 @@
 <?php include_once 'includes/templates/head.php';  ?>
+<style>
+  .ocultar{
+    display: none;
+  }
+</style>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Registro Cerrado<br>Sesiones Educativas</h1>
+    <h1 class="header__titulo">Registro<br>Sesiones Educativas</h1>
     <img src="img/linea.png" alt="">
   </div>
 </header>
@@ -138,7 +143,7 @@
           <div class="ocultar" id="contenedorBtn">
             <div class="row text-center" id="">
               <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary disabled" id="btnAgregar">
+                <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
                   <i class="fi-plus"></i> Añadir Ponente</button>
               </div>
             </div>
@@ -165,11 +170,12 @@
             <div class="col">
               <label for="tematica class="form-label">Eje Temático:</label>
               <select class="form-select" name="Tema">
-                <option value="1">Participación, Inclusión y Sociabilidad</option>
-                <option value="2">Equidad, Economía y Financiación</option>
-                <option value="3">Medio ambiente y Sostenibilidad</option>
-                <option value="4">Diseño, Infraestructura y Equipamiento</option>
+                <option value="1">Medio Ambiente y Sustentabilidad</option>
                 <option value="5">Salud y Bienestar</option>
+                <option value="2">Eventos, Recreación y Participación Ciudadana</option>
+                <option value="3">Diseño, Mantenimiento y Equipamiento</option>
+                <option value="4">Innovación y Tecnología</option>
+                <option value="6">Ciudad y Movilidad</option>
               </select>
             </div>
           </div>
@@ -200,7 +206,7 @@
         </fieldset>
         <div class="text-center">
         <input type="hidden" name="evento" value="2">
-          <input type="submit" name="" value="Registrar Propuesta" class="btn btn__primary ">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary ">
         </div>
         <div>
       

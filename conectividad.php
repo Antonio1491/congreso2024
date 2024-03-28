@@ -125,12 +125,13 @@
           <li><img src="build/img/cdmx.png" alt="" class="icon_title mt-2 mb-2"> Campeche | <strong>204 km</strong></li>
           <li><img src="build/img/san-luis-potosi.png" alt="" class="icon_title mt-2 mb-2"> Quintana Roo. | <strong>287 km </strong></li>
           <li><img src="build/img/guadalajara.png" alt="" class="icon_title mt-2 mb-2"> Veracruz. | <strong>476 km </strong></li>
-          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Tabasco. <strong>561 km </strong></li>
-          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Chiapas. | <strong>844 km </strong></li>
+          
         </ol>
       </div>
       <div class="col-sm-12 col-md-6">
         <ol class="list-none">
+          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Tabasco. <strong>561 km </strong></li>
+          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Chiapas. | <strong>844 km </strong></li>
           <li><img src="build/img/nuevo-laredo.png" alt="" class="icon_title mt-2 mb-2"> Oaxaca | <strong>  1249 km</strong> </li>
       
         </ol>

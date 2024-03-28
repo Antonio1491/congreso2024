@@ -293,8 +293,8 @@ a {
   letter-spacing: 2px;
 }
 .header img {
-  width: 35%;
-  
+  width: 50%;
+  height: 15px;
 }
 .header p {
   color: #ffffff;
@@ -493,9 +493,6 @@ footer .subtitulo {
   .ejes .texto__header {
     width: 100%;
   }
-  .header_home{
-    height: 40vh !important;
-  }
 }
 @media screen and (max-width: 500px) {
   .ejes .texto__header {
@@ -509,9 +506,6 @@ footer .subtitulo {
 @media screen and (max-width: 500px) {
   .ejes .texto__header p {
     text-align: center;
-  }
-  .header_home{
-    height: 20vh !important;
   }
 }
 .ejes .contenedor__cajas {
@@ -599,32 +593,38 @@ footer .subtitulo {
 
 .box__1 {
   background: url("../../build/img/medio-ambiente-sostenibilidad.jpg");
-  background-position: bottom;
+  background-position: center;
+  background-size: cover;
 }
 
 .box__2 {
-  background: url("../../build/img/diseno-infraestructura-equipamiento.jpg");
-  background-position: bottom;
+  background: url("../../build/img/salud-bienestar.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .box__3 {
-  background: url("../../build/img/equidad-economia-financiacion.jpg");
-  background-position: bottom;
+  background: url("../../build/img/eventos.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .box__4 {
-  background: url("../../build/img/participacion-inclusion-sociabilidad.jpg");
-  background-position: bottom;
+  background: url("../../build/img/diseno.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .box__5 {
-  background: url("../../build/img/salud-bienestar.jpg");
-  background-position: bottom;
+  background: url("../../build/img/innovacion_y_tecnologia.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .box__6 {
-  background: url("../../build/img/salud-bienestar.jpg");
-  background-position: bottom;
+  background: url("../../build/img/ciudad_y_movilidad.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .patrocinadores img {
@@ -1633,12 +1633,3 @@ section .datosConferencia {
   font-weight: bold;
   color: #d2dd0a;
 }/*# sourceMappingURL=app.css.map */
-
-.container{
-  flex-wrap: wrap;
-  
-}
-.right_center{
-  margin-left: 25%;
-}
-

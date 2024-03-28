@@ -63,6 +63,7 @@
   width: 400px;
   padding: 0;
   border: 3px #fff solid;
+
 }
 
 .contenido {
@@ -118,30 +119,36 @@
 
   .box__1 {
   background: url("../../build/img/medio-ambiente-sostenibilidad.jpg");
-  background-position: bottom;
+  background-position: center;
+    background-size: cover;
 }
 
 .box__2 {
-  background: url("../../build/img/diseno-infraestructura-equipamiento.jpg");
-  background-position: bottom;
+  background: url("../../build/img/salud-bienestar.jpg");
+ background-position: center;
+    background-size: cover;
 }
 
 .box__3 {
-  background: url("../../build/img/equidad-economia-financiacion.jpg");
-  background-position: bottom;
+  background: url("../../build/img/eventos.jpg");
+  background-position: center;
+    background-size: cover;
 }
 
 .box__4 {
-  background: url("../../build/img/participacion-inclusion-sociabilidad.jpg");
-  background-position: bottom;
+  background: url("../../build/img/diseno.jpg");
+  background-position: center;
+    background-size: cover;
 }
 
 .box__5 {
-  background: url("../../build/img/salud-bienestar.jpg");
-  background-position: bottom;
+  background: url("../../build/img/innovacion_y_tecnologia.jpg");
+  background-position: center;
+    background-size: cover;
 }
 
 .box__6 {
-  background: url("../../build/img/salud-bienestar.jpg");
-  background-position: bottom;
+  background: url("../../build/img/ciudad_y_movilidad.jpg");
+  background-position: center;
+    background-size: cover;
 }

@@ -1081,6 +1081,8 @@
 
   <?php require 'includes/templates/patrocinadores.php'; ?>
 
-  <?php require 'includes/templates/expositores.php'; ?>
+  <?php 
+  // require 'includes/templates/expositores.php'; 
+  ?>
 
 <?php require 'includes/templates/footer.php'; ?>

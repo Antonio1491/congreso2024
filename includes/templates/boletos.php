@@ -1,6 +1,7 @@
  <!-- ::::: Boletos del congreso :::::: -->
  <section class="seccionPrecios primaryBg pt-5 mt-5 pb-5">
     <h2 class="text-center tituloB mb-5">Entradas</h2>
+    <p class="text-center">*Disponibles a partir de Mayo</p>
     <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly">
       <!-- Profesional Miembro -->
       <div class="boleto boleto__active m-3 mb-md-0">
@@ -33,7 +34,7 @@
           </ul>
         </div>
         <div class="boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary">Comprar</a>
+          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
         </div> 
       </div>
       <!-- Estudiante -->
@@ -64,7 +65,7 @@
           </ul>
         </div>
         <div class="text-center boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary">Comprar</a>
+          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
         </div>
       </div>
       <!-- Profesional No miembro -->
@@ -96,7 +97,7 @@
           </ul>
         </div>
         <div class="text-center boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary">Comprar</a>
+          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
         </div>
       </div>
     </div>

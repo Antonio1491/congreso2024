@@ -27,7 +27,7 @@ const propuestas_calificar = async() =>{
       event.preventDefault()
       Swal.fire({
         title: 'Estas seguro que quieres eliminar esto',
-        text: "Eeste cambio no se puede revertir",
+        text: "Este cambio no se puede revertir",
         icon: 'warning',
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
@@ -38,7 +38,7 @@ const propuestas_calificar = async() =>{
           // window.location= this.href;
           Swal.fire(
             'Archivo eliminado con éxito',
-            'el archivo se eliminó con éxito',
+            'El archivo se eliminó con éxito',
             'success'
           ).then((result)=>{
             if (result) {

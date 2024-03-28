@@ -164,11 +164,18 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
       <dt>Descripción:</dt>
       <dd>Describe tu sesión de forma clara y concisa; Esto debe ser de 200 palabras o menos. Si tu sesión es seleccionada, la descripción aparecerá en nuestro sitio web, asegúrate que sea atractiva e invite a los asistentes a unirse a la misma.</dd>
     </div>
-    <div class="col">
+    <div class="col mt-4">
       <dt>Justificación:</dt>
       <dd>Justifica la importancia de tu propuesta, identificando cómo tu proyecto/iniciativa/investigación resuelve un problema relacionado con el espacio público y cómo se relaciona con los temas del congreso. No hay límite en el número de palabras.</dd>
       <dt>Objetivos:</dt>
       <dd>La sesión debe tener objetivos de aprendizaje claros y medibles de lo que los asistentes aprenderán. Es importante que enumeres al menos 3.</dd>
+    </div>
+  </div>
+</div>
+<div class="container mt-5">
+  <div class="row text-center ">
+    <div class="col">
+      <a href="registro_sesiones.php" class="btn btn__primary Disable">Registrar Propuesta</a>
     </div>
   </div>
 </div>

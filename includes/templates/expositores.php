@@ -1,4 +1,4 @@
-<section class="expositores container pt-3">
+<!-- <section class="expositores container pt-3">
   <div class="row mb-4 mt-5">
     <h2 class="subtituloPMin text-center">Expositores</h2>
   </div>
@@ -9,14 +9,12 @@
       <div><img src="build/img/expositor_3.png" alt=""></div>
       <div><img src="build/img/expositor_4.png" alt=""></div>
       <div><img src="build/img/expositor_5.png" alt=""></div>
-      <!-- <div><img src="build/img/expositor_6.png" alt=""></div> -->
       <div><img src="build/img/expositor_7.png" alt=""></div>
       <div><img src="build/img/expositor_8.png" alt=""></div>
       <div><img src="build/img/expositor_9.png" alt=""></div>
       <div><img src="build/img/expositor_10.png" alt=""></div>
       <div><img src="build/img/expositor_11.png" alt=""></div>
       <div><img src="build/img/expositor_12.png" alt=""></div>
-      <!-- <div><img src="build/img/expositor_13.png" alt=""></div> -->
       <div><img src="build/img/expositor_17.png" alt=""></div>
       <div><img src="build/img/expositor_18.png" alt=""></div>
       <div><img src="build/img/expositor-19.png" alt=""></div>
@@ -29,4 +27,4 @@
       <div><img src="build/img/expositor-26.png" alt=""></div>
     </div>
   </div>
-</section>
+</section> -->

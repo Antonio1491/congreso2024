@@ -15,18 +15,21 @@
         </p>
       </div>
       <div class="col-sm-12 col-md-4">
-        <h6 class="subtituloPMin text-center mb-2">¿Necesitas contactar a alguien del equipo?</h6>
-        <strong class="primary">Dir. de contenido y educación:</strong>
-        <p>contenido@congresoparques.com</p>
-        <strong class="primary">Dir. comercial y ventas:</strong>
-        <p>comercial@congresoparques.com</p>
-        <strong class="primary">Coordinación comercial:</strong>
-        <p>expo@congresoparques.com</p>
-        <strong class="primary">Comunicación y prensa:</strong>
-        <p>comunicacion@congresoparques.com</p>
-        <strong class="primary">Información general:</strong>
-        <p>comunicacion@congresoparques.com</p>
-      </div>
+        <ul>
+          <!-- <h6 class="subtituloPMin text-center mb-2">¿Necesitas contactar a alguien del equipo?</h6> -->
+          <h5 class="subtituloPMin">Contáctanos:</h5>
+          <li><strong class="primary">Dir. de Contenido y Educación:</strong></li>
+          <p>contenido@congresoparques.com</p>
+          <li><strong class="primary">Dir. Comercial y Ventas:</strong></li>
+          <p>comercial@congresoparques.com</p>
+          <li><strong class="primary">Coordinación Comercial:</strong></li>
+          <p>expo@congresoparques.com</p>
+          <li><strong class="primary">Comunicación y Prensa:</strong></li>
+          <p>comunicacion@congresoparques.com</p>
+          <li><strong class="primary">Información General:</strong></li>
+          <p>comunicacion@congresoparques.com</p>
+        </div>
+        </ul>
     </div>
   </div>
 
@@ -48,7 +51,9 @@
 
   <?php require 'includes/templates/patrocinadores.php'; ?>
 
-  <?php require 'includes/templates/expositores.php'; ?>
+  <?php 
+  // require 'includes/templates/expositores.php'; 
+  ?>
 
 </main>
 <?php require 'includes/templates/footer.php'; ?>

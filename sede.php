@@ -1,7 +1,7 @@
 <?php require 'includes/templates/head.php'; ?>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Sede: Mérida, Yucatán</h1>
+    <h1 class="header__titulo">Mérida, Yucatán</h1>
     <img src="build/img/linea.png" alt="">
   </div>
 </header>
@@ -21,7 +21,7 @@
 <div class="container mt-5 mb-5">
   <div class="row">
     <div class="col-sm-12 col-md-6">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/vPTeF6d3SiA?si=zfb7a3UlDWk0uwiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/vPTeF6d3SiA?si=zfb7a3UlDWk0uwiv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
     <div class="col-sm-12 col-md-6">
       <p class="justify">Mérida es un destino que te cautivará con su magia y encanto.
       </p>
@@ -44,7 +44,7 @@
     <h4 class="text-center subtituloBMin mb-5">Centro de Convenciones Yucatán Siglo XXI</h4>
     </div>
     <div class="row">
-      <div class="col-sm-12 col-md-6">
+      <div class="col-sm-12 col-md-6" style="text-align: justify;">
         <p>Lugar sede de nuestro Congreso Internacional de Parques Urbanos “Congreso Parques” Este centro de convenciones y exposiciones de renombre internacional está ubicado al norte de Mérida, a 20 minutos del centro y a 10 minutos de los principales hoteles. Aquí disfrutarás de una experiencia única y emocionante.</p>
         <p>Cuenta con varias salas de exposiciones cuyos nombres hacen referencia a sitios arqueológicos mayas como Chichén Itzá, Ek Balam, Uxmal. El lugar sede del Congreso Parques es el escenario perfecto para reunir a expertos y profesionales en el ámbito de los parques urbanos. Sus amplias y modernas instalaciones brindan el espacio necesario para conferencias, presentaciones y exposiciones. Además, su ubicación estratégica facilita el acceso y ofrece comodidad a los visitantes.</p>
       </div>
@@ -67,7 +67,9 @@
 
   <?php require 'includes/templates/patrocinadores.php'; ?>
 
-  <?php require 'includes/templates/expositores.php'; ?>
+  <?php require 
+  'includes/templates/expositores.php'; 
+  ?>
 
 </main>
 <?php require 'includes/templates/footer.php'; ?>
