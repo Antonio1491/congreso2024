@@ -72,9 +72,9 @@
             <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
           </ul>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="expo_parques.php" class="nav-link">Expo Espacio Público</a>
-        </li>
+        </li> -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Convocatorias
@@ -95,9 +95,9 @@
 </nav>
 <header class="header header_home">
   <!-- <img src="build/img/logo_semana.png" alt="" class="logo_arquitectura"> -->
-  <div class="container">
+  <div class="d-flex justify-content-evenly align-items-center">
     <img  src="img/logotipos/recursomerida.png">
-    <img  src="build/img/recursomerida2.png" class="right_center">
+    <img  src="build/img/recursomerida2.png" >
    
     <div class="cta">
       <!--<a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary" >Inscríbete ahora</a>

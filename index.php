@@ -1,7 +1,8 @@
 <?php
   require 'includes/templates/head_home.php';
 ?>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <style>
   #popup {
   left: 0;
@@ -260,32 +261,32 @@
       <div class="flex-sm-column d-md-flex flex-md-row justify-content-md-evenly">
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_asistentes.png" alt="">
-            <h2 class="subtituloPMay">+8546</h2>
+            <h2 class="subtituloPMay ">+<span class="counter">8546</span></h2>
             <h6 class="subtituloPMay">Asistentes</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_ciudades.png" alt="">
-            <h2 class="subtituloPMay">+139</h2>
+            <h2 class="subtituloPMay">+<span class="counter">139</span></h2>
             <h6 class="subtituloPMay">Países</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_conferencistas.png" alt="">
-            <h2 class="subtituloPMay">+550</h2>
+            <h2 class="subtituloPMay">+<span class="counter">550</span></h2>
             <h6 class="subtituloPMay">Conferencistas</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_conferencias.png" alt="">
-            <h2 class="subtituloPMay">+273</h2>
+            <h2 class="subtituloPMay">+<span class="counter">273</span></h2>
             <h6 class="subtituloPMay">Conferencias</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_talleres.png" alt="">
-            <h2 class="subtituloPMay">+78</h2>
+            <h2 class="subtituloPMay">+<span class="counter">78</span></h2>
             <h6 class="subtituloPMay">Talleres</h6>
           </div>
           <div class="text-center m-5 m-md-0">
             <img src="./build/img/i_expositores.png" alt="">
-            <h2 class="subtituloPMay">+229</h2>
+            <h2 class="subtituloPMay">+<span class="counter">229</span></h2>
             <h6 class="subtituloPMay">Expositores</h6>
           </div>
       </div>
@@ -365,7 +366,17 @@ if(contenedorFondo){
 }
   </script>
   <script src="build/js/contador.js"></script>
-
+<!-- counter - numeralia -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+      <!-- counter numeralia  -->
+      <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -386,4 +397,7 @@ if(contenedorFondo){
     });
   });
   </script>
+
+   
+
  

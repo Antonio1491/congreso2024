@@ -49,11 +49,16 @@ if(contenedorFondo){
 
 }
   </script>
+
+
   <!-- //slick  -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- Carrusel - slide  -->
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.js"></script>
+
+
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -114,5 +119,13 @@ if(contenedorFondo){
         logged_in_greeting="¡Hola!, cómo puedo ayudarte?"
         logged_out_greeting="¡Hola!, cómo puedo ayudarte?">
         </div>
+
+        <!-- AOS - Animación entrada  -->
+        
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
+ 

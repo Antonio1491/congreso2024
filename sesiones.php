@@ -1,4 +1,7 @@
 <?php include_once 'includes/templates/head.php';  ?>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <header class="header">
   <div class="container">
@@ -19,7 +22,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-6">
+  <div class="col-6" >
     <h4 class="subtituloPMin">Perfil del Presentador</h4>
     <ul class="listaVinetas">
       <li>Arquitectos, urbanistas, paisajistas, diseñadores de hábitat.</li>
@@ -29,32 +32,32 @@
       <li>Cualquier otra persona interesada en compartir sus conocimientos y proyectos sobre el espacio público con los asistentes.</li>
     </ul>
   </div>
-  <div class="col-6 text-center">
+  <div class="col-6 text-center" data-aos="fade-left">
     <img src="./build/img/perfil_mujer.png" alt="" class="convocatoria__perfil">
     <img src="./build/img/perfil_hombre.png" alt="" class="convocatoria__perfil">
   </div>
 </div>
 </div>
-<div class="container text-center border border-secondary-subtle mt-5 mb-5 p-3 bg-body-tertiary">
-<div class="row mb-3">
-  <div class="col">
-    <h4 class="subtituloPMin">Fechas Importantes</h4>
+<div class="container text-center border border-secondary-subtle mt-5 mb-5 p-3 bg-body-tertiary " data-aos="fade-down">
+  <div class="row mb-3">
+    <div class="col">
+      <h4 class="subtituloPMin">Fechas Importantes</h4>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col">
-    <span>Convocatoria</span>
-    <p>Abril - Junio</p>
+  <div class="row">
+    <div class="col">
+      <span>Convocatoria</span>
+      <p>Abril - Junio</p>
+    </div>
+    <div class="col">
+      <span>Revisión de propuestas</span>
+      <p>Junio - Julio</p>
+    </div>
+    <div class="col">
+      <span>Resultados</span>
+      <p>Julio</p>
+    </div>
   </div>
-  <div class="col">
-    <span>Revisión de propuestas</span>
-    <p>Junio - Julio</p>
-  </div>
-  <div class="col">
-    <span>Resultados</span>
-    <p>Julio</p>
-  </div>
-</div>
 </div>
 <div class="container">
   <div class="row">
@@ -75,7 +78,7 @@
 <div class="container-fluid  primaryBg mt-5 mb-5 ">
   <div class="container py-5">
     <div class="row">
-      <div class="col-6 align-self-center">
+      <div class="col-6 align-self-center" data-aos="fade-right">
         <div class="row">
           <div class="col">
             <img src="./build/img/magistrales.png" alt="" class="iconBeneficio">
@@ -99,7 +102,7 @@
           </div>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-6" data-aos="fade-left">
         <h4 class="subtituloCMin">Beneficios</h4>
         <p>
           <li>A los ponentes seleccionados se les otorgará una entrada de cortesía para los días del congreso. La entrada de cortesía incluye:</li>
@@ -124,17 +127,17 @@
     <h3 class="subtituloPMin">Instrucciones</h3>
   </div>
   <div class="row g-0 text-center instrucciones">
-    <div class="col instruccion">
+    <div class="col instruccion" data-aos="zoom-in">
       <img src="./build/img/paso1.png" alt="" >
       <h4 class="mt-3">Llena el Formulario</h4>
       <p class="p-3">Si tu propuesta incluye otro ponente, es importante registrar a todas las personas.</p>
     </div>
-    <div class="col instruccion">
+    <div class="col instruccion" data-aos="zoom-in">
       <img src="./build/img/paso2.png" alt="" >
       <h4 class="mt-3">Envía tu propuesta</h4>
       <p class="p-3">El envío de la propuesta no garantiza tu aceptación, ni tu registro como asistente del congreso.</p>
     </div>
-    <div class="col instruccion">
+    <div class="col instruccion" data-aos="zoom-in">
       <img src="./build/img/paso3.png" alt="" >
       <h4 class="mt-3">Espera los resultados</h4>
       <p class="p-3">Recibirás los resultados de la convocatoria en las fechas establecidas.</p>
