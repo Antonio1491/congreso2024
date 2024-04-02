@@ -378,6 +378,11 @@ button.navbar-toggler {
   position: relative;
   overflow: hidden;
 }
+@media screen and (max-width: 580px) {
+  .boleto {
+    width: 90%;
+  }
+}
 .boleto .cinta {
   background-color: #ff00ff;
   min-width: 140px;
@@ -902,8 +907,19 @@ footer .subtitulo {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 580px) {
+  .seccionExperiencia .contenedor_items_experiencia {
+    flex-direction: column;
+  }
+}
 .seccionExperiencia .contenedor_items_experiencia .item_experiencia {
   width: 22%;
+}
+@media screen and (max-width: 580px) {
+  .seccionExperiencia .contenedor_items_experiencia .item_experiencia {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 .video {

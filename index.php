@@ -123,7 +123,7 @@
   <section class="seccionExperiencia container-fluid">
     <div class="container">
       <div class="contenedor_items_experiencia">
-        <div class="item_experiencia">
+        <div class="item_experiencia col-sm-12">
           <div class="text-center">
             <img src="./build/img/magistrales.png" alt="" class="figure-img img-fluid rounded">
           </div>
@@ -176,13 +176,13 @@
     </div>
     <div class="container">
       <div class="row slider_conferencistas justify-content-center">
-        <div class="col-md-2 text-center conferencista">
+        <div class="col-md-2 text-center conferencista d-sm-block d-none">
           <img src="./build/img/perfil_hombre.png" alt="" class="img_200">
           <h5>Conferencista</h5>
           <!-- <h6>EMPRESA</h6> -->
           <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
         </div>
-        <div class="col-md-2 text-center conferencista">
+        <div class="col-md-2 text-center conferencista d-sm-block d-none">
           <img src="./build/img/perfil_mujer.png" alt="" class="img_200">
           <h5>Conferencista</h5>
           <!-- <h6>EMPRESA</h6> -->
@@ -256,7 +256,7 @@
   <section class="seccionLegado pt-5 pb-5">
     <div class="container">
       <div class="row text-center ">
-        <h2 class="tituloP mb-5">Nuestro Legado</h2>
+        <h2 class="tituloP mb--md-5 mb-sm-2">Nuestro Legado</h2>
       </div>
       <div class="flex-sm-column d-md-flex flex-md-row justify-content-md-evenly">
           <div class="text-center m-5 m-md-0">

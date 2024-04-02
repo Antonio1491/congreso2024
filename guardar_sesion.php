@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $apellidoMaterno = str_replace("'","´",$_POST['ApellidoMaterno']);
   $email = $_POST['Email'];
   $emailAlternativo = $_POST['EmailAlternativo'];
-  $telefono = $_POST['Telefono'];
+  $telefono = '';
   $telefonoAlternativo = $_POST['TelefonoAlternativo'];
   $cargo = str_replace("'","´",$_POST['Cargo']);
   $empresa = str_replace("'","´",$_POST['Empresa']);
@@ -41,8 +41,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 
    $evento = $_POST['evento'];
 
-  $sesion = $registro->savePonencia($modalidad, $titulo, $subtitulo, $tema, $descripcion, $justificacion, 
-            $objetivos , $recursos);
+  $sesion = $registro->savePonencia($modalidad, $titulo, $subtitulo, $tema, $descripcion, $justificacion, $objetivos , $recursos, $evento);
   $id_ponencia = $sesion;
   
   $usuario = $registro->saveUsuario($array, $nombre, $apellidoPaterno, $apellidoMaterno, $email,

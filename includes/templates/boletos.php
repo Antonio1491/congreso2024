@@ -4,10 +4,9 @@
     <p class="text-center">*Disponibles a partir de Mayo</p>
     <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly">
       <!-- Profesional Miembro -->
-      <div class="boleto boleto__active m-3 mb-md-0">
+      <div class="boleto boleto__active m-3 mb-md-0 mb-sm-4">
         <div class="cinta"><span>Preventa</span></div>
         <div class="text-center">
-          
         </div>
         <h4 class="boleto-titulo">
         <img src="img/icon_entrada_oro.png" alt="" height="60px">Oro

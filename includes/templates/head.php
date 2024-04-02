@@ -17,7 +17,7 @@
   <meta property="og:title"              content="Congreso Parques León 2023" />
   <meta name="og:site_propiedad"         content="Congreso Parques León 2023">
   <meta property="og:description"        content="Un evento especializado de educación y contenido experimental, dirigido a profesionales en espacios públicos y parques urbanos." />
-  <title>Congreso Parques León | Convocatorias</title>
+  <title>Congreso Parques Mérida 2024 | Convocatorias</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="./build/image/png" href="./img/favicon.png" />
   

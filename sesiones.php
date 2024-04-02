@@ -22,7 +22,7 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-6" >
+  <div class="col-md-6 col-sm-12" >
     <h4 class="subtituloPMin">Perfil del Presentador</h4>
     <ul class="listaVinetas">
       <li>Arquitectos, urbanistas, paisajistas, diseñadores de hábitat.</li>
@@ -32,7 +32,7 @@
       <li>Cualquier otra persona interesada en compartir sus conocimientos y proyectos sobre el espacio público con los asistentes.</li>
     </ul>
   </div>
-  <div class="col-6 text-center" data-aos="fade-left">
+  <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
     <img src="./build/img/perfil_mujer.png" alt="" class="convocatoria__perfil">
     <img src="./build/img/perfil_hombre.png" alt="" class="convocatoria__perfil">
   </div>
@@ -78,7 +78,7 @@
 <div class="container-fluid  primaryBg mt-5 mb-5 ">
   <div class="container py-5">
     <div class="row">
-      <div class="col-6 align-self-center" data-aos="fade-right">
+      <div class="col-md-6 col-sm-12 mb-sm-4 align-self-center " data-aos="fade-right">
         <div class="row">
           <div class="col">
             <img src="./build/img/magistrales.png" alt="" class="iconBeneficio">
@@ -102,11 +102,11 @@
           </div>
         </div>
       </div>
-      <div class="col-6" data-aos="fade-left">
+
+      <div class="col-md-6 col-sm-12" data-aos="fade-left">
         <h4 class="subtituloCMin">Beneficios</h4>
         <p>
           <li>A los ponentes seleccionados se les otorgará una entrada de cortesía para los días del congreso. La entrada de cortesía incluye:</li>
-
         </p>
         <ul>
           <li>Diploma de participación como ponente.</li>
@@ -156,7 +156,7 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
 
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col-sm-12 col-md-6">
       <h4 class="subtituloPMin">Sobre la sesión educativa:</h4>
       <dt>Título de la sesión:</dt>
       <dd>
@@ -167,7 +167,7 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
       <dt>Descripción:</dt>
       <dd>Describe tu sesión de forma clara y concisa; Esto debe ser de 200 palabras o menos. Si tu sesión es seleccionada, la descripción aparecerá en nuestro sitio web, asegúrate que sea atractiva e invite a los asistentes a unirse a la misma.</dd>
     </div>
-    <div class="col mt-4">
+    <div class="col-sm-12 col-md-6 mt-4">
       <dt>Justificación:</dt>
       <dd>Justifica la importancia de tu propuesta, identificando cómo tu proyecto/iniciativa/investigación resuelve un problema relacionado con el espacio público y cómo se relaciona con los temas del congreso. No hay límite en el número de palabras.</dd>
       <dt>Objetivos:</dt>

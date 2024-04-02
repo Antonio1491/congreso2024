@@ -17,7 +17,7 @@
   <meta property="og:title"              content="Congreso Parques Mérida 2024" />
   <meta name="og:site_propiedad"         content="Congreso Parques Mérida 2024">
   <meta property="og:description"        content="A specialized event of educational and experiential content, aimed at public space professionals and urban parks" />
-  <title>Congreso Parques Mérida | Convocatoria Sesiones Educativas</title>
+  <title>Congreso Parques Mérida 2024| Convocatoria Sesiones Educativas</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="./build/img/favicon.png" />
   

@@ -9,6 +9,10 @@
   position: relative;
   overflow: hidden;
 
+  @media screen and (max-width: 580px){
+   width: 90%;
+  }
+
   .cinta {
   background-color: $complementaryColor2;
   min-width: 140px;

@@ -54,7 +54,7 @@
   <div class="container-fluid primaryBg mt-5">
     <div class="row">
       <div class="col-sm-12 col-md-6 p-5">
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/Aif1ogVYigI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=T_yqMzbu_xmEw33u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-sm-12 col-md-6 p-5 d-flex align-items-center justify-content-center">
         <div class="">

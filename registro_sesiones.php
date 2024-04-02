@@ -170,12 +170,12 @@
             <div class="col">
               <label for="tematica class="form-label">Eje Temático:</label>
               <select class="form-select" name="Tema">
-                <option value="1">Medio Ambiente y Sustentabilidad</option>
+                <option value="6">Medio Ambiente y Sustentabilidad</option>
                 <option value="5">Salud y Bienestar</option>
-                <option value="2">Eventos, Recreación y Participación Ciudadana</option>
-                <option value="3">Diseño, Mantenimiento y Equipamiento</option>
-                <option value="4">Innovación y Tecnología</option>
-                <option value="6">Ciudad y Movilidad</option>
+                <option value="7">Eventos, Recreación y Participación Ciudadana</option>
+                <option value="8">Diseño, Mantenimiento y Equipamiento</option>
+                <option value="9">Innovación y Tecnología</option>
+                <option value="10">Ciudad y Movilidad</option>
               </select>
             </div>
           </div>
