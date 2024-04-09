@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Comité Organizador</h1>
-    <img src="build/img/linea.png" alt="">
+    <img src="build/img/linea.png" alt="" class="img-fluid">
   </div>
 </header>
 <main>

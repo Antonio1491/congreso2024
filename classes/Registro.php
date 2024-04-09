@@ -99,11 +99,11 @@ class Registro extends Database
 
   // Pósters 
   public function savePoster($nombre_proyecto, $tema, $categoria, $documento,
-                  $temporal_documento, $poster, $temporal_poster, $recursos)
+                  $temporal_documento, $poster, $temporal_poster, $recursos, $evento)
   {
 
-    $query = "INSERT INTO posters (id, nombre, documento, poster, recursos, id_tema, id_categoria)
-              VALUES (null, '$nombre_proyecto', '$documento', '$poster', '$recursos', '$tema', '$categoria')";
+    $query = "INSERT INTO posters (id, nombre, documento, poster, recursos, id_tema, id_categoria, id_evento)
+              VALUES (null, '$nombre_proyecto', '$documento', '$poster', '$recursos', '$tema', '$categoria', '$evento')";
     
     $ejecutar = $this->conexion->query($query);
 
@@ -136,20 +136,15 @@ class Registro extends Database
   }
 
   public function saveUsuarioPoster($array, $nombre, $apellidoPaterno, $apellidoMaterno, $email,
-                  $emailAlternativo, $telefono, $telefonoAlternativo, $cargo, $empresa,
-                  $pais, $estado, $ciudad, $biografia, $nombre_foto,
-                  $tipo_foto, $temporal_foto, $id_poster)
+                                    $emailAlternativo, $telefono, $cargo, $empresa,
+                                    $pais, $ciudad, $id_poster, $evento)
   {
-
-    
     for ($i=0; $i < $array ; $i++){
       $query = " INSERT INTO usuarios 
               (id, nombres, apellido_paterno, apellido_materno, email, password, email_alternativo, 
               telefono, telefono_alternativo, cargo, empresa, pais, estado, ciudad, biografia,
               fotografia, fecha_registro, estatus, id_categoria, id_evento, modificacion)
-              VALUES (null, '$nombre[$i]', '$apellidoPaterno[$i]', '$apellidoMaterno[$i]', '$email[$i]', null, '$emailAlternativo[$i]',
-              '$telefono[$i]', '$telefonoAlternativo[$i]', '$cargo[$i]', '$empresa[$i]', '$pais[$i]', '$estado[$i]', '$ciudad[$i]', '$biografia[$i]',
-              '$nombre_foto[$i]', NOW(), 0, 5, 1, NOW())";
+              VALUES (null, '$nombre[$i]', '$apellidoPaterno[$i]', '$apellidoMaterno[$i]', '$email[$i]', null, '$emailAlternativo[$i]', '$telefono[$i]', null, '$cargo[$i]', '$empresa[$i]', '$pais[$i]', null, '$ciudad[$i]', null, null, NOW(), 0, 5, $evento, NOW())";
               
       $ejecutar =  $this->conexion->query($query);
 
@@ -158,7 +153,7 @@ class Registro extends Database
 
       if ($ejecutar){
           
-        move_uploaded_file($temporal_foto[$i], $destino_foto.$nombre_foto[$i]);
+        // move_uploaded_file($temporal_foto[$i], $destino_foto.$nombre_foto[$i]);
         
         $query = "SELECT id FROM usuarios ORDER BY id DESC LIMIT 1";
         $ejecutar = $this->conexion->query($query);

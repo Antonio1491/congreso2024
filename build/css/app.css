@@ -304,10 +304,10 @@ a {
   position: relative;
 }
 .header_home img:first-child {
-  height: 40vh;
+  width: 30%;
 }
 .header_home img:nth-child(2) {
-  height: 20vh;
+  width: 50%;
   filter: drop-shadow(2px 4px 6px black);
 }
 

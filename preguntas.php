@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Preguntas Frecuentes</h1>
-    <img src="build/img/linea.png" alt="">
+    <img src="build/img/linea.png" alt="" class="img-fluid">
     <!-- <p>Las personas más reconocidas de nuestra industria en todo el mundo Compartirán sus experiencias profesionales con todos los presentes. 
     Los temas más atractivos, los casos de éxito y mejores prácticas se desvelarán en las Conferencias Magistrales. 
     </p> -->

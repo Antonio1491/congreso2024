@@ -1,19 +1,19 @@
 <?php include_once 'includes/templates/head.php';  ?>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Convocatoria Cerrada<br> Póster Científico</h1>
-    <img src="img/linea.png" alt="">
+    <h1 class="header__titulo">Convocatoria<br> Póster Científico</h1>
+    <img src="img/linea.png" alt="" class="img-fluid">
     <div class="mt-3">
-      <a href="registro_posters.php" class="btn btn__primary disabled">Registrar Póster</a>
+      <a href="registro_posters.php" class="btn btn__primary">Registrar Póster</a>
     </div>
   </div>
 </header>
 <div class="container my-5">
-<div class="row text-center">
+<div class="row text-center mb-4">
   <div class="col">
-    <h2 class="subtituloPMin mb-3">Instrucciones de participación</h2>
-    <p>Difunde tus ideas y trabajos de investigación, estudios de casos, buenas prácticas, proyectos preliminares, proyectos ejecutivos, ensayos o similares relacionados con el espacio público y parques, para ser exhibidos durante las actividades del Congreso Parques del 22 al 25 de noviembre.
-</p>
+    <h2 class="subtituloPMin mb-2">Instrucciones de participación</h2>
+    <p>Difunde tus ideas y trabajos de investigación, estudios de casos, buenas prácticas, proyectos preliminares, proyectos ejecutivos, ensayos o similares relacionados con el espacio público y parques, para ser exhibidos durante las actividades del Congreso Parques del 23 al 25 de octubre.
+    </p>
   </div>
 </div>
 <div class="row">
@@ -27,7 +27,7 @@
     </ul>
   </div>
   <div class="col-6 text-center">
-    <img src="./build/img/perfil_mujer.png" alt="" class="convocatoria__perfil">
+    <img src="./build/img/perfil_mujer.png" alt="" class="convocatoria__perfil" style="margin-right:2rem;">
     <img src="./build/img/perfil_hombre.png" alt="" class="convocatoria__perfil">
   </div>
 </div>
@@ -41,15 +41,15 @@
   <div class="row">
     <div class="col">
       <span>Convocatoria</span>
-      <p>1 de Junio al 30 de Julio</p>
+      <p>Mayo</p>
     </div>
     <div class="col">
       <span>Revisión de propuestas</span>
-      <p>Agosto</p>
+      <p>Julio</p>
     </div>
     <div class="col">
       <span>Resultados</span>
-      <p>Septiembre</p>
+      <p>Julio</p>
     </div>
   </div>
 </div>
@@ -76,8 +76,8 @@
         Este concurso premiará en 3 categorías correspondientes a los perfiles de los asistentes al Congreso Parques:
         </p>
         <ul>
-          <li>Alumno</li>
-          <li>Joven profesional</li>
+          <li>Estudiante</li>
+          <li>Joven Profesional</li>
           <li>Profesional</li>
         </ul>
         <p>
@@ -98,13 +98,13 @@
   <div class="row">
     <div class="col">
       <ul>
-        <li><span>100% de descuento</span> en la inscripción al Congreso Parques </li>
-        <li><span>75% de descuento</span> en la inscripción al Congreso Parques </li>
-        <li><span>50% de descuento</span> en la inscripción al Congreso Parques </li>
+        <li><span>100% de descuento</span> en la inscripción Oro al Congreso Parques </li>
+        <li><span>75% de descuento</span> en la inscripción Oro al Congreso Parques </li>
+        <li><span>50% de descuento</span> en la inscripción Oro al Congreso Parques </li>
       </ul>
       <p><span>Nota:</span> Los gastos relacionados con la inscripción a los talleres, el transporte, el alojamiento, las comidas y los honorarios no están incluidos en el boleto de cortesía.</p>
     </div>
-    <div class="col">
+    <!-- <div class="col">
       <span class="pb-3">La entrada incluye:</span>
       <ul>
         <li>Diploma de participación en la Convocatoria de Póster Científico.</li>
@@ -113,7 +113,7 @@
         <li>Eventos sociales.</li>
         <li>Descuentos especiales.</li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </div>
 <div class="container">
@@ -144,7 +144,7 @@
 <div class="container ">
   <div class="row">
     <div class="col text-center">
-      <h3 class="subtituloPMin mt-5 mb-4">Formato del póster Digital</h3>
+      <h3 class="subtituloPMin mt-5 mb-4">Formato del póster</h3>
     </div>
   </div>
   <div class="row mb-5">
@@ -179,9 +179,9 @@
     </div>
   </div>
   
-  <div class="row">
+  <!-- <div class="row">
     <div class="col text-center">
-      <h3 class="subtituloPMin mt-3 mb-4">Formato del póster Impreso</h3>
+      <h3 class="subtituloPMin mt-3 mb-4">Formato del poster</h3>
     </div>
   </div>
   <div class="row mb-5">
@@ -212,7 +212,7 @@
       </ul>
       
     </div>
-  </div>
+  </div> -->
   
   <div class="row">
     <div class="bg-warning-subtle p-3">
@@ -227,16 +227,16 @@
   <div class="row">
     <h3 class="subtituloPMin mt-4 mb-3">Exhibición</h3>
     <p>
-      El póster podrá ser exhibido durante el programa del congreso. La exhibición se realizará en las sesiones educativas, charlas y/o Expo de acuerdo a lo que determine el Centro de Convenciones con sus criterios de uso, funcionalidad o normas de seguridad que se deban cumplir. Se asegurará que sea un lugar de tránsito visible para todos los asistentes al Congreso y la prensa local.
+    El póster podrá ser exhibido durante el programa del congreso. La exhibición se realizará en las sesiones educativas, charlas y/o Expo de acuerdo a lo que determine el Centro de Convenciones con sus criterios de uso, funcionalidad o normas de seguridad que se deban cumplir. Se asegurará que sea un lugar de tránsito visible para todos los asistentes al Congreso y la prensa local.
     </p>
     <p>
-      Los autores podrán acompañar sus carteles en los horarios que se determinen para resolver dudas de los asistentes. La Organización determinará el lugar y formato de exhibición sin posibilidad de reclamar cambios en los mismos y de acuerdo al plan.
+    Los autores podrán acompañar sus carteles en los horarios que se determinen para resolver dudas de los asistentes. La Organización determinará el lugar y formato de exhibición sin posibilidad de reclamar cambios en los mismos y de acuerdo al plan.
     </p>
     <p>
-      Los ganadores que asistan al congreso podrán entregar su póster impreso al comité organizador durante las fechas del congreso. No obstante, el comité organizador también tendrá la opción de cubrir la impresión de los carteles para aquellos que no puedan asistir.
+    Los ganadores que asistan al congreso podrán entregar su póster impreso al comité organizador durante las fechas del congreso. No obstante, el comité organizador también tendrá la opción de cubrir la impresión de los carteles para aquellos que no puedan asistir.
     </p>
     <p>
-      Los carteles también serán publicados en las redes sociales y páginas oficiales de la Asociación Nacional de Parques y Recreación de México y los asociados a este evento.
+    Los carteles también serán publicados en las redes sociales y páginas oficiales de la Asociación Nacional de Parques y Recreación de México.
     </p>
   </div>
   
@@ -260,11 +260,11 @@
       </p>
       <ul>
         <li>Correspondencia a los ejes  del congreso.</li>
-        <li>Presentación general</li>
-        <li>Creatividad, innovación, originalidad en la propuesta</li>
-        <li>Número de personas beneficiadas con el proyecto</li>
-        <li>Viabilidad de la propuesta (objetivos, tiempos y presupuesto requerido)</li>
-        <li>Contexto en el que se desarrolla (áreas desarrolladas o vulnerables, otras)</li>
+        <li>Presentación general.</li>
+        <li>Creatividad, innovación, originalidad en la propuesta.</li>
+        <li>Número de personas beneficiadas con el proyecto.</li>
+        <li>Viabilidad de la propuesta (objetivos, tiempos y presupuesto requerido).</li>
+        <li>Contexto en el que se desarrolla (áreas desarrolladas o vulnerables, otras).</li>
       </ul>
     </div>
     <div class="col">
@@ -272,6 +272,11 @@
       <p>Las propuestas deberán presentarse en los formatos establecidos. Tanto los pósters como los resúmenes deben enviarse en el sitio web oficial de la Convocatoria de Póster Científico.</p>
       <h6 class="subtitulo pb-2">Aceptación de las bases</h6>
       <p>El hecho de participar en este concurso implica la plena aceptación del contenido de estas bases. El comité organizador se reserva el derecho de realizar todas las modificaciones que considere oportunas para el correcto funcionamiento del concurso.</p>
+    </div>
+  </div>
+  <div class="row mt-3">
+    <div class="text-center">
+      <a href="registro_posters.php" class="btn btn__primary">Registrar Póster</a>
     </div>
   </div>
 </div>

@@ -1,4 +1,5 @@
 <?php include_once 'includes/templates/head.php';  ?>
+
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Registro Finalizado</h1>
@@ -9,7 +10,7 @@
   <section class="container" style="height:40vh;">
     <div class="row mt-5 mb-5">
       <div class="col text-center">
-        <h2 class="subtitulo">¡Gracias!</h2>
+        <h2 class="subtituloPMin">¡Gracias!</h2>
       </div>
     </div>
     <div class="row justify-content-center" >

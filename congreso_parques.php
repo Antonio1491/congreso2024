@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Congreso Parques</h1>
-    <img src="build/img/linea.png" alt="">
+    <img src="build/img/linea.png" alt="" class="img-fluid">
     <p>Un evento especializado de educación y contenido experimental, dirigido a profesionales en espacios públicos y parques urbanos.  
     </p>
   </div>
