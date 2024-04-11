@@ -276,5 +276,16 @@
   require 'includes/templates/expositores.php'; 
   ?>
 
+  <section class="container-fluid primaryBg mt-5">
+    <div class="row">
+      <div class="col text-center pt-5 mb-4">
+          <h2 class="subtituloBMin">Nuestra línea de tiempo</h2>
+      </div>
+    </div>
+    <div class="row">
+      <img src="build/img/linea_de_tiempo_congresos.png" alt="" class="img_fluid">
+    </div>
+  </section>
+
 </main>
 <?php require 'includes/templates/footer.php'; ?>
