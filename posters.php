@@ -68,6 +68,9 @@
           </ul>
           <h4 class="subtituloCMin">Ejes temáticos</h4>
           <p>Los temas deberán coincidir con los ejes del congreso.</p>
+          <ul>
+            <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#00dfbf;">Consultar Ejes Temáticos</a></li>
+          </ul>
         </div>
       </div>
       <div class="col-6">

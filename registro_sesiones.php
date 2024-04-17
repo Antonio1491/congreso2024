@@ -27,6 +27,11 @@
         <li>Ciudad y Movilidad</li>
       </ul>
       <p>
+          <ul>
+            <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Consultar Ejes Temáticos</a></li>
+          </ul>
+        </p>
+      <p>
       Los líderes de parques no están solos, y el Congreso Parques 2024 reunirá a profesionales de todo el mundo y América Latina para desarrollar una nueva visión para el futuro.
       </p>
       <ol>

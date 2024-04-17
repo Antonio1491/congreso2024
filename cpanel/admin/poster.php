@@ -77,6 +77,9 @@ $propuestas = new Propuesta();
 
 <script>
   $(document).foundation();
-  </script> 
+
+  // $_SESSION["evento"]
+  var evento = <?php echo $_SESSION["evento"]; ?>
+</script> 
   </body>
 </html>

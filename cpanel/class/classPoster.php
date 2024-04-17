@@ -7,7 +7,7 @@ class Posters extends Conexion{
 
     }
 
-    public function getPosters(){
+    public function getPosters($evento){
 
         $html = "";
         $sql = "SELECT *
@@ -16,7 +16,8 @@ class Posters extends Conexion{
         ON usuarios_posters.id_usuario = usuarios.id
         RIGHT JOIN posters
         ON usuarios_posters.id_poster = posters.id
-        ";
+        WHERE  eventos_id = $evento ";
+        
 
         $resultado = $this->conexion_db->query($sql);
   

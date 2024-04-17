@@ -1074,18 +1074,24 @@ footer .subtitulo {
 
 .talleres .contenedor__talleres {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
 }
 .talleres .contenedor__talleres--taller {
-  border: 1px #c1c1c1 solid;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  width: 32.5%;
-  margin-left: 0.5%;
+  border: 1px #d8d2d2 solid;
+  border-radius: 0px 0px 20px 20px;
+  width: 30%;
   margin-bottom: 2em;
   transition: 0.5s all ease;
+}
+.talleres .contenedor__talleres--taller img:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+  cursor: pointer;
+  transition-timing-function: ease-out;
 }
 @media screen and (max-width: 500px) {
   .talleres .contenedor__talleres--taller {
@@ -1093,12 +1099,16 @@ footer .subtitulo {
   }
 }
 .talleres .contenedor__talleres--taller:hover {
-  transform: scale(1.03);
+  box-shadow: #e7e7e7 0px 0px 20px;
   transition: 0.5s all ease;
   cursor: pointer;
 }
 .talleres .contenedor__talleres--taller .contenido__taller {
   padding: 1em;
+}
+.talleres .contenedor__talleres--taller .contenido__taller .boleto__btn {
+  display: flex;
+  justify-content: center;
 }
 .talleres .contenedor__talleres--taller .contenido__taller h3 {
   color: #1d0c65;
@@ -1129,6 +1139,9 @@ footer .subtitulo {
 }
 .talleres .contenedor__talleres--taller .contenido__taller .iconos__taller p {
   font-size: 0.9em;
+}
+.talleres .contenedor__talleres--taller .contenido__taller .iconos__taller svg {
+  color: #ff00ff;
 }
 .talleres .contenedor__talleres--taller .contenido__taller .precio h3 {
   color: #d2dd0a;

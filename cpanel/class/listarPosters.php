@@ -1,7 +1,9 @@
 <?php 
+
+$evento = "<script>evento</script>";
 include "funciones.php";
 $posters = new Posters();
-$resultado = $posters->getPosters();
+$resultado = $posters->getPosters($evento);
 
 
 

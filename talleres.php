@@ -3,7 +3,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Talleres</h1>
-    <img src="build/img/linea.png" alt="">
+    <img src="build/img/linea.png" alt="" class="img-fluid">
   </div>
 </header>
 <main>
@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 text-center p-md-5">
           <p class="lead white">
-          <strong class="verde bolded">Los más de 10 talleres</strong> se celebrarán el día miércoles 22 de noviembre,<br> antes de las secisiones educativas, las sesiones magistrales y la Expo Parques. 
+          <strong class="verde bolded">Los más de 10 talleres</strong> se celebrarán el día miércoles <span class="dt" style="color: white;"> 23 de octubre</span>,<br> antes de las secisiones educativas, las sesiones magistrales y la Expo Espacio Público. 
           <br> 
           </p> 
         </div>
@@ -33,7 +33,7 @@
     </div>
   </div>
 
-  <section class="talleres">
+  <section class="talleres mt-5">
     <div class="container contenedor__talleres">
     <?php
       $talleres = new Taller();
@@ -44,7 +44,7 @@
     </div>
   </section>
 
-  <div class="container-fluid bgMaster">
+  <div class="container-fluid bgMaster mt-4 mb-4">
     <article class="container row ">
       <div class="col-sm-12 col-md-6 align-self-center">
         <article>
@@ -73,11 +73,17 @@
 
   <div class="container">
     <div class="row">
-      <img src="build/img/linea_gris.png" alt="">
+      <img src="build/img/linea_gris.png" alt="" class="img-fluid">
     </div>
   </div>
 
   <?php require 'includes/templates/sede.php'; ?>
+
+  <div class="container">
+    <div class="row mt-5">
+      <img src="build/img/linea_gris.png" alt="" class="img-fluid">
+    </div>
+  </div>
 
   <?php require 'includes/templates/patrocinadores.php'; ?>
 

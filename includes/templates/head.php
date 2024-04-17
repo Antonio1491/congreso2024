@@ -14,8 +14,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:url"                content="https://www.congresoparques.com/" />
   <meta property="og:type"               content="website" />
-  <meta property="og:title"              content="Congreso Parques León 2023" />
-  <meta name="og:site_propiedad"         content="Congreso Parques León 2023">
+  <meta property="og:title"              content="Congreso Parques Mérida 2024" />
+  <meta name="og:site_propiedad"         content="Congreso Parques Mérida 2024">
   <meta property="og:description"        content="Un evento especializado de educación y contenido experimental, dirigido a profesionales en espacios públicos y parques urbanos." />
   <title>Congreso Parques Mérida 2024 | Convocatorias</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -49,17 +49,17 @@
             <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
           </ul>
         </li>
-        <!-- <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Actividades
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="programa.php">Programa</a></li>
+            <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
             <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
-            <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li>
-            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li>
+            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li>
+            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li> -->
           </ul>
-        </li> -->
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sede
@@ -70,7 +70,7 @@
             <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Expo Espacio Público
           </a>
@@ -79,7 +79,7 @@
             <li><a class="dropdown-item" href="sesiones.php">Visitantes</a></li>
             <li><a class="dropdown-item" href="posters.php">Expositores</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
           <a href="expo_parques.php" class="nav-link">Expo Espacio Público</a>
         </li> -->

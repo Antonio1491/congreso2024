@@ -157,17 +157,23 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
 <div class="container">
   <div class="row">
     <div class="col-sm-12 col-md-6">
-      <h4 class="subtituloPMin">Sobre la sesión educativa:</h4>
+      <h4 class="subtituloPMin mb-4">Sobre la sesión educativa:</h4>
       <dt>Título de la sesión:</dt>
       <dd>
       Debes crear un título que refleje la esencia de tu sesión y debe tener máximo 12 palabras o menos.
       </dd>
       <dt>Eje temático: </dt>
-      <dd>Elige el eje temático que más se alinee a tu proyecto y propuesta. </dd>
+      <dd>Elige el eje temático que más se alinee a tu proyecto y propuesta. 
+        <p>
+          <ul>
+            <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Consultar Ejes Temáticos</a></li>
+          </ul>
+        </p>
+      </dd>
       <dt>Descripción:</dt>
       <dd>Describe tu sesión de forma clara y concisa; Esto debe ser de 200 palabras o menos. Si tu sesión es seleccionada, la descripción aparecerá en nuestro sitio web, asegúrate que sea atractiva e invite a los asistentes a unirse a la misma.</dd>
     </div>
-    <div class="col-sm-12 col-md-6 mt-4">
+    <div class="col-sm-12 col-md-6 mt-5">
       <dt>Justificación:</dt>
       <dd>Justifica la importancia de tu propuesta, identificando cómo tu proyecto/iniciativa/investigación resuelve un problema relacionado con el espacio público y cómo se relaciona con los temas del congreso. No hay límite en el número de palabras.</dd>
       <dt>Objetivos:</dt>

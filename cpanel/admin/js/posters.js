@@ -1,8 +1,6 @@
 
 const propuestas_calificar = async() =>{
 
-    
-    
   // const data = new FormData();
   // data.append('temas', arreglo);
   
@@ -11,7 +9,6 @@ const propuestas_calificar = async() =>{
   const peticion = await fetch('../class/listarPosters.php',{
   method: 'POST'
   });
-  
   
   
   const respuesta = await peticion.text();

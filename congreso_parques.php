@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2 class="subtituloPMin">Objetivo del evento</h2>
-      <p>Reunir, integrar y capacitar presencial y virtualmente a los profesionales, sociedad civil, funcionarios públicos, academia e industria del espacio público.
+      <p>Reunir, integrar y capacitar presencial a los profesionales, sociedad civil, funcionarios públicos, academia e industria del espacio público.
 </p>
       </div>
       <div class="col-sm-12 col-md-6 text-center">

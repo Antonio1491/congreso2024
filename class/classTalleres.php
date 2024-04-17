@@ -114,41 +114,43 @@ class Taller extends Conexion{
       $piezas = explode(" ", $res['descripcion']);
       $cadena = implode(" ", array_splice($piezas, 0, 60));
   
-      $date=date_create($res['fecha']);
+      $date = date_create($res['fecha']);
       $format = date_format($date,"M. d  ");
       $hora_inicio = date_create($res['inicio']);
       $hora_format_inicio = date_format($hora_inicio,"g:i a ");
      
       $html.='
       <div class="contenedor__talleres--taller" id="resumen-taller-'.$res['id_taller'].'">
-        <img src="build/img/'.$res['foto'].'" alt="" class="img_300" width="100%">
-  
-          <div class="contenido__taller">
-           <div class="iconos__taller">
-  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
-  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-</svg> '.$format.'</p>
-  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
-  <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
-  <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
-</svg> '.$hora_format_inicio.'</p>
-  <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
-</svg> ' .$res['capacidad'].' personas </p>
-  
-  </div>
-          <h6 class="subtituloPMin text-center">'.$res['titulo'].'</h6>
+        <div class="overflow-hidden">
+          <img src="build/img/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
+        </div>
+        <div class="contenido__taller">
+          <div class="iconos__taller">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+            </svg> '.$format.'</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg> '.$hora_format_inicio.'</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/>
+            </svg> ' .$res['capacidad'].' personas </p>
+          </div>
+
+          <h6 class="subtituloPMin text-center mt-2">'.$res['titulo'].'</h6>
           <h5 class="text-center">'.$res['subtitulo'].'</h5>
           <p class="desc_taller">'.$cadena.'...'.'</p>
 
-  
-  <div class="precio">
-  </div>
-  <div class="boleto__btn"><a href="detalleTaller.php?id='.$res['id_taller'].'" class="btn btn__primary">Ver Detalles</a></div>
-  
-  </div>
-  </div>
+          <div class="precio">
+          </div>
 
+          <div class="boleto__btn">
+            <a href="detalleTaller.php?id='.$res['id_taller'].'" class="btn btn__primary">Ver Detalles</a>
+          </div>
+
+        </div>
+      </div>
   ';
     }
 
@@ -175,7 +177,7 @@ class Taller extends Conexion{
      
       $html.='
       <div class="contenedor__talleres--taller">
-      <img src="build/img/'.$res['foto'].'" alt="" class="img_300" width="100%">
+      <img src="build/img/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
   
           <div class="contenido__taller">
           <div class="iconos__taller">

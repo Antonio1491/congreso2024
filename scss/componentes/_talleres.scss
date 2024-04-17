@@ -27,7 +27,6 @@
         font-family: "Montserrat Bold";
         font-size: 1.3rem;
         text-transform: uppercase;
-
     }
 
     figure{
@@ -164,18 +163,25 @@
 .talleres{
     .contenedor__talleres{
         display: flex;
-        justify-content:flex-start;
+        justify-content:space-between;
         align-items: center;
         flex-wrap: wrap;
+        column-gap: 3rem;
 
         &--taller{
-            border: 1px #c1c1c1 solid;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            width: 32.5%;
-            margin-left: .5%;
+            border: 1px #d8d2d2 solid;
+            border-radius:0px 0px 20px 20px;
+            width: 30%;
+            // margin-left: .5%;
             margin-bottom: 2em;
             transition: .5s all ease;
+
+            img:hover{
+                transform: scale(1.2);
+                transition-duration: 0.5s;
+                cursor: pointer;
+                transition-timing-function: ease-out;
+            }
 
             @media screen and (max-width: 500px){
                 width: 100%;
@@ -183,7 +189,8 @@
             }
 
             &:hover{
-                transform: scale(1.03);
+                // transform: scale(1.03);
+                box-shadow: #e7e7e7 0px 0px 20px;
                 transition: .5s all ease;
                 cursor: pointer;
 
@@ -191,6 +198,10 @@
 
             .contenido__taller{
                 padding: 1em;
+                .boleto__btn{
+                    display: flex;
+                    justify-content: center;
+                }
                 h3{
                     color: $primaryColor;
                     // font-family: $fuenteTitulo2;
@@ -222,6 +233,10 @@
                     justify-content: space-between;
                     p{
                         font-size: .9em;
+                    }
+                    
+                    svg{
+                    color: $complementaryColor2;
                     }
                 }
                 .precio{
