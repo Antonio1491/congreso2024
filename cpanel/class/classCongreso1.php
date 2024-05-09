@@ -47,7 +47,7 @@ class Congreso extends Conexion
 
     public function getFecha($congreso)
     {
-      $sql = "SELECT fecha_inicio, fecha_fin, hora_inicio, hora_fin FROM congresos WHERE id_congreso = '$congreso' ";
+      $sql = "SELECT fecha_inicio, fecha_fin FROM eventos WHERE id = '$congreso' ";
 
       $consulta = $this->conexion_db->query($sql);
 

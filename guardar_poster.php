@@ -62,7 +62,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 }
 //En caso de no mandar datos del formulario redireccionaR a convocatoria
 else{
-  //Página web de la convocatoria
+  // Página web de la convocatoria
   header('location: ./../registro_sesiones.php');
 }
   

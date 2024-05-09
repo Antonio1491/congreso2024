@@ -38,27 +38,27 @@
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="apellidoPaterno" class="form-label">Apellido Paterno:</label>
                 <input type="text" id="apellidoPaterno" name="ApellidoPaterno[]" value="" class="form-control" required>
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="apellidoMaterno" class="form-label">Apellido Materno:</label>
                 <input type="text" id="apellidoMaterno" name="ApellidoMaterno[]" value="" class="form-control" required>
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="email" class="form-label">E-mail:</label>
                 <input type="text" id="email" name="Email[]" value="" class="form-control" required placeholder="">
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="emailAlternativo" class="form-label">E-mail alternativo:</label>
                 <input type="text" id="emailAlternativo" name="EmailAlternativo[]" value="" class="form-control" placeholder="">
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="telefono"  class="form-label">Teléfono:</label>
                 <input type="text" id="telefono" name="Telefono[]" value="" class="form-control" placeholder="Código de País y Teléfono">
               </div>
@@ -72,17 +72,17 @@
                 <label for="empresa"  class="form-label">Empresa/Institución:</label>
                 <input type="text" id="empresa" name="Empresa[]" value="" class="form-control">
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="cargo"  class="form-label">Puesto de Trabajo:</label>
                 <input type="text" id="cargo" name="Cargo[]" value="" class="form-control">
               </div>
             </div>
             <div class="row mb-3">
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="pais"  class="form-label">País:</label>
                 <input type="text" id="pais" name="Pais[]" value="" placeholder="" required class="form-control">
               </div>
-              <div class="col-6">
+              <div class="col-md-6 col-sm-12">
                 <label for="ciudad"  class="form-label">Ciudad:</label>
                 <input type="text" id="ciudad" name="Ciudad[]" value="" placeholder="" class="form-control">
               </div>
@@ -135,7 +135,7 @@
             </div>
           </div>
           <div class="row mb-3">
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
               <label for="" class="form-label">Eje temático al que se apega:</label>
               <select class="form-select" name="tema">
                 <option value="6">Medio Ambiente y Sustentabilidad</option>
@@ -146,7 +146,7 @@
                 <option value="10">Ciudad y Movilidad</option>
               </select>
             </div>
-            <div class="col-6">
+            <div class="col-md-6 col-sm-12">
               <label for="" class="form-label">Categoría:</label>
               <select class="form-select" name="categoria">
                 <option value="1">Alumno</option>

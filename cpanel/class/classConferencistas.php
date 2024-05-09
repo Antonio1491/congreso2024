@@ -101,7 +101,9 @@ class Conferencistas extends Conexion{   //utilizar variables y métodos dentro 
       $resultado = $this->conexion_db->query("SELECT * FROM usuarios_ponencias as up
       LEFT JOIN ponencias ON up.id_ponencia = ponencias.id
       LEFT JOIN usuarios as u ON up.id_usuario = u.id
-      WHERE ponencias.estatus = '1' OR u.id_categoria = '2'
+      WHERE ponencias.estatus = '1' 
+      AND u.id_categoria = '2'
+      AND u.id_evento = $evento
       ORDER BY u.id DESC");
 
       $usuarios = $resultado->fetch_all(MYSQLI_ASSOC);

@@ -20,11 +20,12 @@ $id_modalidad = $_POST['modalidad'];
 $id_categoria = $_POST['categoria'];
 $descripcion = filtrado($_POST['descripcion']);
 $objetivos = filtrado($_POST['objetivos']);
+$evento = $_POST['evento'];
 
 $registro = new Conferencia();
 
 $resultado = $registro->registrar($titulo, $subtitulo, $fecha, $hora, $hora_fin, $estatus,
-$id_tema, $ubicacion, $id_modalidad, $id_categoria, $descripcion, $objetivos);
+$id_tema, $ubicacion, $id_modalidad, $id_categoria, $descripcion, $objetivos, $evento);
 
 if ($resultado) {
 

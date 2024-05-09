@@ -35,7 +35,8 @@ $registro = $tallerista->registroTallerista($nombre, $apellidos, $cargo,
 
       echo $mensaje;
 
-      }
+    }
+    
     else{
       echo"<script language='JavaScript'>
           alert('Error: No pudimos realizar el registro');

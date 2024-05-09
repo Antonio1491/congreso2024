@@ -39,11 +39,10 @@ $propuestas = new Propuesta();
         <thead>
           <tr>
             <th class="text-center">#</th>
-            <th class="text-center">Nombre</th>
+            <th class="text-center">Título</th>
             <th class="text-center">Email</th>
             <th class="text-center">Telefono</th>
             <th class="text-center">Empresa</th>
-            <th class="text-center">Ciudad</th>
             <th class="text-center">Doc</th>
             <th class="text-center">Poster</th>
 

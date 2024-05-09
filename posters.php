@@ -1,4 +1,7 @@
 <?php include_once 'includes/templates/head.php';  ?>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Convocatoria<br> Póster Científico</h1>
@@ -10,14 +13,14 @@
 </header>
 <div class="container my-5">
 <div class="row text-center mb-4">
-  <div class="col">
+  <div class="col-sm-12">
     <h2 class="subtituloPMin mb-2">Instrucciones de participación</h2>
     <p>Difunde tus ideas y trabajos de investigación, estudios de casos, buenas prácticas, proyectos preliminares, proyectos ejecutivos, ensayos o similares relacionados con el espacio público y parques, para ser exhibidos durante las actividades del Congreso Parques del 23 al 25 de octubre.
     </p>
   </div>
 </div>
 <div class="row">
-  <div class="col-6">
+  <div class="col-sm-12 col-md-6">
     <h4 class="subtituloPMin">¿Quienes pueden participar?</h4>
     <ul class="listaVinetas">
       <li>Estudiantes Universitarios (últimos dos años) o Postgrado en Facultades de Arquitectura y Urbanismo, Facultades de Ciencias Naturales, Facultades de Ingeniería, Facultades de Ciencias Sociales, Facultades de Tecnología Aplicada, Facultades de Economía, cualquier Universidad, y otras.</li>
@@ -26,13 +29,13 @@
       <li>Consultores, estudios de arquitectura o similares.</li>
     </ul>
   </div>
-  <div class="col-6 text-center">
+  <div class="col-sm-12 col-md-6 text-center" data-aos="fade-left">
     <img src="./build/img/perfil_mujer.png" alt="" class="convocatoria__perfil" style="margin-right:2rem;">
     <img src="./build/img/perfil_hombre.png" alt="" class="convocatoria__perfil">
   </div>
 </div>
 </div>
-<div class="container text-center border border-secondary-subtle mt-5 mb-5 p-3 bg-body-tertiary">
+<div class="container text-center border border-secondary-subtle mt-5 mb-5 p-3 bg-body-tertiary" data-aos="fade-down">
   <div class="row mb-3">
     <div class="col">
       <h4 class="subtituloPMin">Fechas Importantes</h4>
@@ -57,7 +60,7 @@
 <div class="container-fluid primaryBg mt-5 mb-5 py-5">
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <div class="row">
           <h4 class="subtituloCMin">Notas importantes</h4>
           <ul>
@@ -73,7 +76,7 @@
           </ul>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-sm-12 col-md-6">
         <h4 class="subtituloCMin">Beneficios</h4>
         <p>
         Este concurso premiará en 3 categorías correspondientes a los perfiles de los asistentes al Congreso Parques:
@@ -147,14 +150,14 @@
 <div class="container ">
   <div class="row">
     <div class="col text-center">
-      <h3 class="subtituloPMin mt-5 mb-4">Formato del póster</h3>
+      <h3 class="subtituloPMin mt-5 mb-4">Formato del Póster Digital</h3>
     </div>
   </div>
-  <div class="row mb-5">
-    <div class="col">
+  <div class="row mb-3">
+    <div class="col-sm-12 col-md-4 mb-sm-2" data-aos="fade-right">
       <img src="./build/img/poster.png" alt="" class="">
     </div>
-    <div class="col">
+    <div class="col-sm-12 col-md-4">
       <ul>
         <li>Nombre del autor o autores en el encabezado.</li>
         <li>Categoría: Profesional - Joven Profesional - Estudiante.</li>
@@ -166,7 +169,7 @@
         <li>Resultados / Discusión.</li>
       </ul>
     </div>
-    <div class="col">
+    <div class="col-sm-12 col-md-4">
       <ul>
         <li>Conclusión.</li>
         <li>Bibliografía.</li>
@@ -182,13 +185,13 @@
     </div>
   </div>
   
-  <!-- <div class="row">
+  <div class="row">
     <div class="col text-center">
-      <h3 class="subtituloPMin mt-3 mb-4">Formato del poster</h3>
+      <h3 class="subtituloPMin mt-3 mb-4">Formato del Póster Impreso</h3>
     </div>
   </div>
   <div class="row mb-5">
-    <div class="col">
+    <div class="col-md-8 col-sm-12">
       <p>
        En caso de ser seleccionado es importante considerar: 
         El tamaño de letra aproximado para cada una de las partes del póster impreso
@@ -202,11 +205,9 @@
         <li>Notas de pie para fotografías o gráficos 25 puntos.</li>
       </ul>
     </div>
-    <div class="col">
-      
-      <h6 class="subtituloPMin pb-2">Medidas:</h6>
+    <div class="col-md-4 col-sm-12">
+      <h6 class="subtituloPMin pb-2">Entrega Impresa:</h6>
       <ul>
-          <li>ENTREGA IMPRESA (en caso de ser ganadores.)</li>
           <li>Tamaño en pulgadas 24" x 36"</li>
           <li>Tamaño en cm 60,92 x 91,44 cm</li>
           <li>Full Color</li>
@@ -215,7 +216,7 @@
       </ul>
       
     </div>
-  </div> -->
+  </div>
   
   <div class="row">
     <div class="bg-warning-subtle p-3">
@@ -227,7 +228,7 @@
       </ul>
     </div>
   </div>
-  <div class="row">
+  <div class="row col-sm-12 col-md-12">
     <h3 class="subtituloPMin mt-4 mb-3">Exhibición</h3>
     <p>
     El póster podrá ser exhibido durante el programa del congreso. La exhibición se realizará en las sesiones educativas, charlas y/o Expo de acuerdo a lo que determine el Centro de Convenciones con sus criterios de uso, funcionalidad o normas de seguridad que se deban cumplir. Se asegurará que sea un lugar de tránsito visible para todos los asistentes al Congreso y la prensa local.
@@ -254,7 +255,7 @@
     <p>El jurado estará compuesto por:</p>
   </div>
   <div class="row">
-    <div class="col">
+    <div class="col-sm-12 col-md-6">
       <ul>
         <li>Profesionales y expertos del sector de parques y espacios públicos.</li>
       </ul>
@@ -270,10 +271,10 @@
         <li>Contexto en el que se desarrolla (áreas desarrolladas o vulnerables, otras).</li>
       </ul>
     </div>
-    <div class="col">
+    <div class="col-sm-12 col-md-6">
       <p>Los resultados no pueden ser apelados por los participantes.</p>
       <p>Las propuestas deberán presentarse en los formatos establecidos. Tanto los pósters como los resúmenes deben enviarse en el sitio web oficial de la Convocatoria de Póster Científico.</p>
-      <h6 class="subtitulo pb-2">Aceptación de las bases</h6>
+      <h6 class="subtituloPMin">Aceptación de las bases</h6>
       <p>El hecho de participar en este concurso implica la plena aceptación del contenido de estas bases. El comité organizador se reserva el derecho de realizar todas las modificaciones que considere oportunas para el correcto funcionamiento del concurso.</p>
     </div>
   </div>

@@ -3,7 +3,7 @@ const propuestas_calificar = async() =>{
 
   // const data = new FormData();
   // data.append('temas', arreglo);
-  
+ 
   let cuerpotabla = document.getElementById('cuerpoTabla');
   
   const peticion = await fetch('../class/listarPosters.php',{

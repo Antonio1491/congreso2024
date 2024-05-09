@@ -16,7 +16,7 @@ class Posters extends Conexion{
         ON usuarios_posters.id_usuario = usuarios.id
         RIGHT JOIN posters
         ON usuarios_posters.id_poster = posters.id
-        WHERE  eventos_id = $evento ";
+        WHERE  posters.id_evento = $evento ";
         
 
         $resultado = $this->conexion_db->query($sql);
@@ -32,15 +32,14 @@ class Posters extends Conexion{
             $doc = $resp['documento'];
             $poster = $resp['poster'];
             
-            $nombre = $resp['nombres'].' '.$resp['apellido_paterno'].' '.$resp['apellido_materno'];
+            // $nombre = $resp['nombres'].' '.$resp['apellido_paterno'].' '.$resp['apellido_materno'];
 
             $i++;
             $html .= '<tr>
             <td class="text-center">'.$i.'</td>
-            <td class="text-center">'.$nombre.'</td>
+            <td class="text-center">'.$resp['nombre'].'</td>
             <td class="text-center">'.$resp['email'].'</td>
-            <td class="text-center">'.$resp['telefono'].'</td>
-            <td class="text-center">'.$resp['empresa'].'</td>
+           <td class="text-center">'.$resp['telefono'].'</td>
             <td class="text-center">'.$resp['ciudad'].'</td>';
 
             if(!empty($doc)){

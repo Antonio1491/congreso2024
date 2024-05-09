@@ -1048,6 +1048,7 @@ return $resultado;
       lEFT JOIN temas 
       ON ponencias.id_tema = temas.id
       WHERE ponencias.estatus = 1
+      AND ponencias.id_evento = $evento
       ";
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
@@ -1099,8 +1100,7 @@ return $resultado;
       return $respuesta;
     }
 
-    public function registrar($titulo, $subtitulo, $fecha, $hora, $hora_fin, $estatus,
-                              $id_tema, $ubicacion, $id_modalidad, $id_categoria, $descripcion, $objetivos)
+    public function registrar($titulo, $subtitulo, $fecha, $hora, $hora_fin, $estatus, $id_tema, $ubicacion, $id_modalidad, $id_categoria, $descripcion, $objetivos, $evento)
       {
       // $sql = "INSERT INTO conferencias VALUES
       // (null, '$conferencia', '$tema', '$tipo', '$descripcion',
@@ -1108,7 +1108,7 @@ return $resultado;
       // NULL, NULL, NULL, 'aceptada', '$fecha', '$hora', '$hora_fin', '$lugar', null, '$evento')";
       $sql = "INSERT INTO ponencias 
               VALUES
-              (null, '$titulo', '$subtitulo', '$descripcion', '$fecha', '$hora', '$hora_fin', '$estatus', '$id_tema', '$ubicacion', '$id_modalidad', NOW()) ";
+              (null, '$titulo', '$subtitulo', '$descripcion', '$fecha', '$hora', '$hora_fin', '$estatus', '$id_tema', '$ubicacion', '$id_modalidad', NOW(), '$evento')";
 
       $resultado = $this->conexion_db->query($sql);
 
@@ -1119,7 +1119,6 @@ return $resultado;
         $resultado = $this->conexion_db->query($sql);
 
         $data = $resultado->fetch_all(MYSQLI_ASSOC);
-
 
         $id = $data[0]['id'];
 
