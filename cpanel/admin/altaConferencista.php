@@ -35,8 +35,9 @@ var_dump($resultado);
     if ($resultado == true) {
 
       $extraerNombre = $_FILES['fotografia']['tmp_name'];
-      // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2023_convocatorias/imagenes/' ;
-      $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+      // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+      //local
+      $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
 
       // var_dump($destino.$fotografia);
       // exit();

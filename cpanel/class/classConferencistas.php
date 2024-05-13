@@ -262,11 +262,11 @@ class Conferencistas extends Conexion{   //utilizar variables y métodos dentro 
     $consulta = $this->conexion_db->query($sql);
     $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
     foreach ($resultado as $valor) {
-      // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2023_convocatorias/imagenes/' ;
+      // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
       //Producción 
-      unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+      // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
       //Local
-      // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2023_convocatorias/imagenes/".$valor['fotografia']);
+      unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
     }
 
   }
@@ -313,6 +313,17 @@ class Conferencistas extends Conexion{   //utilizar variables y métodos dentro 
 
  // Eliminar conferencista
   public function eliminar($id){
+
+    $sql = "SELECT fotografia FROM usuarios WHERE id = $id ";
+    $consulta = $this->conexion_db->query($sql);
+    $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+    foreach ($resultado as $valor) {
+      // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+      //Producción 
+      // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+      //Local
+      unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
+    }
 
     $sql = $this->conexion_db->query("DELETE FROM usuarios WHERE id = $id ");
 

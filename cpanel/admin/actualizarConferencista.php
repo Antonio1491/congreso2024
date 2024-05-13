@@ -37,7 +37,9 @@ else{
   $actualizarConferencista = $actualizar->actualizarConferencista($usuario, $password, $nombres, $apellido_paterno, $apellido_materno, $cargo, $empresa, $biografia, $pais, $ciudad, $conferencia, $id, $fotografia);
 
   $extraerNombre = $_FILES['fotografia']['tmp_name'];
-  $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+  //local
+  $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+  // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
   echo move_uploaded_file($extraerNombre,$destino.$fotografia);
 
   $mensaje = "<script>window.history.go(-2);</script>";

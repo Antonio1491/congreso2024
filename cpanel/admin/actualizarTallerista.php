@@ -35,7 +35,10 @@ else{
 
   $extraerNombre = $_FILES['fotografia']['tmp_name'];
   // $destino= $_SERVER['DOCUMENT_ROOT'].'/img/uploads/talleristas/' ;
-  $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+  // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+  //local
+  $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+
   echo move_uploaded_file($extraerNombre,$destino.$fotografia);
 
   $mensaje = "<script>window.history.go(-2);</script>";
@@ -43,19 +46,6 @@ else{
 
 }
 
-
-// if ($resultado) {
-//
-//           $mensaje = "<script>window.history.go(-2);</script>";
-//
-//           echo $mensaje;
-//     }
-//     else{
-//     echo"<script language='JavaScript'>
-//     alert('Error: No pudimos actualizar');
-//     </script>";
-//     echo "<script>window.history.go(-2);</script>";
-//     }
 
 ?>
 </html>

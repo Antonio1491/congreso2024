@@ -120,7 +120,7 @@ include('../class/funciones.php');
                         $num++;
                         echo "<tr>
                         <td>".$num ."</td>
-                        <td><img src='__DIR__ /../../../build/img/".$valor['foto']."'></td>
+                        <td><img src='__DIR__ /../../../imagenes/".$valor['foto']."'></td>
                         <td>" .$valor['titulo']. "</td>
                         <td>" .$valor['fecha']. "</td>
                         <td>" .$valor['inicio']. "</td>

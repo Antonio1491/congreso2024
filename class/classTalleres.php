@@ -122,7 +122,7 @@ class Taller extends Conexion{
       $html.='
       <div class="contenedor__talleres--taller" id="resumen-taller-'.$res['id_taller'].'">
         <div class="overflow-hidden">
-          <img src="build/img/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
+          <img src="imagenes/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
         </div>
         <div class="contenido__taller">
           <div class="iconos__taller">

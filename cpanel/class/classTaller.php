@@ -53,12 +53,12 @@ class Taller extends Conexion{
         // unlink($_SERVER['DOCUMENT_ROOT']."/build/img/".$valor['foto']);
 
         //servidor local
-        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/build/img/".$valor['foto']);
+        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
 
       }
     }
 
-    public function actualizar($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id){
+    public function actualizarTaller($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id){
 
       $eliminarFoto = $this->eliminarFoto($id);
 
@@ -70,7 +70,7 @@ class Taller extends Conexion{
               inicio = '$inicio',
               fin = '$fin',
               capacidad = '$capacidad',
-              categoria = '$tipo,
+              categoria = '$tipo',
               foto = '$fotografia'
               WHERE id_taller = '$id'
               ";
@@ -94,6 +94,20 @@ class Taller extends Conexion{
 
 
     public function eliminar($id){
+
+      $sql = "SELECT foto FROM talleres WHERE id_taller = $id ";
+      $consulta = $this->conexion_db->query($sql);
+      $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+
+      foreach ($resultado as $valor) 
+      {
+        // unlink($_SERVER['DOCUMENT_ROOT']."/build/img/".$valor['foto']);
+
+        //servidor local
+        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
+
+      }
+
      $sql = $this->conexion_db->query("DELETE FROM talleres
     WHERE id_taller = $id ");
      return $sql;

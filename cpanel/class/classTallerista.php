@@ -55,8 +55,9 @@ class Tallerista extends Conexion{
       $consulta = $this->conexion_db->query($sql);
       $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
         foreach ($resultado as $valor) {
-        // unlink($_SERVER['DOCUMENT_ROOT']."/img/uploads/talleristas/".$valor['fotografia']);
-        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+        // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+        //local
+        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
 
         }
 
@@ -83,6 +84,17 @@ class Tallerista extends Conexion{
 
     // Eliminar tallerista
     public function eliminar($id){
+
+      $sql = "SELECT fotografia FROM talleristas WHERE id_tallerista = $id ";
+      $consulta = $this->conexion_db->query($sql);
+      $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+        foreach ($resultado as $valor) {
+        // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+        //local
+        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
+
+        }
+
       $sql = $this->conexion_db->query("DELETE FROM talleristas WHERE id_tallerista = $id ");
       return $sql;
 }

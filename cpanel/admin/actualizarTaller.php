@@ -36,16 +36,16 @@ if ($_FILES['fotografia']['name'] == "") {
 
 }
 else{
-  $actualizarTaller = $actualizar->actualizar($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id);
+  $actualizarTaller = $actualizar->actualizarTaller($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id);
 
-                  $extraerNombre = $_FILES['fotografia']['tmp_name'];
-                  // $destino= $_SERVER['DOCUMENT_ROOT'].'/build/img/' ;
-                  //servidor local
-                  $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/build/img/' ;
-                  echo move_uploaded_file($extraerNombre,$destino.$fotografia);
+    $extraerNombre = $_FILES['fotografia']['tmp_name'];
+    // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+    //servidor local
+    $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+    echo move_uploaded_file($extraerNombre,$destino.$fotografia);
 
-  $mensaje = "<script>window.history.go(-2);</script>";
-  echo $mensaje;
+    $mensaje = "<script>window.history.go(-2);</script>";
+    echo $mensaje;
 
 }
 
