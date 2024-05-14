@@ -39,9 +39,9 @@ else{
   $actualizarTaller = $actualizar->actualizarTaller($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id);
 
     $extraerNombre = $_FILES['fotografia']['tmp_name'];
-    // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+    $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
     //servidor local
-    $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+    // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
     echo move_uploaded_file($extraerNombre,$destino.$fotografia);
 
     $mensaje = "<script>window.history.go(-2);</script>";

@@ -260,10 +260,6 @@ class Conferencia extends Conexion{
           $resultado = $this->conexion_db->query($sql);
           $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
           echo json_encode($resultado_consulta);
-
-    
-
-
     }                  
 
     public function preguntaById($id_pregunta) {
@@ -422,12 +418,7 @@ class Conferencia extends Conexion{
     }
     
 
-
-
     public function filtrarPorNumeroDeTema($tema){
-
-
-      
       
       $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
       b.apellidos, b.pais, b.ciudad FROM conferencias AS a
@@ -520,15 +511,9 @@ class Conferencia extends Conexion{
         }
 
 
-      
-    
-
-
     }
 
     public function guardarPreguntasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario){
-
-    
 
       // $pregunta4 = !empty($v4) ? "'$v4'" : "NULL";
 
@@ -548,72 +533,56 @@ if ($valor == 'Excellent') {
   $id_valor_resp = "NULL";
 }
 
-
-
   $sql = "INSERT INTO calificar_propuestas VALUES
   (null,'$indice','$valor',$id_valor_resp,'$id_conferencia','$id_tema','$id_usuario')";
   $resultado = $this->conexion_db->query($sql);
 
-
-
 }
 return $resultado;
- 
 
-      
       // return $resultado;
 
     }
 
     public function actualizarRespuestasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario){
 
-    
-
       // $pregunta4 = !empty($v4) ? "'$v4'" : "NULL";
 
-  $sql1 = "DELETE FROM calificar_propuestas WHERE id_conferencia = '$id_conferencia' AND id_usuario='$id_usuario'";
-  $resultado1 = $this->conexion_db->query($sql1);
+      $sql1 = "DELETE FROM calificar_propuestas WHERE id_conferencia = '$id_conferencia' AND id_usuario='$id_usuario'";
+      $resultado1 = $this->conexion_db->query($sql1);
 
-  $sql4= 'SET @num := 0';
-  $resultado5 = $this->conexion_db->query($sql4);
+      $sql4= 'SET @num := 0';
+      $resultado5 = $this->conexion_db->query($sql4);
 
-  $sql2 ="  UPDATE calificar_propuestas SET id_calificacion = @num := (@num+1)";
-  $resultado2 = $this->conexion_db->query($sql2);
-  $sql3 ="ALTER TABLE calificar_propuestas AUTO_INCREMENT = 1";
-  $resultado3 = $this->conexion_db->query($sql3);
+      $sql2 ="  UPDATE calificar_propuestas SET id_calificacion = @num := (@num+1)";
+      $resultado2 = $this->conexion_db->query($sql2);
+      $sql3 ="ALTER TABLE calificar_propuestas AUTO_INCREMENT = 1";
+      $resultado3 = $this->conexion_db->query($sql3);
 
+      foreach($arreglo as $indice =>$valor){
+
+
+        if ($valor == 'Excellent') {
+          $id_valor_resp = "'1'";
+        } elseif ($valor == 'Very Good') {
+          $id_valor_resp = "'2'";
+        } elseif ($valor == 'Good') {
+          $id_valor_resp = "'3'";
+        }elseif($valor == 'Regular'){
+          $id_valor_resp = "'4'";
+        }elseif($valor == 'Bad'){
+          $id_valor_resp = "'5'";
+        }else{
+          $id_valor_resp = "NULL";
+        }
   
-  
-
-foreach($arreglo as $indice =>$valor){
-
-
-  if ($valor == 'Excellent') {
-    $id_valor_resp = "'1'";
-  } elseif ($valor == 'Very Good') {
-    $id_valor_resp = "'2'";
-  } elseif ($valor == 'Good') {
-    $id_valor_resp = "'3'";
-  }elseif($valor == 'Regular'){
-    $id_valor_resp = "'4'";
-  }elseif($valor == 'Bad'){
-    $id_valor_resp = "'5'";
-  }else{
-    $id_valor_resp = "NULL";
-  }
-  
-  $sql = "INSERT INTO calificar_propuestas VALUES
-  (null,'$indice','$valor',$id_valor_resp,'$id_conferencia','$id_tema','$id_usuario')";
-  $resultado = $this->conexion_db->query($sql);
-
-
+      $sql = "INSERT INTO calificar_propuestas VALUES
+      (null,'$indice','$valor',$id_valor_resp,'$id_conferencia','$id_tema','$id_usuario')";
+      $resultado = $this->conexion_db->query($sql);
 
 }
 return $resultado;
  
-
-      
-
     }
 
     
@@ -638,10 +607,6 @@ return $resultado;
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
 
-
-
-
-
       foreach($conferencias as $preguntas){
     
         $html.='<div id="'.$preguntas['id_pregunta'].'" class="column medium-12">
@@ -654,8 +619,6 @@ return $resultado;
 
       return $html;
 
-
-
     }
 
     public function preg($id){
@@ -667,10 +630,6 @@ return $resultado;
       ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
-
-
-
-
 
 
       foreach($conferencias as $preguntas){
@@ -756,11 +715,6 @@ return $resultado;
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-
-
-
-
-
       foreach($conferencias as $preguntas){
     
         $html.='<div id="'.$preguntas['id_pregunta'].'" class="column medium-12">
@@ -788,9 +742,6 @@ return $resultado;
       ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
-
-      
-
 
 
       foreach($conferencias as $preguntas){
@@ -877,11 +828,6 @@ return $resultado;
           
               }
 
-        
-
-
-        
-
         if (in_array($nombre,$id_cat_array)){
           $Marcado = ' checked="checked"';
       } else {
@@ -955,9 +901,6 @@ return $resultado;
     public function consultaInputContestados($id,$conferencia,$usuario){
       $html="";
 
-
-     
-
       $sql1 = "SELECT * FROM calificar_propuestas
       WHERE id_conferencia = '$conferencia' 
       AND id_usuario='$usuario'
@@ -1009,15 +952,11 @@ return $resultado;
       $html = '';
       $sql = "SELECT * FROM respuestas
       INNER JOIN valor_respuestas ON valor_respuestas.id_respuesta = respuestas.id_valor_respuesta
-      WHERE id_pregunta = '$id'"
-      
-      ;
+      WHERE id_pregunta = '$id'" ;
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-      
-
-      
+     
       foreach($conferencias as $respuestas =>$i){
         $resp = $i['valor_input'].'-'.$i['respuesta'];
 

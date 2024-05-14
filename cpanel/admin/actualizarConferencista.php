@@ -38,8 +38,8 @@ else{
 
   $extraerNombre = $_FILES['fotografia']['tmp_name'];
   //local
-  $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
-  // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+  // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+  $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
   echo move_uploaded_file($extraerNombre,$destino.$fotografia);
 
   $mensaje = "<script>window.history.go(-2);</script>";

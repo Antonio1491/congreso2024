@@ -19,9 +19,9 @@ $descripcion = addslashes($_POST['descripcion']);
 
 $fotografia = $_FILES['fotografia']['name'];
 $extraerNombre = $_FILES['fotografia']['tmp_name'];
-// $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+$destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
 // servidor local 
-$destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/';
+// $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/';
 $evento = $_POST['evento'];
 
 $insertar = new Taller();

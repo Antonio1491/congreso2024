@@ -31,7 +31,7 @@ $logo = json_decode($logo -> logoById($_SESSION['evento']));
     <!-- <li><a href="eventos.php"><i class="fi-ticket"></i> Eventos Sociales</a></li>-->
     <li><a href="programa.php"><i class="fi-calendar"></i> Programa</a></li>
     <!-- <li><a href="hoteles.php"><i class="fi-marker"></i> Hoteles</a></li>  -->
-    <li><a href="patrocinadores.php"><i class="fi-trophy"></i> Patrocinadores</a></li>
+    <!-- <li><a href="patrocinadores.php"><i class="fi-trophy"></i> Patrocinadores</a></li> -->
     <li><a href="voluntarios.php" ><i class="fi-torsos-all"></i> Voluntarios</a></li>
     <!-- <li><a href="agregarPreguntas.php"><i class="fi-results"></i>Añadir preguntas</a> -->
     <!-- <li><a href="boletos.php"><i class="fi-ticket"></i> Boletos del Evento</a></li> -->

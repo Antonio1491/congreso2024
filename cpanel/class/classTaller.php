@@ -8,12 +8,15 @@ class Taller extends Conexion{
     }
 
 
-    public function listaTalleres(){
-      $sql = "SELECT * FROM talleres ORDER BY id_taller DESC";
+    public function listaTalleres($evento){
+      $sql = "SELECT * FROM talleres 
+              WHERE id_evento = $evento
+              ORDER BY id_taller DESC";
       $resultado = $this->conexion_db->query($sql);
       $talleres = $resultado->fetch_all(MYSQLI_ASSOC);
       return $talleres;
     }
+    
     public function talleristas($id_congreso){
       $sql = "SELECT * FROM talleristas WHERE id_congreso = '$id_congreso' ";
       $resultado = $this->conexion_db->query($sql);
@@ -50,10 +53,10 @@ class Taller extends Conexion{
 
       foreach ($resultado as $valor) 
       {
-        // unlink($_SERVER['DOCUMENT_ROOT']."/build/img/".$valor['foto']);
+        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['foto']);
 
         //servidor local
-        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
+        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
 
       }
     }
@@ -101,10 +104,10 @@ class Taller extends Conexion{
 
       foreach ($resultado as $valor) 
       {
-        // unlink($_SERVER['DOCUMENT_ROOT']."/build/img/".$valor['foto']);
+        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['foto']);
 
         //servidor local
-        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
+        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
 
       }
 

@@ -55,9 +55,9 @@ class Tallerista extends Conexion{
       $consulta = $this->conexion_db->query($sql);
       $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
         foreach ($resultado as $valor) {
-        // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
         //local
-        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
+        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
 
         }
 
@@ -89,9 +89,9 @@ class Tallerista extends Conexion{
       $consulta = $this->conexion_db->query($sql);
       $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
         foreach ($resultado as $valor) {
-        // unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
+        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['fotografia']);
         //local
-        unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
+        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['fotografia']);
 
         }
 

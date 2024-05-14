@@ -28,9 +28,9 @@ $registro = $tallerista->registroTallerista($nombre, $apellidos, $cargo,
     if ($registro) {
 
       $extraerNombre = $_FILES['fotografia']['tmp_name'];
-      // $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
+      $destino= $_SERVER['DOCUMENT_ROOT'].'/imagenes/' ;
       //local
-      $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
+      // $destino= $_SERVER['DOCUMENT_ROOT'].'/congreso2024/imagenes/' ;
       move_uploaded_file($extraerNombre,$destino.$fotografia);
       $mensaje = header("Location:". getenv('HTTP_REFERER'));
 
