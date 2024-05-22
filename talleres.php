@@ -38,7 +38,7 @@
     <?php
       $talleres = new Taller();
 
-      $html = $talleres->htmlTalleresVivenciales();
+      $html = $talleres->htmlTalleresVivenciales(2);
         echo $html;    
       ?>
     </div>
@@ -63,7 +63,7 @@
     <?php
       $talleres = new Taller();
 
-      $html = $talleres->htmlTalleresCurrriculares();
+      $html = $talleres->htmlTalleresCurrriculares(2);
         echo $html;    
       ?>
     </div>

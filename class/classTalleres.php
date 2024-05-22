@@ -13,13 +13,13 @@ class Taller extends Conexion{
 
       foreach($resultado as $data){
 
-        $precios = '';
-        if($data['categoria'] == 'Vivencial'){
-          $precios = "<div class='text-center'>$750 MXN <br><h6><strike>$1220 Mxn</strike></h6><div>";
-        }else{
-          $precios = "<div class='text-center'>$980 MXN <br><h6><strike>$1500 Mxn</strike></h6><div>";
+        // $precios = '';
+        // if($data['categoria'] == 'Vivencial'){
+        //   $precios = "<div class='text-center'>$750 MXN <br><h6><strike>$1220 Mxn</strike></h6><div>";
+        // }else{
+        //   $precios = "<div class='text-center'>$980 MXN <br><h6><strike>$1500 Mxn</strike></h6><div>";
 
-        }
+        // }
 
         // setlocale(LC_ALL,"es_ES");
         $date=date_create($data['fecha']);
@@ -39,18 +39,15 @@ class Taller extends Conexion{
         <h2 class="subtituloPMin mb-2">'.$data['titulo'].'</h2>
         <h4 class="aprendiendo">'.$data['subtitulo'].'</h4>
         <div class="row text-center">
-        <img src="build/img/'.$data['foto'].'" alt="" class="mt-3 mb-5">
+        <img src="imagenes/'.$data['foto'].'" alt="" class="mt-3 mb-5">
         </div>
         
           <h5 class="subtituloPMin">Descripción</h5>
           <p>'.$data['descripcion'].'</p>
         </div>
       <div class="col-md-3 col-sm-12 cuadroAzul">
-          <h2 id="taller-'.$id_taller.'" class="text-center subtituloBMin">'.$precios.'</h2>
-          <div class="text-center">
-            <a class="btn btn__primary justify-content-center" href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx">
-            <i class="fi-shopping-cart"></i>Comprar ahora</a>
-          </div>
+          
+          
           
           <hr class="mt-4 mb-4">
           <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
@@ -103,8 +100,8 @@ class Taller extends Conexion{
             return $html;
 
     }
-  public function htmlTalleresVivenciales(){
-    $sql = "SELECT * FROM talleres WHERE categoria = 'Vivencial' ORDER BY fecha, inicio";
+  public function htmlTalleresVivenciales($evento){
+    $sql = "SELECT * FROM talleres WHERE categoria = 'Vivencial' AND id_evento = '$evento' ORDER BY fecha, inicio";
     $consulta = $this->conexion_db->query($sql);
     $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
 
@@ -157,8 +154,8 @@ class Taller extends Conexion{
     return $html;
   }
 
-  public function htmlTalleresCurrriculares(){
-    $sql = "SELECT * FROM talleres WHERE categoria = 'Master Class' ORDER BY fecha, inicio";
+  public function htmlTalleresCurrriculares($evento){
+    $sql = "SELECT * FROM talleres WHERE categoria = 'Master Class' AND id_evento = '$evento' ORDER BY fecha, inicio";
     $consulta = $this->conexion_db->query($sql);
     $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
 
@@ -177,7 +174,7 @@ class Taller extends Conexion{
      
       $html.='
       <div class="contenedor__talleres--taller">
-      <img src="build/img/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
+      <img src="imagenes/'.$res['foto'].'" alt="" class="img_fluid mb-2" width="100%">
   
           <div class="contenido__taller">
           <div class="iconos__taller">
