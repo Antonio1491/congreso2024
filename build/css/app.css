@@ -895,6 +895,92 @@ footer .subtitulo {
   font-family: "Montserrat Medium";
 }
 
+#ponentes .contenido_conferencista figcaption {
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  margin-top: 15px;
+}
+#ponentes .contenido_conferencista figcaption h3.nombre {
+  font-family: "Montserrat Bold";
+  color: #1d0c65;
+  font-size: 1rem;
+}
+#ponentes .contenido_conferencista figcaption h3 {
+  font-family: "Montserrat Regular";
+  margin: 0;
+}
+@media screen and (max-width: 500px) {
+  #ponentes .contenido_conferencista figcaption h3 {
+    height: 100%;
+    margin-top: 0;
+    float: left;
+  }
+}
+#ponentes .contenido_conferencista img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  box-shadow: 0px 0px 20px #d2d0d0;
+}
+@media screen and (max-width: 500px) {
+  #ponentes .contenido_conferencista img {
+    width: 20%;
+    height: auto;
+    float: left;
+    object-fit: cover;
+    /* // height: 120px; */
+  }
+}
+#ponentes .contenido_conferencista figcaption {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  #ponentes .contenido_conferencista figcaption {
+    flex-direction: column;
+    align-items: start;
+    padding: 10px 20px;
+  }
+}
+#ponentes .contenido_conferencista figcaption hr {
+  margin: -0.3rem 0.5em 0.3rem 0.5rem;
+  width: 70%;
+  color: #1d0c65;
+  height: 2px;
+}
+#ponentes .contenido_conferencista figcaption h4 {
+  font-size: 11.5px;
+  font-family: "Montserrat Bold";
+  text-transform: initial;
+  text-transform: uppercase;
+}
+#ponentes .contenido_conferencista figcaption h5 {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.6px;
+  font-family: "Montserrat Regular";
+}
+#ponentes .contenido_conferencista figcaption h3 {
+  font-size: 11px;
+  font-family: "Montserrat Medium";
+  color: #7f7f7f;
+  text-transform: initial;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+  #ponentes .contenido_conferencista figcaption h1, #ponentes .contenido_conferencista figcaption h2, #ponentes .contenido_conferencista figcaption h3 {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px) {
+  #ponentes .contenido_conferencista {
+    margin-bottom: 5px;
+  }
+}
+
 .seccionExperiencia {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1285,124 +1371,6 @@ footer .subtitulo {
 /* // @import "paginas/convocatoriaSesiones"; */
 /* // @import "paginas/propuestaRegistrada"; */
 /* // @import "paginas/comitePatrocinadores"; */
-#ponentes .imghr {
-  padding: 2em 0;
-}
-#ponentes h2 {
-  font-family: "Antonio Bold";
-  font-size: 12px;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .descripcion_principal {
-    margin-bottom: 20px;
-    text-align: center !important;
-  }
-}
-#ponentes .contenido_conferencista {
-  text-align: center;
-}
-#ponentes .contenido_conferencista figcaption {
-  text-transform: capitalize;
-}
-#ponentes .contenido_conferencista figcaption h1 {
-  font-family: "Montserrat Bold";
-  margin: 0;
-  color: #1d0c65;
-  font-size: 15px;
-  height: 50px;
-  margin-top: 1em;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista figcaption h1 {
-    height: 100%;
-    margin-top: 0;
-    float: left;
-  }
-}
-#ponentes .contenido_conferencista figcaption h3 {
-  font-family: "Montserrat Medium";
-  margin: 0;
-  color: #1d0c65;
-  font-size: 16px;
-  height: 50px;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista figcaption h3 {
-    height: auto;
-  }
-}
-#ponentes .contenido_conferencista figcaption h2 {
-  font-family: "Montserrat Regular";
-  font-size: 12px;
-  color: #4b4646;
-  text-transform: initial;
-  margin-top: -15px;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista figcaption h2 {
-    font-size: 12px;
-  }
-}
-#ponentes .contenido_conferencista img {
-  height: 200px;
-  width: 200px;
-  object-fit: cover;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista img {
-    width: 20%;
-    height: auto;
-    float: left;
-    object-fit: cover;
-    /* // height: 120px; */
-  }
-}
-#ponentes .contenido_conferencista figcaption {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista figcaption {
-    flex-direction: column;
-    align-items: start;
-    padding: 10px 20px;
-  }
-}
-#ponentes .contenido_conferencista figcaption hr {
-  margin: 0.5em;
-  width: 70%;
-}
-#ponentes .contenido_conferencista figcaption h4 {
-  font-size: 11px;
-  font-family: "Montserrat Bold";
-  text-transform: initial;
-  height: 40px;
-}
-#ponentes .contenido_conferencista figcaption h3 {
-  font-size: 11px;
-  font-family: "Montserrat Medium";
-  color: #7f7f7f;
-  text-transform: initial;
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista figcaption h1, #ponentes .contenido_conferencista figcaption h2, #ponentes .contenido_conferencista figcaption h3 {
-    text-align: left;
-  }
-}
-@media screen and (max-width: 500px) {
-  #ponentes .contenido_conferencista {
-    margin-bottom: 5px;
-  }
-}
-#ponentes a h1 {
-  color: #1d0c65;
-}
-#ponentes a h1:hover {
-  color: #ff00ff;
-}
-
 .actividad > img {
   height: 30px;
 }

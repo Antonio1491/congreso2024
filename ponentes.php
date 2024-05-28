@@ -36,15 +36,14 @@ $data = new Conferencistas();
                 {
                   echo "
                     <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-                      <img src='./imagenes/".$value['fotografia']."'>
+                      <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
                       <figcaption>
                         <a href='conferencista.php?id=".$value["id"]."'>
-                          <h1>".$value['nombres']." ".$value['apellido_paterno']."</h1>
+                          <h3 class='nombre'>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                         </a>
-                        <h2>".$value['cargo']."</h2>
-                        <h4>".$value['empresa']."</h4>
+                        <h4>".$value['cargo']."</h4>
                         <hr>
-                        <h3>".$value['ciudad'].", ".$value['pais']."</h3>
+                        <h5>".$value['empresa']."</h5>
                       </figcaption>
                     </figure>
                   ";
@@ -64,20 +63,19 @@ $data = new Conferencistas();
             </div> -->
             <div class="row mt-3">
               <?php 
-                $conferencistas = $data->sesionesEducativas(1);
+                $conferencistas = $data->sesionesEducativas(2);
                 foreach ($conferencistas as $value) 
                 {
                   echo "
                     <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-                      <img src='./imagenes/".$value['fotografia']."'>
+                      <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
                       <figcaption>
                         <a href='conferencista.php?id=".$value["id"]."'>
-                          <h1>".$value['nombres']." ".$value['apellido_paterno']."</h1>
+                          <h3 class='nombre'>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                         </a>
-                        <h2>".$value['cargo']."</h2>
-                        <h4>".$value['empresa']."</h4>
+                        <h4>".$value['cargo']."</h4>
                         <hr>
-                        <h3>".$value['ciudad'].", ".$value['pais']."</h3>
+                        <h5>".$value['empresa']."</h5>
                       </figcaption>
                     </figure>
                   ";
@@ -90,19 +88,19 @@ $data = new Conferencistas();
           <div class="container">
           <div class="row mt-3">
               <?php 
-                $talleristas = $data->talleristas(1);
+                $talleristas = $data->talleristas(2);
                 foreach ($talleristas as $value) 
                 {
                   echo "
                     <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-                      <img src='./imagenes/".$value['fotografia']."'>
+                      <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
                       <figcaption>
-                        <a href='conferencista.php?id=".$value["id_tallerista"]."'>
-                          <h1>".$value['nombre']." ".$value['apellidos']."</h1>
+                        <a href='conferencista.php?id=".$value["id"]."'>
+                          <h3 class='nombre'>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                         </a>
-                        <h2>".$value['cargo']."</h2>
-                        <h4>".$value['empresa']."</h4>
+                        <h4>".$value['cargo']."</h4>
                         <hr>
+                        <h5>".$value['empresa']."</h5>
                       </figcaption>
                     </figure>
                   ";

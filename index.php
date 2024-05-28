@@ -178,7 +178,8 @@
          <h3>¡Forma parte del Congreso Parques 2024!</h3>  -->
       </div>
     </div>
-    <div class="container d-flex justify-content-evenly">
+    <div class="container d-flex flex-wrap justify-content-evenly">
+    <!-- conferencista.php?id=".$value["id"]." -->
       <?php
         $data = new Conferencistas();
         $magistrales = $data->magistrales(1);
@@ -190,7 +191,7 @@
                 <img src='./imagenes/".$value['fotografia']."' style='' >
               </div>
               <figcaption >
-                <a href='conferencista.php?id=".$value["id"]."'>
+                <a href='#'>
                   <h3>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                 </a>
                 <h4>".$value['cargo']."</h4>
@@ -280,7 +281,7 @@
 
   <section class="seccionLegado pt-5 pb-5">
     <div class="container">
-      <div class="row text-center ">
+      <div class="row text-center mb-5">
         <h2 class="tituloP mb--md-5 mb-sm-2">Nuestro Legado</h2>
       </div>
       <div class="flex-sm-column d-md-flex flex-md-row justify-content-md-evenly">

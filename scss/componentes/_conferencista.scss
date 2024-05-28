@@ -54,3 +54,103 @@
     font-family: 'Montserrat Medium';
     }
   }
+
+
+//:::: Página de conferencistas/ponentes :::: 
+#ponentes{
+
+  // .descripcion_principal{
+  //   @media screen and (max-width: 500px){
+  //     margin-bottom: 20px;
+  //     text-align: center !important;
+  //   }
+  // }
+  .contenido_conferencista{
+    
+    figcaption{
+      text-transform: uppercase;
+      width: 200px;
+      text-align: center;
+      margin-top:15px;
+      
+      h3.nombre{
+        font-family: "Montserrat Bold";
+        color: $primaryColor;
+        font-size: 1rem;
+      }
+      h3{
+        font-family: "Montserrat Regular";
+        margin: 0;
+        @media screen and (max-width: 500px){
+          height: 100%;
+          margin-top: 0;
+          float: left;
+        }
+      }
+    }
+
+    img{
+      height: 200px;
+      width: 200px;
+      object-fit: cover;
+      box-shadow: 0px 0px 20px #d2d0d0;
+      // border: 3px solid $primaryColor ;
+      @media screen and (max-width: 500px){
+        width: 20%;
+        height: auto;
+        float: left;
+        object-fit: cover;
+        /* // height: 120px; */
+      }
+    }
+    figcaption{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      @media screen and (max-width: 500px){
+        flex-direction: column;
+        align-items:start;
+        padding: 10px 20px;
+        }
+      hr{
+        margin: -.3rem .5em .3rem .5rem;
+        width: 70%;
+        color: $primaryColor;
+        height: 2px ;
+      }
+      h4{
+        font-size: 11.5px;
+        font-family: "Montserrat Bold";
+        text-transform: initial;
+        // height: 40px;
+        text-transform: uppercase;
+      }
+      h5{
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 0.6px;
+        font-family: "Montserrat Regular";
+      }
+      h3{
+        font-size: 11px;
+        font-family: "Montserrat Medium";
+        color: #7f7f7f;
+        text-transform: initial;
+        text-transform: uppercase;
+
+      }
+     
+      h1, h2, h3{
+        @media screen and (max-width: 500px){
+          text-align: left;
+
+        }
+      }
+    }
+      @media screen and (max-width: 500px){
+        margin-bottom: 5px;
+      }
+  }
+
+}

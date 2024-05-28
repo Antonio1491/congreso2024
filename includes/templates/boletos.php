@@ -13,9 +13,9 @@
         </h4>
         <!-- <p class="text-center"><strong>*Precio para miembros activos de ANPR</strong></p> -->
         <div class="boleto-precio">
-        <sup>$</sup>2,300<span style="font-size:1rem;">MXN</span>
+        <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <sup>$</sup>2,970<span style="font-size:1rem;">MXN</span>
+            <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span>
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -44,9 +44,9 @@
         </h4>
         <!-- <p class="text-center"><strong>*Estudiantes de nivel licenciatura</strong></p> -->
         <div class="boleto-precio">
-          <sup>$</sup>1,950<span style="font-size:1rem;">MXN</span>
+          <sup>$</sup>2,260<span style="font-size:1rem;"> MXN</span>
           <div class="boleto_precio_final">
-            <sup>$</sup>2,530<span style="font-size:1rem;">MXN</span>
+            <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -76,9 +76,9 @@
         </h4>
         <!-- <p class="text-center"><strong>*Incluye prueba de Membresía ANPR</strong></p> -->
         <div class="boleto-precio">
-        <sup>$</sup>1,610<span style="font-size:1rem;">MXN</span>
+        <sup>$</sup>1,866<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <sup>$</sup>1,890<span style="font-size:1rem;">MXN</span>
+            <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span>
           </div>
         </div>
         <div class="boleto-descripcion">
