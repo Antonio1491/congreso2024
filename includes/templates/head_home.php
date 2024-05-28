@@ -17,7 +17,7 @@
   <meta property="og:title"              content="Congreso Parques Mérida 2024" />
   <meta name="og:site_propiedad"         content="Congreso Parques Mérida 2024">
   <meta property="og:description"        content="A specialized event of educational and experiential content, aimed at public space professionals and urban parks" />
-  <title>Congreso Parques Mérida 2024| Convocatoria Sesiones Educativas</title>
+  <title>Congreso Parques Mérida 2024</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="image/png" href="./build/img/favicon.png" />
   
@@ -51,17 +51,17 @@
             <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
           </ul>
         </li>
-        <!-- <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Actividades
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="programa.php">Programa</a></li>
+            <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
             <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
-            <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li>
-            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li>
+            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li> -->
+            <!-- <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li> -->
           </ul>
-        </li> -->
+        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Sede
@@ -72,7 +72,7 @@
             <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
           </ul>
         </li>
-        <li class="nav-item dropdown">
+        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Expo Espacio Público
           </a>
@@ -81,7 +81,7 @@
             <li><a class="dropdown-item" href="sesiones.php">Visitantes</a></li>
             <li><a class="dropdown-item" href="posters.php">Expositores</a></li>
           </ul>
-        </li>
+        </li> -->
         <!-- <li class="nav-item">
           <a href="expo_parques.php" class="nav-link">Expo Espacio Público</a>
         </li> -->
@@ -103,6 +103,8 @@
     </div>
   </div>
 </nav>
+
+
 <header class="header header_home">
   <!-- <img src="build/img/logo_semana.png" alt="" class="logo_arquitectura"> -->
   <div class="d-flex justify-content-evenly align-items-center p-sm-4">

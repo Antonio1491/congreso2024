@@ -1,5 +1,6 @@
 <?php
   require 'includes/templates/head_home.php';
+  require 'class/clases.php';
 ?>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -55,45 +56,45 @@
   z-index: 1005; }
 </style>
 
-<!--::::: contador del evento :::::-->
-<div class="container-fluid contador">
-  <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=+529993530691&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
-    <img src="build/img/whatsapp.png" alt="">
-  </a>
-  <div class="container">
-    <div class="reloj">
-      <div class="tabla_contador">
-        <div class="fila ">
-          <div class="col">Días</div>
-          <div class="col">Horas</div>
-          <div class="col">Minutos</div>
-          <div class="col">Segundos</div>
-        </div>
-        <div class="fila" id='contador'>
+  <!--::::: contador del evento :::::-->
+  <div class="container-fluid contador">
+    <a id="app-whatsapp" target="_blanck" href="https://api.whatsapp.com/send?phone=+529993530691&amp;text=Hola!&nbsp;me&nbsp;pueden&nbsp;apoyar?">
+      <img src="build/img/whatsapp.png" alt="">
+    </a>
+    <div class="container">
+      <div class="reloj">
+        <div class="tabla_contador">
+          <div class="fila ">
+            <div class="col">Días</div>
+            <div class="col">Horas</div>
+            <div class="col">Minutos</div>
+            <div class="col">Segundos</div>
+          </div>
+          <div class="fila" id='contador'>
+          </div>
         </div>
       </div>
+      <a id="app-messenger" target="_blank" href="https://m.me/CongresoParques">
+        <img src="build/img/messenger.png" alt="">
+      </a>
     </div>
-    <a id="app-messenger" target="_blank" href="https://m.me/CongresoParques">
-      <img src="build/img/messenger.png" alt="">
-    </a>
   </div>
-</div>
 
 <!--:::::: anuncios en popup
 
 <div id="popup" >
-    <div class="content-popup">
-      <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
-        <div>
-          
-             <a href="https://www.ticketopolis.com/worldurbanparkscongress2022/tickets.aspx" target="_blank"> 
-                <img id="img-popup" src="build/img/inscripcion4.png" alt="">
-            </a>  
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-    </div>
+  <div class="content-popup">
+    <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
+      <div>
+        
+            <a href="https://www.ticketopolis.com/worldurbanparkscongress2022/tickets.aspx" target="_blank"> 
+              <img id="img-popup" src="build/img/inscripcion4.png" alt="">
+          </a>  
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
   </div>
-  :::::: fin popup ::::::
+</div>
+:::::: fin popup ::::::
 
   <div class="popup-overlay"></div> -->
 
@@ -119,7 +120,8 @@
       </div>
     </div>
   </section> -->
-
+  
+  <!--:::: Experiencia  ::::-->
   <section class="seccionExperiencia container-fluid">
     <div class="container">
       <div class="contenedor_items_experiencia">
@@ -165,51 +167,74 @@
       </div>
     </div>
   </section>
+  <!--:::: End Experiencia  ::::-->
+
+  <!--:::: Magistrales ::::-->
   <section class="seccion_conferencista primaryBg container-fluid">
-  
     <div class="container">
-      <div class="row text-center mb-4">
-       <!-- <h1>Conferencistas Magistrales</h1> -->
-        <h2>convocatoria abierta</h2> 
-         <h3>¡Forma parte del Congreso Parques 2024!</h3> 
+      <div class="row text-center mb-5">
+       <h2>Conferencistas Magistrales</h2>
+        <!-- <h2>convocatoria abierta</h2> 
+         <h3>¡Forma parte del Congreso Parques 2024!</h3>  -->
       </div>
     </div>
-    <div class="container">
-      <div class="row slider_conferencistas justify-content-center">
+    <div class="container d-flex justify-content-evenly">
+      <?php
+        $data = new Conferencistas();
+        $magistrales = $data->magistrales(1);
+        foreach ($magistrales as $value) 
+        {
+          echo "
+            <figure class='conferencista'>
+              <div class=' overflow-hidden rounded-circle' style=''>
+                <img src='./imagenes/".$value['fotografia']."' style='' >
+              </div>
+              <figcaption >
+                <a href='conferencista.php?id=".$value["id"]."'>
+                  <h3>".$value['nombres']." ".$value['apellido_paterno']."</h3>
+                </a>
+                <h4>".$value['cargo']."</h4>
+              </figcaption>
+            </figure>
+          ";
+        }
+      ?>
+      <!-- <div class="row slider_conferencistas justify-content-center">
         <div class="col-md-2 text-center conferencista d-sm-block d-none">
           <img src="./build/img/perfil_hombre.png" alt="" class="img_200">
           <h5>Conferencista</h5>
-          <!-- <h6>EMPRESA</h6> -->
-          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
+          <h6>EMPRESA</h6>
+          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
         </div>
         <div class="col-md-2 text-center conferencista d-sm-block d-none">
           <img src="./build/img/perfil_mujer.png" alt="" class="img_200">
           <h5>Conferencista</h5>
-          <!-- <h6>EMPRESA</h6> -->
-          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
+          <h6>EMPRESA</h6>
+          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
         </div>
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_hombre.png" alt="" class="img_200">
           <h5>Conferencista</h5>
-          <!-- <h6>EMPRESA</h6> -->
-          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
+          <h6>EMPRESA</h6>
+          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
         </div>
         <div class="col-md-2 text-center conferencista">
           <img src="./build/img/perfil_mujer.png" alt="" class="img_200">
           <h5>Conferencista</h5>
-          <!-- <h6>EMPRESA</h6> -->
-          <!-- <h6 class="conferencista__cargo">CIUDAD, PAIS</h6> -->
+          <h6>EMPRESA</h6>
+          <h6 class="conferencista__cargo">CIUDAD, PAIS</h6>
         </div>
         </div>
-    </div>
-    <div class="row text-center mt-5">
-      <div class="cta">
+      </div> -->
+      <!-- <div class="row text-center mt-5">
+        <div class="cta">
         <a href="./sesiones.php" class="btn btn__primary">Consulta las bases</a>
-      </div>
+      </div> -->
     </div> 
   </section>
-  <section class="seccionOrganizado pt-5 pb-5 container-fluid
-  ">
+
+  <!--:::: Logotipos Organizadores ::::-->
+  <section class="seccionOrganizado pt-5 pb-5 container-fluid">
     <div class="container">
       <div class="row text-center">
         <h2 class="tituloP mb-5">Organizado por:</h2>
@@ -244,12 +269,12 @@
           <div class="col">
             <img src="./build/img/patrocinador-2.png" alt="" class="" style="width: 18rem;">
           </div>
-          
       </div>
             -->
       <hr>
     </div>
   </section>
+  <!--:::: End logotipos ::::-->
 
   <?php include 'includes/templates/boletos.php'; ?>
 
@@ -292,6 +317,8 @@
       </div>
     </div>
   </section>
+
+  <!--:::: Ubicación ::::-->
   <section class="primaryBg container-fluid" id="seccionMapa">
     <div class="row align-items-center">
       <div class="col-sm-12 col-md-4 text-center py-5 ">
@@ -309,6 +336,7 @@
       </div>
     </div>
   </section>
+  <!--:::: End Ubicación ::::-->
 
 <body>
   

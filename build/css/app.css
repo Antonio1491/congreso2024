@@ -1,3 +1,4 @@
+/* //========= Colores generales ======== // */
 .verde {
   color: #d2dd0a;
 }
@@ -27,6 +28,7 @@
   font-family: "Montserrat Bold";
 }
 
+/* //=========== Fuentes ===========// */
 @font-face {
   font-family: "Antonio Bold";
   src: url("../fonts/Antonio-Bold.ttf");
@@ -47,6 +49,7 @@
   src: url("../fonts/Montserrat-Medium_0.ttf");
   font-display: swap;
 }
+/* // Media Queries */
 span, dt {
   color: #1d0c65;
   font-weight: bold;
@@ -204,8 +207,7 @@ a {
 }
 .btn__register {
   border: 3px solid transparent;
-  -o-border-image: linear-gradient(to left, #c00ab3 0%, #2837d2 100%) 1;
-     border-image: linear-gradient(to left, #c00ab3 0%, #2837d2 100%) 1;
+  border-image: linear-gradient(to left, #c00ab3 0%, #2837d2 100%) 1;
 }
 .btn:active {
   top: 2px;
@@ -274,6 +276,7 @@ a {
   color: #0084ff;
 }
 
+/* // @import "base/responsive"; */
 .header {
   display: flex;
   flex-direction: column;
@@ -741,6 +744,14 @@ footer .subtitulo {
   width: 150px;
 }
 
+/* // @import "componentes/headerRegistro"; */
+/* // @import "componentes/headerPaginas"; */
+/* // @import "componentes/login"; */
+/* // @import "componentes/menuCpanel"; */
+/* // @import "componentes/tablaResultados"; */
+/* // @import "componentes/headerCongreso"; */
+/* // @import "componentes/magistrales"; */
+/* // @import "componentes/sliderEjes"; */
 #seccion_mapa {
   overflow: hidden;
   margin: 0;
@@ -780,6 +791,9 @@ footer .subtitulo {
   position: static;
 }
 
+/* // @import "componentes/numeralia"; */
+/* // @import "componentes/boletos"; */
+/* // @import "componentes/cintaPatrocinadores"; */
 .contador {
   background: linear-gradient(45deg, rgb(192, 10, 179) 0%, rgb(40, 55, 210) 100%);
   height: 14vh;
@@ -846,32 +860,39 @@ footer .subtitulo {
 .seccion_conferencista h2 {
   font-family: "Montserrat Bold";
   text-transform: uppercase;
-  color: #ff00ff;
+  /* color: $primaryColor; */
 }
 
-.conferencista__cargo {
-  font-weight: bold;
-  font-size: 0.6rem !important;
-  color: #00dfbf;
+.conferencista figcaption {
+  margin-top: 15px;
+  width: 180px;
+  text-align: center;
+}
+.conferencista div {
+  box-shadow: 0px 0px 30px #070025;
+  border: 5px solid #64c9fc;
 }
 .conferencista img {
-  margin-bottom: 30px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  transition: ease-in-out 0.2s;
 }
-.conferencista h5 {
+.conferencista img:hover {
+  filter: opacity(0.5);
+}
+.conferencista h3 {
   text-transform: uppercase;
   font-family: "Montserrat Bold";
-  margin-bottom: 0px;
-  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  color: #d2dd0a;
 }
-.conferencista h6 {
+.conferencista h4 {
   text-transform: uppercase;
-  font-size: 0.8rem;
-  margin-bottom: 2px;
-}
-.conferencista span {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-family: "Montserrat Bold";
+  font-size: 0.6rem;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat Medium";
 }
 
 .seccionExperiencia {
@@ -938,6 +959,15 @@ footer .subtitulo {
   font-size: 0.7rem;
 }
 
+/* // @import "componentes/eventos"; */
+/* // @import "componentes/formularioBoletin"; */
+/* // @import "componentes/popup"; */
+/* // @import "componentes/resumen"; */
+/* // @import "componentes/tablaResultados"; */
+/* // @import "componentes/tableroFechas"; */
+/* // @import "componentes/traductor"; */
+/* // @import "componentes/chat"; */
+/* // @import "componentes/botonScroll"; */
 .entradas {
   margin-bottom: 2em;
 }
@@ -1008,7 +1038,6 @@ footer .subtitulo {
 }
 @media screen and (max-width: 500px) {
   .talleres__vivenciales .descripcion {
-    height: -moz-max-content;
     height: max-content;
   }
 }
@@ -1077,8 +1106,7 @@ footer .subtitulo {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  -moz-column-gap: 3rem;
-       column-gap: 3rem;
+  column-gap: 3rem;
 }
 .talleres .contenedor__talleres--taller {
   border: 1px #d8d2d2 solid;
@@ -1247,6 +1275,16 @@ footer .subtitulo {
   font-weight: bold;
 }
 
+/* // @import "componentes/preguntas"; */
+/* // @import "componentes/card_hover"; */
+/* // @import "componentes/mmenu"; */
+/* // @import "componentes/textoPrincipal"; */
+/* // @import "componentes/menu_responsive"; */
+/* // @import "paginas/convocatorias"; */
+/* // @import "paginas/congresoParques"; */
+/* // @import "paginas/convocatoriaSesiones"; */
+/* // @import "paginas/propuestaRegistrada"; */
+/* // @import "paginas/comitePatrocinadores"; */
 #ponentes .imghr {
   padding: 2em 0;
 }
@@ -1308,16 +1346,15 @@ footer .subtitulo {
 #ponentes .contenido_conferencista img {
   height: 200px;
   width: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 500px) {
   #ponentes .contenido_conferencista img {
     width: 20%;
     height: auto;
     float: left;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
+    /* // height: 120px; */
   }
 }
 #ponentes .contenido_conferencista figcaption {
@@ -1651,10 +1688,17 @@ section .datosConferencia {
   color: #006868;
 }
 
-.detalles_evento {
-  color: white;
-}
-.detalles_evento span {
-  font-weight: bold;
-  color: #d2dd0a;
-}/*# sourceMappingURL=app.css.map */
+/* // @import "paginas/magistrales"; */
+/* // @import "paginas/ejes"; */
+/* // @import "paginas/patrocinadores"; */
+/* // @import "paginas/inscripcion"; */
+/* // @import "paginas/expoParques"; */
+/* // @import "paginas/hoteles"; */
+/* // @import "paginas/hospedaje"; */
+/* // @import "paginas/covid"; */
+/* // @import "paginas/conectividad"; */
+/* // @import "paginas/sede"; */
+/* // @import "paginas/acerca_de"; */
+/* @import "paginas/eventos"; */
+/* // @import "paginas/prices"; */
+/* // @import "paginas/index"; */

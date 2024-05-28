@@ -2,7 +2,6 @@
   {
     padding-top: 60px;
     padding-bottom: 60px;
-    
     h1{
     font-family: 'Antonio Bold';
     text-transform: uppercase;
@@ -10,33 +9,48 @@
     h2{
       font-family: 'Montserrat Bold';
       text-transform: uppercase;
-      color: $complementaryColor2;
+      /* color: $primaryColor; */
       }
   }
+
   .conferencista{
-    &__cargo{
-      font-weight: bold;
-      font-size: .6rem !important;
-      color: $complementaryColor3;
+    figcaption{
+    margin-top: 15px;
+    width:180px;
+    text-align: center;
     }
-  img{
-    margin-bottom: 30px;
+    div{
+      // width:180px; 
+      // height:180px;
+      box-shadow: 0px 0px 30px #070025;
+      border: 5px solid $complementaryColor1;
     }
-  h5{
+    // &__cargo{
+    //   font-weight: bold;
+    //   font-size: .6rem !important;
+    //   color: $complementaryColor3; 
+    // }
+    img{
+      width:180px; 
+      height:180px; 
+      object-fit:cover; 
+      transition: ease-in-out .2s;
+      
+      &:hover{
+        filter: opacity(0.5);
+      }
+    }
+    h3{
     text-transform: uppercase;
     font-family: 'Montserrat Bold';
-    margin-bottom: 0px;
-    font-size: 1.1rem;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: $secondaryColor;
     }
-  h6{
+    h4{
     text-transform: uppercase;
-    font-size: 0.8rem;
-    margin-bottom: 2px;
-    }
-  span{
-    text-transform: uppercase;
-    font-size: 0.7rem;
-    font-family: 'Montserrat Bold';
-    
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+    font-family: 'Montserrat Medium';
     }
   }
