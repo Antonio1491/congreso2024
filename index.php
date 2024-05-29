@@ -182,7 +182,7 @@
     <!-- conferencista.php?id=".$value["id"]." -->
       <?php
         $data = new Conferencistas();
-        $magistrales = $data->magistrales(1);
+        $magistrales = $data->magistrales(2);
         foreach ($magistrales as $value) 
         {
           echo "
@@ -191,10 +191,12 @@
                 <img src='./imagenes/".$value['fotografia']."' style='' >
               </div>
               <figcaption >
-                <a href='#'>
+                <a href='conferencista.php?id=".$value["id_usuario"]."'>
                   <h3>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                 </a>
                 <h4>".$value['cargo']."</h4>
+                <hr>
+                <h5>".$value['empresa']."</h5>
               </figcaption>
             </figure>
           ";

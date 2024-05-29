@@ -26,25 +26,23 @@ $datos = new Programa();
 
         $conferencista = $datos->conferencistaImparte($idConferencista);
         foreach($conferencista as $valor) {
-          echo"<div class='text-center'>
-                <img src='./imagenes/".$valor['fotografia']."'>
+          echo"<div class='row inf_conferencista'>
+                  <div class='col-sm-12 col-md-3 text-center'>
+                    <img src='./imagenes/".$valor['fotografia']."' class='rounded-circle'>
+                  </div>
+                  <div class='col-sm-12 col-md-9'>
+                    <h4>".$valor['nombres']." ".$valor['apellido_paterno']." ".$valor['apellido_materno']."</h4>
+                    <h6>".$valor['cargo']." </h6>
+                    <h6>".$valor['empresa']."</h6>
+                    <h6>".$valor['ciudad'].", ".$valor['pais']."</h6>
+                  </div>
                 </div>
-                <div class='derecha detalles-conferencistas'>
-                <section>
-                <h4>".$valor['nombres']." ".$valor['apellido_paterno']." ".$valor['apellido_materno']."</h4>
-                <h5>Position: ".$valor['cargo']." </h5>
-                <h6>Company: ".$valor['empresa']."</h6>
-                <h6>Location: ".$valor['ciudad'].", ".$valor['pais']."</h6>
-                </section>
-                </div>";
-          
-           echo"
-
-                <div class='col-sm-12 col-md-12 mt-4'>
-                  <h5 class='semblanza'>Biografía:</h5>
-                  <p>".$valor['biografia']."</p>
-                   
-                </div>";
+                <div class='row inf_conferencista'>
+                  <div class='col-sm-12 col-md-12 mt-4'>
+                    <h4>Biografía:</h4>
+                    <p class=''>".$valor['biografia']."</p>
+                  </div>
+                </div>";            
         }
 
        ?>

@@ -862,6 +862,10 @@ footer .subtitulo {
   text-transform: uppercase;
   /* color: $primaryColor; */
 }
+.seccion_conferencista hr {
+  color: #9dcd0a;
+  margin: 0px 0px 5px;
+}
 
 .conferencista figcaption {
   margin-top: 15px;
@@ -870,7 +874,6 @@ footer .subtitulo {
 }
 .conferencista div {
   box-shadow: 0px 0px 30px #070025;
-  border: 5px solid #64c9fc;
 }
 .conferencista img {
   width: 180px;
@@ -885,14 +888,20 @@ footer .subtitulo {
   text-transform: uppercase;
   font-family: "Montserrat Bold";
   margin-bottom: 5px;
-  font-size: 0.9rem;
+  font-size: 15px;
   color: #d2dd0a;
 }
 .conferencista h4 {
   text-transform: uppercase;
-  font-size: 0.6rem;
+  font-size: 12px;
   letter-spacing: 0.5px;
   font-family: "Montserrat Medium";
+}
+.conferencista h5 {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-family: "Montserrat Regular";
 }
 
 #ponentes .contenido_conferencista figcaption {
@@ -979,6 +988,27 @@ footer .subtitulo {
   #ponentes .contenido_conferencista {
     margin-bottom: 5px;
   }
+}
+
+.inf_conferencista img {
+  height: 300px;
+  margin: 0 auto;
+}
+.inf_conferencista h4, .inf_conferencista h6 {
+  text-transform: uppercase;
+}
+.inf_conferencista h4 {
+  color: #1d0c65;
+  font-family: "Montserrat Bold";
+  font-size: 1.2rem;
+}
+.inf_conferencista h6 {
+  color: #1d0c65;
+  font-family: "Montserrat Medium";
+  font-size: 0.9rem;
+}
+.inf_conferencista p {
+  text-align: justify;
 }
 
 .seccionExperiencia {

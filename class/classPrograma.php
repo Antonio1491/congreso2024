@@ -275,15 +275,21 @@ return $element;
       return $listaBloque;
   }
 
-  public function conferencistaImparte($idConferencia){
+  // Mostrar la información individual del conferencista 
+  public function conferencistaImparte($idUsuario){
     $sql = "SELECT * FROM usuarios_ponencias as up
     LEFT JOIN usuarios as u ON up.id_usuario = u.id
-    WHERE up.id_ponencia = '$idConferencia'";
+    WHERE u.id = '$idUsuario'";
     $consulta = $this->conexion_db->query($sql);
     $arrayConferencistas = $consulta->fetch_all(MYSQLI_ASSOC);
 
-      return $arrayConferencistas;
+    return $arrayConferencistas;
   }
+
+  public function ConferenciaByUsuario($id_usuario){
+
+  }
+
   public function datosConferencista($idConferencista){
     $sql = "SELECT * FROM conferencistas WHERE id_usuario = $idConferencista";
     $consulta = $this->conexion_db->query($sql);

@@ -31,14 +31,14 @@ $data = new Conferencistas();
           <div class="container">
             <div class="row mt-3">
               <?php 
-                $magistrales = $data->magistrales(1);
+                $magistrales = $data->magistrales(2);
                 foreach ($magistrales as $value) 
                 {
                   echo "
                     <figure class='col-sm-12 col-md-3 contenido_conferencista'>
                       <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
                       <figcaption>
-                        <a href='conferencista.php?id=".$value["id"]."'>
+                        <a href='conferencista.php?id=".$value["id_usuario"]."'>
                           <h3 class='nombre'>".$value['nombres']." ".$value['apellido_paterno']."</h3>
                         </a>
                         <h4>".$value['cargo']."</h4>
