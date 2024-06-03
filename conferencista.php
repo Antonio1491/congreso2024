@@ -26,23 +26,28 @@ $datos = new Programa();
 
         $conferencista = $datos->conferencistaImparte($idConferencista);
         foreach($conferencista as $valor) {
-          echo"<div class='row inf_conferencista'>
+          echo"<section class='border border-secondary-subtle mt-4 p-4'>
+                <div class='row inf_conferencista pb-3'>
                   <div class='col-sm-12 col-md-3 text-center'>
                     <img src='./imagenes/".$valor['fotografia']."' class='rounded-circle'>
                   </div>
-                  <div class='col-sm-12 col-md-9'>
-                    <h4>".$valor['nombres']." ".$valor['apellido_paterno']." ".$valor['apellido_materno']."</h4>
-                    <h6>".$valor['cargo']." </h6>
-                    <h6>".$valor['empresa']."</h6>
-                    <h6>".$valor['ciudad'].", ".$valor['pais']."</h6>
+                  <div class='col-sm-12 col-md-9 d-flex align-items-center'>
+                    <div>
+                      <h4>".$valor['nombres']." ".$valor['apellido_paterno']." ".$valor['apellido_materno']."</h4>
+                      <h6>".$valor['cargo']." </h6>
+                      <h6>".$valor['empresa']."</h6>
+                      <h6>".$valor['ciudad'].", ".$valor['pais']."</h6>
+                    </div>
                   </div>
                 </div>
+                <hr>
                 <div class='row inf_conferencista'>
-                  <div class='col-sm-12 col-md-12 mt-4'>
+                  <div class='col-sm-12 col-md-12 mt-3'>
                     <h4>Biografía:</h4>
                     <p class=''>".$valor['biografia']."</p>
                   </div>
-                </div>";            
+                </div>
+              </section>";            
         }
 
        ?>

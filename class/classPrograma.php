@@ -286,9 +286,7 @@ return $element;
     return $arrayConferencistas;
   }
 
-  public function ConferenciaByUsuario($id_usuario){
 
-  }
 
   public function datosConferencista($idConferencista){
     $sql = "SELECT * FROM conferencistas WHERE id_usuario = $idConferencista";

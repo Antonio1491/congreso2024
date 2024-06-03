@@ -991,7 +991,8 @@ footer .subtitulo {
 }
 
 .inf_conferencista img {
-  height: 300px;
+  height: 200px;
+  width: 200px;
   margin: 0 auto;
 }
 .inf_conferencista h4, .inf_conferencista h6 {
