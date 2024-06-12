@@ -281,6 +281,7 @@
 
   <?php include 'includes/templates/boletos.php'; ?>
 
+  <!--:::: Legado :::: -->
   <section class="seccionLegado pt-5 pb-5">
     <div class="container">
       <div class="row text-center mb-5">
@@ -320,6 +321,7 @@
       </div>
     </div>
   </section>
+  <!-- :::: End legado :::: -->
 
   <!--:::: Ubicación ::::-->
   <section class="primaryBg container-fluid" id="seccionMapa">
@@ -340,6 +342,37 @@
     </div>
   </section>
   <!--:::: End Ubicación ::::-->
+
+    <!-- :::: Eventos Anteriores Videos ::::  -->
+    <section class="eventos_anteriores hide-for-small-only container seccionOrganizado pt-5 pb-5 container-fluid">
+      <div class="row">
+        <h3 class="titulo_secciones_aqua tituloP mb--md-5 mb-sm-2">Eventos Anteriores</h3>
+      </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <div class="videos_eventos container eventos_anteriores hide-for-small-only seccionOrganizado pt-5 pb-5 container-fluid">
+      <div class="carousel">
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/kOJ5Qm3vLHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/-IVXzEncjfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/ZwH7OSGZxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/x_oSKftOUhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/Rov_ecOfY34?si=0W8NnBcQ7-w9XxO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/Le980lW1rGE?si=--pfQ6nKV2JQnEo5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- :::: End Eventos Anteriores Videos ::::  -->
 
 <body>
   
@@ -427,6 +460,27 @@ if(contenedorFondo){
       return false;
     });
   });
+
+  // Slider videos anteriores 
+  $(document).ready(function() {
+      var docWidth = $('body').width(),
+          $carousel = $('.carousel'),
+          $items = $('.item_videos_eventos'),
+          totalWidth = $items.length * ($items.outerWidth(true));
+
+      $(window).on('resize', function() {
+        docWidth = $('body').width();
+      });
+
+      $(document).mousemove(function(e) {
+        var mouseX = e.pageX,
+            offset = mouseX / docWidth * totalWidth - mouseX / 2;
+        
+        $carousel.css({
+          'transform': 'translate3d(' + -offset + 'px, 0, 0)'
+        });
+      });
+    });
   </script>
 
    

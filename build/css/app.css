@@ -1068,6 +1068,28 @@ footer .subtitulo {
   position: relative;
 }
 
+.videos_eventos {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.videos_eventos {
+  width: 1260px;
+}
+
+.item_videos_eventos {
+  flex: 0 0 auto;
+  margin: 0 10px;
+}
+
 .seccionLegado img {
   height: 80px;
   margin-bottom: 30px;
@@ -1078,7 +1100,60 @@ footer .subtitulo {
 
 /* // @import "componentes/eventos"; */
 /* // @import "componentes/formularioBoletin"; */
-/* // @import "componentes/popup"; */
+#popup {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1001;
+  -moz-z-index: 1001;
+  -webkit-z-index: 1001;
+}
+
+.content-popup {
+  margin: 0px auto;
+  margin-top: 100px;
+  position: relative;
+  padding: 5px;
+  max-width: 520px;
+  min-height: 250px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0 2px 5px #666666;
+  box-shadow: 0 2px 10px #666666;
+}
+@media screen and (max-width: 500px) {
+  .content-popup {
+    width: 80vw;
+  }
+}
+
+.content-popup h2 {
+  color: #48484B;
+  border-bottom: 1px solid #48484B;
+  margin-top: 0;
+  padding-bottom: 4px;
+}
+
+.popup-overlay {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  background-color: #777777;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.close #close {
+  position: absolute;
+  right: 15px;
+  color: #DE2C74;
+  z-index: 1005;
+}
+
 /* // @import "componentes/resumen"; */
 /* // @import "componentes/tablaResultados"; */
 /* // @import "componentes/tableroFechas"; */

@@ -5,3 +5,26 @@
   z-index: 10;
   position: relative;
 }
+
+//sección eventos anteriores
+
+    .videos_eventos {
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .videos_eventos {
+      width: 1260px;
+    }
+    .item_videos_eventos {
+      flex: 0 0 auto;
+      margin: 0 10px;
+    }
