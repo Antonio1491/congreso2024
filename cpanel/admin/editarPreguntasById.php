@@ -80,73 +80,58 @@ $id_pregunta = $_GET['id_pregunta'];
 </div>
 
 <script>
-
-
-
-
 const peticion = async () =>{
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const params = Object.fromEntries(urlSearchParams.entries());
-        const data = new FormData();
-        data.append('id_pregunta', params.id_pregunta);
-        let pregunta  = document.getElementById('pregunta');
-        let tipo = document.getElementById('tipo');
-        let area = document.getElementById('area');
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  const data = new FormData();
+  data.append('id_pregunta', params.id_pregunta);
+  let pregunta  = document.getElementById('pregunta');
+  let tipo = document.getElementById('tipo');
+  let area = document.getElementById('area');
     
-    const pet = await fetch('../class/preguntaById.php',{
-    method: 'POST',
-    body: data
-});
+  const pet = await fetch('../class/preguntaById.php',{
+  method: 'POST',
+  body: data
+  });
 
-const respuesta = await pet.json();
+  const respuesta = await pet.json();
 
-for(datos of respuesta){
+  for(datos of respuesta)
+  {  
     pregunta.value = datos.pregunta;
     
     if(datos.tipo == '1'){
         tipo.value = '1'
     }else{
         tipo.value = '2'
-
     }
 
     area.value = datos.area_calificar;
-    
+  }
 }
 
-
-}
 let cuerpotabla = document.getElementById('cuerpoTabla');
+let formulario = document.getElementById('form');
 
-    
+formulario.addEventListener('submit', function(e){
+  e.preventDefault();
 
-    let formulario = document.getElementById('form');
+  let pregunta = document.getElementById('pregunta');
+  let tipo = document.getElementById('tipo');
+  let area = document.getElementById('area');
 
-    formulario.addEventListener('submit', function(e){
-      e.preventDefault();
+  if(pregunta.value == ""|| area.value == "" || tipo.value=="nulo"){
 
-      let pregunta = document.getElementById('pregunta');
-      let tipo = document.getElementById('tipo');
-      let area = document.getElementById('area');
-
-
-      if(pregunta.value == ""|| area.value == "" || tipo.value=="nulo"){
-
-        Swal.fire(
-            'Completa todos los campos',
-            'Antes de continuar necesitas llenar todos los campos',
-            'warning'
-                )
-      }else{
-        formulario.submit();
-        
-        
-      }
-
-
-    });
-
-
+    Swal.fire(
+        'Completa todos los campos',
+        'Antes de continuar necesitas llenar todos los campos',
+        'warning'
+            )
+  }else{
+    formulario.submit();
+  }
+});
     
     peticion();
 </script>

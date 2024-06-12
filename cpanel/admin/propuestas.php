@@ -1,7 +1,7 @@
 <?php session_start();
 include('../class/funciones.php');
 $propuestas = new Propuesta();
-// var_dump($_SESSION["evento"]);
+// var_dump($_SESSION["usuario"]);
 
 ?>
 <!DOCTYPE html>

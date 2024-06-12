@@ -25,9 +25,6 @@ $usuario =  $_SESSION['idCredencial'];
       <?php include("inc/menuEvento.php") ?>
       </div>
       <section class="column medium-10">
- 
-
-
       <?php require ("inc/header.php") ?>
       <div id="botones">
       <a  id="preguntas" href="agregarPreguntas.php"  class="button margin-top-1" >Agregar Pregunta</a>
@@ -41,8 +38,6 @@ $usuario =  $_SESSION['idCredencial'];
             <th>Pregunta</th>
             <th>tipo</th>
             <th>Acciones</th>
-
-
           </tr>
           </thead>
           <tbody id="cuerpoTabla">

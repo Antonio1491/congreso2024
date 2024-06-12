@@ -42,7 +42,7 @@ class Login extends Conexion{
             }
 
             $usuario = $valor['nombres'];
-            // $_SESSION['idCredencial'] = $valor['id_credencial'];
+            $_SESSION['idCredencial'] = $valor['id'];
             $_SESSION['nombre'] = $valor['nombres'];
             $_SESSION['apellido'] = $valor['apellido_paterno'];
             $_SESSION['fotografia'] = $valor['fotografia'];

@@ -251,24 +251,25 @@ class Conferencia extends Conexion{
     return $html;
     }
 
-    public function listarPreguntas(){
-
-  
+    public function listarPreguntas()
+    {
       $sql = "SELECT * FROM preguntas
-              INNER JOIN tipo_pregunta ON preguntas.tipo = tipo_pregunta.id_tipo
-      ";
-          $resultado = $this->conexion_db->query($sql);
-          $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-          echo json_encode($resultado_consulta);
+      INNER JOIN tipo_pregunta ON preguntas.tipo = tipo_pregunta.id_tipo";
+
+      $resultado = $this->conexion_db->query($sql);
+      $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
+      
+      echo json_encode($resultado_consulta);
     }                  
 
     public function preguntaById($id_pregunta) {
       $sql = "SELECT * FROM preguntas
       WHERE id_pregunta = '$id_pregunta'";
-          $resultado = $this->conexion_db->query($sql);
-          $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-          echo json_encode($resultado_consulta);
+      $resultado = $this->conexion_db->query($sql);
+      $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
+      echo json_encode($resultado_consulta);
     }
+
     public function guardarNuevaPregunta($pregunta,$tipo_pregunta,$area,$congreso){
 
       if($tipo_pregunta == '1'){

@@ -9,11 +9,9 @@ const propuestas_calificar = async() =>{
 });
     
     
-    
     const respuesta = await peticion.json();
     console.log(respuesta);
     
-
     let i = 0;
     let datosTabla;
     for(resp of respuesta){

@@ -1,7 +1,7 @@
  <!-- ::::: Boletos del congreso :::::: -->
  <section class="seccionPrecios primaryBg pt-5 mt-5 pb-5">
     <h2 class="text-center tituloB mb-5">Entradas</h2>
-    <p class="text-center">*Disponibles a partir de Mayo</p>
+    <p class="text-center">Inicio Preventa, 17 de Junio</p>
     <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly">
       <!-- Profesional Miembro -->
       <div class="boleto boleto__active m-3 mb-md-0 mb-sm-4">
