@@ -47,15 +47,15 @@
   <div class="row">
     <div class="col">
       <span>Convocatoria</span>
-      <p>Abril - Junio</p>
+      <p>Abril - 15 de Julio</p>
     </div>
     <div class="col">
       <span>Revisión de propuestas</span>
-      <p>Junio - Julio</p>
+      <p>16 de Julio - 11 de Agosto</p>
     </div>
     <div class="col">
       <span>Resultados</span>
-      <p>Julio</p>
+      <p>15 de Agosto</p>
     </div>
   </div>
 </div>
