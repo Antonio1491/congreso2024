@@ -65,7 +65,7 @@
 // ::::: Eventos Sociales ::::::
 
 .bgApertura {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/inauguracion.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/Apertura.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,13 +86,14 @@
 }
 
 .bgClausura{
-  background: linear-gradient(90deg, rgb(29, 12, 101) 0%, rgba(29, 12, 101, 0.7) 40%, rgba(255, 255, 255, 0) 90%), url("../img/clausura.jpg");
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%,  rgba(29, 12, 101, 0.9) 90%), url("../img/clausura2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 45vh;
   display: flex;
-  padding-left: 7%;
+  justify-content: flex-end;
+  margin-bottom: -1px;
 }
 
 .experiencia

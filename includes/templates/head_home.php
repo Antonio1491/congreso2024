@@ -89,7 +89,10 @@
               Actividades
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
+              <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
+            <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
+            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li> -->
+            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">
