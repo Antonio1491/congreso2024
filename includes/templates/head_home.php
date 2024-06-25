@@ -58,7 +58,6 @@
           <ul class="dropdown-menu">
             <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
             <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
-            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li> -->
             <!-- <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li> -->
           </ul>
         </li>
@@ -72,19 +71,7 @@
             <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
           </ul>
         </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Expo Espacio Público
-          </a>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="expo_parques.php">Acerca del Evento</a></li>
-            <li><a class="dropdown-item" href="sesiones.php">Visitantes</a></li>
-            <li><a class="dropdown-item" href="posters.php">Expositores</a></li>
-          </ul>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a href="expo_parques.php" class="nav-link">Expo Espacio Público</a>
-        </li> -->
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Convocatorias
@@ -95,6 +82,9 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
           </ul>
+        </li>
+        <li class="nav-item">
+          <a href="https://www.expoespaciopublico.com" class="nav-link">Expo Espacio Público</a>
         </li>
       </ul>
       <!--<a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__register">
@@ -108,14 +98,11 @@
 <header class="header header_home">
   <!-- <img src="build/img/logo_semana.png" alt="" class="logo_arquitectura"> -->
   <div class="d-flex justify-content-evenly align-items-center p-sm-4">
-
     <img  src="img/logotipos/recursomerida.png" class="img-fluid m-sm-4">
     <img  src="build/img/recursomerida2.png" class="d-sm-block d-none">
-   
     <!-- <div class="cta">
       <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary" >Inscríbete ahora</a>
     </div> -->
-
   </div>
   <!-- <img src="build/img/f4.png" alt="" class="absolute fh"> -->
 </header>
