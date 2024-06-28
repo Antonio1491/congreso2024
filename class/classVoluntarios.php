@@ -58,9 +58,12 @@ class Voluntarios extends Conexion
   public function registroVoluntario($nombre, $apellidos, $email, $celular, $universidad, $city, $country, $semblanza, $razones, $turno, $evento){
     $sql = "INSERT INTO voluntarios VALUES (null, '$nombre', '$apellidos', '$email', '$celular', '$universidad', '$city', '$country', '$semblanza', '$razones', '$evento')";
     $consulta = $this->conexion_db->query($sql);
-    if($consulta){
+    if($consulta){  
+     
       $turnoAsignado = $this->turnoAsignado($turno);
       // $email = $this->correoAceptacionVoluntario($email, $nombre, $turno);
+      $sql = "SELECT id_voluntario FROM voluntarios";
+      return true;
     }
     else{
       return false;
