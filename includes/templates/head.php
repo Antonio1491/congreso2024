@@ -96,31 +96,4 @@
   </nav>
 <body>
   
-<style>
-    .dropdown-submenu {
-      position: relative;
-    }
-
-    .dropdown-submenu  .dropdown-menu {
-      display: none;
-      top: 0;
-      left: 99%;
-      margin-top: -1px;
-    }
-
-    .dropdown-submenu.show .dropdown-menu {
-      display: block;
-    }
-
-    @media (min-width: 768px) {
-      .dropdown-submenu:hover .dropdown-menu {
-        display: block;
-      }
-    }
-    @media (max-width: 768px) {
-      .dropdown-submenu .dropdown-menu {
-        display: block;
-      }
-    }
-  </style>
 

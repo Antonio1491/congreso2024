@@ -353,6 +353,31 @@ button.navbar-toggler {
   background: #d2dd0a;
 }
 
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  display: none;
+  top: 0;
+  left: 99%;
+  margin-top: -1px;
+}
+
+.dropdown-submenu.show .dropdown-menu {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .dropdown-submenu .dropdown-menu {
+    display: block;
+  }
+}
 .convocatoria__perfil {
   height: 200px;
   filter: contrast(0.7);
