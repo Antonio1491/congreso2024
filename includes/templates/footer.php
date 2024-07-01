@@ -124,7 +124,22 @@ if(contenedorFondo){
         
   <script>
     AOS.init();
+ 
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 768) {
+        var dropdowns = document.querySelectorAll('.dropdown-submenu > a');
+
+        dropdowns.forEach(function (dropdown) {
+          dropdown.addEventListener('click', function (e) {
+            e.preventDefault();
+            var submenu = this.nextElementSibling;
+            submenu.classList.toggle('show');
+          });
+        });
+      }
+    });
   </script>
+
 
 </body>
 </html>

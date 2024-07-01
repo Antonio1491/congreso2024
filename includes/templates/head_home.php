@@ -22,33 +22,7 @@
   <link rel="icon" type="image/png" href="./build/img/favicon.png" />
   <link rel="stylesheet" href="./build/css/app.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <style>
-    .dropdown-submenu {
-      position: relative;
-    }
 
-    .dropdown-submenu  .dropdown-menu {
-      display: none;
-      top: 0;
-      left: 99%;
-      margin-top: -1px;
-    }
-
-    .dropdown-submenu.show .dropdown-menu {
-      display: block;
-    }
-
-    @media (min-width: 768px) {
-      .dropdown-submenu:hover .dropdown-menu {
-        display: block;
-      }
-    }
-    @media (max-width: 768px) {
-      .dropdown-submenu .dropdown-menu {
-        display: block;
-      }
-    }
-  </style>
 </head>
 
 <body>
@@ -128,20 +102,3 @@
   </header>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+6zt3fwb6Y9Qp0D+NfPpb47CzXc8b" crossorigin="anonymous"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      if (window.innerWidth <= 768) {
-        var dropdowns = document.querySelectorAll('.dropdown-submenu > a');
-
-        dropdowns.forEach(function (dropdown) {
-          dropdown.addEventListener('click', function (e) {
-            e.preventDefault();
-            var submenu = this.nextElementSibling;
-            submenu.classList.toggle('show');
-          });
-        });
-      }
-    });
-  </script>
-</body>
-</html>
