@@ -29,25 +29,24 @@
 
 <?php include 'includes/templates/banner_header.php'; ?>
 <nav class="navbar sticky-top navbar-expand-md">
-  <div class="container">
-    <a class="navbar-brand" href="index.php">
-      <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques"  class="d-inline-block align-text-top">
-    </a>
-    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarPrincipal">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Acerca de
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="congreso_parques.php">Congreso</a></li>
-           <!-- <li><a class="dropdown-item" href="ponentes.php">Ponentes</a></li> -->
-            <li><a class="dropdown-item" href="comite.php">Organizadores</a></li>
-            <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
-            <li><a class="dropdown-item" href="Preparate.php">Prepárate</a></li>
+    <div class="container">
+      <a class="navbar-brand" href="index.php">
+        <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarPrincipal">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Acerca de
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="congreso_parques.php">Congreso</a></li>
+              <li><a class="dropdown-item" href="comite.php">Organizadores</a></li>
+              <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
+              <li><a class="dropdown-item" href="Preparate.php">Prepárate</a></li>
               <li class="dropdown-submenu">
                 <a class="dropdown-item dropdown-toggle" href="#">Galerías</a>
                 <ul class="dropdown-menu">
@@ -61,61 +60,67 @@
               </li>
             </ul>
           </li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Actividades
-          </a>
-          <ul class="dropdown-menu">
-            <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Actividades
+            </a>
+            <ul class="dropdown-menu">
+              <!-- <li><a class="dropdown-item" href="programa.php">Programa</a></li> -->
             <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
-            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li>
-            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li> -->
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Sede
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="sede.php">Mérida, Yucatán</a></li>
-            <!-- <li><a class="dropdown-item" href="hospedaje.php">Hospedaje</a></li> -->
-            <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
-          </ul>
-        </li>
-        <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-           Expo Espacio Público
-          </a>
-          <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="expo_parques.php">Acerca del Evento</a></li>
-            <li><a class="dropdown-item" href="sesiones.php">Visitantes</a></li>
-            <li><a class="dropdown-item" href="posters.php">Expositores</a></li>
-          </ul>
-        </li> -->
-        <!-- <li class="nav-item">
-          <a href="expo_parques.php" class="nav-link">Expo Espacio Público</a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Convocatorias
-          </a>
-          <ul class="dropdown-menu">
-          <!-- <li><a class="dropdown-item" href="voluntarios.php">Voluntarios</a></li> -->
-          <li><a class="dropdown-item" href="sesiones.php">Sesiones Educativas</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!--<a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__register">
-        Inscribirme
-      </a> -->
+            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li> -->
+            <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sede
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sede.php">Mérida, Yucatán</a></li>
+              <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Convocatorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="sesiones.php">Sesiones Educativas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 <body>
   
+<style>
+    .dropdown-submenu {
+      position: relative;
+    }
 
+    .dropdown-submenu  .dropdown-menu {
+      display: none;
+      top: 0;
+      left: 99%;
+      margin-top: -1px;
+    }
+
+    .dropdown-submenu.show .dropdown-menu {
+      display: block;
+    }
+
+    @media (min-width: 768px) {
+      .dropdown-submenu:hover .dropdown-menu {
+        display: block;
+      }
+    }
+    @media (max-width: 768px) {
+      .dropdown-submenu .dropdown-menu {
+        display: block;
+      }
+    }
+  </style>
 
