@@ -1,5 +1,4 @@
 // console.log('funcionando');
-
 let formulario = document.getElementById('formulario');
 // let respuesta = document.getElementById('respuesta');
 
@@ -8,8 +7,6 @@ formulario.addEventListener('submit', async (e) =>{
     console.log('me diste un click')
 
     let datos = new FormData(formulario);
-
-    
 
     // console.log(datos)
     // let usario =datos.get('email');
@@ -22,7 +19,7 @@ formulario.addEventListener('submit', async (e) =>{
     })
        const resp = await peticion.json();
        const [objresp] = resp;
-    console.log(resp);
+        console.log(resp);
 
     //    let [{tipo}] =  await resp;
     //    let [{id_credencial}] =  await resp;
@@ -33,55 +30,54 @@ formulario.addEventListener('submit', async (e) =>{
     //  console.log(resp1);
 
        
-            // console.log(objresp)
-            if(resp === 'vacio'){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Llena todos los campos primero',
-                  })
-                  
-            }
+    // console.log(objresp)
+    if(resp === 'vacio'){
+        Swal.fire({
+            icon: 'error',
+            title: 'Llena todos los campos primero',
+            })
+    }
+    
+    if(resp=== 'admin'){
+        Swal.fire({
+            icon: 'success',
+            title: 'Bienvenido',
+            })
+            .then(function() {
+            window.location = "admin/index.php";
+        });
+    }
+    
+    else if(resp== 'error'){
+        Swal.fire({
+            icon: 'error',
+            title: 'Usuario o contraseña invalida',
+            })
             
-            if(resp=== 'admin'){
-                Swal.fire({
+    }
+    else if( objresp.id_categoria === '4') {
+
+        // console.log(resp);
+        Swal.fire({
+            icon: 'success',
+            title: 'Bienvenido',
+            })
+            .then(function() {
+            window.location = `admin/propuestas_calificar.php?id_usuario=${objresp.id_credencial}` ;
+        });
+    }
+    else if ( objresp.tipo ==='2'){
+
+        Swal.fire({
+
                     icon: 'success',
                     title: 'Bienvenido',
-                  })
-                  .then(function() {
-                    window.location = "admin/index.php";
+                    })
+                    .then(function() {
+                    window.location = `../cpanel/conferencistas/index.php?id_usuario=${objresp.id_credencial}`;
                 });
-            }
-          
-            else if(resp== 'error'){
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Usuario o contraseña invalida',
-                  })
-                 
-            }
-            else if( objresp.tipo==='3') {
 
-                // console.log(resp);
-                Swal.fire({
-                    icon: 'success',
-                    title: 'Bienvenido',
-                  })
-                  .then(function() {
-                    window.location = `admin/propuestas_calificar.php?id_usuario=${objresp.id_credencial}` ;
-                });
-            }
-            else if ( objresp.tipo ==='2'){
-
-                Swal.fire({
-
-                            icon: 'success',
-                            title: 'Bienvenido',
-                          })
-                          .then(function() {
-                            window.location = `../cpanel/conferencistas/index.php?id_usuario=${objresp.id_credencial}`;
-                        });
-
-            }
+    }
         
    
     

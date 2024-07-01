@@ -2,7 +2,7 @@
 
 const propuestas_calificar = async() =>{
   let fecha_hoy = new Date();
-  let fecha_vencimiento = new Date('2022-07-10');
+  let fecha_vencimiento = new Date('2024-07-01');
 
   if(fecha_hoy>= fecha_vencimiento){
     Swal.fire(
