@@ -47,6 +47,20 @@
            <!-- <li><a class="dropdown-item" href="ponentes.php">Ponentes</a></li> -->
             <li><a class="dropdown-item" href="comite.php">Organizadores</a></li>
             <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
+            <li><a class="dropdown-item" href="Preparate.php">Prepárate</a></li>
+              <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle" href="#">Galerías</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/187067785@N06/albums/72177720318221804">LEÓN, MÉXICO 2023</a></li>
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/187067785@N06/albums/72177720304254471">MONTERREY, MÉXICO 2022</a></li>
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/181957383@N07/albums/72157716439617597/">LEÓN, MÉXICO 2020</a></li>
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/181957383@N07/albums/72157709039135088/">MONTERREY, MÉXICO 2019</a></li>
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/181957383@N07/albums/72157711451410436/">SALTA, ARGENTINA 2019</a></li>
+                  <li><a class="dropdown-item" href="https://www.flickr.com/photos/181957383@N07/albums/72157712815040782/">MÉRIDA, MÉXICO 2018</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
           </ul>
         </li>
         <li class="nav-item dropdown">
