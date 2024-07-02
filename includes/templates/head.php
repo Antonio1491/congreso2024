@@ -90,6 +90,11 @@
               <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.expoespaciopublico.com">
+              Expo Espacio Público
+            </a> 
+          </li>
         </ul>
       </div>
     </div>
