@@ -53,15 +53,15 @@
     <div class="row">
       <div class="col">
         <span>Apertura de Convocatoria</span>
-        <p>11 de Septiembre</p>
+        <p>15 de Julio</p>
       </div>
       <div class="col">
         <span>Período de evaluación</span>
-        <p>Indefinido</p>
+        <p>15 de Julio al 01 de Septiembre</p>
       </div>
       <div class="col">
         <span>Cierre de Convocatoria</span>
-        <p>Indefinido</p>
+        <p>01 de Septiembre</p>
       </div>
     </div>
   </div>
