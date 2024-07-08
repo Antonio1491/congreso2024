@@ -59,7 +59,7 @@ formulario.addEventListener('submit', async (e) =>{
                   })
                  
             }
-            else if( objresp.tipo==='3') {
+            else if( objresp.id_categoria==='4') {
 
                 // console.log(resp);
                 Swal.fire({
