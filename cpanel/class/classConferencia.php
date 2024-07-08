@@ -29,7 +29,7 @@ class Conferencia extends Conexion{
 
     public function temasByUsuario($id_usuario){
       $sql = "SELECT * FROM comite_tema
-      INNER JOIN temas ON temas.id_tema = comite_tema.id_tema 
+      INNER JOIN temas ON temas.id = comite_tema.id_tema 
       WHERE id_credencial = '$id_usuario'
       ";
       $resultado = $this->conexion_db->query($sql);
@@ -420,13 +420,19 @@ class Conferencia extends Conexion{
     
 
     public function filtrarPorNumeroDeTema($tema){
+      $sql = "SELECT * FROM `usuarios_ponencias` AS up
+              LEFT JOIN usuarios AS u
+              ON up.id_usuario = u.id
+              LEFT JOIN ponencias as p 
+              ON up.id_ponencia = p.id
+              WHERE p.id_tema = '$tema' ";
       
-      $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
-      b.apellidos, b.pais, b.ciudad FROM conferencias AS a
-      INNER JOIN aspirantes AS b
-      ON a.id_conferencia = b.id_conferencia
-      WHERE a.id_tema = '$tema'
-      GROUP BY a.id_conferencia";
+      // $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
+      // b.apellidos, b.pais, b.ciudad FROM conferencias AS a
+      // INNER JOIN aspirantes AS b
+      // ON a.id_conferencia = b.id_conferencia
+      // WHERE a.id_tema = '$tema'
+      // GROUP BY a.id_conferencia";
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
       $i=0;

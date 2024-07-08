@@ -2,7 +2,7 @@
 
 const propuestas_calificar = async() =>{
   let fecha_hoy = new Date();
-  let fecha_vencimiento = new Date('2024-08-11');
+  let fecha_vencimiento = new Date('2024-09-01');
 
   if(fecha_hoy>= fecha_vencimiento){
     Swal.fire(
@@ -40,8 +40,6 @@ const propuestas_calificar = async() =>{
       }
     ]
     const array = JSON.stringify(arreglo);
-
-
     
     let cuerpotabla = document.getElementById('cuerpoTabla');
     
