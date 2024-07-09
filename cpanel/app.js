@@ -8,7 +8,7 @@ formulario.addEventListener('submit', async (e) =>{
 
     let datos = new FormData(formulario);
 
-    // console.log(datos)
+    console.log(datos);
     // let usario =datos.get('email');
     // let pass = datos.get('password');
     // console.log(usario);
@@ -63,7 +63,7 @@ formulario.addEventListener('submit', async (e) =>{
             title: 'Bienvenido',
             })
             .then(function() {
-            window.location = `admin/propuestas_calificar.php?id_usuario=${objresp.id_credencial}` ;
+            window.location = `admin/propuestas_calificar.php?id_usuario=${objresp.id}` ;
         });
     }
     else if ( objresp.tipo ==='2'){

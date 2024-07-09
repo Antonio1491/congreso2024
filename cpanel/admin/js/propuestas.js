@@ -2,7 +2,7 @@
 
 const propuestas_calificar = async() =>{
   let fecha_hoy = new Date();
-  let fecha_vencimiento = new Date('2024-09-01');
+  let fecha_vencimiento = new Date('2024-12-01');
 
   if(fecha_hoy>= fecha_vencimiento){
     Swal.fire(
@@ -10,7 +10,9 @@ const propuestas_calificar = async() =>{
       'La fecha para calificar propuestas ya expiró',
       'warning'
     )
-  }else{
+  }
+  
+  else{
   const urlSearchParams = new URLSearchParams(window.location.search);
   const params = Object.fromEntries(urlSearchParams.entries());
 
@@ -24,30 +26,33 @@ const propuestas_calificar = async() =>{
 
     const arreglo = [];
     
+    //Crear un arreglo con todos los temas asignados al usuario
     const respuesta_temas = await peticion_temas.json();
+    // console.log(respuesta_temas);
     for(temas of respuesta_temas){
       arreglo.push(parseInt(temas.id_tema));
     }
 
       //  const arreglo = [2,4];
-       const arreglo2 =  [{
-        nombre: "Diseño y Planeación",
-        id_tema: 9
-      },
-      {
-        nombre: "La ciudad",
-        id_tema: 4
-      }
-    ]
+    //    const arreglo2 =  [{
+    //     nombre: "Diseño y Planeación",
+    //     id_tema: 9
+    //   },
+    //   {
+    //     nombre: "La ciudad",
+    //     id_tema: 4
+    //   }
+    // ]
     const array = JSON.stringify(arreglo);
+    console.log(array);
     
     let cuerpotabla = document.getElementById('cuerpoTabla');
     
+    //enviar el arreglo de ids de temas
     const peticion = await fetch('../class/temas.php',{
     method: 'POST',
      body: array
     });
-    
     
     
     const respuesta = await peticion.text();

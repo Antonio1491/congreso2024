@@ -2,6 +2,7 @@
 include('../class/funciones.php');
 $propuestas = new Propuesta();
 $usuario =  $_SESSION['idCredencial'];
+// var_dump($usuario);
   if (!isset($usuario))
    {
       header("location: ../index.html");
@@ -35,11 +36,11 @@ $usuario =  $_SESSION['idCredencial'];
               <th>#</th>
               <th>Propuesta</th>
               <!-- <th>Modality</th> -->
-              <th>Author</th>
-              <th>Country</th>
-              <th>City</th>
-              <th>Track</th>
-              <th>Actions</th>
+              <th>Autor</th>
+              <th>País</th>
+              <th>Ciudad</th>
+              <th>Tema</th>
+              <th></th>
             </tr>
           </thead>
           <tbody id="cuerpoTabla">
