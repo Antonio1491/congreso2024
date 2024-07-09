@@ -53,15 +53,15 @@
     <div class="row">
       <div class="col">
         <span>Apertura de Convocatoria</span>
-        <p>11 de Septiembre</p>
+        <p>15 de Julio</p>
       </div>
       <div class="col">
         <span>Período de evaluación</span>
-        <p>Indefinido</p>
+        <p>15 de Julio al 01 de Septiembre</p>
       </div>
       <div class="col">
         <span>Cierre de Convocatoria</span>
-        <p>Indefinido</p>
+        <p>01 de Septiembre</p>
       </div>
     </div>
   </div>
@@ -75,7 +75,7 @@
           <li>Atender y apoyar en el área de registro.</li>
           <li>Orientar y apoyar a los participantes.</li>
           <li>Hacer el seguimiento del ingreso a las salas y brindar respaldo en caso de contratiempos que puedan ocurrir durante las sesiones educativas, magistrales y demás actividades.</li>
-          <li>Acompañar a los talleres (22 de noviembre).</li>
+          <li>Acompañar a los talleres (23 de octubre).</li>
           <li>Apoyar a los ponentes.</li>
           <li>Asistencia en los eventos sociales.</li>
           <li>Apoyar en el área de Expo Parques.</li>
@@ -84,7 +84,7 @@
       <div class="col-sm-12 col-md-6">
         <h4 class="mb-4 subtituloPMin">Horarios Disponibles</h4>
         <table class="table table-bordered">
-          <thead>
+          <thead> 
             <tr>
               <th>Miércoles</th>
               <th>Jueves</th>
@@ -93,9 +93,9 @@
           </thead>
           <tbody>
             <tr>
-              <td>22 de Noviembre</td>
-              <td>23 de Noviembre</td>
-              <td>24 de Noviembre</td>
+              <td>23 de octubre</td>
+              <td>24 de octubre</td>
+              <td>25 de octubre</td>
             </tr>
             <tr>
               <td>8:00 hrs. - 19:00 hrs.</td>
