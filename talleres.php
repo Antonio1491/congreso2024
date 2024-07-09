@@ -27,7 +27,7 @@
         <article>
           <h2 class="subtituloBMin">Talleres Vivenciales</h2>
           <h6 class="subtituloComplementario">¡Visita los parques más emblemáticos de la ciudad!</h6>
-          <p class="white text-justify">¡Conoce León y aprende al mismo tiempo! En los talleres vivenciales conocerás atractivos turísticos y proyectos ciudadanos relacionados con el espacio público; habrá expertos en el tema y colaboradores de la ciudad anfitriona que compartirán durante 4 horas sus experiencias en la administración de estos espacios, los retos que han enfrentado y las actividades que han implementado. </p>
+          <p class="white text-justify">¡Conoce Mérida y aprende al mismo tiempo! En los talleres vivenciales conocerás atractivos turísticos y proyectos ciudadanos relacionados con el espacio público; habrá expertos en el tema y colaboradores de la ciudad anfitriona que compartirán durante 4 horas sus experiencias en la administración de estos espacios, los retos que han enfrentado y las actividades que han implementado. </p>
         </article>
       </div>
     </div>

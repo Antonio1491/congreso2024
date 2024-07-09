@@ -84,7 +84,7 @@
       <div class="col-sm-12 col-md-6">
         <h4 class="mb-4 subtituloPMin">Horarios Disponibles</h4>
         <table class="table table-bordered">
-          <thead>
+          <thead> 
             <tr>
               <th>Miércoles</th>
               <th>Jueves</th>
