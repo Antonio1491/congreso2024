@@ -22,7 +22,7 @@ include ('class/clases.php');
           <li>Espera un correo de confirmación, con más detalles para tu registro al congreso.</li>
           <li>Asistir a la capacitación en línea de voluntarios. El equipo del congreso se pondrá en contacto para hacerte saber el día y horario disponible para la capacitación. Asistir a la capacitación de voluntarios es indispensable.</li>
         </ul>
-        <p class="justify">Si tienes dudas o inconvenientes para llenar este formulario, comunícate con Vitoria Martín, Directora de Contenido y Educación de la ANPR México a la dirección contenido@congresoparques.com con copia a Boris Solis, Auxiliar de Contenido y Educación a asistente@congresoparques.com 
+        <p class="justify">Si tienes dudas o inconvenientes para llenar este formulario, comunícate con Vitoria Martín, Directora de Contenido y Educación de la ANPR México a la dirección contenido@congresoparques.com con copia a Boris Solis, Auxiliar de Contenido y Educación a asistente@congresoparques.com  
         </p>
       </div>
 
