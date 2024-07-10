@@ -148,3 +148,4 @@ include ('class/clases.php');
 
 </main>
 <?php require 'includes/templates/footer.php'; ?>
+

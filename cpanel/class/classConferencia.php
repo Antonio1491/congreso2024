@@ -27,10 +27,12 @@ class Conferencia extends Conexion{
         
     }
 
+    //Conocer el tema asignado al usuario
     public function temasByUsuario($id_usuario){
       $sql = "SELECT * FROM comite_tema
-      INNER JOIN temas ON temas.id_tema = comite_tema.id_tema 
-      WHERE id_credencial = '$id_usuario'
+      LEFT JOIN temas 
+      ON temas.id = comite_tema.id_tema 
+      WHERE comite_tema.id_credencial =  '$id_usuario'
       ";
       $resultado = $this->conexion_db->query($sql);
       $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
@@ -373,9 +375,22 @@ class Conferencia extends Conexion{
 
     }
 
-    public function getPropuestasByIdTema($array){
+    public function getPropuestasByIdTema($array_temas){
+      // var_dump($array_temas);
+      foreach($array_temas as $tema){
+        // var_dump($tema);
+        // die();
+        $sql = "SELECT DISTINCT *, p.id AS id_ponencia
+            FROM usuarios_ponencias AS up
+            LEFT JOIN usuarios AS u
+            ON up.id_usuario = u.id
+            LEFT JOIN ponencias AS p
+            ON up.id_ponencia = p.id
+            LEFT JOIN temas AS t
+            ON p.id_tema = t.id
+            WHERE p.id_tema = $tema
+              ";
 
-      foreach($array as $arr){
         // $sql="SELECT DISTINCT conferencias.id_conferencia, conferencias.conferencia, conferencias.modalidad, b.nombre,b.pais, b.ciudad,b.id_conferencia, conferencias.id_tema FROM conferencias
         // LEFT JOIN aspirantes AS b
         // ON conferencias.id_conferencia = b.id_conferencia
@@ -383,13 +398,13 @@ class Conferencia extends Conexion{
         // GROUP BY conferencias.id_conferencia
         // ";
 
-        $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
-        b.apellidos, b.pais, b.ciudad ,temas.tema FROM conferencias AS a
-        INNER JOIN aspirantes AS b
-        ON a.id_conferencia = b.id_conferencia
-        INNER JOIN temas on temas.id_tema = a.id_tema
-        WHERE a.id_tema = '$arr'
-        GROUP BY a.id_conferencia";
+        // $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
+        // b.apellidos, b.pais, b.ciudad ,temas.tema FROM conferencias AS a
+        // INNER JOIN aspirantes AS b
+        // ON a.id_conferencia = b.id_conferencia
+        // INNER JOIN temas on temas.id_tema = a.id_tema
+        // WHERE a.id_tema = '$arr'
+        // GROUP BY a.id_conferencia";
         $resultado = $this->conexion_db->query($sql);
         $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
         $i=0;
@@ -399,14 +414,13 @@ class Conferencia extends Conexion{
           $info = '
           <tr>
           <td>'.$i.'</td>
-          <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id_conferencia'].'">'.$conf['conferencia'].'</a></td>         
-          <td>'.$conf['modalidad'].'</td>
-          <td>'.$conf['nombre'].'</td>
+          <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id_ponencia'].'">'.$conf['titulo'].'</a></td>         
+          <td>'.$conf['nombres'].'</td>
           <td>'.$conf['pais'].'</td>
           <td>'.$conf['ciudad'].'</td>
           <td>'.$conf['tema'].'</td>
-          <td class="text-center acciones"><a alt="calificar" href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i alt="algo" id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].'"></i></a>
-          <a alt="editar" id="conferencia-'.$conf['id_conferencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i alt="algo" class="fi-pencil edit-'.$conf['id_conferencia'].' ocultar"></i></a>
+          <td class="text-center acciones"><a alt="calificar" href="calificarPropuestas.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i></a>
+          <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"></i></a>
           </td>
           </tr>
           ';
@@ -420,13 +434,19 @@ class Conferencia extends Conexion{
     
 
     public function filtrarPorNumeroDeTema($tema){
+      $sql = "SELECT * FROM `usuarios_ponencias` AS up
+              LEFT JOIN usuarios AS u
+              ON up.id_usuario = u.id
+              LEFT JOIN ponencias as p 
+              ON up.id_ponencia = p.id
+              WHERE p.id_tema = '$tema' ";
       
-      $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
-      b.apellidos, b.pais, b.ciudad FROM conferencias AS a
-      INNER JOIN aspirantes AS b
-      ON a.id_conferencia = b.id_conferencia
-      WHERE a.id_tema = '$tema'
-      GROUP BY a.id_conferencia";
+      // $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
+      // b.apellidos, b.pais, b.ciudad FROM conferencias AS a
+      // INNER JOIN aspirantes AS b
+      // ON a.id_conferencia = b.id_conferencia
+      // WHERE a.id_tema = '$tema'
+      // GROUP BY a.id_conferencia";
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
       $i=0;

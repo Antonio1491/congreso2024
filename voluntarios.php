@@ -146,14 +146,12 @@
     </div>
   </div>
 
-
   <div class="container">
     <div class="row">
       <img src="build/img/linea_gris.png" alt="">
     </div>
   </div>
 </main>
-
 
   <?php require 'includes/templates/sede.php'; ?>
 
@@ -163,3 +161,4 @@
 
 </main>
 <?php require 'includes/templates/footer.php'; ?>
+
