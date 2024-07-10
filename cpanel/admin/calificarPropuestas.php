@@ -3,8 +3,7 @@ include('../class/funciones.php');
 $propuestas = new Propuesta();
 $conferencias = new Conferencia();
 
-
-$conferencia = $_GET['id_conferencia'];
+$conferencia = $_GET['id_ponencia'];
 $congreso = $_GET['id_congreso'];
 $tema = $_GET['id_tema'];
 $usuario =  $_SESSION['idCredencial'];

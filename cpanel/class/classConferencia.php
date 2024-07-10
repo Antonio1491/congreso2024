@@ -419,8 +419,13 @@ class Conferencia extends Conexion{
           <td>'.$conf['pais'].'</td>
           <td>'.$conf['ciudad'].'</td>
           <td>'.$conf['tema'].'</td>
-          <td class="text-center acciones"><a alt="calificar" href="calificarPropuestas.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i></a>
-          <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"></i></a>
+          <td class="text-center acciones">
+            <a alt="calificar" href="calificarPropuestas.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta">
+              <i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i>
+            </a>
+            <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">
+              <i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"></i>
+            </a>
           </td>
           </tr>
           ';
@@ -620,7 +625,8 @@ return $resultado;
     public function preguntas(){
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
+      LEFT JOIN area_conferencia 
+      ON preguntas.area_calificar = area_conferencia.id_area
       GROUP BY area_calificar
       ORDER BY area_calificar
       ";
