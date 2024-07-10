@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-5JBQPS6SX1');
   </script>
   <meta charset="UTF-8">
@@ -88,6 +87,11 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
             </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.expoespaciopublico.com">
+              Expo Espacio Público
+            </a> 
           </li>
         </ul>
       </div>

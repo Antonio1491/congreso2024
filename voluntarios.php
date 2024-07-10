@@ -17,7 +17,7 @@
         </div>
         <h4 class="subtituloPMin text-center">Beneficios de ser voluntario</h4>
         <ul>
-          <li>Precio preferencial para voluntarios </li>
+          <li>Precio preferencial para voluntarios (50% de descuento en una entrada plata) </li>
           <li>Contacto con más de 40 ponentes nacionales e internacionales.</li>
           <li>Capacitación en áreas especializadas.</li>
           <li>Networking.</li>
@@ -34,7 +34,7 @@
         <h4 class="subtituloPMin text-center">¿Qué necesitas para ser voluntario?</h4>
         <ul>
           <li>Inscribirse al programa de voluntarios dentro del periodo determinado.</li>
-          <li>Inscribirse al programa de voluntarios dentro del periodo determinado.</li>
+          <li>Llenar la ficha de voluntario.</li>
           <li>Tener disponibilidad para desempeñarse como voluntario por lo menos un día del Congreso.</li>
           <li>Asistir a la capacitación online. (Esta capacitación es indispensable)</li>
           <li>Cumplir con los tiempos y turnos a las actividades del congreso.</li>
