@@ -622,86 +622,76 @@ return $resultado;
     //   return $conferencias;
     // }
 
-    public function preguntas(){
+    public function preguntas()
+    {
       $html="";
       $sql = "SELECT * FROM preguntas
-      LEFT JOIN area_conferencia 
-      ON preguntas.area_calificar = area_conferencia.id_area
-      GROUP BY area_calificar
-      ORDER BY area_calificar
-      ";
+              LEFT JOIN area_conferencia 
+              ON preguntas.area_calificar = area_conferencia.id_area
+              GROUP BY area_calificar
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-
-      foreach($conferencias as $preguntas){
-    
+      //Mostrar título de cada sección
+      foreach($conferencias as $preguntas)
+      {
         $html.='<div id="'.$preguntas['id_pregunta'].'" class="column medium-12">
-        <h5 class="unique"><b>-'.$preguntas['nombre_area'].'</b></h5>';
+        <h5 class="unique"><b>- '.$preguntas['nombre_area'].'</b></h5>';
         $html.=$this->preg($preguntas['area_calificar']);
         $html.= '</div>';
-
-
       }
 
       return $html;
-
     }
 
-    public function preg($id){
+    //construcción de preguntas por cada área a calificar
+    public function preg($id)
+    {
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
-      WHERE area_calificar = '$id'
-      ORDER BY area_calificar
-      ";
+              INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
+              WHERE area_calificar = '$id'
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
-      $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
+      $preguntas = $resultado->fetch_all(MYSQLI_ASSOC);
 
+      foreach($preguntas as $pregunta)
+      {
+        $nombre_tema = $pregunta['nombre_area'];
+        $titulo = $pregunta['nombre_area'];
 
-      foreach($conferencias as $preguntas){
-        $nombre_tema = $preguntas['nombre_area'];
-
-        $titulo = $preguntas['nombre_area'];
-
-
-        if($preguntas['tipo']==1 ){
-          $html .=  '
-          
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          ';
-
-
-          $html .='<label for=""><b>'.$preguntas['pregunta'].'</b></label><br>';
-
-         $html.= $this->respuestachecks($preguntas['id_pregunta']);
-          $html.='</div>';
-
+        //pregunta de tipo checkbox
+        if($pregunta['tipo']==1 )
+        {
+          $html .= '<div id="'.$pregunta['id_pregunta'].'" class="column medium-8">';
+          $html .= '<label for=""><b>'.$pregunta['pregunta'].'</b></label>checkbox<br>';
+          $html .= $this->respuestachecks($pregunta['id_pregunta']);
+          $html .= '</div>';
         }
-
-        if($preguntas['tipo']==2){
+        //pregunta de tipo input
+        if($pregunta['tipo']==2)
+        {
           $html .=  '
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          
-          <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>
-          <input type="text" name="'.$preguntas['id_pregunta'].'"  placeholder="Razon" >
+          <div id="'.$pregunta['id_pregunta'].'" class="column medium-8">
+          <label for=""><b>'.$pregunta['pregunta'].'</b></label><br>
+          <input type="text" name="'.$pregunta['id_pregunta'].'"  placeholder="Razon" >aquí
           </div>';
         }
 
-        if($preguntas['tipo']==3){
-          $html .=  '
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>
-         ';
+        if($pregunta['tipo']==3)
+        {
+          $html .=  '<div id="'.$pregunta['id_pregunta'].'" class="column medium-8">
+                      <label for=""><b>'.$pregunta['pregunta'].'</b></label><br>';
           $html.= $this->consultaPregunta();
           $html.=' </div>';
- 
         }  
       
       }
 
       return $html;
-
     }
 
     public function tituloConferencia($id){
@@ -975,27 +965,25 @@ return $resultado;
  
     }
 
-    public function respuestachecks($id){
+    //armar las respuestas para las preguntas de tipo check
+    public function respuestachecks($id)
+    {
       $html = '';
       $sql = "SELECT * FROM respuestas
-      INNER JOIN valor_respuestas ON valor_respuestas.id_respuesta = respuestas.id_valor_respuesta
-      WHERE id_pregunta = '$id'" ;
+              INNER JOIN valor_respuestas ON valor_respuestas.id_respuesta = respuestas.id_valor_respuesta
+              WHERE id_pregunta = '$id'" ;
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-     
-      foreach($conferencias as $respuestas =>$i){
+      foreach($conferencias as $respuestas =>$i)
+      {
         $resp = $i['valor_input'].'-'.$i['respuesta'];
-
         $name = 'name='.$id;
-
-        $html.='<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'">
+        $html .= '<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'"> 22
         <label for="html">'.$resp.'</label><br>';
       }
 
       return $html;
-
-
     }
 
     public function propuestasCalifcadasPorUsuario($id){
