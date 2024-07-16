@@ -4,7 +4,7 @@
     <h1 class="header__titulo">Voluntarios</h1>
     <img src="build/img/linea.png" alt="">
     <div class="mt-3">
-      <a href="registro_voluntarios.php" class="btn btn__primary">Registrame como voluntario</a>
+      <a href="registro_voluntarios.php" class="btn btn__primary">Registrarme como voluntario</a>
     </div>
   </div>
 </header>
@@ -141,7 +141,7 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-12 mt-5 mb-5 text-center">
-        <a href="registro_voluntarios.php" class="btn btn__primary">Registrame como voluntario</a>
+        <a href="registro_voluntarios.php" class="btn btn__primary">Registrarme como voluntario</a>
       </div>
     </div>
   </div>
