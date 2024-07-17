@@ -14,8 +14,8 @@ $usuario =  $_SESSION['idCredencial'];
       <!-- <a href="#"><span>2019</span></a>
       <ul class="vertical menu nested"> -->
       <li><a href="propuestas_calificar.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Todas las propuestas</a>
-        <li><a href="propuestarPorCalificar.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Propuestas a evaluar</a>
-        <li><a href="propuestasCalificadas.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Propuestas evaluadas</a>
+        <!-- <li><a href="propuestarPorCalificar.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Propuestas a evaluar</a> -->
+        <!-- <li><a href="propuestasCalificadas.php?id_usuario=<?php echo $usuario ?>"><i class="fi-results"></i> Propuestas evaluadas</a> -->
   
 
 

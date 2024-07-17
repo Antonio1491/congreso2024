@@ -421,11 +421,11 @@ class Conferencia extends Conexion{
           <td>'.$conf['tema'].'</td>
           <td class="text-center acciones">
             <a alt="calificar" href="calificarPropuestas.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta">
-              <i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i>
+              <i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i> Calificar
             </a>
             <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">
-              <i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"></i>
-            </a>
+              <i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"> </i> Editar
+            </a> 
           </td>
           </tr>
           ';
@@ -525,8 +525,13 @@ class Conferencia extends Conexion{
             <td>'.$conf['ciudad'].'</td>
             <td>'.$conf['tema'].'</td>
             <td class="text-center acciones">
-            <a href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].' ocultar"></i></a>
-            <a id="conferencia-'.$conf['id_conferencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i class="fi-pencil edit-'.$conf['id_conferencia'].'"></i></a>
+            <a href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta">
+              <i id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].' ocultar">
+              </i>
+            </a>
+            <a id="conferencia-'.$conf['id_conferencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">Editar
+              <i class="fi-pencil edit-'.$conf['id_conferencia'].'"></i>
+            </a>
             </td>
             </tr>
             ';
@@ -667,7 +672,8 @@ return $resultado;
         if($pregunta['tipo']==1 )
         {
           $html .= '<div id="'.$pregunta['id_pregunta'].'" class="column medium-8">';
-          $html .= '<label for=""><b>'.$pregunta['pregunta'].'</b></label>checkbox<br>';
+          $html .= '<label for=""><b>'.$pregunta['pregunta'].'</b></label><br>';
+
           $html .= $this->respuestachecks($pregunta['id_pregunta']);
           $html .= '</div>';
         }
@@ -979,7 +985,7 @@ return $resultado;
       {
         $resp = $i['valor_input'].'-'.$i['respuesta'];
         $name = 'name='.$id;
-        $html .= '<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'"> 22
+        $html .= '<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'">
         <label for="html">'.$resp.'</label><br>';
       }
 

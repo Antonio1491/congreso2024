@@ -4,7 +4,7 @@ $propuestas = new Propuesta();
 $conferencias = new Conferencia();
 
 
-$conferencia = $_GET['id_conferencia'];
+$conferencia = $_GET['id_ponencia'];
 $congreso = $_GET['id_congreso'];
 $tema = $_GET['id_tema'];
 $usuario =  $_SESSION['idCredencial'];
@@ -45,7 +45,7 @@ $variable = 'conferencia='.$conferencia.'&congreso='.$congreso.'&tema='.$tema.'&
                   ?>
                    <br><div class="column medium-8">
                 
-                <input type="submit" name="" value="Calificar" class="button success">
+                <input type="submit" name="" value="Actualizar" class="button success">
               </div>
              </div>            
           </form>        
@@ -100,19 +100,7 @@ $variable = 'conferencia='.$conferencia.'&congreso='.$congreso.'&tema='.$tema.'&
                 }
             });
 
-            
-
         }
-
-
-
-
-
-      
-        
-
-
-
 
   </script>
    <script>
