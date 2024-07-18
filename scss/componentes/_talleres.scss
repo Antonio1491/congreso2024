@@ -313,6 +313,11 @@
             text-align: justify;
 
         }
+            pre{
+        overflow: none !important;
+        text-wrap: wrap !important;
+        font-family: "Montserrat Regular" !important;
+        }
       
     }
 

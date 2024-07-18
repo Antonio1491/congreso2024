@@ -53,7 +53,7 @@ class Login extends Conexion{
               {
                 echo  json_encode('admin');                                
               }
-              else if($nivel == 3)
+              else if($nivel == 4)
               {
                 echo json_encode ($respuesta);                      
               }
