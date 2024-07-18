@@ -19,6 +19,20 @@
         <br>
         <li>A través de conocer toda esta información <b>establece metas</b> a corto y largo plazo que te <b>ayuden a cumplir mejor tu trabajo.</b> Estas metas deben de ser apoyadas por la idea de asistir al evento.</li>
       </ul>
+      <p>
+        <h5><strong style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Kit de asistente:</strong></h5>
+      </p>
+      <div class="row">
+        <div class="col-md-6">
+          <li><a href="https://congresoparques.com/docs/Informacion%20general%20Congreso%20Parques%202024%20presentacio%CC%81n_compressed%20(1).pdf" >Información general</a></li>
+          <li><a href="https://congresoparques.com/docs/Instrucciones%20para%20Registro%20Congreso%20Parques%202024.pdf">Instrucciones para registro al Congreso Parques</a></li>  
+        </div>
+        <div class="col-md-6">
+          <li><a href="https://congresoparques.com/docs/Datos%20Bancarios%20-%20Congreso%20Parques%202024.pdf">Datos bancarios</a></li>
+          <li><a href="https://congresoparques.com/docs/Enlaces%20Importantes%20Congreso%20Parques%202024.pdf">Enlaces importantes</a></li>
+        </div>
+      </div>
+      
     </div>
     <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
       <img src="./build/img/Recursopreventa.png" alt="" class="convocatoria__perfil" style="width: 60%; height: auto;">
