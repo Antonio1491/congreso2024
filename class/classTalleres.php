@@ -43,11 +43,13 @@ class Taller extends Conexion{
         </div>
         
           <h5 class="subtituloPMin">Descripción</h5>
-          <p>'.$data['descripcion'].'</p>
+          <div class="col-sm-12 col-md-11">
+            <p> <pre>'.htmlspecialchars($data['descripcion']).'</pre></p>
+          </div>
         </div>
       <div class="col-md-3 col-sm-12 cuadroAzul">
           
-          
+        <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary"> Comprar aquí  </a>  
           
           <hr class="mt-4 mb-4">
           <p ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
@@ -362,5 +364,6 @@ class Taller extends Conexion{
 }
 
  ?>
+
 
 
