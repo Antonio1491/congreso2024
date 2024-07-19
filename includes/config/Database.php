@@ -1,6 +1,6 @@
 <?php
- DEFINE ('DB_USUARIO', 'root');
-  //DEFINE ('DB_USUARIO', 'u951310947_sistemas');
+ //DEFINE ('DB_USUARIO', 'root');
+  DEFINE ('DB_USUARIO', 'u951310947_sistemas');
 
    DEFINE('DB_CONTRASENA', 'root');
   //DEFINE('DB_CONTRASENA', 'Anpr2023*');

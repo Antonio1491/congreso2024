@@ -86,6 +86,7 @@
               <li><a class="dropdown-item" href="sesiones.php">Sesiones Educativas</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
+              <li><a class="dropdown-item" href="voluntarios.php">Voluntarios</a></li>
             </ul>
           </li>
           <li class="nav-item">
