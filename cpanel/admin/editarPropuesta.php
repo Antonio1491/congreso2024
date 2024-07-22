@@ -33,10 +33,8 @@ $variable = 'conferencia='.$conferencia.'&congreso='.$congreso.'&tema='.$tema.'&
       </div>
       <section class="column medium-10">
 
-
       <?php require ("inc/header.php") ?>
 
-   
           <form class="" action="datosRespuesta.php?<?php echo $variable?>" method="post" enctype="multipart/form-data">
               <div class="row ">
                   <?php
