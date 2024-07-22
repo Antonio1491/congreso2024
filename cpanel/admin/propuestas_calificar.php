@@ -40,7 +40,7 @@ $usuario =  $_SESSION['idCredencial'];
               <th>País</th>
               <th>Ciudad</th>
               <th>Tema</th>
-              <th></th>
+              <th style="width: 170px;"></th>
             </tr>
           </thead>
           <tbody id="cuerpoTabla">

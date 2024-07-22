@@ -444,6 +444,8 @@ class Conferencia extends Conexion{
               ON up.id_usuario = u.id
               LEFT JOIN ponencias as p 
               ON up.id_ponencia = p.id
+              LEFT JOIN temas AS t
+              ON p.id_tema = t.id
               WHERE p.id_tema = '$tema' ";
       
       // $sql = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
@@ -461,15 +463,19 @@ class Conferencia extends Conexion{
         $info = '
         <tr>
         <td>'.$i.'</td>
-        <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id_conferencia'].'">'.$conf['conferencia'].'</a></td>         
-        <td>'.$conf['modalidad'].'</td>
-        <td>'.$conf['nombre'].'</td>
-        <td>'.$conf['pais'].'</td>
-        <td>'.$conf['ciudad'].'</td>
-        <td>'.$conf['id_tema'].'</td>
-        <td class="text-center acciones"><a href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].'"></i></a>
-        <a href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i class="fi-pencil ocultar"></i></a>
-        </td>
+        <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id_ponencia'].'">'.$conf['titulo'].'</a></td>         
+        <td>'.$conf['nombres'].'</td>
+          <td>'.$conf['pais'].'</td>
+          <td>'.$conf['ciudad'].'</td>
+          <td>'.$conf['tema'].'</td>
+        <td class="text-center acciones">
+            <a alt="calificar" href="calificarPropuestas.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta ">
+              <i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"> <strong style="font-size:11px;">Calificar</strong> </i> 
+            </a>
+            <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">
+              <i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"> <strong style="font-size:11px;">Editar</strong></i> 
+            </a> 
+          </td>
         </tr>
         ';
 
@@ -692,7 +698,7 @@ return $resultado;
           $html .=  '
           <div id="'.$pregunta['id_pregunta'].'" class="column medium-8">
           <label for=""><b>'.$pregunta['pregunta'].'</b></label><br>
-          <input type="text" name="'.$pregunta['id_pregunta'].'"  placeholder="Razon" >aquí
+          <input type="text" name="'.$pregunta['id_pregunta'].'"  placeholder="" >
           </div>';
         }
 
