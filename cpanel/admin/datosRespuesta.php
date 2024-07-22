@@ -21,9 +21,10 @@ $id_tema = $_GET["tema"];
 $id_conferencia = $_GET["conferencia"];
 $id_usuario = $_GET["usuario"];
 
-
-
-// var_dump($_POST);
+//var_dump($id_congreso);
+//var_dump($id_tema);
+//var_dump($id_conferencia);
+//var_dump($id_usuario);
 
 $insertar = $conferencias->guardarPreguntasBD($_POST,$id_congreso,$id_tema,$id_conferencia,$id_usuario);
 

@@ -419,8 +419,13 @@ class Conferencia extends Conexion{
           <td>'.$conf['pais'].'</td>
           <td>'.$conf['ciudad'].'</td>
           <td>'.$conf['tema'].'</td>
-          <td class="text-center acciones"><a alt="calificar" href="calificarPropuestas.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"></i></a>
-          <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"></i></a>
+          <td class="text-center acciones">
+            <a alt="calificar" href="calificarPropuestas.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta ">
+              <i alt="algo" id="'.$conf['id_ponencia'].'" class="fi-checkbox size-72 num-'.$conf['id_ponencia'].'"> <strong style="font-size:11px;">Calificar</strong> </i> 
+            </a>
+            <a alt="editar" id="conferencia-'.$conf['id_ponencia'].'" href="editarPropuesta.php?id_ponencia='.$conf['id_ponencia'].'&id_congreso='.$conf['id_evento'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">
+              <i alt="algo" class="fi-pencil edit-'.$conf['id_ponencia'].' ocultar"> <strong style="font-size:11px;">Editar</strong></i> 
+            </a> 
           </td>
           </tr>
           ';
@@ -520,8 +525,13 @@ class Conferencia extends Conexion{
             <td>'.$conf['ciudad'].'</td>
             <td>'.$conf['tema'].'</td>
             <td class="text-center acciones">
-            <a href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta"><i id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].' ocultar"></i></a>
-            <a id="conferencia-'.$conf['id_conferencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta"><i class="fi-pencil edit-'.$conf['id_conferencia'].'"></i></a>
+            <a href="calificarPropuestas.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'" class="link_encuesta">
+              <i id="'.$conf['id_conferencia'].'" class="fi-checkbox size-72 num-'.$conf['id_conferencia'].' ocultar">
+              </i>
+            </a>
+            <a id="conferencia-'.$conf['id_conferencia'].'" href="editarPropuesta.php?id_conferencia='.$conf['id_conferencia'].'&id_congreso='.$conf['id_congreso'].'&id_tema='.$conf['id_tema'].'"  class="link_encuesta">Editar
+              <i class="fi-pencil edit-'.$conf['id_conferencia'].'"></i>
+            </a>
             </td>
             </tr>
             ';
@@ -534,41 +544,50 @@ class Conferencia extends Conexion{
 
     }
 
-    public function guardarPreguntasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario){
-
+    //guardar actualización de edición calificados
+    public function guardarPreguntasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario)
+    {
+       //eliminar aquí lo existente con anterioridad
+       $sql = "DELETE FROM calificar_propuestas 
+       WHERE id_usuario = $id_usuario
+       AND id_conferencia = $id_conferencia
+       ";
+      $resultado = $this->conexion_db->query($sql);
       // $pregunta4 = !empty($v4) ? "'$v4'" : "NULL";
 
-foreach($arreglo as $indice =>$valor){
+      foreach($arreglo as $indice =>$valor)
+      {
 
-if ($valor == 'Excellent') {
-  $id_valor_resp = "'1'";
-} elseif ($valor == 'Very good') {
-  $id_valor_resp = "'2'";
-} elseif ($valor == 'Good') {
-  $id_valor_resp = "'3'";
-}elseif($valor == 'Regular'){
-  $id_valor_resp = "'4'";
-}elseif($valor == 'Bad'){
-  $id_valor_resp = "'5'";
-}else{
-  $id_valor_resp = "NULL";
-}
+        if ($valor == 'Excelente') {
+          $id_valor_resp = "'1'";
+        } elseif ($valor == 'Muy Bien') {
+          $id_valor_resp = "'2'";
+        } elseif ($valor == 'Bien') {
+          $id_valor_resp = "'3'";
+        }elseif($valor == 'Regular'){
+          $id_valor_resp = "'4'";
+        }elseif($valor == 'Malo'){
+          $id_valor_resp = "'5'";
+        }else{
+          $id_valor_resp = "NULL";
+        }
 
-  $sql = "INSERT INTO calificar_propuestas VALUES
-  (null,'$indice','$valor',$id_valor_resp,'$id_conferencia','$id_tema','$id_usuario')";
-  $resultado = $this->conexion_db->query($sql);
+          $sql = "INSERT INTO calificar_propuestas VALUES
+          (null,'$indice','$valor',$id_valor_resp,'$id_conferencia','$id_tema','$id_usuario')";
+          $resultado = $this->conexion_db->query($sql);
 
-}
-return $resultado;
-
+      }
+      return $resultado;
+    }
       // return $resultado;
 
-    }
 
-    public function actualizarRespuestasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario){
 
+    public function actualizarRespuestasBD($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario)
+    {
       // $pregunta4 = !empty($v4) ? "'$v4'" : "NULL";
-
+      var_dump($arreglo,$id_congreso,$id_tema,$id_conferencia,$id_usuario);
+      die();
       $sql1 = "DELETE FROM calificar_propuestas WHERE id_conferencia = '$id_conferencia' AND id_usuario='$id_usuario'";
       $resultado1 = $this->conexion_db->query($sql1);
 
@@ -583,15 +602,15 @@ return $resultado;
       foreach($arreglo as $indice =>$valor){
 
 
-        if ($valor == 'Excellent') {
+        if ($valor == 'Excelente') {
           $id_valor_resp = "'1'";
-        } elseif ($valor == 'Very Good') {
+        } elseif ($valor == 'Muy Bien') {
           $id_valor_resp = "'2'";
-        } elseif ($valor == 'Good') {
+        } elseif ($valor == 'Bien') {
           $id_valor_resp = "'3'";
         }elseif($valor == 'Regular'){
           $id_valor_resp = "'4'";
-        }elseif($valor == 'Bad'){
+        }elseif($valor == 'Malo'){
           $id_valor_resp = "'5'";
         }else{
           $id_valor_resp = "NULL";
@@ -617,85 +636,77 @@ return $resultado;
     //   return $conferencias;
     // }
 
-    public function preguntas(){
+    public function preguntas()
+    {
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
-      GROUP BY area_calificar
-      ORDER BY area_calificar
-      ";
+              LEFT JOIN area_conferencia 
+              ON preguntas.area_calificar = area_conferencia.id_area
+              GROUP BY area_calificar
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-
-      foreach($conferencias as $preguntas){
-    
+      //Mostrar título de cada sección
+      foreach($conferencias as $preguntas)
+      {
         $html.='<div id="'.$preguntas['id_pregunta'].'" class="column medium-12">
-        <h5 class="unique"><b>-'.$preguntas['nombre_area'].'</b></h5>';
+        <h5 class="unique"><b>- '.$preguntas['nombre_area'].'</b></h5>';
         $html.=$this->preg($preguntas['area_calificar']);
         $html.= '</div>';
-
-
       }
 
       return $html;
-
     }
 
-    public function preg($id){
+    //construcción de preguntas por cada área a calificar
+    public function preg($id)
+    {
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
-      WHERE area_calificar = '$id'
-      ORDER BY area_calificar
-      ";
+              INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
+              WHERE area_calificar = '$id'
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
-      $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
+      $preguntas = $resultado->fetch_all(MYSQLI_ASSOC);
 
+      foreach($preguntas as $pregunta)
+      {
+        $nombre_tema = $pregunta['nombre_area'];
+        $titulo = $pregunta['nombre_area'];
 
-      foreach($conferencias as $preguntas){
-        $nombre_tema = $preguntas['nombre_area'];
+        //pregunta de tipo checkbox
+        if($pregunta['tipo']==1 )
+        {
+          $html .= '<div id="'.$pregunta['id_pregunta'].'" class="column medium-8">';
+          $html .= '<label for=""><b>'.$pregunta['pregunta'].'</b></label><br>';
 
-        $titulo = $preguntas['nombre_area'];
-
-
-        if($preguntas['tipo']==1 ){
-          $html .=  '
-          
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          ';
-
-
-          $html .='<label for=""><b>'.$preguntas['pregunta'].'</b></label><br>';
-
-         $html.= $this->respuestachecks($preguntas['id_pregunta']);
-          $html.='</div>';
-
+          $html .= $this->respuestachecks($pregunta['id_pregunta']);
+          $html .= '</div>';
         }
-
-        if($preguntas['tipo']==2){
+        //pregunta de tipo input
+        if($pregunta['tipo']==2)
+        {
           $html .=  '
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          
-          <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>
-          <input type="text" name="'.$preguntas['id_pregunta'].'"  placeholder="Razon" >
+          <div id="'.$pregunta['id_pregunta'].'" class="column medium-8">
+          <label for=""><b>'.$pregunta['pregunta'].'</b></label><br>
+          <input type="text" name="'.$pregunta['id_pregunta'].'"  placeholder="Razon" >aquí
           </div>';
         }
 
-        if($preguntas['tipo']==3){
-          $html .=  '
-          <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
-          <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>
-         ';
+        if($pregunta['tipo']==3)
+        {
+          $html .=  '<div id="'.$pregunta['id_pregunta'].'" class="column medium-8">
+                      <label for=""><b>'.$pregunta['pregunta'].'</b></label><br>';
           $html.= $this->consultaPregunta();
           $html.=' </div>';
- 
         }  
       
       }
 
       return $html;
-
     }
 
     public function tituloConferencia($id){
@@ -725,29 +736,27 @@ return $resultado;
     }
 
 
-    public function pregContestadas($conferencia,$usuario){
+    public function pregContestadas($conferencia,$usuario)
+    {
 
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
-      GROUP BY area_calificar
-      ORDER BY area_calificar
-      ";
+              INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
+              GROUP BY area_calificar
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-      foreach($conferencias as $preguntas){
-    
+      foreach($conferencias as $preguntas)
+      {
         $html.='<div id="'.$preguntas['id_pregunta'].'" class="column medium-12">
         <h5 class="unique"><b>-'.$preguntas['nombre_area'].'</b></h5>';
         $html.=$this->preguntasContestadas($preguntas['area_calificar'],$conferencia,$usuario);
         $html.= '</div>';
-
-
       }
 
       return $html;
-
 
     }
 
@@ -756,30 +765,29 @@ return $resultado;
 
       $html="";
       $sql = "SELECT * FROM preguntas
-      INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
-      WHERE area_calificar = '$id'
-      ORDER BY area_calificar
-
-      ";
+              INNER JOIN area_conferencia ON preguntas.area_calificar = area_conferencia.id_area
+              WHERE area_calificar = '$id'
+              ORDER BY area_calificar
+              ";
       $resultado = $this->conexion_db->query($sql); 
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
 
-      foreach($conferencias as $preguntas){
-
-        if($preguntas['tipo']==1){
+      foreach($conferencias as $preguntas)
+      {
+        if($preguntas['tipo']==1)
+        {
           $html .=  '
           <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
           <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>';
 
-         $html.= $this->respuestachecksContestadas($preguntas['id_pregunta'],$conferencia,$usuario);
+          $html.= $this->respuestachecksContestadas($preguntas['id_pregunta'],$conferencia,$usuario);
           $html.='</div>';
-
         }
 
-
-        if($preguntas['tipo']==2){
-
+        //preguntas abiertas (input)
+        if($preguntas['tipo']==2)
+        {
           $html.=' <div id="'.$preguntas['id_pregunta'].'" class="column medium-8">
           <label for=""><b>'.$preguntas['pregunta'].'</b></label><br>';
           $html.= $this->consultaInputContestados($preguntas['id_pregunta'],$conferencia,$usuario);
@@ -919,30 +927,28 @@ return $resultado;
  
     }
 
-    public function consultaInputContestados($id,$conferencia,$usuario){
+    public function consultaInputContestados($id,$conferencia,$usuario)
+    {
       $html="";
 
       $sql1 = "SELECT * FROM calificar_propuestas
-      WHERE id_conferencia = '$conferencia' 
-      AND id_usuario='$usuario'
-      AND id_pregunta = $id";
+              WHERE id_conferencia = '$conferencia' 
+              AND id_usuario='$usuario'
+              AND id_pregunta = $id
+              ";
       $resultado1 = $this->conexion_db->query($sql1);
       $respuestas_usuario = $resultado1->fetch_all(MYSQLI_ASSOC);
 
-
-      foreach($respuestas_usuario as $respuestas =>$i){
-
-
+      foreach($respuestas_usuario as $respuestas =>$i)
+      {
         $html.='
-        <input type="text" name="'.$i['id_pregunta'].'" value="'.$i['respuesta'].'"  placeholder="Razon" >
-        ';
-
-
+        <input type="text" name="'.$i['id_pregunta'].'" value="'.$i['respuesta'].'"  placeholder="Razon">';
       }
+      
       return $html;
 
-
     }
+
     public function consultaPregunta(){
 
       $html="";
@@ -969,27 +975,25 @@ return $resultado;
  
     }
 
-    public function respuestachecks($id){
+    //armar las respuestas para las preguntas de tipo check
+    public function respuestachecks($id)
+    {
       $html = '';
       $sql = "SELECT * FROM respuestas
-      INNER JOIN valor_respuestas ON valor_respuestas.id_respuesta = respuestas.id_valor_respuesta
-      WHERE id_pregunta = '$id'" ;
+              INNER JOIN valor_respuestas ON valor_respuestas.id_respuesta = respuestas.id_valor_respuesta
+              WHERE id_pregunta = '$id'" ;
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-     
-      foreach($conferencias as $respuestas =>$i){
+      foreach($conferencias as $respuestas =>$i)
+      {
         $resp = $i['valor_input'].'-'.$i['respuesta'];
-
         $name = 'name='.$id;
-
-        $html.='<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'">
+        $html .= '<input type="radio" '.$name.' id="html"  value="'.$i['respuesta'].'">
         <label for="html">'.$resp.'</label><br>';
       }
 
       return $html;
-
-
     }
 
     public function propuestasCalifcadasPorUsuario($id){

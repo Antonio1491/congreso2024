@@ -132,9 +132,6 @@ const propuestas_calificar = async() =>{
       calificados();
 
     
-    
-    
-    
       let botonTema= document.getElementById('botones');
 
 
