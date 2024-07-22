@@ -5,7 +5,7 @@
   <div class="row">
     <div class="col-sm-12 col-md-4">
       <img src="build/img/hotel.jpg" alt="" class="mb-4" width="100%">
-      <a href="#">
+      <a href="hospedaje.php">
         <h4 class="text-center subtituloPMin">Encuentra tu alojamiento</h4>
       </a>
       <p class="text-justofy">Mérida cuenta con una amplia oferta hotelera, en esta sección encontrarás información sobre hoteles a corta distancia del Centro de Convenciones.

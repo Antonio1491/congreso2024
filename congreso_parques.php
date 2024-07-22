@@ -220,7 +220,7 @@
           <h4 class="subtituloComplementario">23 de Octubre</h4>
           <p>Desde parques urbanos,  proyectos ciudadanos y centros recreativos hasta técnicas sobre temas diversos del espacio público. Esta es una gran oportunidad para expandir tu conocimiento.
           </p>
-          <a href="talleres.php" class="btn btn__primary disabled">Ver Más</a>
+          <a href="talleres.php" class="btn btn__primary">Ver Más</a>
         </div>
       </article>
     </div>
@@ -231,7 +231,7 @@
           <h4 class="subtituloComplementario">23 de Octubre</h4>
           <p>Obtén conocimientos técnicos sobre un tema especializado, contarán con la orientación de un especialista que te ayudará a ampliar tus conocimientos y aprender técnicas sobre diversos temas del espacio público.
           </p>
-          <a href="talleres.php" class="btn btn__primary disabled">Ver Más</a>
+          <a href="talleres.php" class="btn btn__primary">Ver Más</a>
         </div>
         <div class="col-sm-12 col-md-6"></div>
       </article>
@@ -244,7 +244,7 @@
           <h4 class="subtituloComplementario">24 al 25 de Octubre</h4>
           <p>Es el foro de negocios que reúne a las empresas líderes del mercado en México y el mundo, presentando los mejores productos y servicios para el diseño, construcción y equipamiento del espacio público.
           </p>
-          <a href="expo_parques.php" class="btn btn__primary disabled">Ver Más</a>
+          <a href="https://www.expoespaciopublico.com/" class="btn btn__primary">Ver Más</a>
         </div>
       </article>
     </div>
@@ -255,7 +255,7 @@
           <h4 class="subtituloComplementario">23 al 25 de Octubre</h4>
           <p>Amplía tu red profesional y disfruta de los 3 eventos organizados especialmente para ti. Asiste a la fiesta de bienvenida, la fiesta de la cerveza y la fiesta de clausura del Congreso, reúnete en un ambiente distendido, diviértete y establece contactos.
           </p>
-          <a href="sociales.php" class="btn btn__primary disabled">Ver Más</a>
+          <a href="sociales.php" class="btn btn__primary">Ver Más</a>
         </div>
         <div class="col-sm-12 col-md-6"></div>
       </article>

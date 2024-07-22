@@ -76,6 +76,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="sede.php">Mérida, Yucatán</a></li>
               <li><a class="dropdown-item" href="conectividad.php">Conectividad</a></li>
+              <li><a class="dropdown-item" href="hospedaje.php">Hospedaje</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown">

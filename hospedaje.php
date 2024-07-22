@@ -86,7 +86,7 @@
             <p><strong class="hotel__dato">Clave de Reservación:</strong> CONGRESO PARQUES MERIDA 2024 </p>
             <p><strong class="hotel__dato">Contacto:</strong> Gabriel Carrillo Gasca </br>
             ventas@hiexmerida.com</br>Tel - 999 964 22 00  ext. 2100  Cel. 999 204 9517</p>
-            <p><strong class="hotel__dato">Web:</strong>https://www.ihg.com/holidayinnexpress/hotels/us/es/merida/midsa/hoteldetail</p>
+            <p><strong class="hotel__dato">Web:</strong>https://www.ihg.com/</p>
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
             <p><strong class="hotel__dato">Clave de Reservación:</strong>CPMID24</p>
             <p><strong class="hotel__dato">Contacto:</strong> Shelia Jiménez</br>hector.rojas3@hilton.com</br>
             Tel - 4777403219</p>
-            <p><strong class="hotel__dato">Web:</strong> https://all.accor.com/ssr/app/accor/rates/A7V8/index.es.shtml?dateIn=2024-09-06&nights=1&compositions=2&stayplus=false&snu=false&accessibleRooms=false&hideWDR=true&productCode=null&hideHotelDetails=true&utm_campaign=A7V8-MX-cpc-desktop-default-0--localuniversal--0-0-0&utm_medium=partenariats&hmGUID=dc6f4480-875a-43da-a91f-9502e0c575aa&utm_source=seo_meta_google</p>
+            <p><strong class="hotel__dato">Web:</strong> https://all.accor.com/</p>
           </div>
         </div>
       </div>
