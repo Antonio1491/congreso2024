@@ -7,7 +7,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Registro<br>Sesiones Educativas</h1>
-    <img src="img/linea.png" alt="">
+    <img src="img/linea.png" alt="" class="img-fluid">
   </div>
 </header>
 <div class="container my-5">
@@ -211,7 +211,7 @@
         </fieldset>
         <div class="text-center">
         <input type="hidden" name="evento" value="2">
-          <input type="submit" name="" value="Registrar" class="btn btn__primary ">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary disabled">
         </div>
         <div>
       
