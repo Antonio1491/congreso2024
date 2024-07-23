@@ -942,7 +942,7 @@ return $resultado;
       foreach($respuestas_usuario as $respuestas =>$i)
       {
         $html.='
-        <input type="text" name="'.$i['id_pregunta'].'" value="'.$i['respuesta'].'"  placeholder="Razon">';
+        <input type="text" name="'.$i['id_pregunta'].'" value="'.$i['respuesta'].'"  placeholder="">';
       }
       
       return $html;
