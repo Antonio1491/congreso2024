@@ -33,8 +33,10 @@ return $element;
 
   }
 
-  public function contendorPrograma(){
-    $sql = "SELECT fecha_inicio,fecha_fin FROM eventos";
+  // ::::: Crear contenedor de programa :::::
+  public function contendorPrograma($congreso){
+    $sql = "SELECT fecha_inicio, fecha_fin FROM eventos
+            WHERE id = '$congreso'"; 
     $consulta = $this->conexion_db->query($sql);
     $listaBloque = $consulta->fetch_all(MYSQLI_ASSOC);
 

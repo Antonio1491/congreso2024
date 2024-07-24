@@ -20,7 +20,7 @@ $listaBloque = new Programa();
   <div class="row">
     <?php
     $congreso = "2";
-    $bloque = $listaBloque->contendorPrograma(); 
+    $bloque = $listaBloque->contendorPrograma($congreso); 
     echo $bloque
     ?>
   </div>
