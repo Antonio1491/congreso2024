@@ -82,6 +82,14 @@ class Programa extends Conexion{
     return $sql;
   }
 
+  public function eliminarBloquePrograma($id)
+  {
+    $sql = $this->conexion_db->query("DELETE FROM programa 
+              WHERE id = '$id' ");
+
+    return $sql;
+  }
+
 
 
   }
