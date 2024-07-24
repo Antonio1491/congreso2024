@@ -19,7 +19,7 @@ $listaBloque = new Programa();
   <div class="container mt-5 mb-5">
   <div class="row">
     <?php
-    $congreso = "1";
+    $congreso = "2";
     $bloque = $listaBloque->contendorPrograma(); 
     echo $bloque
     ?>
