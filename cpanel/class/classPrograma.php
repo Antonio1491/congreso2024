@@ -46,7 +46,7 @@ class Programa extends Conexion{
     $contenido = "";
 
      foreach($data as $item){
-        $contenido .= "<li><span>".$item["taller_ing"]."</span></li>";
+        $contenido .= "<li><span>".$item["titulo"]."</span></li>";
       }
 
     return $contenido;
