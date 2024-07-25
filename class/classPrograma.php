@@ -1,10 +1,14 @@
 <?php
-class Programa  extends Conexion{
-  public function __construct(){
+class Programa  extends Conexion
+{
+  
+  public function __construct()
+  {
       parent::__construct();
   }
 
-  public function botones(){
+  public function botones()
+  {
     $sql = "SELECT fecha_inicio,fecha_fin FROM congresos";
     $consulta = $this->conexion_db->query($sql);
     $listaBloque = $consulta->fetch_all(MYSQLI_ASSOC);
@@ -12,24 +16,24 @@ class Programa  extends Conexion{
     $fecha= $listaBloque[0]['fecha_inicio']; 
     $fecha2= $listaBloque[0]['fecha_fin']; 
 
-
     $datetime1 = new DateTime($fecha);// Imprime mi�rcoles, 08 de marzo del 2017
     $datetime2 = new DateTime($fecha2);// Imprime mi�rcoles, 08 de marzo del 2017
-$num_final= date_format($datetime1, ' Y-m-d ');
+    $num_final= date_format($datetime1, ' Y-m-d ');
 
-$datetime2->modify('+1 day');
-$interval = $datetime1->diff($datetime2);
-$hola = $interval->format("%a");
-$numero = intval($hola);
-$count = 0;
-$element = '';
-while($count < $numero){
+    $datetime2->modify('+1 day');
+    $interval = $datetime1->diff($datetime2);
+    $hola = $interval->format("%a");
+    $numero = intval($hola);
+    $count = 0;
+    $element = '';
 
-    $count++;
-$element.='<input type="button" value="Day '.$count.'" id="ocultar'.$count.'"class="btn_programa btn_2 "/>';
+    while($count < $numero)
+    {
+      $count++;
+      $element.='<input type="button" value="Day '.$count.'" id="ocultar'.$count.'"class="btn_programa btn_2 "/>';
+    }
 
-}
-return $element;
+    return $element;
 
   }
 
