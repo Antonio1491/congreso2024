@@ -105,9 +105,12 @@ return $element;
       <article class="actividad">
       <header id="contenedor'.$bloque['id'].'">
         <div class="centrado_vertical">';
-        if($bloque['tipo']=='Conferencias'){
-          $htmlBloque .=' <img src="build/img/icon-conferencia.png" alt="">';
+        if($bloque['tipo']=='Magistral'){
+          $htmlBloque .=' <img src="build/img/icon-magistral.png" alt="">';
           }
+          if($bloque['tipo']=='Conferencias'){
+            $htmlBloque .=' <img src="build/img/icon-conferencia.png" alt="">';
+            }
           if($bloque['tipo']=='Talleres'){
             $htmlBloque .=' <img src="build/img/icon-taller-curricular.png" alt="">';
             }

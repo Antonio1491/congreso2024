@@ -59,6 +59,7 @@ $fecha = json_decode($congreso->getFecha($_SESSION["evento"]));
                 <div class="column medium-3">
                   <label for="">Tipo:</label>
                   <select name="tipoBloque">
+                    <option value="Magistral">Magistral</option>
                     <option value="Conferencias">Conferencia</option>
                     <option value="Talleres">Taller</option>
                     <option value="Registro">Registro</option>
