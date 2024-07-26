@@ -17,12 +17,18 @@ class Programa extends Conexion{
     return json_encode($programa);
   }
 
+  //bloque del programa
   public function bloque($tipo, $fecha, $inicio, $fin, $congreso)
   {
 
-    if($tipo === 'Conferencias')
+    if($tipo === 'Conferencias' OR $tipo === 'Magistral')
     {
-      $sql = "SELECT * FROM ponencias where fecha = '$fecha' AND hora_inicio BETWEEN '$inicio' AND '$fin' ORDER BY hora_inicio";
+      $sql = "SELECT * FROM ponencias 
+              WHERE fecha = '$fecha' 
+              AND hora_inicio 
+              BETWEEN '$inicio' 
+              AND '$fin' 
+              ORDER BY hora_inicio";
 
       $resultado =  $this->conexion_db->query($sql);
 
@@ -31,7 +37,7 @@ class Programa extends Conexion{
       $contenido = "";
       
       foreach($data as $item){
-        $contenido .= "<li><span>".$item["titulo"]."</span></li>";
+        $contenido .= "<li><span>Ti".$item["titulo"]."</span></li>";
       }
 
       return $contenido;

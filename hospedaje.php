@@ -14,8 +14,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 text-center p-md-5">
           <p class="lead white">
-          León cuenta con una amplia oferta hotelera, en esta sección encontrarás información sobre hoteles a corta distancia del Poliforum León.<br>
-          Si tu hotel desea formar parte del evento, escríbenos a: info@congresoparques.com 
+          Encuentra tu alojamiento Mérida cuenta con una amplia oferta hotelera, en esta sección encontrarás información sobre hoteles a corta distancia del Centro de Convenciones Yucatán Siglo XXI. Si tu hotel desea formar parte del evento, escríbenos a:  info@congresoparques.com 
           </p> 
           <p>
             <strong style="color: #cfde00;">Para utilizar tu clave de reservación comunícate de manera telefónica a tu hotel seleccionado</strong>

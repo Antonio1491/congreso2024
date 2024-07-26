@@ -146,6 +146,10 @@ return $element;
         });
       </script>';
 
+      if($bloque['tipo']=='Magistral')
+        {
+          $htmlBloque.= $this->contenedorPrograma($bloque['id'],$fechaInicio,$bloque['inicio'],$bloque['fin'],$bloque['tipo']);
+        }
         if($bloque['tipo']=='Conferencias')
         {
           $htmlBloque.= $this->contenedorPrograma($bloque['id'],$fechaInicio,$bloque['inicio'],$bloque['fin'],$bloque['tipo']);
@@ -165,7 +169,12 @@ return $element;
   }
 
   public function contenedorPrograma($id_bloque,$fechaInicio,$horaI,$horaF,$tipo){
-    $sql = "SELECT * FROM ponencias where fecha = '$fechaInicio' AND hora_inicio BETWEEN '$horaI' AND '$horaF' ORDER BY hora_inicio";
+    $sql = "SELECT * FROM ponencias 
+            where fecha = '$fechaInicio' 
+            AND hora_inicio 
+            BETWEEN '$horaI' 
+            AND '$horaF' 
+            ORDER BY hora_inicio";
     $consulta = $this->conexion_db->query($sql);
     $listaBloque = $consulta->fetch_all(MYSQLI_ASSOC);
 
@@ -176,14 +185,13 @@ return $element;
       
       $resumen = $this->resumen($valor['descripcion']);
       $bloqueActividad.= "<script>
-        $(document).ready(function(){
-            $('.".$valor["id"]."').click(function(){
-                $('#".$valor["id"]."').fadeToggle();
-              });
-        });
-      </script>";
+                          $(document).ready(function(){
+                              $('.".$valor["id"]."').click(function(){
+                                  $('#".$valor["id"]."').fadeToggle();
+                                });
+                            });
+                          </script>";
 
-      
       $bloqueActividad .= 
         "<div class='conferencia'>
           <div class='lugar'>
