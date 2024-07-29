@@ -107,7 +107,8 @@ $fecha = json_decode($congreso->getFecha($_SESSION["evento"]));
             </div>
           </section>
           <section class="contenido_bloque">
-            <?php $contenido = $programaContenido->bloque($bloque->tipo, $bloque->fecha, $bloque->inicio, $bloque->fin, $bloque->id_congreso) ?>
+            <?php 
+            $contenido = $programaContenido->bloque($bloque->tipo, $bloque->fecha, $bloque->inicio, $bloque->fin, $bloque->id_congreso) ?>
               <ul class="lista_bloque">
                 <?php   
                echo $contenido; ?>

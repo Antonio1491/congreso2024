@@ -79,14 +79,14 @@ $listaBloque = new Programa();
         <div class='modal-dialog'>
           <div class='modal-content'>
             <div class='modal-header'>
-              <h1 class='modal-title fs-5' id='exampleModalLabel'>".$valor['titulo']." " .$valor['subtitulo']."</h1>
+              <h3 class='modal-title fs-5 subtituloPMin' id='exampleModalLabel'>".$valor['titulo']." " .$valor['subtitulo']."</h3>
               <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
             </div>
             <div class='modal-body'>
               <p >".$valor['descripcion']."</p>
-              <small>Fecha: ".$valor['fecha']."</small>
-              <small>Horario: de ".$valor['hora_inicio']." a ".$valor['hora_fin']." </small>
-              <small>Lugar: ".$valor['ubicacion']."</small>
+              <small><strong>Fecha:</strong> ".$valor['fecha']."</small><br>
+              <small><strong>Horario:</strong> de ".$valor['hora_inicio']." a ".$valor['hora_fin']." </small><br>
+              <small><strong>Lugar:</strong> ".$valor['ubicacion']."</small>
             </div>
           </div>
         </div>

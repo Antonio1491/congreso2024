@@ -25,8 +25,7 @@ class Conferencistas extends Conexion{
     // ON a.id_conferencia = b.id_conferencia
     // WHERE b.id_tipo = 2 AND b.id_congreso = '$congreso'  AND a.id_congreso ='$congreso'
     // ORDER BY prioridad";
-    $sql = "
-      SELECT * from usuarios
+    $sql = "SELECT * from usuarios
       LEFT JOIN usuarios_ponencias
       ON usuarios.id = usuarios_ponencias.id_usuario
       Left JOIN conferencias 
