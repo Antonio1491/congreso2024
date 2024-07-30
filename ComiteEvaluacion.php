@@ -13,13 +13,10 @@ $data = new Conferencistas();
   <div class="container mt-5">
     <div class="row">
       <div class="col-sm-12 col-md-8">
-        <p>¡Descubre quiénes forman parte de nuestro consejo consultivo!
-        <br>
-        El Consejo Evaluador del Congreso Parques 2024 está formado por expertos en desarrollo y conservación de espacios públicos en Latinoamérica. 
+        <p class="subtituloPMin">¡Descubre quiénes forman parte de nuestro consejo consultivo!</p>
+        <p>El Consejo Evaluador del Congreso Parques 2024 está formado por expertos en desarrollo y conservación de espacios públicos en Latinoamérica. 
         Este grupo de profesionales destacados es fundamental para garantizar la calidad y relevancia de las propuestas seleccionadas para el evento.</p>
         <p>¡Conoce a todos los integrantes!</p>
-        
-     
   </div>
 
   <div class="container mt-3">

@@ -88,6 +88,7 @@
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="posters.php">Pósters Científicos</a></li>
               <li><a class="dropdown-item" href="voluntarios.php">Voluntarios</a></li>
+              <li><a class="dropdown-item" href="ComiteEvaluacion.php">Comité Evaluador</a></li>
             </ul>
           </li>
           <li class="nav-item">
