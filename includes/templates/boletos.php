@@ -24,9 +24,9 @@
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
-            <li>Ticket de comida - Fiesta de Inauguración</li>
+            <!-- <li>Ticket de comida - Fiesta de Inauguración</li> -->
             <li>Ticket de comida - Fiesta de Clausura</li>
-            <li>Beer Party</li>
+            <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
             <li>Certificado Digital de Participación</li>
@@ -55,9 +55,9 @@
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
-            <li>Ticket de comida - Fiesta de Inauguración</li>
+            <!-- <li>Ticket de comida - Fiesta de Inauguración</li> -->
             <li>Ticket de comida - Fiesta de Clausura</li>
-            <li>Beer Party</li>
+            <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
             <li>Certificado Digital de Participación</li>
@@ -87,9 +87,9 @@
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
-            <li style="text-decoration:line-through; ">Ticket de comida - Fiesta de Inauguración</li>
+            <!-- <li style="text-decoration:line-through; ">Ticket de comida - Fiesta de Inauguración</li> -->
             <li style="text-decoration:line-through; ">Ticket de comida - Fiesta de Clausura</li>
-            <li>Beer Party</li>
+            <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
             <li>Certificado Digital de Participación</li>

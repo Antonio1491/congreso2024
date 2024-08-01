@@ -113,7 +113,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2 class="subtituloPMin">Conectividad Terrestre: <img src="build/img/bus.svg" alt="" class="icon_title"></h2> 
-        <p>León tiene acceso a las redes carreteras y puertos más importantes, conectando de manera rápida tanto el norte como al sur del país. También cuenta con dinamismo y excelente conectividad carretera y férrea con Estados Unidos de América y Canadá. </p>
+        <p>Mérida tiene acceso a las redes carreteras y puertos más importantes, conectando de manera rápida tanto el norte como al sur del país. También cuenta con dinamismo y excelente conectividad carretera y férrea con Estados Unidos de América y Canadá. </p>
       </div>
     </div>
     <div class="row mt-5 mb-3">

@@ -11,14 +11,14 @@
     <div class="container">
       <div class="row">
         <div class="col col-sm-12 col-md-12 text-center p-md-5">
-          <p class="lead white">Amplía tu red profesional y disfruta de los 3 eventos organizados especialmente para ti. <strong class="verde bolded">Asiste a la fiesta de Apertura, la Beer Party y al Evento de Clausura del Congreso Parques</strong>. Reúnete en un ambiente relajado, diviértete y establece contactos. 
+          <p class="lead white">Expande tus horizontes profesionales y sumérgete en una experiencia única con los dos eventos exclusivos que hemos organizado especialmente para ti. Eventos sociales donde la diversión se mezcla con la innovación y el networking. En un ambiente relajado y lleno de posibilidades,<strong class="verde bolded"> disfruta, conecta y forja relaciones</strong> que impulsarán el futuro de los parques y espacios públicos.
           </p>
         </div>
       </div>
     </div>
   </div>
   
-  <div class="container-fluid ">
+  <!-- <div class="container-fluid ">
     <article class="row bgApertura">
       <div class="col-sm-12 col-md-6"></div>
       <div class="col-sm-12 col-md-6 align-self-center">
@@ -28,23 +28,23 @@
         </p>
         <div class="row detalles_evento">
           <div class="col-md-6 col-sm-12">
-           <!--  <span><i class="bi bi-clock "></i><p class="subtituloComplementario">  Hora:</p></span>
-             <p class="white">8:00 p.m. - 11 p.m.</p> -->
+            <span><i class="bi bi-clock "></i><p class="subtituloComplementario">  Hora:</p></span>
+             <p class="white">8:00 p.m. - 11 p.m.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <!-- <span><i class="fi-marker"></i><p class="subtituloComplementario"> Lugar:</p></span>
-            <p><a href="https://goo.gl/maps/F4EUNkGaD9SjH2Xy8" class="white">Museo de Ciencias Explora </a></p> -->
+            <span><i class="fi-marker"></i><p class="subtituloComplementario"> Lugar:</p></span>
+            <p><a href="https://goo.gl/maps/F4EUNkGaD9SjH2Xy8" class="white">Museo de Ciencias Explora </a></p>
           </div>
         </div>
       </div>
     </article>
-  </div>
+  </div> -->
   <div class="container-fluid ">
     <article class="row bgBeerparty">
       <div class="col-sm-12 col-md-6 align-self-center">
-        <h2 class="subtituloBMin">Beer Party</h2>
+        <h2 class="subtituloBMin">Beer & Mix Party</h2>
         <h4 class="subtituloComplementario">24 de octubre</h4>
-        <p class="white">Asiste a la Beer Party dentro de  Expo Espacio Público, donde tendrás la oportunidad de probar la deliciosa cerveza artesanal de Mérida, conocer a los expositores y hacer networking. 
+        <p class="white">Únete a nosotros en la Beer & Mix Party, un evento social vibrante y lleno de sabor que se celebra en el corazón del Congreso Parques. Disfruta de una noche única en la que la cerveza artesanal y la mixología se combinan para ofrecerte una experiencia inolvidable. ¡No te pierdas esta oportunidad de brindar por el futuro de nuestros espacios públicos!
         </p>
         <div class="row detalles_evento">
           <!-- <div class="col-md-6 col-sm-12">
@@ -66,7 +66,7 @@
       <div class="col-sm-12 col-md-6 align-self-center">
       <h2 class="subtituloBMin">Evento de Clausura</h2>
         <h4 class="subtituloComplementario">25 de octubre</h4>
-        <p class="white">Ya que hemos aprendido de los expertos, adquirido nuevas experiencias, ¡Es hora de celebrar e intercambiar tarjetas! Qué mejor escenario que este Evento de Clausura en el que encontrarás deliciosa comida local, música, baile y mucho ambiente rodeado por un gran parque. 
+        <p class="white">Actualizar la descripción de Evento de Clausura a: Después de aprender de los expertos y adquirir nuevas experiencias, ¡es hora de celebrar en el Evento de Clausura. Sumérgete en el ambiente vibrante de una de las cantinas botaneras más típicas de Mérida, donde te esperan antojitos yucatecos, música, baile y un ambiente único. Disfruta de la deliciosa comida local y la buena compañía, mientras brindas por los logros compartidos durante el Congreso Parques. 
         </p>
         <div class="row detalles_evento">
           <div class="col-md-6 col-sm-12">

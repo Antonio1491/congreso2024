@@ -349,7 +349,7 @@
                 <li>Eventos sociales**</li>
               </ul>
               <p>*Los talleres se adquieren adicionalmente</p>
-              <p>**Los actos sociales de apertura y clausura no están incluidos en la entrada de la categoría de estudiantes.</p>
+              <p>**El evento social de clausura no están incluidos en la entrada de la entrada bronce.</p>
             </div>
           </div>
         </div>
@@ -943,8 +943,8 @@
             <div class="accordion-body">
               <p>Habrán 3 eventos sociales en el Congreso Parques: </p>
               <ul>
-                <li>Evento Apertura el 23 de octubre</li>
-                <li>Beer Party el 24 de octubre</li>
+                <!-- <li>Evento Apertura el 23 de octubre</li> -->
+                <li>Beer & Mix Party el 24 de octubre</li>
                 <li>Evento de Clausura el 25 de octubre</li>
               </ul>
             </div>
@@ -958,9 +958,9 @@
           </h2>
           <div id="collapse60" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <p>Los Eventos Sociales de apertura y clausura están incluidos en su entrada al congreso*
-                La Beer Party está incluida para todos los que asistan al congreso.
-                *Excepto al adquirir una entrada de estudiante.
+              <p>Los Eventos Sociales están incluidos en su entrada al congreso*
+                La Beer & Mix Party está incluida para todos los que asistan al congreso.
+                El ticket de alimentos para el Evento Social de Clausura está disponible para las entradas oro y plata.
                 </p>
             </div>
           </div>
