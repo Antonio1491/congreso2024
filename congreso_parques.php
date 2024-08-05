@@ -205,7 +205,7 @@
         <div class="col-sm-12 col-md-6 align-self-center">
           <h2 class="subtituloBMin">Sesiones Educativas</h2>
           <h4 class="subtituloComplementario">24 y 25 de Octubre</h4>
-          <p>EEl momento asignado para el aprendizaje y capacitación será en las más de 40 sesiones educativas que contarán con conferencistas nacionales e internacionales.
+          <p>El momento asignado para el aprendizaje y capacitación será en las más de 40 sesiones educativas que contarán con conferencistas nacionales e internacionales.
           </p>
           <a href="programa.php" class="btn btn__primary ">Ver Más</a>
         </div>
