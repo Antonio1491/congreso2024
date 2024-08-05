@@ -196,7 +196,7 @@
           <p>Contaremos con expertos en parques urbanos y espacios públicos; ellos hablarán sobre sus experiencias profesionales y personales además de tocar temas de interés común para nuestras ciudades.
 
           </p>
-          <a href="#" class="btn btn__primary disabled">Ver Más</a>
+          <a href="programa.php" class="btn btn__primary">Ver Más</a>
         </div>
       </article>
     </div>
@@ -207,7 +207,7 @@
           <h4 class="subtituloComplementario">24 y 25 de Octubre</h4>
           <p>EEl momento asignado para el aprendizaje y capacitación será en las más de 40 sesiones educativas que contarán con conferencistas nacionales e internacionales.
           </p>
-          <a href="#" class="btn btn__primary disabled">Ver Más</a>
+          <a href="programa.php" class="btn btn__primary ">Ver Más</a>
         </div>
         <div class="col-sm-12 col-md-6"></div>
       </article>

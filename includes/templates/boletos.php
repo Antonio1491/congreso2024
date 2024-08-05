@@ -5,7 +5,8 @@
     <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly">
       <!-- Profesional Miembro -->
       <div class="boleto boleto__active m-3 mb-md-0 mb-sm-4">
-        <div class="cinta"><span>Preventa</span></div>
+        <!-- <div class="cinta"><span>Preventa</span></div> -->
+        <div class="cinta"><span>Venta Final</span></div>
         <div class="text-center">
         </div>
         <h4 class="boleto-titulo">
@@ -13,9 +14,10 @@
         </h4>
         <!-- <p class="text-center"><strong>*Precio para miembros activos de ANPR</strong></p> -->
         <div class="boleto-precio">
-        <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span>
+        <!-- <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span> -->
+        <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span>
+            <!-- <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span> -->
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -33,20 +35,22 @@
           </ul>
         </div>
         <div class="boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
+          <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary ">Comprar</a>
         </div> 
       </div>
       <!-- Estudiante -->
       <div class="boleto m-3 mb-md-0">
-        <div class="cinta"><span>Preventa</span></div>
+        <!-- <div class="cinta"><span>Preventa</span></div> -->
+        <div class="cinta"><span>Venta Final</span></div>
         <h4 class="boleto-titulo">
         <img src="img/icon_entrada_plata.png" alt="" height="60px">Plata
         </h4>
         <!-- <p class="text-center"><strong>*Estudiantes de nivel licenciatura</strong></p> -->
         <div class="boleto-precio">
-          <sup>$</sup>2,260<span style="font-size:1rem;"> MXN</span>
+          <!-- <sup>$</sup>2,260<span style="font-size:1rem;"> MXN</span> -->
+          <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
           <div class="boleto_precio_final">
-            <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
+            <!-- <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span> -->
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -64,21 +68,23 @@
           </ul>
         </div>
         <div class="text-center boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
+          <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary">Comprar</a>
         </div>
       </div>
       <!-- Profesional No miembro -->
       <div class="boleto boleto__active m-3 mb-md-0">
-        <div class="cinta"><span>Preventa</span></div>
+        <!-- <div class="cinta"><span>Preventa</span></div> -->
+        <div class="cinta"><span>Venta Final</span></div>
         <h4 class="boleto-titulo">
         <img src="img/icon_entrada_bronce.png" alt="" height="60px">Bronce<br>
           <!-- + Suscripción ANPR -->
         </h4>
         <!-- <p class="text-center"><strong>*Incluye prueba de Membresía ANPR</strong></p> -->
         <div class="boleto-precio">
-        <sup>$</sup>1,866<span style="font-size:1rem;"> MXN</span>
+        <!-- <sup>$</sup>1,866<span style="font-size:1rem;"> MXN</span> -->
+        <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span>
+            <!-- <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span> -->
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -96,7 +102,7 @@
           </ul>
         </div>
         <div class="text-center boleto-btn">
-          <a href="https://www.ticketopolis.com/congresoleon2023/tickets.aspx" class="btn btn__primary disabled">Comprar</a>
+          <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary">Comprar</a>
         </div>
       </div>
     </div>
