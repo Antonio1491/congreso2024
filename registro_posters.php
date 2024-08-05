@@ -117,7 +117,7 @@
           <div class="ocultar" id="contenedorBtn">
             <div class="row text-center" id="">
               <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
+                <button type="button" name="Autor" class="btn btn__primary disabled" id="btnAgregar">
                   <i class="fi-plus"></i> Añadir Participante</button>
               </div>
             </div>
@@ -182,7 +182,7 @@
         </fieldset>
         <div class="text-center mt-4">
           <input type="hidden" name="evento" value="2">
-          <input type="submit" name="" value="Registrar" class="btn btn__primary">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary disabled">
         </div>
       </form>
       <!-- Fin de formulario -->
