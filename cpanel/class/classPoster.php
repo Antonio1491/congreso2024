@@ -25,7 +25,7 @@ class Posters extends Conexion{
 
         $i = 0;
 
-        $carpetaDocumentos = $_SERVER['DOCUMENT_ROOT'].'/docs/';
+        $carpetaDocumentos = 'https://congresoparques.com/docs/';
         // var_dump($carpetaDocumentos);
 
   foreach($respuesta as $resp){
@@ -51,7 +51,7 @@ class Posters extends Conexion{
             }
             if( !empty($poster)){
                 $html .='
-                 <td class="text-center"><a download href="'.$carpetaDocumentos .$resp['poster'].'"><i class="fi-page-csv"></i></a></td>
+                 <td class="text-center"><a download href="'.$carpetaDocumentos .$resp['poster'].'"><i class="fi-page-csv"></i> '.$carpetaDocumentos .$resp['poster'].'</a></td>
                  ';
                  }else{
                  $html .='
