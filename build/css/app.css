@@ -1116,6 +1116,18 @@ footer .subtitulo {
   margin: 0 10px;
 }
 
+.carouselmobile {
+  Display: none;
+}
+
+@media (max-width: 767px) {
+  .carouselpc {
+    display: none;
+  }
+  .carouselmobile {
+    Display: block;
+  }
+}
 .seccionLegado img {
   height: 80px;
   margin-bottom: 30px;
