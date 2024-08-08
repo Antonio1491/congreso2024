@@ -157,100 +157,107 @@ class Conferencia extends Conexion{
 
     }
 
-    public function avanceCalificadorPorid(){
-
-
+    public function avanceCalificadorPorid()
+    {
       $i= 0;
 
-      $sql2 ="SELECT DISTINCT id_credencial FROM comite_tema";
+      $sql2 ="SELECT DISTINCT id_credencial 
+              FROM comite_tema";
       $resultado2 = $this->conexion_db->query($sql2);
       $resultado_consulta2 = $resultado2->fetch_all(MYSQLI_ASSOC);
 
-      foreach($resultado_consulta2 as $comite){
-
+      foreach($resultado_consulta2 as $comite)
+      {
         $user = $comite['id_credencial'];
-        $sql3 = "SELECT * FROM credenciales 
-        WHERE id_credencial = '$user'";
+        $sql3 = "SELECT * FROM usuarios
+                  WHERE id = '$user'";
         $resultado3 = $this->conexion_db->query($sql3);
         $resultado_consulta3 = $resultado3->fetch_all(MYSQLI_ASSOC);
 
-        foreach ($resultado_consulta3 as $pintarTabla){
+        foreach ($resultado_consulta3 as $pintarTabla)
+        {
           $i ++;
           $info = '
           <tr>
           <td>'.$i.'</td>
-          <td>'.$pintarTabla['nombre'].'</td>';
+          <td>'.$pintarTabla['nombres'].'</td>';
           $info.=$this->calcularAvance($user);
           $info .= '</tr>';
           echo $info;  
-
         }
 
       }
     }
 
-    public function calcularAvance($user){
-
+    public function calcularAvance($user)
+    {
       $array = [];
-
-
-      $sql2 = "SELECT id_tema from comite_tema
-      WHERE id_credencial ='$user'";
+      //Temas asignados al usuario (ids)
+      $sql2 = "SELECT id_tema 
+              from comite_tema
+              WHERE id_credencial ='$user'";
        $resultado2 = $this->conexion_db->query($sql2);
        $resultado_consulta2 = $resultado2->fetch_all(MYSQLI_ASSOC);
 
-      foreach ($resultado_consulta2 as $arreglotema){
+      foreach ($resultado_consulta2 as $arreglotema)
+      {
         array_push($array,$arreglotema['id_tema']);
       }
+
       $numerosuma = [];
       $temas_calificados = [];
 
-      foreach ($array as $dato){
-        $sql = "SELECT count(DISTINCT a.id_conferencia) as suma FROM conferencias AS a
-        INNER JOIN aspirantes AS b
-        ON a.id_conferencia = b.id_conferencia
-        INNER JOIN temas on temas.id_tema = a.id_tema
-        WHERE a.id_tema = '$dato'
-        ";
-    $resultado = $this->conexion_db->query($sql);
-    $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-    foreach ($resultado_consulta as $res){
-      array_push($numerosuma,intval($res['suma']));
+      foreach ($array as $dato)
+      {
+        //saber cuantas propuestas hay de ese tema
+        $sql = "SELECT count(DISTINCT a.id) as suma 
+                FROM ponencias AS a
+                INNER JOIN usuarios_ponencias AS b
+                ON a.id = b.id_ponencia
+                INNER JOIN temas on temas.id = a.id_tema
+                WHERE a.id_tema = '$dato' AND a.id_evento = 2";
+        $resultado = $this->conexion_db->query($sql);
+        $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
 
-    }
+        foreach ($resultado_consulta as $res)
+        {
+          //total de conferencias del mismo tema
+          array_push($numerosuma,intval($res['suma']));
+        }
 
-    $sql1= "SELECT COUNT(DISTINCT id_conferencia) as tema
-    FROM calificar_propuestas
-    WHERE  id_tema = $dato";
-    $resultado1 = $this->conexion_db->query($sql1);
-    $resultado_consult1 = $resultado1->fetch_all(MYSQLI_ASSOC);
+        //total de conferencias evaluadas segun el tema
+        $sql1= "SELECT COUNT(DISTINCT id_conferencia) as tema
+                FROM calificar_propuestas
+                WHERE  id_tema = $dato";
+        $resultado1 = $this->conexion_db->query($sql1);
+        $resultado_consult1 = $resultado1->fetch_all(MYSQLI_ASSOC);
 
-    foreach ($resultado_consult1 as $res1){
-      array_push($temas_calificados,intval($res1['tema']));
-
-    }
-
+        foreach ($resultado_consult1 as $res1)
+        {
+          array_push($temas_calificados,intval($res1['tema']));
+        }
       }
+
       $total=0;
       $total1=0;
 
-      foreach ($numerosuma as $value) {
+      foreach ($numerosuma as $value) 
+      {
         $total+=$value;
-    }
+      }
 
-    foreach($temas_calificados as $temas){
-      $total1+=$temas;
+      foreach($temas_calificados as $temas)
+      {
+        $total1+=$temas;
+      }
 
-    }
+      $html= '
+      <td>
+      <progress id="file" max="100" value="'.intval(($total1/$total)*100).'"></progress>  '.intval(($total1/$total)*100).'%
+      </td>
+      ';
 
-    
-    $html= '
-    <td>
-    <progress id="file" max="100" value="'.intval(($total1/$total)*100).'"></progress>  '.intval(($total1/$total)*100).'%
-    </td>
-    ';
-
-    return $html;
+      return $html;
     }
 
     public function listarPreguntas()
