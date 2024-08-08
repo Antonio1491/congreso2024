@@ -489,6 +489,18 @@ footer .subtitulo {
   letter-spacing: 1px;
 }
 
+.FooterResponsive {
+  Display: none;
+}
+
+@media (max-width: 767px) {
+  .FooterPC {
+    display: none;
+  }
+  .FooterResponsive {
+    Display: block;
+  }
+}
 .head_promocion {
   background-color: #1f2338;
   color: #ff00ff;

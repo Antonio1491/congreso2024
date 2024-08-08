@@ -20,4 +20,21 @@ footer{
     font-family: 'Antonio Bold';
     letter-spacing: 1px;
   }
+
+ 
+
+}
+
+     .FooterResponsive {
+      Display: none;
+      }
+
+        @media (max-width: 767px) {
+   .FooterPC{
+    display:none;
+      }
+
+     .FooterResponsive {
+      Display: block;
+      }
 }

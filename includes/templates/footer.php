@@ -1,3 +1,4 @@
+<div class="FooterPC">
 <footer class="container-fluid mt-5">
   <div class="container py-5">
     <div class="row">
@@ -30,6 +31,38 @@
     </div>
   </div>
 </footer>
+</div>
+
+<div class="FooterResponsive">
+<footer class="container-fluid mt-5">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col text-center">
+      <h4 class="subtitulo">¡Mantente informado!</h4>
+        <h6>Organizado por</h6>
+        <img src="./build/img/anpr_blanco.png" alt="" class="logoFooter">
+        <h6 class="pb-3">Contacto</h6>
+        <a href="https://www.facebook.com/CongresoParques/">
+          <img src="./build/img/icon_facebook.png" alt="" class="iRedes">
+        </a>
+        <a href="https://www.instagram.com/congreso_parques/">
+          <img src="./build/img/icon_instagram.png" alt="" class="iRedes">
+        </a>
+        <a href="https://www.youtube.com/channel/UC_ExzrmxP5er7qZHeVpWidQ">
+          <img src="./build/img/icon_youtube.png" alt="" class="iRedes">
+        </a>
+        <a href="https://twitter.com/congreso_parque">
+          <img src="./build/img/icon_twitter.png" alt="" class="iRedes">
+        </a>
+        <div>
+          <span>WhatsApp +52 999 353 0691</span><br>
+          <span>info@congresoparques.com</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
 
   <?php 
 $imagesDir = './build/img/headers/';
@@ -145,4 +178,20 @@ if(contenedorFondo){
 
 </body>
 </html>
- 
+ <style>
+   .FooterResponsive {
+      Display: none;
+      }
+
+        @media (max-width: 767px) {
+   .FooterPC{
+    display:none;
+      }
+
+     .FooterResponsive {
+      Display: block;
+      }
+}
+
+
+  </style>
