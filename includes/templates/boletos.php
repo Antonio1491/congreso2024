@@ -22,12 +22,12 @@
         </div>
         <div class="boleto-descripcion">
           <ul>
-            <li>Incluye un Taller</li>
+            <li>Incluye 1 Taller</li>
             <li>Acceso a Expo Espacios Públicos</li>
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
             <!-- <li>Ticket de comida - Fiesta de Inauguración</li> -->
-            <li>Ticket de comida - Fiesta de Clausura</li>
+            <li>Fiesta de Clausura</li>
             <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
@@ -60,7 +60,7 @@
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
             <!-- <li>Ticket de comida - Fiesta de Inauguración</li> -->
-            <li>Ticket de comida - Fiesta de Clausura</li>
+            <li>Fiesta de Clausura</li>
             <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
@@ -94,7 +94,7 @@
             <li>Acceso a Conferencias Magistrales</li>
             <li>Acceso a Sesiones Educativas</li>
             <!-- <li style="text-decoration:line-through; ">Ticket de comida - Fiesta de Inauguración</li> -->
-            <li style="text-decoration:line-through; ">Ticket de comida - Fiesta de Clausura</li>
+            <li style="text-decoration:line-through; ">Fiesta de Clausura</li>
             <li>Beer & Mix Party</li>
             <li>Comida el día Viernes</li>
             <li>Kit de Bienvenida</li>
