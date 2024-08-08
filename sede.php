@@ -101,7 +101,11 @@
   </div>
 </div>
 
-
+<div class="container mt-5">
+    <div class="row">
+      <img src="build/img/linea_gris.png" alt="">
+    </div>
+  </div>
 
 
 </main>
