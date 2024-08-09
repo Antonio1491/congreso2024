@@ -179,31 +179,33 @@ class Conferencia extends Conexion{
 
     public function calcularAvance($user)
     {
-      $array = [];
+      //Arreglo de temas asignados
+      $array_temas = [];
       //Temas asignados al usuario (ids)
       $sql2 = "SELECT id_tema 
               from comite_tema
               WHERE id_credencial ='$user'";
-       $resultado2 = $this->conexion_db->query($sql2);
-       $resultado_consulta2 = $resultado2->fetch_all(MYSQLI_ASSOC);
+      $resultado2 = $this->conexion_db->query($sql2);
+      $resultado_consulta2 = $resultado2->fetch_all(MYSQLI_ASSOC);
 
+      //Genera el arreglo de temas asignados (Ids)
       foreach ($resultado_consulta2 as $arreglotema)
       {
-        array_push($array,$arreglotema['id_tema']);
+        array_push($array_temas,$arreglotema['id_tema']);
       }
 
       $numerosuma = [];
       $temas_calificados = [];
 
-      foreach ($array as $dato)
+      foreach ($array_temas as $tema)
       {
-        //saber cuantas propuestas hay de ese tema
+        //saber cuantas propuestas hay de ese tema 
         $sql = "SELECT count(DISTINCT a.id) as suma 
                 FROM ponencias AS a
                 INNER JOIN usuarios_ponencias AS b
                 ON a.id = b.id_ponencia
                 INNER JOIN temas on temas.id = a.id_tema
-                WHERE a.id_tema = '$dato' AND a.id_evento = 2";
+                WHERE a.id_tema = '$tema' AND a.id_evento = 2";
         $resultado = $this->conexion_db->query($sql);
         $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
 
@@ -216,17 +218,21 @@ class Conferencia extends Conexion{
         //total de conferencias evaluadas segun el tema
         $sql1= "SELECT COUNT(DISTINCT id_conferencia) as tema
                 FROM calificar_propuestas
-                WHERE  id_tema = $dato";
+                WHERE  id_tema = $tema AND id_usuario = $user";
         $resultado1 = $this->conexion_db->query($sql1);
         $resultado_consult1 = $resultado1->fetch_all(MYSQLI_ASSOC);
 
         foreach ($resultado_consult1 as $res1)
         {
+          //asignamos el total de propuestas calificadas
           array_push($temas_calificados,intval($res1['tema']));
         }
       }
 
+      //total de propuestas de un tema
       $total=0;
+
+      //total de propuestas calificadas de u8n tema
       $total1=0;
 
       foreach ($numerosuma as $value) 
