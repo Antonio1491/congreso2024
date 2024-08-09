@@ -60,39 +60,48 @@ class Conferencia extends Conexion{
 
           $id_conf = $arr['id_conferencia'];
   
-          $sql1 = "SELECT DISTINCT a.id_conferencia, a.conferencia, a.modalidad, a.link, a.id_tema, a.id_congreso, b.nombre,
-          b.apellidos, b.pais, b.ciudad ,temas.tema, a.status FROM conferencias AS a
-          INNER JOIN aspirantes AS b
-          ON a.id_conferencia = b.id_conferencia
-          INNER JOIN temas on temas.id_tema = a.id_tema
-          WHERE a.id_conferencia = '$id_conf'
-          GROUP BY a.id_conferencia";
+          $sql1 = "SELECT DISTINCT a.id, a.titulo, a.id_modalidad, a.id_tema, a.id_evento, b.nombres, b.apellido_paterno, b.pais, b.ciudad ,temas.tema, a.estatus 
+                  FROM ponencias AS a
+                  LEFT JOIN usuarios_ponencias AS u
+                  ON a.id = u.id_ponencia
+                  INNER JOIN usuarios AS b
+                  ON u.id_usuario = b.id
+                  INNER JOIN temas on temas.id = a.id_tema
+                  WHERE a.id = '$id_conf'
+                  GROUP BY a.id";
           $resultado1 = $this->conexion_db->query($sql1);
           $conferencias1 = $resultado1->fetch_all(MYSQLI_ASSOC);
   
-          foreach($conferencias1 as $conf){
+          foreach($conferencias1 as $conf)
+          {
             $i ++;
             $info = '
             <tr>
             <td>'.$i.'</td>
-            <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id_conferencia'].'">'.$conf['conferencia'].'</a></td>         
-            <td>'.$conf['modalidad'].'</td>
-            <td>'.$conf['nombre'].'</td>
+            <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id'].'">'.$conf['titulo'].'</a></td>         
+            <td>'.$conf['id_modalidad'].'</td>
+            <td>'.$conf['nombres'].'</td>
             <td>'.$conf['pais'].'</td>
             <td>'.$conf['ciudad'].'</td>
             <td>'.$conf['tema'].'</td>';
-            $info.= $this->promedioPropuestasByIdConferencia($conf['id_conferencia']);
-               if( $conf['status'] == NULL){
-                $info.="<td><a class='noAceptada' href='aceptarPropuesta.php?id=".$conf['id_conferencia']."'>Aprobar</a> |
-                <a class='rechazar' href='rechazarPropuesta.php?id=".$conf['id_conferencia']."'>Recahzar</a></td>
-                ";
-                        }
-                        if($conf['status'] == 'aceptada'){
-                          $info.= "<td class='aceptada'>Aceptada</a></td>";
-                        }if($conf['status'] == 'rechazada'){
-                          $info.= "<td class='rechazada'>Recahazada</a></td>";
+            $info.= $this->promedioPropuestasByIdConferencia($conf['id']);
 
-                        }
+               if( $conf['estatus'] == NULL)
+               {
+                  $info.="<td><a class='noAceptada' href='aceptarPropuesta.php?id=".$conf['id']."'>Aprobar</a> |
+                  <a class='rechazar' href='rechazarPropuesta.php?id=".$conf['id']."'>Recahzar</a></td>
+                  ";
+                }
+
+                if($conf['estatus'] == 'aceptada')
+                {
+                  $info.= "<td class='aceptada'>Aceptada</a></td>";
+                }
+                if($conf['estatus'] == 'rechazada')
+                {
+                  $info.= "<td class='rechazada'>Recahazada</a></td>";
+
+                }
             $info.= ' </tr>';
             echo $info;   
           }
