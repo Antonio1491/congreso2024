@@ -114,7 +114,7 @@ class Propuesta extends Conexion{
       return $consulta;
     }
     public function rechazarPropuesta($id_propuesta){
-      $sql= "UPDATE ponencias SET status = 0 WHERE id = $id_propuesta";
+      $sql= "UPDATE ponencias SET status = 2 WHERE id = $id_propuesta";
       $consulta = $this->conexion_db->query($sql);
       return $consulta;
     }
