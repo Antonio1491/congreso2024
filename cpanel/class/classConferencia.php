@@ -13,168 +13,147 @@ class Conferencia extends Conexion{
     }
 
 
-    public function eliminarPregunta($id){
+    public function eliminarPregunta($id)
+    {
       $sql ="DELETE FROM preguntas
-      WHERE id_pregunta = '$id'";
+            WHERE id_pregunta = '$id'";
       $resultado = $this->conexion_db->query($sql);
 
-      if($resultado){
+      if($resultado)
+      {
         echo json_encode('ok');
-      }else{
+      }else
+      {
         echo json_encode('error');
-
-      }
-        
+      }       
     }
 
     //Conocer el tema asignado al usuario
-    public function temasByUsuario($id_usuario){
+    public function temasByUsuario($id_usuario)
+    {
       $sql = "SELECT * FROM comite_tema
-      LEFT JOIN temas 
-      ON temas.id = comite_tema.id_tema 
-      WHERE comite_tema.id_credencial =  '$id_usuario'
-      ";
+              LEFT JOIN temas 
+              ON temas.id = comite_tema.id_tema 
+              WHERE comite_tema.id_credencial =  '$id_usuario'";
       $resultado = $this->conexion_db->query($sql);
       $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
       echo json_encode($resultado_consulta);
     }
 
-    public function totalPropuestas(){
-
+    public function totalPropuestas()
+    {
       $sql ="SELECT DISTINCT * FROM calificar_propuestas
-      GROUP BY id_conferencia
-      ORDER BY id_conferencia DESC
-      ";
-        $resultado = $this->conexion_db->query($sql);
-        $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-
-        $i=0;
-
-        foreach($resultado_consulta as $arr){
-          // $sql="SELECT DISTINCT conferencias.id_conferencia, conferencias.conferencia, conferencias.modalidad, b.nombre,b.pais, b.ciudad,b.id_conferencia, conferencias.id_tema FROM conferencias
-          // LEFT JOIN aspirantes AS b
-          // ON conferencias.id_conferencia = b.id_conferencia
-          // WHERE conferencias.id_tema = '$arr'
-          // GROUP BY conferencias.id_conferencia
-          // ";
-
-          $id_conf = $arr['id_conferencia'];
+            GROUP BY id_conferencia
+            ORDER BY id_conferencia DESC
+            ";
+      $resultado = $this->conexion_db->query($sql);
+      $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
+      $i=0;
+      foreach($resultado_consulta as $arr)
+      {
+        $id_conf = $arr['id_conferencia'];
+        $sql1 = "SELECT DISTINCT a.id, a.titulo, a.id_modalidad, a.id_tema, a.id_evento, b.nombres, b.apellido_paterno, b.pais, b.ciudad ,temas.tema, a.estatus 
+                FROM ponencias AS a
+                LEFT JOIN usuarios_ponencias AS u
+                ON a.id = u.id_ponencia
+                INNER JOIN usuarios AS b
+                ON u.id_usuario = b.id
+                INNER JOIN temas on temas.id = a.id_tema
+                WHERE a.id = '$id_conf'
+                GROUP BY a.id";
+        $resultado1 = $this->conexion_db->query($sql1);
+        $conferencias1 = $resultado1->fetch_all(MYSQLI_ASSOC);
   
-          $sql1 = "SELECT DISTINCT a.id, a.titulo, a.id_modalidad, a.id_tema, a.id_evento, b.nombres, b.apellido_paterno, b.pais, b.ciudad ,temas.tema, a.estatus 
-                  FROM ponencias AS a
-                  LEFT JOIN usuarios_ponencias AS u
-                  ON a.id = u.id_ponencia
-                  INNER JOIN usuarios AS b
-                  ON u.id_usuario = b.id
-                  INNER JOIN temas on temas.id = a.id_tema
-                  WHERE a.id = '$id_conf'
-                  GROUP BY a.id";
-          $resultado1 = $this->conexion_db->query($sql1);
-          $conferencias1 = $resultado1->fetch_all(MYSQLI_ASSOC);
-  
-          foreach($conferencias1 as $conf)
+        foreach($conferencias1 as $conf)
+        {
+          $i ++;
+          $info = '
+          <tr>
+          <td>'.$i.'</td>
+          <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id'].'">'.$conf['titulo'].'</a></td>         
+          <td>'.$conf['id_modalidad'].'</td>
+          <td>'.$conf['nombres'].'</td>
+          <td>'.$conf['pais'].'</td>
+          <td>'.$conf['ciudad'].'</td>
+          <td>'.$conf['tema'].'</td>';
+          $info.= $this->promedioPropuestasByIdConferencia($conf['id']);
+
+          if( $conf['estatus'] == 0)
           {
-            $i ++;
-            $info = '
-            <tr>
-            <td>'.$i.'</td>
-            <td><a class="bold" href="descripcionPropuesta.php?id='.$conf['id'].'">'.$conf['titulo'].'</a></td>         
-            <td>'.$conf['id_modalidad'].'</td>
-            <td>'.$conf['nombres'].'</td>
-            <td>'.$conf['pais'].'</td>
-            <td>'.$conf['ciudad'].'</td>
-            <td>'.$conf['tema'].'</td>';
-            $info.= $this->promedioPropuestasByIdConferencia($conf['id']);
-
-               if( $conf['estatus'] == NULL)
-               {
-                  $info.="<td><a class='noAceptada' href='aceptarPropuesta.php?id=".$conf['id']."'>Aprobar</a> |
-                  <a class='rechazar' href='rechazarPropuesta.php?id=".$conf['id']."'>Recahzar</a></td>
-                  ";
-                }
-
-                if($conf['estatus'] == 'aceptada')
-                {
-                  $info.= "<td class='aceptada'>Aceptada</a></td>";
-                }
-                if($conf['estatus'] == 'rechazada')
-                {
-                  $info.= "<td class='rechazada'>Recahazada</a></td>";
-
-                }
-            $info.= ' </tr>';
-            echo $info;   
+            $info.="<td><a class='noAceptada' href='aceptarPropuesta.php?id=".$conf['id']."' style='background: #cbe7de;
+    padding: 2px 8px; border-radius: 10px; font-weight: 600;'>Aprobar</a> |
+            <a class='rechazar' href='rechazarPropuesta.php?id=".$conf['id']."' style='background: #ffcfda;
+    padding: 2px 8px; border-radius: 10px; font-weight: 600;'>Recahzar</a></td>
+            ";
           }
-        }
+          if($conf['estatus'] == '1')
+          {
+            $info.= "<td class='aceptada'>Aceptada</a></td>";
+          }
+          if($conf['estatus'] == '2')
+          {
+            $info.= "<td class='rechazada'>Recahazada</a></td>";
+          }
 
+          $info.= ' </tr>';
+          echo $info;  
+        }
+      }
     }
 
-    public function promedioPropuestasByIdConferencia($id){
-
-      $sql= "SELECT COUNT(id_conferencia) AS total FROM calificar_propuestas
-      WHERE id_conferencia = '$id'
-      AND id_valor_respuesta IS NOT NULL";
+    public function promedioPropuestasByIdConferencia($id)
+    {
+      $sql= "SELECT COUNT(id_conferencia) AS total 
+              FROM calificar_propuestas
+              WHERE id_conferencia = '$id'
+              AND id_valor_respuesta IS NOT NULL";
       $resultado = $this->conexion_db->query($sql);
       $conferencias = $resultado->fetch_all(MYSQLI_ASSOC);
 
-    $sql1 = "SELECT valor FROM calificar_propuestas 
-    INNER JOIN valor_respuestas ON calificar_propuestas.id_valor_respuesta= valor_respuestas.id_respuesta
-    WHERE id_conferencia= '$id'
-    AND id_valor_respuesta IS NOT NULL";
-    $resultado1 = $this->conexion_db->query($sql1);
-    $conferencias1 = $resultado1->fetch_all(MYSQLI_ASSOC);
-    
-    
-    $total=0;
-    foreach($conferencias1 as $valor){
-      $total_calificados = $valor['valor'];
+      $sql1 = "SELECT valor FROM calificar_propuestas 
+              INNER JOIN valor_respuestas ON calificar_propuestas.id_valor_respuesta= valor_respuestas.id_respuesta
+              WHERE id_conferencia= '$id'
+              AND id_valor_respuesta IS NOT NULL";
+      $resultado1 = $this->conexion_db->query($sql1);
+      $conferencias1 = $resultado1->fetch_all(MYSQLI_ASSOC);
+      $total=0;
+      foreach($conferencias1 as $valor)
+      {
+        $total_calificados = $valor['valor'];
+        $total+= $total_calificados;
+      }
+      $promedio = $total/$conferencias[0]['total'];
 
-      $total+= $total_calificados;
+      if($promedio <= '60'){
+        $info = '
+        <td class="rechazada">'.$promedio.'</td>
+        ';
+      }else{
+        $info = '
+        <td class="aceptada">'.$promedio.'</td>
+        ';
+      }
+      return $info;  
     }
 
-
-    $promedio = $total/$conferencias[0]['total'];
-
-    if($promedio <= '60'){
-      $info = '
-      <td class="rechazada">'.$promedio.'</td>
-      ';
-    }else{
-      $info = '
-      <td class="aceptada">'.$promedio.'</td>
-      ';
-    }
-
-
-    return $info;
-      
-
-
-
-    }
-
-    public function actualizarPregunta($id,$pregunta,$tipo_pregunta,$area,$congreso){
-
-    $sql = "UPDATE preguntas
-    SET pregunta='$pregunta',
-    tipo = '$tipo_pregunta',
-    area_calificar = '$area'
-    WHERE id_pregunta='$id'";
-    $resultado = $this->conexion_db->query($sql);
-
-    return $resultado;
-
+    public function actualizarPregunta($id,$pregunta,$tipo_pregunta,$area,$congreso)
+    {
+      $sql = "UPDATE preguntas
+              SET pregunta='$pregunta',
+              tipo = '$tipo_pregunta',
+              area_calificar = '$area'
+              WHERE id_pregunta='$id'";
+      $resultado = $this->conexion_db->query($sql);
+      return $resultado;
     }
 
     public function avanceCalificadorPorid()
     {
       $i= 0;
-
       $sql2 ="SELECT DISTINCT id_credencial 
               FROM comite_tema";
       $resultado2 = $this->conexion_db->query($sql2);
       $resultado_consulta2 = $resultado2->fetch_all(MYSQLI_ASSOC);
-
       foreach($resultado_consulta2 as $comite)
       {
         $user = $comite['id_credencial'];
@@ -272,46 +251,42 @@ class Conferencia extends Conexion{
     public function listarPreguntas()
     {
       $sql = "SELECT * FROM preguntas
-      INNER JOIN tipo_pregunta ON preguntas.tipo = tipo_pregunta.id_tipo";
-
+              INNER JOIN tipo_pregunta 
+              ON preguntas.tipo = tipo_pregunta.id_tipo";
       $resultado = $this->conexion_db->query($sql);
       $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-      
       echo json_encode($resultado_consulta);
     }                  
 
-    public function preguntaById($id_pregunta) {
+    public function preguntaById($id_pregunta) 
+    {
       $sql = "SELECT * FROM preguntas
-      WHERE id_pregunta = '$id_pregunta'";
+              WHERE id_pregunta = '$id_pregunta'";
       $resultado = $this->conexion_db->query($sql);
       $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
       echo json_encode($resultado_consulta);
     }
 
-    public function guardarNuevaPregunta($pregunta,$tipo_pregunta,$area,$congreso){
-
-      if($tipo_pregunta == '1'){
-
-        $sql1 = "INSERT INTO preguntas VALUES
-        (null,'$pregunta','$tipo_pregunta','$area','$congreso')";
+    public function guardarNuevaPregunta($pregunta,$tipo_pregunta,$area,$congreso)
+    {
+      if($tipo_pregunta == '1')
+      {
+        $sql1 = "INSERT INTO preguntas 
+                  VALUES (null,'$pregunta','$tipo_pregunta','$area','$congreso')";
         $resultado1 = $this->conexion_db->query($sql1);
-
-        if($resultado1){
+        if($resultado1)
+        {
           $sql = "SELECT max(id_pregunta) as id FROM preguntas";
           $resultado = $this->conexion_db->query($sql);
           $resultado_consulta = $resultado->fetch_all(MYSQLI_ASSOC);
-
           $variable = $resultado_consulta[0]['id'];
-
-                $array = [
-        ["id_valor_respuesta"=>'1','id_pregunta'=>$variable],
-        ["id_valor_respuesta"=>'2','id_pregunta'=>$variable],
-        ["id_valor_respuesta"=>'3','id_pregunta'=>$variable],
-        ["id_valor_respuesta"=>'4','id_pregunta'=>$variable],
-        ["id_valor_respuesta"=>'5','id_pregunta'=>$variable]
-
-                        ];
-
+          $array = [
+            ["id_valor_respuesta"=>'1','id_pregunta'=>$variable],
+            ["id_valor_respuesta"=>'2','id_pregunta'=>$variable],
+            ["id_valor_respuesta"=>'3','id_pregunta'=>$variable],
+            ["id_valor_respuesta"=>'4','id_pregunta'=>$variable],
+            ["id_valor_respuesta"=>'5','id_pregunta'=>$variable]
+          ];
 
           foreach($array as $indice =>$valor){
 
