@@ -84,57 +84,48 @@ class Programa  extends Conexion
 return $element;
   }
 
-  public function contenedorBloque($fechaInicio){
-
+  public function contenedorBloque($fechaInicio)
+  {
     $sql = "SELECT * FROM programa where fecha = '$fechaInicio' ORDER BY inicio";
     $consulta = $this->conexion_db->query($sql);
     $listaBloque = $consulta->fetch_all(MYSQLI_ASSOC);
     $htmlBloque="";
-    foreach($listaBloque as $bloque){
-
+    foreach($listaBloque as $bloque)
+    {
       $strtotime = strtotime($bloque['inicio']);
       $strtotime1 = strtotime($bloque['fin']);
-      
       $mysql_time = date('h:i a',$strtotime);
       $mysql_time1 = date('h:i a',$strtotime1);
-    
-      // $horaI = date_format($strtotime, 'g:i A');
-      // $horaF = date_format($strtotime1, 'g:i A');
-
       $htmlBloque .= '
       <article class="actividad">
       <header id="contenedor'.$bloque['id'].'">
-        <div class="centrado_vertical">';
+      <div class="centrado_vertical">';
         if($bloque['tipo']=='Magistral'){
-          $htmlBloque .=' <img src="build/img/icon-magistral.png" alt="">';
-          }
-          if($bloque['tipo']=='Conferencias'){
-            $htmlBloque .=' <img src="build/img/icon-conferencia.png" alt="">';
-            }
-          if($bloque['tipo']=='Talleres'){
-            $htmlBloque .=' <img src="build/img/icon-taller-curricular.png" alt="">';
-            }
+        $htmlBloque .=' <img src="build/img/icon-magistral.png" alt="">';
+        }
+        if($bloque['tipo']=='Conferencias'){
+        $htmlBloque .=' <img src="build/img/icon-conferencia.png" alt="">';
+        }
+        if($bloque['tipo']=='Talleres'){
+        $htmlBloque .=' <img src="build/img/icon-taller-curricular.png" alt="">';
+        }
         if($bloque['tipo']=='Registro'){
-     $htmlBloque .=' <img src="build/img/icon-registro.png" alt="">';
-
-              }
-           if($bloque['tipo']=='Expo'){
-          $htmlBloque .=' <img src="build/img/icon-expo.png" alt="">';
-     
-                   }
-            if($bloque['tipo']=='Evento Social' || $bloque['tipo']=='Otro'){
-     $htmlBloque .=' <img src="build/img/icon-eventos-sociales.png" alt="">';
-
-              }
-           
-          $htmlBloque .= '
-        </div>
-        <div class="hora">
-          <i class="fi-clock"></i> '.$mysql_time.' - '.$mysql_time1.'
-        </div>
-        <div class="tituloActividad contieneBloque '.$bloque['tipo'].'" >
+        $htmlBloque .=' <img src="build/img/icon-registro.png" alt="">';
+        }
+        if($bloque['tipo']=='Expo'){
+        $htmlBloque .=' <img src="build/img/icon-expo.png" alt="">';
+        }
+        if($bloque['tipo']=='Evento Social' || $bloque['tipo']=='Otro'){
+        $htmlBloque .=' <img src="build/img/icon-eventos-sociales.png" alt="">';
+        }
+        $htmlBloque .= '
+      </div>
+      <div class="hora">
+        <i class="fi-clock"></i> '.$mysql_time.' - '.$mysql_time1.'
+      </div>
+      <div class="tituloActividad contieneBloque '.$bloque['tipo'].'" >
         <h6>'.$bloque['titulo'].'</h6>
-        </div>
+      </div>
       </header>
 
       <script>
@@ -168,7 +159,8 @@ return $element;
 
   }
 
-  public function contenedorPrograma($id_bloque,$fechaInicio,$horaI,$horaF,$tipo){
+  public function contenedorPrograma($id_bloque,$fechaInicio,$horaI,$horaF,$tipo)
+  {
     $sql = "SELECT * FROM ponencias 
             where fecha = '$fechaInicio' 
             AND hora_inicio 
@@ -177,12 +169,10 @@ return $element;
             ORDER BY hora_inicio";
     $consulta = $this->conexion_db->query($sql);
     $listaBloque = $consulta->fetch_all(MYSQLI_ASSOC);
-
     $bloqueActividad = "";
-
-    foreach($listaBloque as $valor){
+    foreach($listaBloque as $valor)
+    {
       $bloqueActividad.= ' <section class="magistrales'.$id_bloque.'">';
-      
       $resumen = $this->resumen($valor['descripcion']);
       $bloqueActividad.= "<script>
                           $(document).ready(function(){
@@ -191,7 +181,6 @@ return $element;
                                 });
                             });
                           </script>";
-
       $bloqueActividad .= 
         "<div class='conferencia'>
           <div class='lugar'>
@@ -205,12 +194,13 @@ return $element;
                 <small>
                   <a href='#' data-bs-toggle='modal' data-bs-target='#c".$valor['id']."'>... ver más</a>
                 </small>
-              </p>";                                      
+              </p>";
 
               $conferencistas = $this->conferencistaImparte($valor["id"]);
-              foreach ($conferencistas as $valor) {
+              foreach ($conferencistas as $valor) 
+              {
                 $bloqueActividad .=
-                "<div class='imparten ".$valor["id"]."'>
+                "<div class='imparten ".$valor["id"]."' style='height: 75px; font-size: 11px;'>
                   <div>
                     <img src='./imagenes/".$valor['fotografia']."'>
                   </div>
@@ -218,8 +208,7 @@ return $element;
                     <a href='conferencista.php?id=".$valor['id']."'><span>".$valor["nombres"]." ".$valor["apellido_paterno"]."  | ".$valor["ciudad"].", ".$valor["pais"]."</span></a>
                     <p>".$valor["cargo"].", ".$valor["empresa"]."</p>
                   </div>
-                </div>
-                ";
+                </div>";
               }
 
               $bloqueActividad .= 
@@ -229,44 +218,36 @@ return $element;
         </div>
         ";                
                         
-        
-      
       $bloqueActividad.= '</section>';
-      
     }
 
     return $bloqueActividad;
-
-
   }
 
-
-  public function talleresDatos($id_bloque,$fechaInicio,$horaI,$horaF,$tipo){
-
+  public function talleresDatos($id_bloque,$fechaInicio,$horaI,$horaF,$tipo)
+  {
     $bloqueActividad='';
     $bloqueActividad.=' 
-      <script>
-      $(document).ready(function()
+    <script>
+    $(document).ready(function()
+      {
+        $("#contenedor'.$id_bloque.'").click(function()
         {
-          $("#contenedor'.$id_bloque.'").click(function()
-          {
-            $(".taller'.$id_bloque.'").fadeToggle();
-          });
+          $(".taller'.$id_bloque.'").fadeToggle();
         });
-      </script>';
-      $bloqueActividad.=' 
+      });
+    </script>';
+    $bloqueActividad.=' 
     <section class="taller'.$id_bloque.'" >
       <div class="lista_talleres">
       <ul>';
-          $talleres = $this->talleres($fechaInicio,$horaI,$horaF,$congreso='1');
-          foreach ($talleres as $valor)
-          { 
-            $bloqueActividad.= "<li>".$valor['titulo']." " .$valor['subtitulo']."</li>";
-            $resumen = $this->resumen($valor['descripcion']);
-            $bloqueActividad.= "<p class='resumen'>".$resumen." <small><a href='#' data-bs-toggle='modal' data-bs-target='#t".$valor['id_taller']."'>... ver más</a></small></p>";
-          }
-        
-
+        $talleres = $this->talleres($fechaInicio,$horaI,$horaF,$congreso='1');
+        foreach ($talleres as $valor)
+        { 
+          $bloqueActividad.= "<li>".$valor['titulo']." " .$valor['subtitulo']."</li>";
+          $resumen = $this->resumen($valor['descripcion']);
+          $bloqueActividad.= "<p class='resumen'>".$resumen." <small><a href='#' data-bs-toggle='modal' data-bs-target='#t".$valor['id_taller']."'>... ver más</a></small></p>";
+        }
      $bloqueActividad.='  </ul>
     </div>        
     </section>';
@@ -293,10 +274,10 @@ return $element;
   }
 
   // Mostrar la información individual del conferencista 
-  public function conferencistaImparte($idUsuario){
+  public function conferencistaImparte($id_ponencia){
     $sql = "SELECT * FROM usuarios_ponencias as up
     LEFT JOIN usuarios as u ON up.id_usuario = u.id
-    WHERE u.id = '$idUsuario'";
+    WHERE up.id_ponencia = '$id_ponencia'";
     $consulta = $this->conexion_db->query($sql);
     $arrayConferencistas = $consulta->fetch_all(MYSQLI_ASSOC);
 
