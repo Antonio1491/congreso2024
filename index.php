@@ -258,7 +258,7 @@
           </div>
       </div>
             -->
-    <!-- </div>
+    </div>
 
     <div class="container mt-5">
       <div class="row text-center">
@@ -267,15 +267,25 @@
      
       <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly text-center">
           <div class="col">
-            <img src="./build/img/patrocinador-1.png" alt="" class="" style="width: 18rem;">
+            <img src="./build/img/bugy_expo_espacio_publico.png" alt="" class="" style="width: 10rem;">
           </div>
           <div class="col">
-            <img src="./build/img/patrocinador-2.png" alt="" class="" style="width: 18rem;">
+            <img src="./build/img/jimumex_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/play_club_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/jumbo_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/equiparque_2024.png" alt="" class="" style="width: 10rem;">
           </div>
       </div>
-            -->
-      <hr>
+      <!-- <hr> -->
     </div>
+
+    <?php include 'includes/templates/expositores.php' ?>
   </section>
   <!--:::: End logotipos ::::-->
 
@@ -507,6 +517,13 @@ if(contenedorFondo){
         autoplay: true,
         autoplaySpeed: 2000,
       });
+    });
+
+    $('.slider_expositores').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 600,
     });
 
     $('.carouselM').slick();
