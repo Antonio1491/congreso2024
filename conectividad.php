@@ -32,22 +32,24 @@
         <h5 class="subtituloPMin">Vuelos directos internacionales: </h5>
         <ul>
           <li>Houston, Texas (IAH).</li>
-          <li>Chicago, Illinois (ORD).</li>
           <li>Dallas/Fort Worth, Texas (DFW).</li>
           <li>Miami, Florida (MIA).</li>
-          <li>Atlanta, Georgia (ATL).</li>
-          <li>Nueva York, Nueva York (JFK).</li>
           <li>Ciudad de Guatemala, Guatemala (GUA).</li>
           <li>Toronto, Ontario (YYZ).</li>
-          <li>Montreal, Quebec (YUL).</li>
+          <li>La Habana, Cuba (HAV).</li>
+          <li>Orlando, Florida (MCO).</li>
         </ul>
       </div>
       <div class="col-sm-12 col-md-6">
         <h5 class="subtituloPMin">Vuelos directos nacionales: </h5>
         <ul>
           <li>Ciudad de México (MEX).</li>
+          <li>Ciudad de México Santa Lucia (NLU).</li>
           <li>Guadalajara (GDL).</li>
           <li>Monterrey (MTY).</li>
+          <li>Toluca (TLC).</li>
+          <li>Cancún (CUN).</li>
+          <li>Oaxaca de Juárez (OAX).</li>
           <li>Tuxtla Gutiérrez (TGZ).</li>
           <li>Villahermosa (VSA).</li>
           <li>Veracruz (VER).</li>
@@ -66,18 +68,24 @@
       <h5 class="subtituloPMin">Aerolíneas</h5>
     </div>
     <div class="row aerolineas">
+          <div class="col-sm-12 col-md-2">
+        <img src="build/img/logo_westjet.png" alt="">
+      </div>
+       <div class="col-sm-12 col-md-2">
+        <img src="build/img/logo-tagairlines.png" alt="">
+      </div> 
       <div class="col-sm-12 col-md-2">
         <img src="build/img/aeromexico.png" alt="">
       </div>
-      <!-- <div class="col-sm-12 col-md-2">
+       <div class="col-sm-12 col-md-2">
+        <img src="build/img/logo_euroairlines.png" alt="">
+      </div> 
+      <div class="col-sm-12 col-md-2">
         <img src="build/img/american-airlines.png" alt="">
-      </div> -->
-      <!-- <div class="col-sm-12 col-md-2">
-        <img src="build/img/united-airlines.png" alt="">
-      </div> -->
-      <!-- <div class="col-sm-12 col-md-2">
-        <img src="build/img/united-express.png" alt="">
-      </div> -->
+      </div> 
+       <div class="col-sm-12 col-md-2">
+        <img src="build/img/logo-united.png" alt="">
+      </div> 
       <div class="col-sm-12 col-md-2">
         <img src="build/img/viva-aerobus.png" alt="">
       </div>
@@ -85,6 +93,7 @@
         <img src="build/img/volaris.png" alt="">
       </div>
     </div>
+    
     
 
     <!-- <div class="row mt-5 mb-5 aerolineas">

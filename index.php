@@ -258,7 +258,7 @@
           </div>
       </div>
             -->
-    <!-- </div>
+    </div>
 
     <div class="container mt-5">
       <div class="row text-center">
@@ -267,15 +267,25 @@
      
       <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly text-center">
           <div class="col">
-            <img src="./build/img/patrocinador-1.png" alt="" class="" style="width: 18rem;">
+            <img src="./build/img/bugy_expo_espacio_publico.png" alt="" class="" style="width: 10rem;">
           </div>
           <div class="col">
-            <img src="./build/img/patrocinador-2.png" alt="" class="" style="width: 18rem;">
+            <img src="./build/img/jimumex_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/play_club_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/jumbo_2024.png" alt="" class="" style="width: 10rem;">
+          </div>
+          <div class="col">
+            <img src="./build/img/equiparque_2024.png" alt="" class="" style="width: 10rem;">
           </div>
       </div>
-            -->
-      <hr>
+      <!-- <hr> -->
     </div>
+
+    <?php include 'includes/templates/expositores.php' ?>
   </section>
   <!--:::: End logotipos ::::-->
 
@@ -344,12 +354,12 @@
   <!--:::: End Ubicación ::::-->
 
     <!-- :::: Eventos Anteriores Videos ::::  -->
+     <div class="carouselpc">
     <section class="eventos_anteriores hide-for-small-only container seccionOrganizado pt-5 pb-5 container-fluid">
-      <div class="row">
-        <h3 class="titulo_secciones_aqua tituloP mb--md-5 mb-sm-2">Eventos Anteriores</h3>
-      </div>
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <div class="videos_eventos container eventos_anteriores hide-for-small-only seccionOrganizado pt-5 pb-5 container-fluid">
+    <div class="row">
+      <h3 class="titulo_secciones_aqua tituloP mb--md-5 mb-sm-2">Eventos Anteriores</h3>
+    </div>
+   
       <div class="carousel">
         <div class="item_videos_eventos">
           <iframe width="300" height="177" src="https://www.youtube.com/embed/kOJ5Qm3vLHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -370,8 +380,39 @@
           <iframe width="300" height="177" src="https://www.youtube.com/embed/Le980lW1rGE?si=--pfQ6nKV2JQnEo5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+  
   </section>
+          </div>
+
+<div class="carouselmobile">
+  <section class="eventos_anteriores hide-for-small-only container seccionOrganizado pt-5 pb-5 container-fluid">
+    <div class="row">
+      <h3 class="titulo_secciones_aqua tituloP mb--md-5 mb-sm-2">Eventos Anteriores</h3>
+    </div>
+   
+      <div class="carouselM">
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/kOJ5Qm3vLHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/-IVXzEncjfM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/ZwH7OSGZxww" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/x_oSKftOUhY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/Rov_ecOfY34?si=0W8NnBcQ7-w9XxO8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="item_videos_eventos">
+          <iframe width="300" height="177" src="https://www.youtube.com/embed/Le980lW1rGE?si=--pfQ6nKV2JQnEo5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+  
+  </section>
+          </div>
   <!-- :::: End Eventos Anteriores Videos ::::  -->
 
 <body>
@@ -462,26 +503,40 @@ if(contenedorFondo){
   });
 
   // Slider videos anteriores 
-  $(document).ready(function() {
-      var docWidth = $('body').width(),
-          $carousel = $('.carousel'),
-          $items = $('.item_videos_eventos'),
-          totalWidth = $items.length * ($items.outerWidth(true));
+ 
+  </script>
 
-      $(window).on('resize', function() {
-        docWidth = $('body').width();
-      });
-
-      $(document).mousemove(function(e) {
-        var mouseX = e.pageX,
-            offset = mouseX / docWidth * totalWidth - mouseX / 2;
-        
-        $carousel.css({
-          'transform': 'translate3d(' + -offset + 'px, 0, 0)'
-        });
+  <!--Slider--->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
       });
     });
+
+    $('.slider_expositores').slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 600,
+    });
+
+    $('.carouselM').slick();
   </script>
+<style>
+    .carousel .item_videos_eventos {
+      margin: 10px;
+    }
+    .carousel iframe {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 
    
 

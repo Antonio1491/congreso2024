@@ -7,7 +7,7 @@
     <h1 class="header__titulo">Convocatoria<br> Póster Científico</h1>
     <img src="img/linea.png" alt="" class="img-fluid">
     <div class="mt-3">
-      <a href="registro_posters.php" class="btn btn__primary">Registrar Póster</a>
+      <a href="registro_posters.php" class="btn btn__primary disabled">Registrar Póster</a>
     </div>
   </div>
 </header>
@@ -280,7 +280,7 @@
   </div>
   <div class="row mt-3">
     <div class="text-center">
-      <a href="registro_posters.php" class="btn btn__primary">Registrar Póster</a>
+      <a href="registro_posters.php" class="btn btn__primary disabled">Registrar Póster</a>
     </div>
   </div>
 </div>
