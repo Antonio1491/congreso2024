@@ -284,6 +284,17 @@ return $element;
     return $arrayConferencistas;
   }
 
+  public function descripcionConferencista($idUsuario){
+    $sql = "SELECT * FROM usuarios_ponencias as up
+    LEFT JOIN usuarios as u ON up.id_usuario = u.id
+    WHERE u.id = '$idUsuario'";
+    $consulta = $this->conexion_db->query($sql);
+    $arrayConferencistas = $consulta->fetch_all(MYSQLI_ASSOC);
+
+    return $arrayConferencistas;
+  }
+
+
 
 
   public function datosConferencista($idConferencista){

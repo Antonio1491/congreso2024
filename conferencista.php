@@ -24,7 +24,7 @@ $datos = new Programa();
     <div class="row  biografias mt-5">
       <?php
 
-        $conferencista = $datos->conferencistaImparte($idConferencista);
+        $conferencista = $datos->descripcionConferencista($idConferencista);
         foreach($conferencista as $valor) {
           echo"<section class='border border-secondary-subtle mt-4 p-4'>
                 <div class='row inf_conferencista pb-3'>
@@ -47,8 +47,10 @@ $datos = new Programa();
                     <p class=''>".$valor['biografia']."</p>
                   </div>
                 </div>
-              </section>";            
+              </section>"; 
+                         
         }
+        
 
        ?>
     </div>

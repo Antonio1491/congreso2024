@@ -285,7 +285,6 @@
       <!-- <hr> -->
     </div>
 
-    <?php include 'includes/templates/expositores.php' ?>
   </section>
   <!--:::: End logotipos ::::-->
 
