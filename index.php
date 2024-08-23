@@ -54,6 +54,18 @@
   right: 15px;
   color: #DE2C74;
   z-index: 1005; }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10001; /* Asegura que el botón de cerrar esté al frente */
+}
+
+.close img {
+    width: 20px;
+    filter: brightness(0) invert(1); /* Cambia el color de la imagen a blanco */
+    cursor: pointer;
+}
 </style>
 
   <!--::::: contador del evento :::::-->
@@ -80,21 +92,21 @@
     </div>
   </div>
 
-<!--:::::: anuncios en popup
+
 
 <div id="popup" >
   <div class="content-popup">
     <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
       <div>
         
-            <a href="https://www.ticketopolis.com/worldurbanparkscongress2022/tickets.aspx" target="_blank"> 
-              <img id="img-popup" src="build/img/inscripcion4.png" alt="">
+            <a href="https://anpr.org.mx/resultados-de-la-convocatoria-de-propuestas-congreso-parques-2024/" target="_blank"> 
+              <img width="auto" height="560" id="img-popup" src="build/img/Resultados .png" alt="">
           </a>  
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   -->
       </div>
   </div>
 </div>
-:::::: fin popup ::::::
+
 
   <div class="popup-overlay"></div> -->
 
@@ -266,20 +278,21 @@
       </div>
      
       <div class="flex-sm-column justify-content-sm-around d-md-flex flex-md-row justify-content-md-evenly text-center">
-          <div class="col">
-            <img src="./build/img/bugy_expo_espacio_publico.png" alt="" class="" style="width: 10rem;">
+           <div class="col">
+            <img src="./build/img/Playclub_Plata.png" alt="" class="" style="width: 15rem;">
+          </div>
+           <div class="col">
+            <img src="./build/img/Jimumex_Plata.png" alt="" class="" style="width: 15rem;">
           </div>
           <div class="col">
-            <img src="./build/img/jimumex_2024.png" alt="" class="" style="width: 10rem;">
+            <img src="./build/img/bugy_Bronce.png" alt="" class="" style="width: 15rem;">
           </div>
           <div class="col">
-            <img src="./build/img/play_club_2024.png" alt="" class="" style="width: 10rem;">
+            <img src="./build/img/Jumbo_Bronce_2.png" alt="" class="" style="width: 15rem;">
           </div>
+          
           <div class="col">
-            <img src="./build/img/jumbo_2024.png" alt="" class="" style="width: 10rem;">
-          </div>
-          <div class="col">
-            <img src="./build/img/equiparque_2024.png" alt="" class="" style="width: 10rem;">
+            <img src="./build/img/Equiparque_Platino.png" alt="" class="" style="width: 15rem;">
           </div>
       </div>
       <!-- <hr> -->
