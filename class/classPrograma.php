@@ -38,6 +38,35 @@ class Programa  extends Conexion
   }
 
   // ::::: Crear contenedor de programa :::::
+
+ 
+  public function descripcionTallerista($idTallerista) {
+    // Usar consultas preparadas para evitar SQL Injection
+    $sql = "SELECT * FROM talleristas WHERE id_tallerista = ?";
+    $stmt = $this->conexion_db->prepare($sql);
+    $stmt->bind_param("i", $idTallerista);
+    $stmt->execute();
+    $consulta = $stmt->get_result();
+    $arrayTalleristas = $consulta->fetch_all(MYSQLI_ASSOC);
+    $stmt->close();
+
+    return $arrayTalleristas;
+}
+
+
+  public function datosTallerista($idTallerista) {
+    // Usar consultas preparadas para evitar SQL Injection
+    $sql = "SELECT * FROM talleristas WHERE id_tallerista = ?";
+    $stmt = $this->conexion_db->prepare($sql);
+    $stmt->bind_param("i", $idTallerista);
+    $stmt->execute();
+    $consulta = $stmt->get_result();
+    $datosTallerista = $consulta->fetch_all(MYSQLI_ASSOC);
+    $stmt->close();
+
+    return $datosTallerista;
+}
+
   public function contendorPrograma($congreso){
     $sql = "SELECT fecha_inicio, fecha_fin FROM eventos
             WHERE id = '$congreso'"; 
