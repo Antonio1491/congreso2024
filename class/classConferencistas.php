@@ -51,10 +51,11 @@ class Conferencistas extends Conexion{
     $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
     return $resultado;
   }
-  public function sesionesEducativas($congreso)
-  {
+ public function sesionesEducativas($congreso) {
+    // Usar consultas preparadas para evitar inyección SQL
     $sql = "
-    SELECT * from usuarios
+    SELECT DISTINCT usuarios.* 
+    FROM usuarios
     LEFT JOIN usuarios_ponencias
     ON usuarios.id = usuarios_ponencias.id_usuario
     LEFT JOIN conferencias 
@@ -62,17 +63,28 @@ class Conferencistas extends Conexion{
     LEFT JOIN ponencias 
     ON ponencias.id = conferencias.id_ponencia
     WHERE conferencias.id_categoria = 1
-    AND usuarios.id_evento = $congreso
-    AND ponencias.estatus = 1;
+    AND usuarios.id_evento = ?
+    AND ponencias.estatus = 1
+    AND usuarios.nombres NOT LIKE 'Ejemplo congreso%'
+    AND usuarios.apellido_paterno NOT LIKE '2024 Ejemplo%'
+    AND usuarios.nombres NOT LIKE 'Prueba 2024%'
+    AND usuarios.apellido_paterno NOT LIKE 'Ejemplo%';
     ";
-    $consulta = $this->conexion_db->query($sql);
-    $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
-    return $resultado;
-  }
+
+    if ($stmt = $this->conexion_db->prepare($sql)) {
+        $stmt->bind_param("i", $congreso);
+        $stmt->execute();
+        $resultado = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+        $stmt->close();
+        return $resultado;
+    } else {
+        return [];
+    }
+}
 
   public function talleristas($congreso){
     $sql = "
-      SELECT * from talleristas
+      SELECT * from talleristas 
       WHERE id_congreso = $congreso;
     ";
     $consulta = $this->conexion_db->query($sql);
@@ -80,6 +92,10 @@ class Conferencistas extends Conexion{
     return $resultado;
   }
 
+
+
+
+  
     //despliega listas de conferencistas
     public function get_usuarios($evento){
       $resultado = $this->conexion_db->query("SELECT a.id_conferencista, a.nombre, a.apellidos,

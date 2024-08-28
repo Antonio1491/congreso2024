@@ -77,7 +77,7 @@ $array_datos_usuario = $tallerista->mostrarDatosEdit($id);
                               <select name="taller">
                               <option value="'.$valor['id_taller'].'">'.$valor['titulo'].'</option>';
                                 $lista_conferencias = new Taller();
-                                $lista_desplegable = $lista_conferencias->listaTalleres('1');
+                                $lista_desplegable = $lista_conferencias->listaTalleres('2');
                                 foreach ($lista_desplegable as $value) {
         $tabla = $tabla.        '<option value="'.$value['id_taller'].'">'.$value['titulo'].'</option>';
                                 }

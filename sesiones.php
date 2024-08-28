@@ -8,8 +8,8 @@
     <h1 class="header__titulo">Convocatoria<br>Sesiones Educativas</h1>
     <img src="build/img/linea.png" alt="" class="img-fluid">
     <div class="mt-3">
-      <a href="registro_sesiones.php" class="btn btn__primary disabled">Registro Cerrado</a>
-    </div>
+      <a href="https://anpr.org.mx/resultados-de-la-convocatoria-de-propuestas-congreso-parques-2024/" class="btn btn__primary">VER RESULTADOS</a>
+    </div>  
   </div>
 </header>
 
@@ -184,9 +184,16 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
 <div class="container mt-5">
   <div class="row text-center ">
     <div class="col">
-      <a href="registro_sesiones.php" class="btn btn__primary disabled">Registro Cerrado</a>
+      <a href="https://anpr.org.mx/resultados-de-la-convocatoria-de-propuestas-congreso-parques-2024/" class="btn btn__primary disabled">VER RESULTADOS</a>
     </div>
   </div>
 </div>
+<!-- <div class="container mt-5">
+  <div class="row text-center ">
+    <div class="col">
+      <a href="registro_sesiones.php" class="btn btn__primary disabled">Registro Cerrado</a>
+    </div>
+  </div>
+</div> -->
 
 <?php include_once 'includes/templates/footer.php'; ?>

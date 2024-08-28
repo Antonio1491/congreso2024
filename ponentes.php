@@ -87,25 +87,31 @@ $data = new Conferencistas();
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
           <div class="container">
           <div class="row mt-3">
-              <?php 
-                $talleristas = $data->talleristas(2);
-                foreach ($talleristas as $value) 
-                {
-                  echo "
-                    <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-                      <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
-                      <figcaption>
-                        <a href='conferencista.php?id=".$value["id"]."'>
-                          <h3 class='nombre'>".$value['nombres']." ".$value['apellido_paterno']."</h3>
-                        </a>
-                        <h4>".$value['cargo']."</h4>
-                        <hr>
-                        <h5>".$value['empresa']."</h5>
-                      </figcaption>
-                    </figure>
-                  ";
-                }
-              ?>
+          <?php 
+$talleristas = $data->talleristas(2);
+foreach ($talleristas as $value) {  
+    echo "
+    <figure class='col-sm-12 col-md-3 contenido_conferencista'>
+      <img src='./imagenes/".$value['fotografia']."' class='rounded-circle'>
+      <figcaption>
+        <a href='talleristas.php?id=".$value["id_tallerista"]."'>
+          <h3 class='nombre'>".$value['nombre']." ".$value['apellidos']."</h3>
+        </a>
+        <h4>".$value['cargo']."</h4>
+        <hr>
+        <h5>".$value['empresa']."</h5>
+      </figcaption>
+    </figure>
+    ";
+}
+?>
+
+
+
+
+
+
+
             </div>
           </div>
         </div>
