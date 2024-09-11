@@ -2,7 +2,7 @@
 <header class="header">
   <div class="container">
     <h1 class="header__titulo">Congreso Parques</h1>
-    <img src="build/img/linea.png" alt="">
+    <img src="build/img/linea.png" alt="" class="img-fluid">
     <p>Un evento especializado de educación y contenido experimental, dirigido a profesionales en espacios públicos y parques urbanos.  
     </p>
   </div>
@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2 class="subtituloPMin">Objetivo del evento</h2>
-      <p>Reunir, integrar y capacitar presencial y virtualmente a los profesionales, sociedad civil, funcionarios públicos, academia e industria del espacio público.
+      <p>Reunir, integrar y capacitar presencial a los profesionales, sociedad civil, funcionarios públicos, academia e industria del espacio público.
 </p>
       </div>
       <div class="col-sm-12 col-md-6 text-center">
@@ -33,10 +33,10 @@
       <div class="col-sm-12 col-md-3 text-center">
         <img src="build/img/fechas_acerca.png" alt="" class="mb-3" width="40%">
         <h4 class="subtituloPMin">Fecha</h4>
-        <p>23 de Octubre al 25 de Octubre de 2024<br>
-          <strong>Talleres:</strong> 23 de Octubre<br>
-          <strong>Expo Parques Público:</strong><br> 24 y 25 de Octubre<br>
-          <strong>Sesiones Educativas:</strong><br> 24 y 25 de Octubre
+        <p>Del 23 al 25 de Octubre del 2024<br>
+          <!-- <strong>Talleres:</strong> 23 de Octubre<br>
+          <strong>Expo Espacio Público:</strong><br> 24 y 25 de Octubre<br>
+          <strong>Sesiones Educativas:</strong><br> 24 y 25 de Octubre -->
         </p>
       </div>
       <div class="col-sm-12 col-md-3 text-center">
@@ -54,7 +54,7 @@
   <div class="container-fluid primaryBg mt-5">
     <div class="row">
       <div class="col-sm-12 col-md-6 p-5">
-        <iframe width="100%" height="400" src="https://www.youtube.com/embed/Aif1ogVYigI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="400" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=T_yqMzbu_xmEw33u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-sm-12 col-md-6 p-5 d-flex align-items-center justify-content-center">
         <div class="">
@@ -196,7 +196,7 @@
           <p>Contaremos con expertos en parques urbanos y espacios públicos; ellos hablarán sobre sus experiencias profesionales y personales además de tocar temas de interés común para nuestras ciudades.
 
           </p>
-          <a href="#" class="btn btn__primary disabled">Ver Más</a>
+          <a href="programa.php" class="btn btn__primary">Ver Más</a>
         </div>
       </article>
     </div>
@@ -205,9 +205,9 @@
         <div class="col-sm-12 col-md-6 align-self-center">
           <h2 class="subtituloBMin">Sesiones Educativas</h2>
           <h4 class="subtituloComplementario">24 y 25 de Octubre</h4>
-          <p>EEl momento asignado para el aprendizaje y capacitación será en las más de 40 sesiones educativas que contarán con conferencistas nacionales e internacionales.
+          <p>El momento asignado para el aprendizaje y capacitación será en las más de 40 sesiones educativas que contarán con conferencistas nacionales e internacionales.
           </p>
-          <a href="#" class="btn btn__primary disabled">Ver Más</a>
+          <a href="programa.php" class="btn btn__primary ">Ver Más</a>
         </div>
         <div class="col-sm-12 col-md-6"></div>
       </article>
@@ -240,11 +240,11 @@
       <article class="row bgExpo">
         <div class="col-sm-12 col-md-6"></div>
         <div class="col-sm-12 col-md-6 align-self-center">
-          <h2 class="subtituloBMin">Expo Parques</h2>
+          <h2 class="subtituloBMin">Expo Espacio Público</h2>
           <h4 class="subtituloComplementario">24 al 25 de Octubre</h4>
           <p>Es el foro de negocios que reúne a las empresas líderes del mercado en México y el mundo, presentando los mejores productos y servicios para el diseño, construcción y equipamiento del espacio público.
           </p>
-          <a href="expo_parques.php" class="btn btn__primary">Ver Más</a>
+          <a href="https://www.expoespaciopublico.com/" class="btn btn__primary">Ver Más</a>
         </div>
       </article>
     </div>
@@ -272,7 +272,20 @@
 
   <?php require 'includes/templates/patrocinadores.php'; ?>
 
-  <?php require 'includes/templates/expositores.php'; ?>
+  <?php 
+  require 'includes/templates/expositores.php'; 
+  ?>
+
+  <section class="container-fluid primaryBg mt-5">
+    <div class="row">
+      <div class="col text-center pt-5 mb-4">
+          <h2 class="subtituloBMin">Nuestra línea de tiempo</h2>
+      </div>
+    </div>
+    <div class="row">
+      <img src="build/img/linea_de_tiempo_congresos.png" alt="" class="img_fluid">
+    </div>
+  </section>
 
 </main>
 <?php require 'includes/templates/footer.php'; ?>

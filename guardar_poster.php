@@ -14,16 +14,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $email = $_POST['Email'];
   $emailAlternativo = $_POST['EmailAlternativo'];
   $telefono = $_POST['Telefono'];
-  $telefonoAlternativo = $_POST['TelefonoAlternativo'];
+  // $telefonoAlternativo = $_POST['TelefonoAlternativo'];
   $cargo = str_replace("'","´",$_POST['Cargo']);
   $empresa = str_replace("'","´",$_POST['Empresa']);
   $pais =  str_replace("'","´",$_POST['Pais']);
-  $estado =  str_replace("'","´",$_POST['Estado']);
+  // $estado =  str_replace("'","´",$_POST['Estado']);
   $ciudad =  str_replace("'","´",$_POST['Ciudad']);
-  $biografia = str_replace("'","´",$_POST['Biografia']);
-  $nombre_foto = $_FILES['Fotografia']['name'];
-  $tipo_foto = $_FILES['Fotografia']['type'];
-  $temporal_foto = $_FILES['Fotografia']['tmp_name'];
+  // $biografia = str_replace("'","´",$_POST['Biografia']);
+  // $nombre_foto = $_FILES['Fotografia']['name'];
+  // $tipo_foto = $_FILES['Fotografia']['type'];
+  // $temporal_foto = $_FILES['Fotografia']['tmp_name'];
   
   $array = count($_POST['Nombre']);
   
@@ -37,15 +37,14 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $temporal_poster = $_FILES['poster']['tmp_name'];
   $recursos = $_POST['recursos'];
 
-  // $evento = $_POST['Evento'];
+  $evento = $_POST['evento'];
 
   $poster = $registro->savePoster($nombre_proyecto, $tema, $categoria, $documento,
-            $temporal_documento, $poster, $temporal_poster, $recursos);
+            $temporal_documento, $poster, $temporal_poster, $recursos, $evento);
   $id_poster = $poster;
   $usuario = $registro->saveUsuarioPoster($array, $nombre, $apellidoPaterno, $apellidoMaterno, $email,
-                $emailAlternativo, $telefono, $telefonoAlternativo, $cargo, $empresa,
-                $pais, $estado, $ciudad, $biografia, $nombre_foto,
-                $tipo_foto, $temporal_foto, $id_poster);
+                $emailAlternativo, $telefono, $cargo, $empresa,
+                $pais, $ciudad, $id_poster, $evento);
   
   if ( $usuario == true ) {
 
@@ -64,7 +63,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
 //En caso de no mandar datos del formulario redireccionaR a convocatoria
 else{
   //Página web de la convocatoria
-  header('location: ./../registro_sesiones.php');
+  // header('location: ./../registro_sesiones.php');
 }
   
   function filtrado($datos){

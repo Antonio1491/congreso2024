@@ -1,8 +1,13 @@
 <?php include_once 'includes/templates/head.php';  ?>
+<style>
+  .ocultar{
+    display: none;
+  }
+</style>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Registro Cerrado<br>Sesiones Educativas</h1>
-    <img src="img/linea.png" alt="">
+    <h1 class="header__titulo">Registro<br>Sesiones Educativas</h1>
+    <img src="img/linea.png" alt="" class="img-fluid">
   </div>
 </header>
 <div class="container my-5">
@@ -21,6 +26,11 @@
         <li>Innovación y Tecnología</li>
         <li>Ciudad y Movilidad</li>
       </ul>
+      <p>
+          <ul>
+            <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Consultar Ejes Temáticos</a></li>
+          </ul>
+        </p>
       <p>
       Los líderes de parques no están solos, y el Congreso Parques 2024 reunirá a profesionales de todo el mundo y América Latina para desarrollar una nueva visión para el futuro.
       </p>
@@ -74,16 +84,16 @@
                 <input type="text" id="emailAlternativo" name="EmailAlternativo[]" value="" class="form-control" placeholder="">
               </div>
             </div>
-            <div class="row mb-3">
+            <!-- <div class="row mb-3">
               <div class="col-6">
                 <label for="telefono"  class="form-label">Teléfono:</label>
                 <input type="text" id="telefono" name="Telefono[]" value="" class="form-control" placeholder="Clave de País y Teléfono)">
-              </div>
-              <div class="col-6">
+              </div> -->
+              <!-- <div class="col-6">
                 <label for="telefonoAlternativo"  class="form-label">Teléfono alternativo:</label>
                 <input type="text" id="telefonoAlternativo" name="TelefonoAlternativo[]" value="" class="form-control" placeholder="Teléfono Alternativo">
               </div>
-            </div>
+            </div> -->
             <div class="row mb-3">
               <div class="col">
                 <label for="empresa"  class="form-label">Empresa:</label>
@@ -112,7 +122,7 @@
             </div>
             <div class="row mb-3">
               <div class="col">
-                <label for="biografia"  class="form-label">Semblanza profesional:</label>
+                <label for="biografia"  class="form-label">Breve semblanza:</label>
                 <textarea name="Biografia[]" id="biografia" rows="4" cols="80" class="form-control" placeholder="Incluya experiencia de trabajo, investigaciones, colaboraciones o información de relevancia. Esta descripción deberá ser una breve biografía."></textarea>
               </div>
             </div>
@@ -138,7 +148,7 @@
           <div class="ocultar" id="contenedorBtn">
             <div class="row text-center" id="">
               <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary disabled" id="btnAgregar">
+                <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
                   <i class="fi-plus"></i> Añadir Ponente</button>
               </div>
             </div>
@@ -151,7 +161,7 @@
           <hr>
           <div class="row mb-3">
             <div class="col">
-              <label for="titulo" class="form-label">Título de la Sesión (12 palabras máximo):</label>
+              <label for="titulo" class="form-label">Nombre de la Sesión (12 palabras máximo):</label>
               <input type="text" id="titulo" name="Titulo" value="" required class="form-control">
             </div>
           </div>
@@ -163,13 +173,14 @@
           </div>
           <div class="row mb-3">
             <div class="col">
-              <label for="tematica class="form-label">Temática:</label>
+              <label for="tematica class="form-label">Eje Temático:</label>
               <select class="form-select" name="Tema">
-                <option value="1">Participación, Inclusión y Sociabilidad</option>
-                <option value="2">Equidad, Economía y Financiación</option>
-                <option value="3">Medio ambiente y Sostenibilidad</option>
-                <option value="4">Diseño, Infraestructura y Equipamiento</option>
+                <option value="6">Medio Ambiente y Sustentabilidad</option>
                 <option value="5">Salud y Bienestar</option>
+                <option value="7">Eventos, Recreación y Participación Ciudadana</option>
+                <option value="8">Diseño, Mantenimiento y Equipamiento</option>
+                <option value="9">Innovación y Tecnología</option>
+                <option value="10">Ciudad y Movilidad</option>
               </select>
             </div>
           </div>
@@ -193,15 +204,18 @@
           </div>
           <div class="row mb-3">
             <div class="col">
-              <label for="recursos" class="form-label">Recursos:</label>
+              <label for="recursos" class="form-label">Fortalece tu propuesta:</label>
               <textarea name="Recursos" id="recursos" rows="4" placeholder="En esta sección puedes agregar varios recursos para apoyar tu propuesta. (Videos, investigaciones, artículos, noticias o cualquier otro recurso que apoye la evaluación de tu propuesta)." required class="form-control"></textarea>
             </div>
           </div>
         </fieldset>
         <div class="text-center">
-          <!-- <input type="hidden" name="Evento" value="CPL2023"> -->
-          <input type="submit" name="" value="Registrar Propuesta" class="btn btn__primary disabled">
+        <input type="hidden" name="evento" value="2">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary disabled">
         </div>
+        <div>
+      
+</div>
       </form>
       <!-- Fin de formulario -->
     </div>

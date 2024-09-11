@@ -19,8 +19,8 @@ $listaBloque = new Programa();
   <div class="container mt-5 mb-5">
   <div class="row">
     <?php
-    $congreso = "1";
-    $bloque = $listaBloque->contendorPrograma(); 
+    $congreso = "2";
+    $bloque = $listaBloque->contendorPrograma($congreso); 
     echo $bloque
     ?>
   </div>
@@ -50,17 +50,17 @@ $listaBloque = new Programa();
     <div class='modal-dialog'>
       <div class='modal-content'>
         <div class='modal-header'>
-          <h1 class='modal-title fs-5' id='exampleModalLabel'>".$valor['titulo']." " .$valor['subtitulo']."</h1>
+          <h3 class='modal-title fs-5 subtituloPMin' id='exampleModalLabel'>".$valor['titulo']. "</br> " .$valor['subtitulo']."</h3>
           <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
         </div>
         <div class='modal-body'>
           <figure class='text-center'>
-            <img src='build/img/".$valor['foto']."' style='width:100%'>
+            <img src='imagenes/".$valor['foto']."' style='width:100%'>
           </figure>
-          <p >".$valor['descripcion']."</p>
-          <small>Fecha: ".$valor['fecha']."</small>
-          <small>Horario: de ".$valor['inicio']." a ".$valor['fin']." </small>
-          <small>Capacidad: ".$valor['capacidad']." personas.</small>
+          <p style='text-align: justify;'>".$valor['descripcion']."</p>
+          <small><strong>Fecha:</strong> ".$valor['fecha']."</small><br>
+          <small><strong>Horario:</strong> de ".$valor['inicio']." a ".$valor['fin']." </small><br>
+          <small><strong>Capacidad:</strong> ".$valor['capacidad']." personas.</small><br>
           </button>
         </div>
       </div>
@@ -79,14 +79,14 @@ $listaBloque = new Programa();
         <div class='modal-dialog'>
           <div class='modal-content'>
             <div class='modal-header'>
-              <h1 class='modal-title fs-5' id='exampleModalLabel'>".$valor['titulo']." " .$valor['subtitulo']."</h1>
+              <h3 class='modal-title fs-5 subtituloPMin' id='exampleModalLabel'>".$valor['titulo']." " .$valor['subtitulo']."</h3>
               <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
             </div>
             <div class='modal-body'>
               <p >".$valor['descripcion']."</p>
-              <small>Fecha: ".$valor['fecha']."</small>
-              <small>Horario: de ".$valor['hora_inicio']." a ".$valor['hora_fin']." </small>
-              <small>Lugar: ".$valor['ubicacion']."</small>
+              <small><strong>Fecha:</strong> ".$valor['fecha']."</small><br>
+              <small><strong>Horario:</strong> de ".$valor['hora_inicio']." a ".$valor['hora_fin']." </small><br>
+              <small><strong>Lugar:</strong> ".$valor['ubicacion']."</small>
             </div>
           </div>
         </div>

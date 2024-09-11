@@ -1,8 +1,10 @@
 <?php
+
 require "includes/config/Database.php";
 include "classes/Registro.php";
 
 $registro = new Registro();
+
 
 if($_SERVER['REQUEST_METHOD'] === 'POST')
 {
@@ -24,6 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $tipo_foto = $_FILES['Fotografia']['type'];
   $temporal_foto = $_FILES['Fotografia']['tmp_name'];
   
+  
   $array = count($_POST['Nombre']);
   
   // Datos sobre la sesión educativa
@@ -36,17 +39,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $recursos = $_POST['Recursos'];
   $modalidad = $_POST['Modalidad'];
 
-  // $evento = $_POST['Evento'];
+   $evento = $_POST['evento'];
 
-  $sesion = $registro->savePonencia($modalidad, $titulo, $subtitulo, $tema, $descripcion, $justificacion, 
-            $objetivos , $recursos);
+  $sesion = $registro->savePonencia($modalidad, $titulo, $subtitulo, $tema, $descripcion, $justificacion, $objetivos , $recursos, $evento);
   $id_ponencia = $sesion;
   
   $usuario = $registro->saveUsuario($array, $nombre, $apellidoPaterno, $apellidoMaterno, $email,
                 $emailAlternativo, $telefono, $telefonoAlternativo, $cargo, $empresa,
                 $pais, $estado, $ciudad, $biografia, $nombre_foto,
-                $tipo_foto, $temporal_foto, $id_ponencia);
-  
+                $tipo_foto, $temporal_foto, $id_ponencia, $evento);
+                
   if ( $usuario) {
 
     echo header("Location: gracias.php");
