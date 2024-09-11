@@ -308,7 +308,7 @@
   <section class="seccionLegado pt-5 pb-5">
     <div class="container">
       <div class="row text-center mb-5">
-        <h2 class="tituloP mb--md-5 mb-sm-2">Nuestro Legado</h2>
+        <h2 class="tituloP mb--md-5 mb-sm-2">Nuestro Legado.</h2>
       </div>
       <div class="flex-sm-column d-md-flex flex-md-row justify-content-md-evenly">
           <div class="text-center m-5 m-md-0">
