@@ -1,8 +1,8 @@
 <?php require 'includes/templates/head.php'; ?>
 <header class="header">
   <div class="container">
-    <h1 class="header__titulo">Expo Espacio Público</h1>
-    <img src="build/img/linea.png" alt="" class="img-fluid">
+    <h1 class="header__titulo">Expo Parques</h1>
+    <img src="build/img/linea.png" alt="">
   </div>
 </header>
 <main>
@@ -11,25 +11,17 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 text-center p-md-5">
           <p class="lead white">
-          Expo Espacio Público 2024 es una exposición especializada que se realiza dentro del Congreso Parques 2024,  <br>
-          <strong class="verde bolded"> y que reúne a los principales proveedores de productos y servicios</strong><br> 
-          a los principales proveedores de productos y servicios para el diseño, planeación, construcción, operación y mantenimiento de áreas verdes, áreas comunes y de convivencia dentro de los desarrollos residenciales, parques, plazas públicas, cruceros, ciclovías, andadores, etc., con el objetivo de tener más y mejores espacios públicos que eleven la calidad de vida de los ciudadanos.
+          Expo Parques en el Congreso Parques 2023, es una feria especializada que <br>
+          <strong class="verde bolded">reúne a la industria de equipamiento urbano para la promoción</strong><br> 
+          de sus productos y servicios y de esta manera, tener más y <br>
+          mejores parques y espacios públicos en América Latina y el mundo.
           </p> 
         </div>
       </div>
     </div>
   </div>
 
-  <div class="container d-flex">
-    <div>
-      <img src="build/img/expo.jpg" alt="" width="100%">
-    </div>
-    <div>
-      <img src="build/img/expo.jpg" alt="" width="100%">
-    </div>
-  </div>
-
-  <!-- <div class="container-fluid primaryBg pt-5 pb-5">
+  <div class="container-fluid primaryBg pt-5 pb-5">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -52,7 +44,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="container mt-2 mb-5">
     <!-- <div class="row">

@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $apellidoMaterno = str_replace("'","´",$_POST['ApellidoMaterno']);
   $email = $_POST['Email'];
   $emailAlternativo = $_POST['EmailAlternativo'];
-  $telefono = '';
+  $telefono = $_POST['Telefono'];
   $telefonoAlternativo = $_POST['TelefonoAlternativo'];
   $cargo = str_replace("'","´",$_POST['Cargo']);
   $empresa = str_replace("'","´",$_POST['Empresa']);

@@ -94,21 +94,22 @@
 
 
 
+<!--<div id="popup" >-->
 <div id="popup" >
-  <div class="content-popup">
-    <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
-      <div>
-        
-            <a href="https://anpr.org.mx/resultados-de-la-convocatoria-de-propuestas-congreso-parques-2024/" target="_blank"> 
-              <img width="auto" height="560" id="img-popup" src="build/img/Resultados .png" alt="">
-          </a>  
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   -->
-      </div>
+    <div class="content-popup">
+      <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
+        <div>
+          
+             <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" target="_blank"> 
+                <img id="img-popup" src="build/img/campaña-ventas-patrias.png" alt=""  style="height: auto; width: 560px;">
+            </a>  
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+        </div>
+    </div>
   </div>
-</div>
 
 
-  <div class="popup-overlay"></div> -->
+<!--  <div class="popup-overlay"></div> -->
 
   <!-- <section class="container-fluid primaryBg pt-5 pb-5">
     <img src="build/img/f1.png" alt="" class="absolute fh">
@@ -288,7 +289,7 @@
             <img src="./build/img/bugy_Bronce.png" alt="" class="" style="width: 15rem;">
           </div>
           <div class="col">
-            <img src="./build/img/Jumbo_Bronce_2.png" alt="" class="" style="width: 15rem;">
+            <img src="./build/img/Jumbo_Bronce.png" alt="" class="" style="width: 15rem;">
           </div>
           
           <div class="col">
