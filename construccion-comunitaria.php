@@ -152,14 +152,14 @@ Comunitaria y transformar este gran espacio público por transformar este parque
             <div class="col-md-6 col-sm-12 preparativos">
                 <h2 class="mb-5 mt-5">Algunas recomendaciones</h2>
                 <ul>
-                    <li>No olvides llevar tu gorra para protegerte del sol.</li>
-                    <li>Ten siempre contigo protector solar y aplícalo regularmente.</li>
-                    <li>Usa lentes de sol para proteger tus ojos.</li>
-                    <li>Lleva ropa y zapatos cómodos, adecuados para trabajo físico.</li>
-                    <li>Trae una botella de agua para mantenerte hidratado.</li>
-                    <li>Usa guantes de trabajo si los tienes, para proteger tus manos.</li>
-                    <li>Lleva una toalla pequeña o pañuelo para el sudor.</li>
-                    <li>Lo más importante: ¡Lleva una actitud positiva y disposición para colaborar con los demás!</li>
+                    <li>No olvides llevar tu gorra para protegerte del sol</li>
+                    <li>Ten siempre contigo protector solar y aplícalo regularmente</li>
+                    <li>Usa lentes de sol para proteger tus ojos</li>
+                    <li>Lleva ropa y zapatos cómodos; adecuados para trabajo físico</li>
+                    <li>Trae una botella de agua para mantenerte hidratado</li>
+                    <li>Usa guantes de trabajo, si tienes, para proteger tus manos</li>
+                    <li>Lleva una toalla pequeña o pañuelo para el sudor</li>
+                    <li>¡Lo más importante es llevar una actitud positiva y disposición para colaborar con los demás!</li>
                 </ul>
             </div>
 
@@ -168,20 +168,18 @@ Comunitaria y transformar este gran espacio público por transformar este parque
  <div class="col-md-6 col-sm-12 requisitos">
                 <h2 class="mb-5 mt-5">Beneficios</h2>
                 <ul class="custom-list" >
-            <li>Transporte y refrigerio: Disfruta de la comodidad del
+            <li>Transporte y refrigerio: disfruta de la comodidad del
             transporte al lugar de la construcción y de refrigerios para
             mantenerte energizado durante la jornada.</li>
-            <li>Conectar con la comunidad: Siente la calidez de construir
+            <li>Conectar con la comunidad: siente la calidez de construir
             juntos, creando lazos que perdurarán más allá del proyecto.</li>
-            <li>Dejar un legado: Ser parte de algo que beneficiará a
+            <li>Dejar un legado: ser parte de algo que beneficiará a
             futuras generaciones, dejando una huella de amor y
             dedicación en tu comunidad.</li>
-            <li>Aprender y crecer: Adquiere nuevas habilidades y
+            <li>Aprender y crecer: adquiere nuevas habilidades y
             conocimientos, mientras te enriqueces con las historias y
             experiencias de tus vecinos.</li>
-            <li>Fortalecer el espíritu comunitario: Ayuda a construir no 
-              solo estructuras, sino también un sentido de pertenencia y 
-              orgullo comunitario.</li>
+            <li>Fortalecer el espíritu comunitario: ayuda a construir estructuras y un sentido de pertenencia y orgullo comunitario.</li>
         </ul>
             </div>
             

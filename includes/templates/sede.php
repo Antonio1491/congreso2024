@@ -16,7 +16,7 @@
       <a href="conectividad.php">
         <h4 class="text-center subtituloPMin">Conectividad</h4>
       </a>  
-      <p class="text-justofy">Mérida cuenta con diversas opciones para que puedas moverte dentro de la ciudad. En esta sección podrás encontrar la mejor forma de transportarte que se adapte a ti.</p>
+      <p class="text-justofy">Mérida tiene diversas opciones para que puedas moverte dentro de la ciudad diversas opciones para que puedas moverte dentro de la ciudad. En esta sección podrás encontrar la mejor forma de transportarte que se adapte a ti.</p>
     </div>
     <div class="col-sm-12 col-md-4">
       <img src="build/img/turismo.png" alt="" class="mb-4" width="100%">

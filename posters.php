@@ -21,7 +21,7 @@
 </div>
 <div class="row">
   <div class="col-sm-12 col-md-6">
-    <h4 class="subtituloPMin">¿Quienes pueden participar?</h4>
+    <h4 class="subtituloPMin">¿Quiénes pueden participar?</h4>
     <ul class="listaVinetas">
       <li>Estudiantes Universitarios (últimos dos años) o Postgrado en Facultades de Arquitectura y Urbanismo, Facultades de Ciencias Naturales, Facultades de Ingeniería, Facultades de Ciencias Sociales, Facultades de Tecnología Aplicada, Facultades de Economía, cualquier Universidad, y otras.</li>
       <li>Organizaciones civiles relacionadas con la industria del espacio público (fundaciones, asociaciones, vecinos organizados, etc.)</li>
@@ -130,7 +130,7 @@
       <p>La propuesta debe cumplir con los siguientes requisitos:</p>
       <ul>
         <li>Enviar el documento resumen en formato .doc</li>
-        <li>Extensión global: máximo una página carta, a espacio sencillo, márgenes superior e inferior de 2,5 cm, y derecho e izquierdo de 3 cm.</li>
+        <li>Extensión máximo 1 página tamaño carta, a espacio sencillo, márgenes superior e inferior de 2.5 cm. y derecho e izquierdo de 3 cm.</li>
         <li>Título: Fuente Times New Roman tamaño 12, centrado, en mayúsculas, negrita y subrayado.</li>
         <li>Autores: nombre de los autores en fuente Times New Roman tamaño 10, en cursiva y justificado a la izquierda. Indique además, la institución u organización de origen.</li>
         <li>Cuerpo del resumen: los epígrafes en fuente Times New Roman tamaño 10, mayúscula, negrita y justificado a la izquierda; el resto, en fuente Times New Roman tamaño 10, y párrafo justificado.</li>
@@ -160,7 +160,7 @@
     <div class="col-sm-12 col-md-4">
       <ul>
         <li>Nombre del autor o autores en el encabezado.</li>
-        <li>Categoría: Profesional - Joven Profesional - Estudiante.</li>
+        <li>Categoría: profesional - Joven Profesional - Estudiante.</li>
         <li>Título.</li>
         <li>Tipo de trabajo: tesis, investigación, proyecto, etc.</li>
         <li>Origen: Ciudad y País.</li>
