@@ -15,9 +15,9 @@
         <!-- <p class="text-center"><strong>*Precio para miembros activos de ANPR</strong></p> -->
         <div class="boleto-precio">
         <!-- <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span> -->
-        <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span>
+        <sup>$</sup>3,400<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <!-- <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span> -->
+             <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span> 
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -48,9 +48,9 @@
         <!-- <p class="text-center"><strong>*Estudiantes de nivel licenciatura</strong></p> -->
         <div class="boleto-precio">
           <!-- <sup>$</sup>2,260<span style="font-size:1rem;"> MXN</span> -->
-          <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
+          <sup>$</sup>2,000<span style="font-size:1rem;"> MXN</span>
           <div class="boleto_precio_final">
-            <!-- <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span> -->
+          <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -82,9 +82,9 @@
         <!-- <p class="text-center"><strong>*Incluye prueba de Membresía ANPR</strong></p> -->
         <div class="boleto-precio">
         <!-- <sup>$</sup>1,866<span style="font-size:1rem;"> MXN</span> -->
-        <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span>
+        <sup>$</sup>1,500<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
-            <!-- <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span> -->
+             <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span> 
           </div>
         </div>
         <div class="boleto-descripcion">
@@ -104,9 +104,13 @@
         <div class="text-center boleto-btn">
           <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary">Comprar</a>
         </div>
+        
       </div>
+      
     </div>
-    
+    <div class="mt-5 text-center" style="margin: 0 20%;">
+    <p><b>Términos y condiciones.</b> Descuento sobre tarifa base. Promoción válida del 13 al 16 de septiembre. Válido para entradas ORO, PLATA y BRONCE. Este descuento no aplica en la compra de Talleres Vivenciales, Master Classes o entrada por un día. No es acumulable con otras promociones o descuentos. No es transferible a otras personas. No permite cambios ni devoluciones.</p>
+    </div>
     <!-- <hr class="mt-5"> -->
 
     <!-- <h2 class="text-center tituloB mb-5 mt-5">Maximiza tu experiencia</h2>
@@ -200,5 +204,5 @@
         </div>
       </div>
     </div> -->
-
+  
   </section>
