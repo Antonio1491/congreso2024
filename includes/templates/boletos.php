@@ -15,7 +15,7 @@
         <!-- <p class="text-center"><strong>*Precio para miembros activos de ANPR</strong></p> -->
         <div class="boleto-precio">
         <!-- <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span> -->
-        <sup>$</sup>3,400<span style="font-size:1rem;"> MXN</span>
+        <sup>$</sup>2,400<span style="font-size:1rem;"> MXN</span>
         <div class="boleto_precio_final">
              <sup>$</sup><span style="text-decoration:line-through;">3,435</span><span style="font-size:1rem;"> MXN</span> 
           </div>
