@@ -96,6 +96,12 @@
               Expo Espacio Público
             </a> 
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="https://congresoparques.com/construccion-comunitaria.php">
+              Construcción 
+              Comunitaria
+            </a> 
+          </li>
           <li>
             <!-- <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary">ADQUIRIR BOLETO</a> -->
           </li>
