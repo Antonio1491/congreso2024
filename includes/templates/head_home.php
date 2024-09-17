@@ -29,7 +29,7 @@
   <nav class="navbar sticky-top navbar-expand-md">
     <div class="container">
       <a class="navbar-brand" href="index.php">
-        <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
+       <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
       </a>
       <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -97,6 +97,12 @@
               Expo Espacio Público
             </a> 
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-center" href="https://congresoparques.com/construccion-comunitaria.php">
+              Construcción 
+              Comunitaria
+            </a> 
+          </li>
           <li>
             <!-- <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary">ADQUIRIR BOLETO</a> -->
           </li>
@@ -109,7 +115,7 @@
   <header class="header header_home">
     <div class="d-flex justify-content-evenly align-items-center p-sm-4">
       <img src="img/logotipos/recursomerida.png" class="img-fluid m-sm-4">
-      <img src="build/img/recursomerida2.png" class="d-sm-block d-none">
+      <img src="build/img/Facebook_Adds_Campañas.png" class="d-sm-block d-none">
     </div>
   </header>
 
