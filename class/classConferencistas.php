@@ -67,8 +67,11 @@ class Conferencistas extends Conexion{
     AND ponencias.estatus = 1
     AND usuarios.nombres NOT LIKE 'Ejemplo congreso%'
     AND usuarios.apellido_paterno NOT LIKE '2024 Ejemplo%'
+    AND usuarios.apellido_paterno NOT LIKE '2024 Ejemplo%'
     AND usuarios.nombres NOT LIKE 'Prueba 2024%'
-    AND usuarios.apellido_paterno NOT LIKE 'Ejemplo%';
+    AND usuarios.apellido_paterno NOT LIKE 'Ejemplo%'
+    AND usuarios.id != '377'
+    AND usuarios.id != '381';
     ";
 
     if ($stmt = $this->conexion_db->prepare($sql)) {

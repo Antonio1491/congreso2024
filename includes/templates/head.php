@@ -47,6 +47,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="congreso_parques.php">Congreso</a></li>
               <li><a class="dropdown-item" href="comite.php">Organizadores</a></li>
+              <li><a class="dropdown-item" href="ponentes.php">Ponentes</a></li>
               <li><a class="dropdown-item" href="preguntas.php">Preguntas Frecuentes</a></li>
               <li><a class="dropdown-item" href="preparate.php">Prepárate</a></li>
               <li class="dropdown-submenu">

@@ -94,7 +94,7 @@
 
 
 
-<div id="popup" >
+<!-- <div id="popup" >
   <div class="content-popup">
     <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
       <div>
@@ -102,13 +102,12 @@
             <a href="https://anpr.org.mx/resultados-de-la-convocatoria-de-propuestas-congreso-parques-2024/" target="_blank"> 
               <img width="auto" height="560" id="img-popup" src="build/img/Resultados .png" alt="">
           </a>  
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   -->
       </div>
   </div>
-</div>
+</div> -->
 
 
-  <div class="popup-overlay"></div> -->
+  <!-- <div class="popup-overlay"></div>  -->
 
   <!-- <section class="container-fluid primaryBg pt-5 pb-5">
     <img src="build/img/f1.png" alt="" class="absolute fh">
@@ -498,21 +497,21 @@ if(contenedorFondo){
   <script src="https://code.jquery.com/jquery-3.2.1.js" type="text/javascript"></script>
   <script type="text/javascript">
   //::::::: Pop Up :::::::
-  $(document).ready(function(){
-    // $('#open').click(function(){
-      $('#popup').fadeIn('slow');
-      $('.popup-overlay').fadeIn('slow');
-      $('.popup-overlay').height($(window).height());
-      return false;
-  });
+  // $(document).ready(function(){
+  //   // $('#open').click(function(){
+  //     $('#popup').fadeIn('slow');
+  //     $('.popup-overlay').fadeIn('slow');
+  //     $('.popup-overlay').height($(window).height());
+  //     return false;
+  // });
 
-  $(document).ready(function(){
-      $('#close').click(function(){
-      $('#popup').fadeOut('slow');
-      $('.popup-overlay').fadeOut('slow');
-      return false;
-    });
-  });
+  // $(document).ready(function(){
+  //     $('#close').click(function(){
+  //     $('#popup').fadeOut('slow');
+  //     $('.popup-overlay').fadeOut('slow');
+  //     return false;
+  //   });
+  // });
 
   // Slider videos anteriores 
  

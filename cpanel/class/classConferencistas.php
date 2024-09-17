@@ -102,7 +102,7 @@ class Conferencistas extends Conexion{   //utilizar variables y métodos dentro 
       LEFT JOIN ponencias ON up.id_ponencia = ponencias.id
       LEFT JOIN usuarios as u ON up.id_usuario = u.id
       WHERE ponencias.estatus = '1' 
-      AND u.id_categoria = '2'
+      AND u.id_categoria = '2' 
       AND u.id_evento = $evento
       ORDER BY u.id DESC");
 
