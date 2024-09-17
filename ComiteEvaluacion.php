@@ -55,7 +55,7 @@ $data = new Conferencistas();
                     </figure>
 
                     <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-                      <img src="imagenes/Eric-Fajardo.jpg" class='rounded-circle'>
+                      <img src="imagenes/Eric-Fajardo.JPG" class='rounded-circle'>
                       <figcaption> 
                           <h3 class='nombre'>Eric Fajardo</h3>
                         </a>
@@ -112,7 +112,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/eugenia-correa.jpg" class='rounded-circle'>
+  <img src="imagenes/Eugenia-Correa.jpg" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Eugenia Correa</h3>
     <h4>Directora</h4>
@@ -123,7 +123,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/karina-aguilar.jpg" class='rounded-circle'>
+  <img src="imagenes/Karina-Aguilar.jpg" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Karina Aguilar</h3>
     <h4>Gerencia de Conservación y Mejoramiento al Ecosistema</h4>
@@ -134,7 +134,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/Jorge-Villaseñor.jpg" class='rounded-circle'>
+  <img src="imagenes/Jorge-Villasenor.JPG" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Jorge Villaseñor</h3>
     <h4>Director</h4>
@@ -145,7 +145,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/gladys-arana.jpeg" class='rounded-circle'>
+  <img src="imagenes/Gladys-Arana.jpeg" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Gladys Arana</h3>
     <h4>Coordinadora de Maestría en Diseño Urbano</h4>
@@ -156,7 +156,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/nayla-campos.jpg" class='rounded-circle'>
+  <img src="imagenes/Nayla-Campos.jpg" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Nayla Campos</h3>
     <h4>Supervisora y Operadora Área de Mariposario</h4>
@@ -222,7 +222,7 @@ $data = new Conferencistas();
 </figure>
 
 <figure class='col-sm-12 col-md-3 contenido_conferencista'>
-  <img src="imagenes/alejandra-aragon.jpeg" class='rounded-circle'>
+  <img src="imagenes/alejandra_aragon.jpeg" class='rounded-circle'>
   <figcaption>
     <h3 class='nombre'>Alejandra Aragón</h3>
     <h4>Encargada de Presupuesto Participativo</h4>

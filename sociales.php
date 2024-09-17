@@ -66,7 +66,7 @@
       <div class="col-sm-12 col-md-6 align-self-center">
       <h2 class="subtituloBMin">Evento de Clausura</h2>
         <h4 class="subtituloComplementario">25 de octubre</h4>
-        <p class="white">Actualizar la descripción de Evento de Clausura a: Después de aprender de los expertos y adquirir nuevas experiencias, ¡es hora de celebrar en el Evento de Clausura. Sumérgete en el ambiente vibrante de una de las cantinas botaneras más típicas de Mérida, donde te esperan antojitos yucatecos, música, baile y un ambiente único. Disfruta de la deliciosa comida local y la buena compañía, mientras brindas por los logros compartidos durante el Congreso Parques. 
+        <p class="white">Después de aprender de los expertos y adquirir nuevas experiencias, ¡es hora de celebrar en el Evento de Clausura. Sumérgete en el ambiente vibrante de una de las cantinas botaneras más típicas de Mérida, donde te esperan antojitos yucatecos, música, baile y un ambiente único. Disfruta de la deliciosa comida local y la buena compañía, mientras brindas por los logros compartidos durante el Congreso Parques. 
         </p>
         <div class="row detalles_evento">
           <div class="col-md-6 col-sm-12">
