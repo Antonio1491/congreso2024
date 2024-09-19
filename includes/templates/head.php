@@ -30,7 +30,7 @@
 </head>
 
 <?php include 'includes/templates/banner_header.php'; ?>
-<nav class="navbar sticky-top navbar-expand-md">
+<nav class="navbar sticky-top navbar-expand-md" style="padding-top: 30px;">
     <div class="container">
       <a class="navbar-brand" href="index.php">
         <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">

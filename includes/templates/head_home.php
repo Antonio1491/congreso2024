@@ -26,7 +26,8 @@
 
 <body>
   <?php include 'includes/templates/banner_header.php'; ?>
-  <nav class="navbar sticky-top navbar-expand-md">
+  
+  <nav class="navbar sticky-top navbar-expand-md " style="padding-top: 30px;">
     <div class="container">
       <a class="navbar-brand" href="index.php">
        <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
@@ -114,7 +115,7 @@
   <header class="header header_home">
     <div class="d-flex justify-content-evenly align-items-center p-sm-4">
       <img src="img/logotipos/recursomerida.png" class="img-fluid m-sm-4">
-      <img src="build/img/Facebook_Adds_Campañas.png" class="d-sm-block d-none">
+      <img src="build/img/Facebook_Adds_Campañas.png" class="d-sm-block d-none "style="width:40%; height: auto;">
     </div>
   </header>
 

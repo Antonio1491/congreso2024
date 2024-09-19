@@ -4,7 +4,7 @@
   }
   </style>
 
-<div class="container-fluid head_promocion" style="position: fixed; z-index: 99999;">
+<div class="container-fluid head_promocion" style=" position: fixed; z-index: 99999; display: inline-block;">
 
   <!-- <a href="https://worldurbanparkscongress.com/prices.php">
     <strong>-30% DISCOUNT TO MEMBERS</strong>

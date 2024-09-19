@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 text-center p-md-5">
           <p class="lead white">
-          Mérida cuenta con una amplia oferta hotelera, en esta sección encontrarás información sobre hoteles a corta distancia del Centro de Convenciones Yucatán Siglo XXI. Si tu hotel desea formar parte del evento, escríbenos a:  info@congresoparques.com 
+          Mérida tiene con una amplia oferta hotelera; en esta sección encontrarás información sobre hoteles a corta distancia del Centro de Convenciones Yucatán Siglo XXI. Si tu hotel desea formar parte del evento, escríbenos a:  info@congresoparques.com 
           </p> 
           <p>
             <strong style="color: #cfde00;">Para utilizar tu clave de reservación comunícate de manera telefónica a tu hotel seleccionado</strong>
@@ -34,10 +34,10 @@
           <div class="col-sm-12 col-md-8">
             <p><strong class="hotel__dato">Ubicación:</strong> Calle 5 B No. 290 A x 20 A y 60, Col Revolución. México, C. 60, 97115 Mérida, Yuc.</p>
             <p><strong class="hotel__dato">Clave de Reservación:</strong> G1RM5H@MER </p>
-            <p><strong class="hotel__dato">Contacto:</strong>Guadalupe Be Mejía <br> 
+            <p><strong class="hotel__dato">Contacto: </strong>Guadalupe Be Mejía <br> 
             ventasfimer@posadas.com </br> Tel - 999 964 3500 
             </p>
-            <p><strong class="hotel__dato">Web:</strong>https://www.fiestainn.com/</p>
+            <p><strong class="hotel__dato">Web: </strong>https://www.fiestainn.com/</p>
           </div>
         </div>
       </div>
@@ -129,8 +129,8 @@
             <img src="build/img/hotel-ibis.jpg" alt="" width="100%">
           </div>
           <div class="col-sm-12 col-md-8">
-            <p><strong class="hotel__dato">Ubicación:</strong> Calle 3 Num 218-N-24 Y 60, Xcumpich, 97205 Mérida, Yuc.</p>
-            <p><strong class="hotel__dato">Clave de Reservación:</strong>CPMID24</p>
+            <p><strong class="hotel__dato">Ubicación:</strong> Calle 3 Núm. 218 entr 24 y 60, Xcumpich, C.P 97205 Mérida, Yuc.</p>
+            <p><strong class="hotel__dato">Clave de Reservación: </strong>CPMID24</p>
             <p><strong class="hotel__dato">Contacto:</strong> Shelia Jiménez</br>hector.rojas3@hilton.com</br>
             Tel - 4777403219</p>
             <p><strong class="hotel__dato">Web:</strong> https://all.accor.com/</p>
@@ -177,7 +177,7 @@
             <img src="build/img/hotel-xtended.jpg" alt="" width="100%">
           </div>
           <div class="col-sm-12 col-md-8">
-            <p><strong class="hotel__dato">Ubicación:</strong>Calle 20-A #284 Int, y17, entre 5-B, Revolución, 97204 Mérida, Yuc.</p>
+            <p><strong class="hotel__dato">Ubicación: </strong>Calle 20-A #284 Int, y 17, entre 5-B, Revolución, 97204 Mérida, Yuc.</p>
             <p><strong class="hotel__dato">Clave de Reservación:</strong> Congreso Parques Mérida 2024</p>
             <p><strong class="hotel__dato">Contacto:</strong> Karime Castillo </br>
             ventas@extendedsuites.com.mx </br>Tel - 4772670704</br></p>
@@ -195,11 +195,11 @@
           </div>
           <div class="col-sm-10 col-md-2 text-center">
             <h6 class="tituloTabla">SGL</h6>
-            $1,064 MXN (1 cama queen).
+            $1,064 MXN (1 camas queen)
           </div>
           <div class="col-sm-10 col-md-2 text-center">
             <h6 class="tituloTabla">DBL</h6>
-            $1,064 MXN (2 cama queen).
+            $1,064 MXN (2 camas queen)
           </div>
           <div class="col-sm-10 col-md-4 text-center">
             <h6 class="tituloTabla">Nota:</h6>
