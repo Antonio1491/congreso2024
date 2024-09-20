@@ -95,18 +95,17 @@
 
 
 <!--<div id="popup" >-->
-<div id="popup" >
-    <div class="content-popup">
-      <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
-        <div>
-          
-             <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" target="_blank"> 
-                <img id="img-popup" src="build/img/campaña-ventas-patrias.png" alt=""  style="height: auto; width: 560px;">
-            </a>  
-          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/uqru5Tgoj_U?si=Y8jrFCNbCfAllOGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
-        </div>
-    </div>
+<!-- <div id="popup" >
+  <div class="content-popup">
+    <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
+      <div>
+        
+            <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" target="_blank"> 
+              <img id="img-popup" src="build/img/campaña-ventas-patrias.png" alt=""  style="height: auto; width: 560px;">
+          </a>  
+      </div>
   </div>
+</div> -->
 
 
 <!--  <div class="popup-overlay"></div> -->

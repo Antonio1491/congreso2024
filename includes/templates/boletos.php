@@ -6,7 +6,7 @@
       <!-- Profesional Miembro -->
       <div class="boleto boleto__active m-3 mb-md-0 mb-sm-4">
         <!-- <div class="cinta"><span>Preventa</span></div> -->
-        <div class="cinta" style="background-color:#f00 !important;"><span>30% DESC</span></div>
+        <div class="cinta" style=""><span>Precio Final</span></div>
         <div class="text-center">
         </div>
         <h4 class="boleto-titulo">
@@ -15,10 +15,10 @@
         <!-- <p class="text-center"><strong>*Precio para miembros activos de ANPR</strong></p> -->
         <div class="boleto-precio">
         <!-- <sup>$</sup>2,654<span style="font-size:1rem;"> MXN</span> -->
-        <sup>$</sup>2,400<span style="font-size:1rem;"> MXN</span>
-        <div class="boleto_precio_final">
+        <sup>$</sup>3,435<span style="font-size:1rem;"> MXN</span>
+        <!-- <div class="boleto_precio_final">
              <sup>$</sup><span style="text-decoration:line-through;">3,435</span><span style="font-size:1rem;"> MXN</span> 
-          </div>
+          </div> -->
         </div>
         <div class="boleto-descripcion">
           <ul>
@@ -41,17 +41,17 @@
       <!-- Estudiante -->
       <div class="boleto m-3 mb-md-0">
         <!-- <div class="cinta"><span>Preventa</span></div> -->
-        <div class="cinta" style="background-color:#f00 !important;"><span>30% DESC</span></div>
+        <div class="cinta" style=""><span>Precio Final</span></div>
         <h4 class="boleto-titulo">
         <img src="img/icon_entrada_plata.png" alt="" height="60px">Plata
         </h4>
         <!-- <p class="text-center"><strong>*Estudiantes de nivel licenciatura</strong></p> -->
         <div class="boleto-precio">
           <!-- <sup>$</sup>2,260<span style="font-size:1rem;"> MXN</span> -->
-          <sup>$</sup>2,000<span style="font-size:1rem;"> MXN</span>
-          <div class="boleto_precio_final">
+          <sup>$</sup>2,925<span style="font-size:1rem;"> MXN</span>
+          <!-- <div class="boleto_precio_final">
           <sup>$</sup><span style="text-decoration:line-through;">2,925</span><span style="font-size:1rem;"> MXN</span>
-          </div>
+          </div> -->
         </div>
         <div class="boleto-descripcion">
         <ul>
@@ -74,7 +74,7 @@
       <!-- Profesional No miembro -->
       <div class="boleto boleto__active m-3 mb-md-0">
         <!-- <div class="cinta"><span>Preventa</span></div> -->
-        <div class="cinta" style="background-color:#f00 !important;"><span>30% DESC</span></div>
+        <div class="cinta" style=""><span>Precio Final</span></div>
         <h4 class="boleto-titulo">
         <img src="img/icon_entrada_bronce.png" alt="" height="60px">Bronce<br>
           <!-- + Suscripción ANPR -->
@@ -82,10 +82,10 @@
         <!-- <p class="text-center"><strong>*Incluye prueba de Membresía ANPR</strong></p> -->
         <div class="boleto-precio">
         <!-- <sup>$</sup>1,866<span style="font-size:1rem;"> MXN</span> -->
-        <sup>$</sup>1,500<span style="font-size:1rem;"> MXN</span>
-        <div class="boleto_precio_final">
+        <sup>$</sup>2,195<span style="font-size:1rem;"> MXN</span>
+        <!-- <div class="boleto_precio_final">
              <sup>$</sup><span style="text-decoration:line-through;">2,195</span><span style="font-size:1rem;"> MXN</span> 
-          </div>
+          </div> -->
         </div>
         <div class="boleto-descripcion">
         <ul>
@@ -108,9 +108,9 @@
       </div>
       
     </div>
-    <div class="mt-5 text-center" style="margin: 0 20%; font-size: 12px;">
+    <!-- <div class="mt-5 text-center" style="margin: 0 20%; font-size: 12px;">
     <p><b>Términos y condiciones.</b> Descuento sobre tarifa base. Promoción válida del 13 al 16 de septiembre. Válido para entradas ORO, PLATA y BRONCE. Este descuento no aplica en la compra de Talleres Vivenciales, Master Classes o entrada por un día. No es acumulable con otras promociones o descuentos. No es transferible a otras personas. No permite cambios ni devoluciones.</p>
-    </div>
+    </div> -->
     <!-- <hr class="mt-5"> -->
 
     <!-- <h2 class="text-center tituloB mb-5 mt-5">Maximiza tu experiencia</h2>

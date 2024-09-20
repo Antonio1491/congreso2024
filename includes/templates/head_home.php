@@ -115,7 +115,7 @@
   <header class="header header_home">
     <div class="d-flex justify-content-evenly align-items-center p-sm-4">
       <img src="img/logotipos/recursomerida.png" class="img-fluid m-sm-4">
-      <img src="build/img/Facebook_Adds_Campañas.png" class="d-sm-block d-none">
+      <img src="build/img/recursomerida2.png" class="d-sm-block d-none">
     </div>
   </header>
 
