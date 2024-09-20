@@ -171,7 +171,7 @@ Te recomendamos escribir con cuidado tu correo y número para que podamos contac
         </p>
       </dd>
       <dt>Descripción:</dt>
-      <dd>Describe tu sesión de forma clara y concisa; Esto debe ser de 200 palabras o menos. Si tu sesión es seleccionada, la descripción aparecerá en nuestro sitio web, asegúrate que sea atractiva e invite a los asistentes a unirse a la misma.</dd>
+      <dd>Describe tu sesión de forma clara y concisa; esto debe ser de 200 palabras o menos. Si tu sesión es seleccionada, la descripción aparecerá en nuestro sitio web, asegúrate que sea atractiva e invite a los asistentes a unirse a la misma.</dd>
     </div>
     <div class="col-sm-12 col-md-6 mt-5">
       <dt>Justificación:</dt>

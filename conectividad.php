@@ -10,7 +10,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-12 text-center p-md-5">
         <h3 class="subtitulo verde bolded">¿Cómo llegar a Mérida?</h3>
-        <p class="lead white pt-2">Al ser un destino de carácter de ciudad industrial, cosmopolita y, por tanto de progresivo desarrollo económico, llegar a Mérida no conlleva mayores dificultades, ya que puede accederse tanto por aire como por tierra.  
+        <p class="lead white pt-2">Al ser un destino de carácter de ciudad industrial, cosmopolita y de progresivo desarrollo económico, llegar a Mérida no conlleva mayores dificultades, ya que puede accederse tanto por aire como por tierra.  
         </p> 
       </div>
     </div>
@@ -44,7 +44,7 @@
         <h5 class="subtituloPMin">Vuelos directos nacionales: </h5>
         <ul>
           <li>Ciudad de México (MEX).</li>
-          <li>Ciudad de México Santa Lucia (NLU).</li>
+          <li>Ciudad de México Santa Lucía (NLU).</li>
           <li>Guadalajara (GDL).</li>
           <li>Monterrey (MTY).</li>
           <li>Toluca (TLC).</li>
@@ -122,7 +122,7 @@
     <div class="row">
       <div class="col-sm-12 col-md-6">
         <h2 class="subtituloPMin">Conectividad Terrestre: <img src="build/img/bus.svg" alt="" class="icon_title"></h2> 
-        <p>Mérida tiene acceso a las redes carreteras y puertos más importantes, conectando de manera rápida tanto el norte como al sur del país. También cuenta con dinamismo y excelente conectividad carretera y férrea con Estados Unidos de América y Canadá. </p>
+        <p>Mérida tiene acceso a las redes carreteras y puertos más importantes, conectando de manera rápida tanto el norte como al sur del país.  </p>
       </div>
     </div>
     <div class="row mt-5 mb-3">
@@ -132,16 +132,16 @@
       <div class="col-sm-12 col-md-6">
         <ol class="list-none">
           <li><img src="build/img/cdmx.png" alt="" class="icon_title mt-2 mb-2"> Campeche | <strong>204 km</strong></li>
-          <li><img src="build/img/san-luis-potosi.png" alt="" class="icon_title mt-2 mb-2"> Quintana Roo. | <strong>287 km </strong></li>
-          <li><img src="build/img/guadalajara.png" alt="" class="icon_title mt-2 mb-2"> Veracruz. | <strong>476 km </strong></li>
+          <li><img src="build/img/san-luis-potosi.png" alt="" class="icon_title mt-2 mb-2"> Quintana Roo | <strong>287 km </strong></li>
+          <li><img src="build/img/guadalajara.png" alt="" class="icon_title mt-2 mb-2"> Veracruz | <strong>476 km </strong></li>
           
         </ol>
       </div>
       <div class="col-sm-12 col-md-6">
         <ol class="list-none">
-          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Tabasco. <strong>561 km </strong></li>
-          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Chiapas. | <strong>844 km </strong></li>
-          <li><img src="build/img/nuevo-laredo.png" alt="" class="icon_title mt-2 mb-2"> Oaxaca | <strong>  1249 km</strong> </li>
+          <li><img src="build/img/manzanillo.png" alt="" class="icon_title mt-2 mb-2"> Tabasco <strong>561 km </strong></li>
+          <li><img src="build/img/monterrey.png" alt="" class="icon_title mt-2 mb-2"> Chiapas | <strong>844 km </strong></li>
+          <li><img src="build/img/nuevo-laredo.png" alt="" class="icon_title mt-2 mb-2"> Oaxaca | <strong>  1,249 km</strong> </li>
       
         </ol>
       </div>

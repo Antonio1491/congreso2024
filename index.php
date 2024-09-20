@@ -165,7 +165,7 @@
             <img src="./build/img/eventos.png" alt="" class="figure-img img-fluid rounded">
           </div>
           <h5 class="subtituloPMin mt-3 text-center">Eventos Sociales</h5>
-          <p >Amplía tu red profesional y disfruta de los eventos realizados especialmente para ti. Reúnase en un ambiente relajado, diviértase y haga networking.</p>
+          <p >Amplía tu red profesional y disfruta de los eventos realizados especialmente para ti. Reúnete en un ambiente relajado, diviértete y haz networking.</p>
         </div>
       </div>
     </div>
@@ -354,7 +354,7 @@
         <img src="build/img/Siglo-XXI.png" alt="" width="30%">
         <p class="mt-2"><strong>Mérida, Yucatán.</strong><br>
         SIGLO XXI<br>
-        Calle 60 Nte 299, Zona <br>Industrial, Revolucion, <br>97118 Mérida, Yuc.
+        Calle 60 Nte 299, Zona <br>Industrial, Revolución, <br>97118 Mérida, Yuc.
         </p>
       </div>
       <div class="col-md-8">

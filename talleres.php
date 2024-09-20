@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-12 text-center p-md-5">
           <p class="lead white">
-          <strong class="verde bolded">Los más de 10 talleres</strong> se celebrarán el día miércoles <span class="dt" style="color: white;"> 23 de octubre</span>,<br> antes de las secisiones educativas, las sesiones magistrales y la Expo Espacio Público. 
+          <strong class="verde bolded">Los más de 10 talleres</strong> se celebrarán el día miércoles <span class="dt" style="color: white;"> 23 de octubre</span>,<br> antes de las sesiones educativas y magistrales y la Expo Espacio Público. 
           <br> 
           </p> 
         </div>
@@ -50,7 +50,7 @@
         <article>
           <h2 class="subtituloBMin">Master Classes</h2>
           <!-- <h6 class="subtituloComplementario">¡Visita los parques más emblemáticos de la ciudad!</h6> -->
-          <p class="white text-justify">Obtén conocimientos técnicos sobre un tema especializado, las master classes cuentan con la orientación de un especialista que te ayudará a ampliar tus conocimientos y aprender técnicas sobre diversos temas del espacio público.
+          <p class="white text-justify">Obtén conocimientos técnicos sobre un tema especializado. Las master classes cuentan con la orientación de un especialista que te ayudará a ampliar tus conocimientos y a aprender técnicas sobre diversos temas del espacio público.
           </p>
         </article>
       </div>

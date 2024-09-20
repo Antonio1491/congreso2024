@@ -38,7 +38,7 @@
           <li>Tener disponibilidad para desempeñarse como voluntario por lo menos un día del Congreso.</li>
           <li>Asistir a la capacitación online. (Esta capacitación es indispensable)</li>
           <li>Cumplir con los tiempos y turnos a las actividades del congreso.</li>
-          <li>Conocimiento del idioma inglés. (Al menos nivel intermedio)</li>
+          <li>Conocimiento del idioma inglés (al menos nivel intermedio).</li>
         </ul>
       </div>
     </div>

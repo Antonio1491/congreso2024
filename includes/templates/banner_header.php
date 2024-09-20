@@ -4,7 +4,7 @@
   }
   </style>
 
-<div class="container-fluid head_promocion" style="position: fixed; z-index: 99999;">
+<div class="container-fluid head_promocion" style=" position: fixed; z-index: 99999; display: inline-block;">
 
  
   &#x2728;<strong style="color: #ccd421;">20% DESCUENTO</strong> A MIEMBROS ANPR - PRECIO ESPECIAL PARA ESTUDIANTES &#x2728;

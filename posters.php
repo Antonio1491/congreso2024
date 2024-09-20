@@ -133,7 +133,7 @@
         <li>Extensión máximo 1 página tamaño carta, a espacio sencillo, márgenes superior e inferior de 2.5 cm. y derecho e izquierdo de 3 cm.</li>
         <li>Título: Fuente Times New Roman tamaño 12, centrado, en mayúsculas, negrita y subrayado.</li>
         <li>Autores: nombre de los autores en fuente Times New Roman tamaño 10, en cursiva y justificado a la izquierda. Indique además, la institución u organización de origen.</li>
-        <li>Cuerpo del resumen: los epígrafes en fuente Times New Roman tamaño 10, mayúscula, negrita y justificado a la izquierda; el resto, en fuente Times New Roman tamaño 10, y párrafo justificado.</li>
+        <li>Cuerpo del resumen: los epígrafes en fuente Times New Roman tamaño 10, mayúscula, negrita y justificado a la izquierda; el resto, en fuente Times New Roman tamaño 10 y párrafo justificado.</li>
       </ul>
       <h6 class="subtituloPMin pb-2">Sección del resumen:</h6>
       <ul>
@@ -173,10 +173,10 @@
       <ul>
         <li>Conclusión.</li>
         <li>Bibliografía.</li>
-        <li>Año: año de elaboración de la propuesta / Año de ejecución: (si aplica)</li>
+        <li>Año: año de elaboración de la propuesta / Año de ejecución (si aplica)</li>
       </ul>
       <h6 class="subtituloPMin pb-2">Entrega digital:</h6>
-      <p>A los efectos de la presentación del póster:</p>
+      <p>Para los efectos de la presentación del póster:</p>
       <ul>
         <li>Formato PDF</li>
         <li>Peso inferior a 10 MB.</li>
@@ -194,15 +194,15 @@
     <div class="col-md-8 col-sm-12">
       <p>
        En caso de ser seleccionado es importante considerar: 
-        El tamaño de letra aproximado para cada una de las partes del póster impreso
+        el tamaño de letra aproximado para cada una de las partes del póster impreso
         es:
       </p>
       <ul>
-        <li>Título 100 puntos</li>
-        <li>Autores y sede 80 puntos</li>
-        <li>Títulos para antecedentes, objetivos, material y métodos, resultados, conclusiones, discusión, bibliografía, etc. 60 puntos.</li>
-        <li>Cuerpo de texto 40 puntos</li>
-        <li>Notas de pie para fotografías o gráficos 25 puntos.</li>
+        <li>Título: 100 puntos</li>
+        <li>Autores y sede: 80 puntos</li>
+        <li>Títulos para antecedentes, objetivos, material y métodos, resultados, conclusiones, discusión, bibliografía, etc: 60 puntos.</li>
+        <li>Cuerpo de texto: 40 puntos</li>
+        <li>Notas de pie para fotografías o gráficos: 25 puntos.</li>
       </ul>
     </div>
     <div class="col-md-4 col-sm-12">
