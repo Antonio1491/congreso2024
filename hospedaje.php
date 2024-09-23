@@ -203,7 +203,7 @@
           </div>
           <div class="col-sm-10 col-md-4 text-center">
             <h6 class="tituloTabla">Nota:</h6>
-            *Incluye desayuno americano.<br>
+            <!-- *Incluye desayuno americano.<br> -->
             *Incluye impuestos.
           </div>
         </div>
