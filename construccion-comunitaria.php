@@ -89,7 +89,7 @@
   <section class="patrocinadores container pt-3 mb-5">
     <div class="row d-flex justify-content-center">
       <img src="build/img/jimumex.png" alt="">
-      <img src="build/img/Logo_FFemsa.png" alt="">
+      <img style="width: 288px; height: 88px;" src="build/img/Logo_FFemsa.png" alt="">
     </div>
     <div class="container-text text-center mt-5">
       <p>Este evento es posible gracias al generoso apoyo de <strong>Fundación FEMSA y JIMUMEX</strong>.
