@@ -42,18 +42,18 @@
   <div class="container-fluid ">
     <article class="row bgBeerparty">
       <div class="col-sm-12 col-md-6 align-self-center">
-        <h2 class="subtituloBMin">Beer Party</h2>
+        <h2 class="subtituloBMin">Beer and Mix Party</h2>
         <h4 class="subtituloComplementario">24 de octubre</h4>
-        <p class="white">Únete a nosotros en la Beer Party, un evento social vibrante y lleno de sabor que se celebra en el corazón del Congreso Parques. Disfruta de una noche única en la que la cerveza artesanal, la música y el buen ambiente se combinan para ofrecerte una experiencia inolvidable. ¡No te pierdas esta oportunidad de brindar por el futuro de nuestros espacios públicos!
+        <p class="white">Únete a nosotros en la Beer and Mix Party, un evento social vibrante y lleno de sabor que se celebra en el corazón del Congreso Parques. Disfruta de una noche única en la que la cerveza artesanal, la música y el buen ambiente se combinan para ofrecerte una experiencia inolvidable. ¡No te pierdas esta oportunidad de brindar por el futuro de nuestros espacios públicos!
         </p>
         <div class="row detalles_evento">
-          <!-- <div class="col-md-6 col-sm-12">
-            <span><i class="bi bi-clock"></i> Hora:</span>
-            <p>8:00 p.m. - 11 p.m.</p>
-          </div> -->
           <div class="col-md-6 col-sm-12">
-            <!-- <span><i class="fi-marker"></i><p class="subtituloComplementario">  Lugar:</p></span>
-            <p class="white">Poliforum León</p> -->
+          <span><i class="bi bi-clock"></i><p class="subtituloComplementario"> Hora:</span>
+          <p class="white">5:30 p.m. - 8:00 p.m.</p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <span><i class="fi-marker"></i><p class="subtituloComplementario">  Lugar:</p></span>
+            <p class="white">Expo Espacio Público</p>
           </div>
         </div>
       </div>
@@ -70,12 +70,12 @@
         </p>
         <div class="row detalles_evento">
           <div class="col-md-6 col-sm-12">
-            <!-- <span><i class="bi bi-clock"></i><p class="subtituloComplementario">  Hora:</p></span>
-          <p class="white">8:00 p.m. - 11 p.m.</p> -->
+            <span><i class="bi bi-clock"></i><p class="subtituloComplementario">  Hora:</p></span>
+          <p class="white">6:30 p.m. - 10 p.m.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-           <!--  <span><i class="fi-marker"></i><p class="subtituloComplementario">  Lugar:</p></span>
-           <p><a href="https://goo.gl/maps/F4EUNkGaD9SjH2Xy8" class="white">Museo de Ciencias Explora </a></p> -->
+            <span><i class="fi-marker"></i><p class="subtituloComplementario">  Lugar:</p></span>
+           <p><a href="https://maps.app.goo.gl/JSKqgaNStcb9obuo7" class="white">Eladios Bar Galerías </a></p>
           </div>
         </div>
       </div>
