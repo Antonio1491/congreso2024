@@ -95,17 +95,17 @@
 
 
 <!--<div id="popup" >-->
-<!-- <div id="popup" >
+<div id="popup" >
   <div class="content-popup">
     <div class="close"><a href="#" id="close"><img src="build/img/close-button.png" width="20px"/></a></div>
       <div>
         
-            <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" target="_blank"> 
-              <img id="img-popup" src="build/img/campaña-ventas-patrias.png" alt=""  style="height: auto; width: 560px;">
-          </a>  
+            <!-- <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" target="_blank">  -->
+              <img id="img-popup" src="build/img/pop_up_app.png" alt=""  style="height: auto; width: 560px;">
+          <!-- </a>   -->
       </div>
   </div>
-</div> -->
+</div>
 
 
 <!--  <div class="popup-overlay"></div> -->
@@ -506,13 +506,13 @@ if(contenedorFondo){
   //     return false;
   // });
 
-  // $(document).ready(function(){
-  //     $('#close').click(function(){
-  //     $('#popup').fadeOut('slow');
-  //     $('.popup-overlay').fadeOut('slow');
-  //     return false;
-  //   });
-  // });
+  $(document).ready(function(){
+      $('#close').click(function(){
+      $('#popup').fadeOut('slow');
+      $('.popup-overlay').fadeOut('slow');
+      return false;
+    });
+  });
 
   // Slider videos anteriores 
  

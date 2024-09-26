@@ -72,6 +72,7 @@ class Conferencistas extends Conexion{
     AND usuarios.apellido_paterno NOT LIKE 'Ejemplo%'
     AND usuarios.id != '377'
     AND usuarios.id != '381';
+    AND usuarios.id != '402';
     ";
 
     if ($stmt = $this->conexion_db->prepare($sql)) {
