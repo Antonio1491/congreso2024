@@ -12,27 +12,38 @@
 </header>
 <div class="container my-5">
   <div class="row">
-    <div class="col-md-5 col-sm-12 bg-light p-4">
+    <div class="col-md-5 col-sm-12 bg-light p-4" style="font-size: 0.9rem;">
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin">¡La convocatoria para sesiones educativas está ABIERTA!</h5>
       <p class="justify">¿Tienes una idea, proyecto o experiencia que pueda inspirar a la comunidad de parques? Este es el momento de compartirla. Te invitamos a enviar tu propuesta y ser parte del programa del <strong>Congreso Parques 2026</strong>Congreso Parques 2026, que se celebrará del <strong>26 de septiembre al 15 de mayo en Tijuana, Baja California, México.</strong></p>
-      <p>La convocatoria está abierta a todos los interesados, <strong> es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición:</p>
+      <p>La convocatoria está abierta a todos los interesados, <strong> es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición.</p>
+      <h5 class="subtitulo text-center subtituloPMin">Perfil de los Ponentes</h5>
       <ul class="pt-2">
-        <li>Naturaleza y Sostenibilidad</li>
-        <li>Comunidad y Participación Ciudadana</li>
-        <li>Diseño, Operación y Gestión Eficiente</li>
-        <li>Tecnología e Innovación Urbana</li>
-        <li>Ciudad, Movilidad y Gobernanza</li>
-        <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
+        <li>Arquitectos, urbanistas, paisajistas y diseñadores del hábitat.</li>
+        <li>Sociólogos, antropólogos, mercadólogos, economistas y administradores.</li>
+        <li>Funcionarios públicos de los tres niveles de gobierno.</li>
+        <li>Ambientalistas, asociaciones civiles y organizaciones sin fines de lucro.</li>
+        <li>Cualquier persona con experiencia, conocimiento o proyectos que fortalezcan la gestión del espacio público.</li>
       </ul>
+      <h5 class="subtitulo text-center subtituloPMin">Beneficios para ponentes</h5>
+      <p>Los seleccionados recibirán una entrada de cortesía para los días del congreso, que incluye:
+        <ul class="pt-2">
+          <li>Diploma de participación como ponente.</li>
+          <li>Acceso a todas las sesiones educativas y conferencias magistrales.</li>
+          <li>Entrada a la exposición comercial.</li>
+          <li>Participación en un taller vivencial o master class.</li>
+          <li>Acceso a eventos sociales.</li>
+        </ul>
+        <i>Nota: Los gastos de inscripción a talleres adicionales, transporte, alojamiento, comidas y honorarios no están incluidos.</i>
+      </p>
       <!-- <p>
           <ul>
             <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Consultar Ejes Temáticos</a></li>
           </ul>
         </p>-->
-      <p> 
+      <strong> 
       Fechas clave de la convocatoria
-      </p>
+    </strong>
       <ul class="pt-2">
         <li><strong>Inicio:</strong> 26 de septiembre de 2025</li>
         <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
@@ -196,25 +207,25 @@
           <div class="row mb-3">
             <div class="col">
               <label for="descripcion" class="form-label">Descripción (220 palabras máximo):</label>
-              <textarea name="Descripcion" id="descripcion" rows="3" placeholder="(Esta información se utilizará con fines promocionales, por favor sea conciso y claro. )" required class="form-control"></textarea>
+              <textarea name="Descripcion" id="descripcion" rows="5" placeholder="(Esta información se utilizará con fines promocionales, por favor sea conciso y claro. )" required class="form-control"></textarea>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col">
               <label for="justificacion" class="form-label">Justificación (No hay límites de palabras):</label>
-              <textarea name="Justificacion" id="justificacion" rows="4" placeholder="Justifique la importancia de su sesión educativa propuesta, identificando cómo su proyecto/iniciativa/investigación da solución a un problema relacionado con el espacio público y cómo se relaciona con las cinco temáticas del congreso." required class="form-control"></textarea>
+              <textarea name="Justificacion" id="justificacion" rows="5" placeholder="Justifique la importancia de su sesión educativa propuesta, identificando cómo su proyecto/iniciativa/investigación da solución a un problema relacionado con el espacio público y cómo se relaciona con las cinco temáticas del congreso." required class="form-control"></textarea>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col">
               <label for="Objetivos" class="form-label">Objetivos:</label>
-              <textarea name="Objetivos" id="objetivos" rows="3" placeholder="La sesión debe contar con al menos 3 objetivos de aprendizaje, claros y medibles." required class="form-control"></textarea>
+              <textarea name="Objetivos" id="objetivos" rows="5" placeholder="La sesión debe contar con al menos 3 objetivos de aprendizaje, claros y medibles." required class="form-control"></textarea>
             </div>
           </div>
           <div class="row mb-3">
             <div class="col">
               <label for="recursos" class="form-label">Fortalece tu propuesta:</label>
-              <textarea name="Recursos" id="recursos" rows="4" placeholder="En esta sección puedes agregar varios recursos para apoyar tu propuesta. (Videos, investigaciones, artículos, noticias o cualquier otro recurso que apoye la evaluación de tu propuesta)." required class="form-control"></textarea>
+              <textarea name="Recursos" id="recursos" rows="5" placeholder="En esta sección puedes agregar varios recursos para apoyar tu propuesta. (Videos, investigaciones, artículos, noticias o cualquier otro recurso que apoye la evaluación de tu propuesta)." required class="form-control"></textarea>
             </div>
           </div>
         </fieldset>

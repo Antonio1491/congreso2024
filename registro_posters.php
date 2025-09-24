@@ -7,27 +7,75 @@
 </header>
 <div class="container my-5">
   <div class="row">
-    <div class="col-md-5 col-sm-12 bg-light p-4">
+    <div class="col-md-5 col-sm-12 bg-light p-4" style="font-size: 0.9rem;">
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin mb-4">¡Convocatoria para Pósters Científicos!</h5>
       <p class="justify">El <strong>Congreso Parques 2026</strong> abre sus puertas a la investigación. Si cuentas con un proyecto académico, estudio técnico o investigación aplicada que aporte al desarrollo de parques y espacios públicos, te invitamos a participar en la <strong>exposición de pósters científicos.</strong></p>
-      <p>La convocatoria está abierta a todos los interesados; no es necesario ser miembro ANPR para enviar tu propuesta. Queremos visibilizar y difundir investigaciones que se relacionen con los ejes temáticos del congreso:</p>
-      <ol>
-        <li>Naturaleza y Sostenibilidad</li>
-        <li>Comunidad y Participación Ciudadana</li>
-        <li>Diseño, Operación y Gestión Eficiente</li>
-        <li>Tecnología e Innovación Urbana</li>
-        <li>Ciudad, Movilidad y Gobernanza</li>
-        <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
-      </ol>
-      <p><strong>El Congreso se llevará a cabo del 13 al 15 de mayo de 2026 en Tijuana, Baja California, México.</strong></p>
-      <h5 class="subtitulo subtituloPMin text-center">Requisitos para envío</h5>
+      <p>La convocatoria está abierta a todos los interesados; no es necesario ser miembro ANPR para enviar tu propuesta. Queremos visibilizar y difundir investigaciones que se relacionen con los ejes temáticos del congreso.</p>
+      <h5 class="subtitulo text-center subtituloPMin mb-4">¿Quiénes pueden participar?</h5>
+      <p>
+        <ul>
+          <li><strong>Estudiantes universitarios</strong> (últimos años) y de posgrado en arquitectura, urbanismo, ciencias naturales, ingeniería, ciencias sociales, economía y áreas afines.</li>
+          <li><strong>Organizaciones civiles:</strong> fundaciones, asociaciones, colectivos vecinales y otras relacionadas con el espacio público.</li>
+          <li><strong>Organismos públicos y privados</strong> dedicados al urbanismo, gestión ambiental o espacios naturales.</li>
+          <li><strong>Consultores, despachos de arquitectura y profesionales independientes</strong> relacionados con el sector.</li>
+        </ul>
+      </p>
+      <p><i>El Congreso se llevará a cabo del 13 al 15 de mayo de 2026 en Tijuana, Baja California, México.</i></p>
+      <h5 class="subtitulo subtituloPMin text-center">Requisitos para participar:</h5>
       <ul>
-        <li>El registro es exclusivamente para pósters científicos.</li>
-        <li>Los trabajos deben enviarse en formato PDF, con un tamaño máximo de 10 MB y resolución de 72 ppp.</li>
-        <li>Cada propuesta debe completarse en el formulario de registro correspondiente.</li>
-        <li>Los pósters seleccionados se exhibirán durante el congreso y formarán parte de la memoria académica del evento.</li>
+        <li>Enviar un documento en <strong>.doc</strong>, máximo una página, a espacio sencillo.</li>
+        <li>Márgenes: superior/inferior 2.5 cm; derecho/izquierdo 3 cm.</li>
+        <li><strong>Título:</strong> Times New Roman 12, mayúsculas, negrita, centrado y subrayado.</li>
+         <li><strong>Autores:</strong> Times New Roman 10, cursiva, justificado a la izquierda (con institución/organización). </li>
+         <li><strong>Cuerpo del resumen:</strong> Times New Roman 10, justificado.</li>
+         <li>Debe incluir: Introducción/objetivos, Metodología, Resultados, Conclusiones y hasta 4 referencias.</li>
       </ul>
+      <p><strong>Póster Digital</strong>
+        <ul>
+          <li>Formato <strong>PDF</strong>, máximo 10 MB, resolución 72 ppp.</li>
+          <li>Debe contener: título, autores, categoría, tipo de trabajo, origen, introducción, metodología, resultados/discusión, conclusión, bibliografía y año.</li>
+        </ul>
+      </p>
+      <p><strong>Póster Impreso (para seleccionados)</strong>
+      <ul>
+        <li>Tamaño: <strong>24” x 36” (60.92 x 91.44 cm)</strong>, full color, 300 dpi, impreso en plotter.</li>
+        <li>Tipografías recomendadas:Título: 100 pts
+          Autores y sede: 80 pts, 
+          Subtítulos: 60 pts, 
+          Cuerpo de texto: 40 pts, 
+          Notas de pie: 25 pts
+        </li>
+        <li>Los costos de diseño e impresión corren por cuenta de los autores. La organización facilitará únicamente la exhibición.</li>
+      </ul>
+      </p>
+      <h5 class="subtitulo subtituloPMin text-center">Beneficios:</h5>
+      <p>El concurso premiará en tres categorías:
+        <ul>
+          <li><strong>Estudiante</strong></li>
+          <li><strong>Joven Profesional</strong></li>
+          <li><strong>Profesional</strong></li>
+        </ul>
+      </p>
+      <strong>Premios para los tres primeros lugares en cada categoría:</strong>
+      <ul>
+        <li>1er lugar: <strong>100% de descuento en inscripción Oro al Congreso</strong></li>
+        <li>2do lugar: <strong>75% de descuento en inscripción Oro al Congreso</strong></li>
+        <li>3er lugar: <strong>50% de descuento en inscripción Oro al Congreso</strong></li>
+      </ul>
+      <strong> 
+      Fechas clave de la convocatoria
+    </strong>
+      <ul class="pt-2">
+        <li><strong>Inicio:</strong> 26 de septiembre de 2025</li>
+        <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
+        <li><strong>Publicación:</strong> 15 de enero de 2026</li>
+        <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
+        <li><strong>Resultados:</strong> 16 dePrimera semana de febrero de 2026</li>
+      </ul>
+      <p>Todos los ganadores recibirán un diploma avalado por la ANPR México.</p>
+      <p><strong>Nota:</strong> gastos de viaje, hospedaje, alimentación y materiales no están incluidos.
+      </p>
       <p>El Congreso Parques es el punto de encuentro más importante de Latinoamérica para profesionales, investigadores y líderes del sector. ¡Comparte tu conocimiento y sé parte de esta edición en Tijuana!
       </p>
     </div>
@@ -121,11 +169,11 @@
               <input type="radio" name="Modalidad" value="1"  id="individual" required checked> No</input>
               <input type="radio" name="Modalidad" value="2" id="mesaPanel" required > Sí (2 participantes máximo)</input>
             </div>
-          </div>
+          </div><br>
           <div class="ocultar" id="contenedorBtn">
             <div class="row text-center" id="">
               <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary disabled" id="btnAgregar">
+                <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
                   <i class="fi-plus"></i> Añadir Participante</button>
               </div>
             </div>
@@ -162,7 +210,7 @@
                 <option value="3">Profesional</option>
               </select>
             </div>
-          </div>
+          </div><br>
           <div class="row">
             <div class="col">
               <h5 class="subtitulo subtituloPMin">Acerca del póster científico:</h5>
@@ -172,7 +220,7 @@
           <div class="row mb-3">
             <div class="col">
               <label for="" class="form-label">Recursos:</label>
-              <textarea name="recursos" rows="3" required class="form-control"></textarea>
+              <textarea name="recursos" rows="5" required class="form-control"></textarea>
             </div>
           </div>
           <div class="row">
