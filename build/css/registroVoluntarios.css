@@ -1,6 +1,6 @@
 header{
   height: 65px;
-  background-color: #1d0c65;
+  background-color: #6847f6;
   color: #ffffff;
   margin: 0;
   display: flex;
@@ -12,7 +12,7 @@ table{
 }
 .header_registro_voluntarios{
   height: 65px;
-  background: #042a54;
+  background: #6847f6;
   color: #ffffff;
   margin: 0;
   display: flex;
@@ -56,7 +56,8 @@ input[type=submit]:hover{
 }
 .titulo{
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: bold;
 }
 .container{
   /* display: flex; */

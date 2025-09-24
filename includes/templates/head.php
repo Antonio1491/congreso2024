@@ -17,7 +17,7 @@
   <meta property="og:title"              content="Congreso Parques Mérida 2024" />
   <meta name="og:site_propiedad"         content="Congreso Parques Mérida 2024">
   <meta property="og:description"        content="Un evento especializado de educación y contenido experimental, dirigido a profesionales en espacios públicos y parques urbanos." />
-  <title>Congreso Parques Mérida 2024</title>
+  <title>Congreso Parques Tijuana 2025</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="icon" type="./build/image/png" href="./img/favicon.png" />
   
@@ -30,15 +30,15 @@
 </head>
 
 <?php include 'includes/templates/banner_header.php'; ?>
-<nav class="navbar sticky-top navbar-expand-md" style="padding-top: 30px;">
+<nav class="navbar sticky-top navbar-expand-md" style="">
     <div class="container">
       <a class="navbar-brand" href="index.php">
         <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
       </a>
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarPrincipal">
+      </button> -->
+      <!-- <div class="collapse navbar-collapse" id="navbarPrincipal">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -70,7 +70,7 @@
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="programa.php">Programa</a></li>
             <li><a class="dropdown-item" href="talleres.php">Talleres</a></li>
-            <!-- <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li> -->
+            <li><a class="dropdown-item" href="expo_parques.php">Expo Parques</a></li>
             <li><a class="dropdown-item" href="sociales.php">Eventos Sociales</a></li>
             </ul>
           </li>
@@ -110,7 +110,7 @@
         </ul>
       </div>
       <a href="https://app.podiumeeting.com/es/registro/congreso-parques-2024" class="btn btn__primary d-sm-none d-md-block">ADQUIRIR BOLETO</a>
-    </div>
+    </div> -->
   </nav>
 <body>
   

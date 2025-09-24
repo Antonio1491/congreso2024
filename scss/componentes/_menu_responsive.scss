@@ -100,9 +100,7 @@ nav .navbar .links li:hover .js-sub-menu{
 .navbar .links li .sub-menu .more-arrow{
   line-height: 40px;
 }
-.navbar .links li .htmlCss-more-sub-menu{
-  /* line-height: 40px; */
-}
+
 .navbar .links li .sub-menu .more-sub-menu{
   position: absolute;
   top: 0;
@@ -196,9 +194,7 @@ nav .navbar .links li:hover .js-sub-menu{
   }
 }
 @media (max-width:800px){
-  nav{
-    /* position: relative; */
-  }
+ 
   .navbar .bx-menu{
     display: block;
   }
@@ -209,7 +205,7 @@ nav .navbar .links li:hover .js-sub-menu{
     display: block;
     max-width: 270px;
     width: 100%;
-    background:  $colorPrincipal;
+    background:  #6847f6;
     line-height: 40px;
     padding: 20px;
     padding-top: 40px;

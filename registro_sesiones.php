@@ -15,40 +15,49 @@
     <div class="col-md-5 col-sm-12 bg-light p-4">
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin">¡La convocatoria para sesiones educativas está ABIERTA!</h5>
-      <p class="justify">Puedes enviar tu propuesta para que lo considere el comité de contenido completando el registro. No necesitas ser miembro ANPR para registrarte, y alentamos a todos a enviar una propuesta sobre los temas que se relacionan al Congreso. ¡Gracias!</p>
-      <p>*El registro es únicamente para Sesiones Educativas.</p>
-      <span class="">El Congreso Parques 2024 será del 23 al 25 de Octubre de 2024 en Mérida, México. Este Congreso explorará los siguientes temas:</span>
+      <p class="justify">¿Tienes una idea, proyecto o experiencia que pueda inspirar a la comunidad de parques? Este es el momento de compartirla. Te invitamos a enviar tu propuesta y ser parte del programa del <strong>Congreso Parques 2026</strong>Congreso Parques 2026, que se celebrará del <strong>26 de septiembre al 15 de mayo en Tijuana, Baja California, México.</strong></p>
+      <p>La convocatoria está abierta a todos los interesados, <strong> es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición:</p>
       <ul class="pt-2">
-        <li>Medio Ambiente y Sustentabilidad</li>
-        <li>Salud y Bienestar</li>
-        <li>Eventos, Recreación y Participación Ciudadana</li>
-        <li>Diseño, Infraestructura y Equipamiento.</li>
-        <li>Innovación y Tecnología</li>
-        <li>Ciudad y Movilidad</li>
+        <li>Naturaleza y Sostenibilidad</li>
+        <li>Comunidad y Participación Ciudadana</li>
+        <li>Diseño, Operación y Gestión Eficiente</li>
+        <li>Tecnología e Innovación Urbana</li>
+        <li>Ciudad, Movilidad y Gobernanza</li>
+        <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
       </ul>
-      <p>
+      <!-- <p>
           <ul>
             <li><a href="congreso_parques.php" class="" style="font-weight: bold; font-size:0.9em; color:#ff00ff;">Consultar Ejes Temáticos</a></li>
           </ul>
-        </p>
-      <p>
-      Los líderes de parques no están solos, y el Congreso Parques 2024 reunirá a profesionales de todo el mundo y América Latina para desarrollar una nueva visión para el futuro.
+        </p>-->
+      <p> 
+      Fechas clave de la convocatoria
       </p>
+      <ul class="pt-2">
+        <li><strong>Inicio:</strong> 26 de septiembre de 2025</li>
+        <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
+        <li><strong>Publicación:</strong> 15 de enero de 2026</li>
+        <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
+        <li><strong>Resultados:</strong> 16 dePrimera semana de febrero de 2026</li>
+      </ul>
+      <h5 class="text-center subtituloPMin">Información a considerar:</h5>
       <ol>
-        <li>Alentamos la distribución de esta convocatoria de sesiones educativas.</li>
-        <li>Para cada propuesta individual, el formulario de registro debe completarse en su totalidad y enviarse.</li>
-        <li>El Comité de Contenido del Congreso se reserva el derecho de hacer selecciones de presentaciones finales y editar descripciones y biografías de los presentadores.</li>
-        <li>Al enviar una propuesta, se entiende que usted se compromete a estar presente y participar según lo propuesto si es aceptado. Este congreso será presencial.</li>
-        <li>Los presentadores aceptados deberán registrarse y podrán acceder al descuento de presentador.</li>
-        <li>Es importante considerar que los tiempos máximos de sesiones educativas son de 30 y 45 minutos. El tiempo será asignado por el comité organizador, dependiendo de la propuesta.</li>
-        <li>Se enviará información adicional sobre la logística de la presentación y los detalles del congreso a todos los solicitantes seleccionados.</li>
-        <li>Si se elige su sesión, alentamos que haga que los materiales de su presentación estén disponibles en formato electrónico en el sitio web después de la conferencia. Esto nos permite proporcionar a los delegados los materiales de presentación, al mismo tiempo que contribuye a nuestro objetivo de ser un "evento verde".
+        <li>Alentamos la difusión de esta convocatoria de sesiones educativas entre colegas, instituciones y organizaciones interesadas.</li>
+        <li>Cada propuesta individual debe completarse en su totalidad a través del formulario de registro y enviarse antes del cierre de convocatoria (15 de enero de 2026).</li>
+        <li>El Comité de Contenido del Congreso se reserva el derecho de seleccionar las ponencias finales y podrá ajustar títulos, descripciones y semblanzas de los presentadores para fines editoriales.</li>
+        <li>Al enviar una propuesta, se entiende que la persona ponente se compromete a estar presente y participar de manera presencial según lo propuesto, en caso de ser aceptada. <strong> los gastos de participación (vuelos, hospedaje, transporte, alimentación, etc.) serán responsabilidad de cada ponente.</strong></li>
+        <li>Los presentadores aceptados deberán registrarse al congreso y podrán acceder a una tarifa especial de presentador.</li>
+        <li>ELas sesiones educativas tendrán una duración máxima de <strong>30 o 45 minutos</strong>, definida por el Comité organizador según la propuesta.</li>
+        <li>Se enviará información adicional sobre la logística de la presentación y los detalles del congreso a todas las personas seleccionadas durante la primera semana de febrero de 2026.</li>
+        <li>Si tu sesión es elegida, se alentará a poner a disposición los materiales de la presentación en formato digital, como parte de nuestro compromiso con un evento sostenible y para beneficio de los asistentes.
         </li>
-        <li>El Comité de Contenido podrá elegir más de una propuesta de un solo presentador. Esto se decidirá caso por caso dada la cantidad de oportunidades disponibles para hablar.</li>
-        <li>Nos reservamos el derecho de editar los documentos enviados con fines de publicación. Todo el contenido será objeto de uso en el desarrollo del congreso.</li>
-        <li>El propósito de las preguntas de selección de tipo, tamaño, formato y audiencia de la sesión es para garantizar una diversidad de temas y estilos de sesión. Nos esforzaremos por adaptarnos a sus preferencias de estilo y tamaño de la audiencia. Sin embargo, debido al formato de este congreso, no se puede garantizar el nivel de asistencia a ninguna sesión.</li>
-        <li>La información enviada bajo esta convocatoria de presentaciones está protegida por la Política de privacidad de la Asociación Nacional de Parques y Recreación de México. La información recopilada será utilizada por el Comité de Contenido del Congreso 2024 para determinar las propuestas seleccionadas.</li>
+        <li>El Comité de Contenido podrá seleccionar más de una propuesta de un mismo presentador, dependiendo de la disponibilidad de espacios.</li>
+        <li>Nos reservamos el derecho de editar los documentos y materiales enviados con fines de publicación. Todo el contenido podrá ser utilizado para la promoción y el desarrollo académico del congreso.</li>
+        <li>Las preguntas incluidas en el formulario sobre tipo, formato y público objetivo de la sesión buscan garantizar la diversidad de temas y estilos. Nos esforzaremos por considerar las preferencias, aunque el nivel de asistencia a cada sesión no puede garantizarse.</li>
+        <li>La información enviada bajo esta convocatoria está protegida por la <strong>Política de Privacidad de la Asociación Nacional de Parques y Recreación de México</strong> y será utilizada únicamente por el Comité de Contenido del <strong>Congreso Parques 2026</strong> para la evaluación de propuestas.</li>
       </ol>
+      <p>El Congreso Parques 2026 reunirá a profesionales, líderes y organizaciones de América Latina y el mundo para fortalecer la visión global sobre el futuro de los espacios públicos.
+</p>
     </div>
 
     <div class="col-md-6 col-sm-12 offset-md-1">
@@ -175,12 +184,12 @@
             <div class="col">
               <label for="tematica class="form-label">Eje Temático:</label>
               <select class="form-select" name="Tema">
-                <option value="6">Medio Ambiente y Sustentabilidad</option>
-                <option value="5">Salud y Bienestar</option>
-                <option value="7">Eventos, Recreación y Participación Ciudadana</option>
-                <option value="8">Diseño, Mantenimiento y Equipamiento</option>
-                <option value="9">Innovación y Tecnología</option>
-                <option value="10">Ciudad y Movilidad</option>
+                <option value="11">Naturaleza y Sostenibilidad</option>
+                <option value="12">Comunidad y Participación Ciudadana</option>
+                <option value="13">Diseño, Operación y Gestión Eficiente</option>
+                <option value="14">Tecnología e Innovación Urbana</option>
+                <option value="15">Ciudad, Movilidad y Gobernanza</option>
+                <option value="16">Finanzas, Patrocinios y Modelos de Ingreso</option>
               </select>
             </div>
           </div>
@@ -210,8 +219,8 @@
           </div>
         </fieldset>
         <div class="text-center">
-        <input type="hidden" name="evento" value="2">
-          <input type="submit" name="" value="Registrar" class="btn btn__primary disabled">
+        <input type="hidden" name="evento" value="3">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary">
         </div>
         <div>
       

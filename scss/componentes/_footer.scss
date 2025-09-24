@@ -2,22 +2,31 @@ footer{
   color: $white;
   background: $backgroundFooter;
 
+  .hashtag{
+    font-size: 20PX;
+    color: #d2dd0a;
+    font-family: "Montserrat Bold";
+  }
   h6{
     font-family: 'Montserrat Bold';
   }
   .iRedes{
-    height: 3rem;
+    height: 2rem;
+    margin-right: 0.5rem;
   }
   .logoFooter{
     height: 7rem;  
   }
   span{
     color: $white;
-    font-size: 0.7rem;  
+    font-size: 0.9rem;  
   }
   .subtitulo{
     color: $white;
     font-family: 'Antonio Bold';
     letter-spacing: 1px;
+  }
+  ul li a{
+    color: white;
   }
 }

@@ -5,7 +5,6 @@ include "classes/Registro.php";
 
 $registro = new Registro();
 
-
 if($_SERVER['REQUEST_METHOD'] === 'POST')
 {
   // Datos personales del conferencista
@@ -25,7 +24,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
   $nombre_foto = $_FILES['Fotografia']['name'];
   $tipo_foto = $_FILES['Fotografia']['type'];
   $temporal_foto = $_FILES['Fotografia']['tmp_name'];
-  
   
   $array = count($_POST['Nombre']);
   

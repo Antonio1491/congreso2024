@@ -9,19 +9,27 @@
   <div class="row">
     <div class="col-md-5 col-sm-12 bg-light p-4">
       <!-- Instrucciones -->
-      <h5 class="subtitulo text-center subtituloPMin mb-4">¡Convocatoria para pósters científicos!</h5>
-      <p class="justify">Puedes enviar tu póster para que lo considere el comité de contenido completando el registro. No necesitas ser miembro ANPR para registrarte, y alentamos a todos a enviar una propuesta sobre los temas que se relacionan al Congreso. ¡Gracias!</p>
-      <p>*El registro es únicamente para <strong>pósters científicos.</strong></p>
-      <span class="">El Congreso Parques 2024 será del 23 al 25 de octubre de 2024 en Mérida, Yucatán. Este Congreso explorará los siguientes temas:</span>
-      <ul class="pt-2">
-        <li>Medio Ambiente y Sustentabilidad</li>
-        <li>Salud y Bienestar</li>
-        <li>Eventos, Recreación y Participación Ciudadana</li>
-        <li>Diseño, Mantenimiento y Equipamiento</li>
-        <li>Innovación y Tecnología</li>
-        <li>Ciudad y Movilidad</li>
+      <h5 class="subtitulo text-center subtituloPMin mb-4">¡Convocatoria para Pósters Científicos!</h5>
+      <p class="justify">El <strong>Congreso Parques 2026</strong> abre sus puertas a la investigación. Si cuentas con un proyecto académico, estudio técnico o investigación aplicada que aporte al desarrollo de parques y espacios públicos, te invitamos a participar en la <strong>exposición de pósters científicos.</strong></p>
+      <p>La convocatoria está abierta a todos los interesados; no es necesario ser miembro ANPR para enviar tu propuesta. Queremos visibilizar y difundir investigaciones que se relacionen con los ejes temáticos del congreso:</p>
+      <ol>
+        <li>Naturaleza y Sostenibilidad</li>
+        <li>Comunidad y Participación Ciudadana</li>
+        <li>Diseño, Operación y Gestión Eficiente</li>
+        <li>Tecnología e Innovación Urbana</li>
+        <li>Ciudad, Movilidad y Gobernanza</li>
+        <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
+      </ol>
+      <p><strong>El Congreso se llevará a cabo del 13 al 15 de mayo de 2026 en Tijuana, Baja California, México.</strong></p>
+      <h5 class="subtitulo subtituloPMin text-center">Requisitos para envío</h5>
+      <ul>
+        <li>El registro es exclusivamente para pósters científicos.</li>
+        <li>Los trabajos deben enviarse en formato PDF, con un tamaño máximo de 10 MB y resolución de 72 ppp.</li>
+        <li>Cada propuesta debe completarse en el formulario de registro correspondiente.</li>
+        <li>Los pósters seleccionados se exhibirán durante el congreso y formarán parte de la memoria académica del evento.</li>
       </ul>
-      <p><strong>Envía tu póster científico en formato PDF (formato PDF, peso inferior a 10 MB, resolución 72 ppp).</strong></p>
+      <p>El Congreso Parques es el punto de encuentro más importante de Latinoamérica para profesionales, investigadores y líderes del sector. ¡Comparte tu conocimiento y sé parte de esta edición en Tijuana!
+      </p>
     </div>
 
     <div class="col-md-6 col-sm-12 offset-md-1">
@@ -138,12 +146,12 @@
             <div class="col-md-6 col-sm-12">
               <label for="" class="form-label">Eje temático al que se apega:</label>
               <select class="form-select" name="tema">
-                <option value="6">Medio Ambiente y Sustentabilidad</option>
-                <option value="5">Salud y Bienestar</option>
-                <option value="7">Eventos, Recreación y Participación Ciudadana</option>
-                <option value="8">Diseño, Mantenimiento y Equipamiento</option>
-                <option value="9">Innovación y Tecnología</option>
-                <option value="10">Ciudad y Movilidad</option>
+                <option value="11">Naturaleza y Sostenibilidad</option>
+                <option value="12">Comunidad y Participación Ciudadana</option>
+                <option value="13">Diseño, Operación y Gestión Eficiente</option>
+                <option value="14">Tecnología e Innovación Urbana</option>
+                <option value="15">Ciudad, Movilidad y Gobernanza</option>
+                <option value="16">Finanzas, Patrocinios y Modelos de Ingreso</option>
               </select>
             </div>
             <div class="col-md-6 col-sm-12">
@@ -157,7 +165,7 @@
           </div>
           <div class="row">
             <div class="col">
-              <h5 class="subtitulo subtituloPMin">Fortaleza tu presentación:</h5>
+              <h5 class="subtitulo subtituloPMin">Acerca del póster científico:</h5>
               <p>En esta sección puedes agregar varios recursos para apoyar tu proyecto. (Videos, investigaciones, artículos, noticias o cualquier otro recurso que apoye la evaluación de tu póster científico).</p>
             </div>
           </div>
@@ -172,7 +180,7 @@
               <label for="" class="form-label">Documento:</label>
               <input type="file" name="documento" accept=".doc, .docx, .pdf" class="form-control">
             </div>
-          </div>
+          </div><br>
           <div class="row">
             <div class="col">
               <label for="" class="form-label">Póster:</label>
@@ -181,8 +189,8 @@
           </div>
         </fieldset>
         <div class="text-center mt-4">
-          <input type="hidden" name="evento" value="2">
-          <input type="submit" name="" value="Registrar" class="btn btn__primary disabled">
+          <input type="hidden" name="evento" value="3">
+          <input type="submit" name="" value="Registrar" class="btn btn__primary">
         </div>
       </form>
       <!-- Fin de formulario -->

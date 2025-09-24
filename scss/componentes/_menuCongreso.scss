@@ -1,5 +1,5 @@
 nav{
-  background-color: $primaryColor;
+  background-color: #6847f6;
   font-family: 'Montserrat Bold';
   text-transform: uppercase;
   min-height: 15vh;
@@ -15,11 +15,11 @@ nav.navbar ul a:hover,
   color: $secondaryColor;  
 }
 .dropdown-menu {
-  background-color: $primaryColor;
+  background-color: #6847f6;
 }
 .dropdown-item:focus, .dropdown-item:hover {
   color: $secondaryColor;
-  background-color: $primaryColor;
+  background-color: #6847f6;
 }
 .navbar-nav .nav-link.show {
   color: $secondaryColor;

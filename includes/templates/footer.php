@@ -2,33 +2,43 @@
   <div class="container py-5">
     <div class="row">
       <div class="col">
-        <h6>Organizado por</h6>
+        <!-- <h6>Organizado por</h6> -->
         <img src="./build/img/anpr_blanco.png" alt="" class="logoFooter">
+        <h4 class="hashtag">#CongresoParques2026</h4>
       </div>
       <div class="col">
-        <h4 class="subtitulo">¡Mantente informado!</h4>
+        <h6 class="pb-3">Enlaces</h6>
+        <ul>
+          <li><a href="">Políticas de privacidad</a></li>
+          <li><a href="">Preguntas frecuentes</a></li>
+        </ul>
       </div>
       <div class="col">
         <h6 class="pb-3">Contacto</h6>
-        <a href="https://www.facebook.com/CongresoParques/">
-          <img src="./build/img/icon_facebook.png" alt="" class="iRedes">
-        </a>
-        <a href="https://www.instagram.com/congreso_parques/">
-          <img src="./build/img/icon_instagram.png" alt="" class="iRedes">
-        </a>
-        <a href="https://www.youtube.com/channel/UC_ExzrmxP5er7qZHeVpWidQ">
-          <img src="./build/img/icon_youtube.png" alt="" class="iRedes">
-        </a>
-        <a href="https://twitter.com/congreso_parque">
-          <img src="./build/img/icon_twitter.png" alt="" class="iRedes">
-        </a>
         <div>
           <span>WhatsApp +52 999 353 0691</span><br>
           <span>info@congresoparques.com</span>
+        </div><br>
+        <div>
+          <a href="https://www.facebook.com/CongresoParques/">
+            <img src="./build/img/icon_facebook.png" alt="" class="iRedes">
+          </a>
+          <a href="https://www.instagram.com/congreso_parques/">
+            <img src="./build/img/icon_instagram.png" alt="" class="iRedes">
+          </a>
+          <a href="https://www.youtube.com/channel/UC_ExzrmxP5er7qZHeVpWidQ">
+            <img src="./build/img/icon_youtube.png" alt="" class="iRedes">
+          </a>
+          <a href="https://twitter.com/congreso_parque">
+            <img src="./build/img/icon_twitter.png" alt="" class="iRedes">
+          </a>
         </div>
       </div>
     </div>
+    <hr>
+    <p class="text-center"">© 2026 Asociación Nacional de Parques y Recreación de México. Todos los derechos reservados.</p>
   </div>
+  
 </footer>
 
   <?php 
@@ -45,7 +55,7 @@ $randomImage = $images[array_rand($images)];
 
 if(contenedorFondo){
   // background-image: radial-gradient( circle farthest-corner at 0.1% 44.3%,  rgba(29,12,101,1) 0%, rgba(187,187,187,0) 67.4% );
-  contenedorFondo.style.backgroundImage= "linear-gradient(90deg, rgba(29,12,101,1) 25%, rgba(255,255,255,0) 100%), url('<?php echo$randomImage ?>')";
+  contenedorFondo.style.backgroundImage= "linear-gradient(90deg, rgb(104, 71, 246) 25%, rgba(255,255,255,0) 100%), url('<?php echo$randomImage ?>')";
 
 }
   </script>

@@ -2,11 +2,12 @@
 
 $primaryColor : #1d0c65;
 $secondaryColor : #d2dd0a;
+$morado : #0e0477;
 
 $complementaryColor1 : #64c9fc;
 $complementaryColor2 : #ff00ff;
 $complementaryColor3 : #00dfbf;
-$backgroundFooter : #1f2338;
+$backgroundFooter : #0e0477;
 
 $red : #bb0000;
 $gray : #4b4646;
@@ -26,7 +27,7 @@ color: $primaryColor;
 .azul{
 color: $complementaryColor1;
 }
-.morado{
+.fushia{
   color: $complementaryColor2;
 }
 .white{
@@ -101,7 +102,7 @@ main, body{
   @include subtitulo($primaryColor, $may);
 }
 .subtituloPMin{
-  @include subtitulo($primaryColor, $none);
+  @include subtitulo($morado, $none);
 }
 .subtituloCMin{
   @include subtitulo($complementaryColor2, $none);
@@ -128,6 +129,7 @@ ul{
     color: $white;
   }
 }
+
 
 .img_300{
  height: 300px,  
@@ -173,6 +175,49 @@ a{
 }
 
 
+.slick-prev, .slick-next{
+  display: none !important;
+}  
+
+
+.img_150{
+  height: 150px;
+}
+
+.img_100{
+  height: 100px;
+}
+
+.img_200{
+  height: 200px,  
+}
+
+.img_350{
+  height: 350px,  
+}
+
+a{
+  text-decoration: none;
+}
+
+.icon_title{
+  height: 45px;
+}
+
+.list-none{
+  list-style: none;
+}
+
+.absolute{
+  position: absolute;  
+}
+
+.fh{
+  width: 90% !important;
+  height: auto !important;
+  margin-left: 5%;
+  z-index: 1;
+}
 
 .slick-prev, .slick-next{
   display: none !important;
