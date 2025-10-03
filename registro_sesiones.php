@@ -38,7 +38,7 @@
         <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
         <li><strong>Publicación:</strong> 15 de enero de 2026</li>
         <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
-        <li><strong>Resultados:</strong> 16 dePrimera semana de febrero de 2026</li>
+        <li><strong>Resultados:</strong> Primera semana de febrero de 2026</li>
       </ul>
       <h5 class="text-center subtituloPMin">Información a considerar:</h5>
       <ol>

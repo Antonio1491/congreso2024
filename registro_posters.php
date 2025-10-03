@@ -20,6 +20,16 @@
         <li>Ciudad, Movilidad y Gobernanza</li>
         <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
       </ol>
+        <p> 
+      Fechas clave de la convocatoria
+      </p>
+      <ul class="pt-2">
+        <li><strong>Inicio:</strong> 26 de septiembre de 2025</li>
+        <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
+        <li><strong>Publicación:</strong> 15 de enero de 2026</li>
+        <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
+        <li><strong>Resultados:</strong> Primera semana de febrero de 2026</li>
+      </ul>
       <p><strong>El Congreso se llevará a cabo del 13 al 15 de mayo de 2026 en Tijuana, Baja California, México.</strong></p>
       <h5 class="subtitulo subtituloPMin text-center">Requisitos para envío</h5>
       <ul>
