@@ -1022,6 +1022,14 @@ return $resultado;
       return $conferencias;
     }
 
+    public function rechazar($id){
+    $stmt = $this->conexion_db->prepare("UPDATE ponencias SET estatus = NULL WHERE id = ?");
+    $stmt->bind_param('i', $id);
+    $ok = $stmt->execute();
+    $stmt->close();
+    return $ok;
+}
+
     public function temas(){
       $sql = "SELECT * FROM temas";
       $resultado = $this->conexion_db->query($sql);

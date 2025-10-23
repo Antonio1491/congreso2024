@@ -22,16 +22,17 @@ $array_conferencias = $conferencias->listaConferencias($_SESSION["evento"]);
     <section class="column medium-10">
     <?php include('inc/header.php'); ?>
       <h1 class="tituloSeccion">Conferencistas </h1>
-      <section class="column medium-12">
-        <!-- <div class="column medium-10 formularioRegistro"> -->
-          <div class="row">
-            <div class="column medium-12">
-              <div class="">
+       <div class="">
                 <button type="button" name="button" id="agregar" class="button">
                   <i class="fi-plus"></i> Agregar Usuario
                 </button>
                 <a href="exportarExcel.php" class="button exportar" invalided><i class="fi-upload"></i> Exportar a Excel</a>
               </div>
+      <section class="column medium-12">
+        <!-- <div class="column medium-10 formularioRegistro"> -->
+          <div class="row">
+            <div class="column medium-12">
+             
 
             </div>
           </div>

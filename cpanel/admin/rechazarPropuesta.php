@@ -1,13 +1,14 @@
-<?php session_start();
+<?php
 include('../class/funciones.php');
-$propuestas = new Propuesta();
 
-$id_propuesta = $_GET['id'];
+$id = (int)$_GET['id'];
 
-$actualizarStatus = $propuestas->rechazarPropuesta($id_propuesta);
-
-echo "<script>window.history.go(-1);</script>";
-
-
-
- ?>
+$propuestas = new Propuesta(); // o la clase donde agregaste `rechazar`
+if ($propuestas->rechazar($id)) {
+    
+  header('Location: propuestas.php');
+  exit;
+} else {
+  header('Location: propuestas.php?error=1');
+  exit;
+}

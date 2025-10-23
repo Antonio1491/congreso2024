@@ -30,6 +30,7 @@ $propuestas = new Propuesta();
 
 
       <?php require ("inc/header.php") ?>
+      <h1 class="tituloSeccion">Posters</h1>
       <!--<div id="botones">-->
       <!--<a  id="preguntas" href="agregarTestimonial.php"  class="button margin-top-1" >Agregar Testimonial</a>-->
       <!--</div>-->

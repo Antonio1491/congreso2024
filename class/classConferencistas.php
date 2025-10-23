@@ -301,15 +301,14 @@ class Conferencistas extends Conexion{
                 }
       }
 
- // Eliminar conferencista
-  public function eliminar($id){
-
-    $sql = $this->conexion_db->query("DELETE FROM conferencistas WHERE id_conferencista = $id ");
-
-    return $sql;
-
-  }
-
+public function eliminarConferencista($idUsuario){
+  $sql = "UPDATE usuarios SET id_categoria = 5 WHERE id = ?";
+  $stmt = $this->conexion_db->prepare($sql);
+  $stmt->bind_param('i', $idUsuario);
+  $ok = $stmt->execute();
+  $stmt->close();
+  return $ok;
+}
   //Firma términos
   public function comprobarFirma($id){
 

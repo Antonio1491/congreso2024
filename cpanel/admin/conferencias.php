@@ -166,7 +166,7 @@ include('../class/funciones.php');
                         <img src='https://lh3.ggpht.com/oGR9I1X9No3SfFEXrq655tETtVVzI3jIphhmEVPGPEVuM5gfwh8lOGWHQFf6gjSTvw=s180' border='0'></a>
                          </td>
                         <td class='acciones'><a href='editarConferencia.php?id=".$valor['id_ponencia']."' title='Editar'><i class='fi-pencil'></i></a> |
-                        <a href='eliminarConferencia.php?id=".$valor['id_ponencia']."' title='Eliminar' class='eliminar'><i class='fi-x'></i> </a></td>
+                         <a href='rechazarConferencia.php?id=".$valor['id_ponencia']."' title='Rechazar' class='eliminar''><i class='fi-x'></i></a>
                         </tr>";
                       }
                     echo "

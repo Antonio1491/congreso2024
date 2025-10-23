@@ -36,6 +36,7 @@
         <li>El registro es exclusivamente para pósters científicos.</li>
         <li>Los trabajos deben enviarse en formato PDF, con un tamaño máximo de 10 MB y resolución de 72 ppp.</li>
         <li>Cada propuesta debe completarse en el formulario de registro correspondiente.</li>
+        <li>De ser seleccionado como ganador, te compartiremos los requisitos para la entrega de tu póster físico durante el Congreso Parques.</li>
         <li>Los pósters seleccionados se exhibirán durante el congreso y formarán parte de la memoria académica del evento.</li>
       </ul>
       <p>El Congreso Parques es el punto de encuentro más importante de Latinoamérica para profesionales, investigadores y líderes del sector. ¡Comparte tu conocimiento y sé parte de esta edición en Tijuana!
@@ -132,14 +133,16 @@
               <input type="radio" name="Modalidad" value="2" id="mesaPanel" required > Sí (2 participantes máximo)</input>
             </div>
           </div>
-          <div class="ocultar" id="contenedorBtn">
-            <div class="row text-center" id="">
-              <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary disabled" id="btnAgregar">
-                  <i class="fi-plus"></i> Añadir Participante</button>
-              </div>
-            </div>
-          </div>
+          <!-- Antes: <div class="ocultar" id="contenedorBtn"> -->
+<div class="ocultar" id="contenedorBtn" style="display:none;">
+  <div class="row text-center">
+    <div class="col">
+      <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
+        <i class="fi-plus"></i> Añadir Participante
+      </button>
+    </div>
+  </div>
+</div>
           <div class="nuevo">
           </div>
         </fieldset>
@@ -209,39 +212,102 @@
 </div>
 <?php include_once 'includes/templates/footer.php'; ?>
 <script type="text/javascript">
-  let maxNumUsuarios = 2;
-  let btnAgregar = document.querySelector('#btnAgregar');
-  let nuevoUsuario = document.querySelector('.nuevo');
-  let datosUsuario = document.querySelector('.datosUsuario').cloneNode(true);
-  let usuario = 1;
-  let mesaPanel = document.querySelector('#mesaPanel');
-  let individual = document.querySelector('#individual');
+(function () {
+  const maxNumUsuarios = 2;
 
-  //mostrar botón de gregar usuario extra
-  mesaPanel.onclick = mostrarBtn;
-  individual.onclick = ocultarBtn;
-  function mostrarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'block';
+  const btnAgregar    = document.querySelector('#btnAgregar');
+  const contenedorBtn = document.querySelector('#contenedorBtn');
+  const nuevoWrap     = document.querySelector('.nuevo');
+  const baseSection   = document.querySelector('.datosUsuario'); // bloque original
+  const radioSi       = document.querySelector('#mesaPanel');
+  const radioNo       = document.querySelector('#individual');
+
+  let usuarios = 1; // ya hay 1 participante (el bloque base)
+
+  // Asigna IDs únicos y limpia valores en el clon
+  function prepararClon(section, idx) {
+    const pairs = [
+      ['Nombre',            'Nombre_'],
+      ['apellidoPaterno',   'ApellidoPaterno_'],
+      ['apellidoMaterno',   'ApellidoMaterno_'],
+      ['email',             'Email_'],
+      ['emailAlternativo',  'EmailAlternativo_'],
+      ['telefono',          'Telefono_'],
+      ['empresa',           'Empresa_'],
+      ['cargo',             'Cargo_'],
+      ['pais',              'Pais_'],
+      ['ciudad',            'Ciudad_']
+    ];
+
+    pairs.forEach(([oldId, prefix]) => {
+      const input = section.querySelector('#' + oldId) || section.querySelector(`[id^="${prefix}"]`) || section.querySelector(`[name^="${prefix.replace('_','')}"]`);
+      if (input) {
+        const newId = prefix + idx;
+        // limpia valor para el clon
+        if (idx > 1 && 'value' in input) input.value = '';
+        // label asociado
+        const label = section.querySelector(`label[for="${input.id}"]`) || input.closest('.col, .row, div')?.querySelector('label');
+        input.id = newId;
+        if (label) label.setAttribute('for', newId);
+      }
+    });
   }
 
-  function ocultarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'none';
-    console.log("click en individual");
+  function mostrarBoton() {
+    contenedorBtn.style.display = 'block';
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
   }
 
-  btnAgregar.onclick = nuevoFormulario;
-
-  function nuevoFormulario()
-  {
-    if(usuario < maxNumUsuarios){
-      usuario++;
-      //insertar formulario
-      console.log('Click en el botón');
-      nuevoUsuario.append(datosUsuario);
-    }
-
+  function ocultarBotonYReset() {
+    contenedorBtn.style.display = 'none';
+    btnAgregar.disabled = true;
+    // si había un segundo participante, lo quitamos
+    nuevoWrap.innerHTML = '';
+    usuarios = 1;
   }
 
+  function agregarParticipante() {
+    if (usuarios >= maxNumUsuarios) return;
+
+    const clon = baseSection.cloneNode(true);
+    usuarios += 1;
+    prepararClon(clon, usuarios);
+
+    // encabezado + botón quitar
+    clon.insertAdjacentHTML('afterbegin', `<hr><h6>Participante ${usuarios}</h6>`);
+    const tools = document.createElement('div');
+    tools.className = 'mb-3 text-end';
+    tools.innerHTML = `<button type="button" class="btn btn-outline-danger btn-sm">Quitar participante</button>`;
+    clon.appendChild(tools);
+
+    tools.querySelector('button').addEventListener('click', () => {
+      clon.remove();
+      usuarios = 1;
+      btnAgregar.disabled = false; // vuelve a permitir añadir
+    });
+
+    // Garantizamos máximo 1 clon
+    nuevoWrap.innerHTML = '';
+    nuevoWrap.appendChild(clon);
+
+    // si ya hay 2, deshabilita el botón
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
+  }
+
+  // Eventos de los radios
+  radioSi.addEventListener('change', () => {
+    if (radioSi.checked) mostrarBoton();
+  });
+  radioNo.addEventListener('change', () => {
+    if (radioNo.checked) ocultarBotonYReset();
+  });
+
+  // Botón agregar
+  btnAgregar.addEventListener('click', agregarParticipante);
+
+  // Estado inicial: botón oculto
+  ocultarBotonYReset();
+  // Asegura que el bloque base (participante 1) tenga IDs coherentes
+  prepararClon(baseSection, 1);
+})();
 </script>

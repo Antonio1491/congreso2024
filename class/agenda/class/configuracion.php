@@ -1,14 +1,15 @@
 <?php
-DEFINE ('DB_HOST', 'mysql.hostinger.mx');
-DEFINE ('DB_USUARIO', 'u951310947_html');
+//DEFINE ('DB_HOST', 'mysql.hostinger.mx');
+//DEFINE ('DB_USUARIO', 'u951310947_html');
 
-DEFINE('DB_CONTRA', 'informatica14');
+//DEFINE('DB_CONTRA', '');
 
 // define('DB_HOST', 'localhost');
-// define('DB_USUARIO', 'root');
-// define('DB_CONTRA', '');
+define('DB_USUARIO', 'root');
+ define('DB_CONTRA', '');
 DEFINE('DB_NOMBRE', 'u951310947_gral');
-DEFINE('DB_CHARSET', 'utf8');
+DEFINE ('DB_SERVER', 'localhost');
+//DEFINE('DB_CHARSET', 'utf8');
 
 
 
