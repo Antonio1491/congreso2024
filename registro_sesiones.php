@@ -16,8 +16,7 @@
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin">¡La convocatoria para sesiones educativas está ABIERTA!</h5>
       <p class="justify">¿Tienes una idea, proyecto o experiencia que pueda inspirar a la comunidad de parques? Este es el momento de compartirla. Te invitamos a enviar tu propuesta y ser parte del programa del <strong>Congreso Parques 2026</strong>, que se celebrará del <strong>26 de septiembre al 15 de mayo en Tijuana, Baja California, México.</strong></p>
-      <p>La convocatoria está abierta a todos los interesados, <strong> no es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición.</p>
-      <h5 class="subtitulo text-center subtituloPMin">Perfil de los Ponentes</h5>
+      <p>La convocatoria está abierta a todos los interesados, <strong> es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición:</p>
       <ul class="pt-2">
         <li>Arquitectos, urbanistas, paisajistas y diseñadores del hábitat.</li>
         <li>Sociólogos, antropólogos, mercadólogos, economistas y administradores.</li>
@@ -49,7 +48,7 @@
         <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
         <li><strong>Publicación:</strong> 15 de enero de 2026</li>
         <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
-        <li><strong>Resultados:</strong> 16 dePrimera semana de febrero de 2026</li>
+        <li><strong>Resultados:</strong> Primera semana de febrero de 2026</li>
       </ul>
       <h5 class="text-center subtituloPMin">Información a considerar:</h5>
       <ol>
@@ -243,39 +242,109 @@
 </div>
 <?php include_once 'includes/templates/footer.php'; ?>
 <script type="text/javascript">
-  let maxNumUsuarios = 2;
-  let btnAgregar = document.querySelector('#btnAgregar');
-  let nuevoUsuario = document.querySelector('.nuevo');
-  let datosUsuario = document.querySelector('.datosUsuario').cloneNode(true);
-  let usuario = 1;
-  let mesaPanel = document.querySelector('#mesaPanel');
-  let individual = document.querySelector('#individual');
+(function () {
+  const maxNumUsuarios = 2;
 
-  //mostrar botón de gregar usuario extra
-  mesaPanel.onclick = mostrarBtn;
-  individual.onclick = ocultarBtn;
-  function mostrarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'block';
+  const btnAgregar     = document.querySelector('#btnAgregar');
+  const contenedorBtn  = document.querySelector('#contenedorBtn');
+  const nuevoWrap      = document.querySelector('.nuevo');
+  const baseSection    = document.querySelector('.datosUsuario'); // bloque original de ponente
+  const radioMesa      = document.querySelector('#mesaPanel');
+  const radioInd       = document.querySelector('#individual');
+
+  let usuarios = 1; // ya existe 1 ponente
+
+  // ---- Mapeo de IDs de campos (para renombrar correctamente el clon) ----
+  const idPairs = [
+    ['Nombre',           'Nombre_'],
+    ['apellidoPaterno',  'ApellidoPaterno_'],
+    ['apellidoMaterno',  'ApellidoMaterno_'],
+    ['email',            'Email_'],
+    ['emailAlternativo', 'EmailAlternativo_'],
+    ['empresa',          'Empresa_'],
+    ['cargo',            'Cargo_'],
+    ['pais',             'Pais_'],
+    ['estado',           'Estado_'],
+    ['ciudad',           'Ciudad_'],
+    ['biografia',        'Biografia_'],
+    ['fotografia',       'Fotografia_']
+  ];
+
+  // Limpia valores y crea IDs únicos para el segundo participante
+  function setIdsUnique(section, idx) {
+    idPairs.forEach(([oldId, prefix]) => {
+      const input = section.querySelector('#' + oldId) || section.querySelector(`[id^="${prefix}"]`);
+      if (input) {
+        const newId = prefix + idx;
+        const label = section.querySelector(`label[for="${input.id}"]`) 
+                   || input.closest('.row, .col, div')?.querySelector('label');
+        input.id = newId;
+        if (label) label.setAttribute('for', newId);
+        // limpiar valor si es clon
+        if (idx > 1 && (input.tagName === 'INPUT' || input.tagName === 'TEXTAREA')) {
+          if (input.type === 'file') input.value = '';
+          else input.value = '';
+        }
+      }
+    });
   }
 
-  function ocultarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'none';
-    console.log("click en individual");
+  // ---- Mostrar y ocultar botón ----
+  function mostrarBoton() {
+    contenedorBtn.style.display = 'block';
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
   }
 
-  btnAgregar.onclick = nuevoFormulario;
-
-  function nuevoFormulario()
-  {
-    if(usuario < maxNumUsuarios){
-      usuario++;
-      //insertar formulario
-      console.log('Click en el botón');
-      nuevoUsuario.append(datosUsuario);
-    }
-
+  function ocultarBotonYReset() {
+    contenedorBtn.style.display = 'none';
+    btnAgregar.disabled = true;
+    nuevoWrap.innerHTML = ''; // elimina ponente extra
+    usuarios = 1;
   }
 
+  // ---- Crear formulario del segundo ponente ----
+  function agregarPonente() {
+    if (usuarios >= maxNumUsuarios) return;
+
+    const clon = baseSection.cloneNode(true);
+    usuarios += 1;
+    setIdsUnique(clon, usuarios);
+
+    // encabezado + botón quitar
+    clon.insertAdjacentHTML('afterbegin', `<hr><h6>Ponente ${usuarios}</h6>`);
+    const tools = document.createElement('div');
+    tools.className = 'mb-3 text-end';
+    tools.innerHTML = `<button type="button" class="btn btn-outline-danger btn-sm">Quitar ponente</button>`;
+    clon.appendChild(tools);
+
+    // evento para quitar el segundo ponente
+    tools.querySelector('button').addEventListener('click', () => {
+      clon.remove();
+      usuarios = 1;
+      btnAgregar.disabled = false;
+    });
+
+    nuevoWrap.innerHTML = ''; // aseguramos solo un clon
+    nuevoWrap.appendChild(clon);
+
+    // si ya hay 2 ponentes, deshabilita el botón
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
+  }
+
+  // ---- Eventos de los radio buttons ----
+  radioMesa.addEventListener('change', () => {
+    if (radioMesa.checked) mostrarBoton();
+  });
+
+  radioInd.addEventListener('change', () => {
+    if (radioInd.checked) ocultarBotonYReset();
+  });
+
+  // ---- Evento del botón ----
+  btnAgregar.addEventListener('click', agregarPonente);
+
+  // ---- Estado inicial ----
+  setIdsUnique(baseSection, 1); // asegura IDs únicos desde el inicio
+  ocultarBotonYReset(); // oculta botón y limpia todo al cargar
+})();
 </script>

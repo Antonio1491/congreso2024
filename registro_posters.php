@@ -11,6 +11,7 @@
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin mb-4">¡Convocatoria para Pósters Científicos!</h5>
       <p class="justify">El <strong>Congreso Parques 2026</strong> abre sus puertas a la investigación. Si cuentas con un proyecto académico, estudio técnico o investigación aplicada que aporte al desarrollo de parques y espacios públicos, te invitamos a participar en la <strong>exposición de pósters científicos.</strong></p>
+<<<<<<< HEAD
       <p>La convocatoria está abierta a todos los interesados; no es necesario ser miembro ANPR para enviar tu propuesta. Queremos visibilizar y difundir investigaciones que se relacionen con los ejes temáticos del congreso.</p>
       <h5 class="subtitulo text-center subtituloPMin mb-4">¿Quiénes pueden participar?</h5>
       <p>
@@ -30,6 +31,35 @@
          <li><strong>Autores:</strong> Times New Roman 10, cursiva, justificado a la izquierda (con institución/organización). </li>
          <li><strong>Cuerpo del resumen:</strong> Times New Roman 10, justificado.</li>
          <li>Debe incluir: Introducción/objetivos, Metodología, Resultados, Conclusiones y hasta 4 referencias.</li>
+=======
+      <p>La convocatoria está abierta a todos los interesados; no es necesario ser miembro ANPR para enviar tu propuesta. Queremos visibilizar y difundir investigaciones que se relacionen con los ejes temáticos del congreso:</p>
+      <ol>
+        <li>Naturaleza y Sostenibilidad</li>
+        <li>Comunidad y Participación Ciudadana</li>
+        <li>Diseño, Operación y Gestión Eficiente</li>
+        <li>Tecnología e Innovación Urbana</li>
+        <li>Ciudad, Movilidad y Gobernanza</li>
+        <li>Finanzas, Patrocinios y Modelos de Ingreso</li>
+      </ol>
+        <p> 
+      Fechas clave de la convocatoria
+      </p>
+      <ul class="pt-2">
+        <li><strong>Inicio:</strong> 26 de septiembre de 2025</li>
+        <li><strong>Cierre:</strong> 15 de mayo de 2026</li>
+        <li><strong>Publicación:</strong> 15 de enero de 2026</li>
+        <li><strong>Evaluación:</strong> 16–31 de enero de 2026</li>
+        <li><strong>Resultados:</strong> Primera semana de febrero de 2026</li>
+      </ul>
+      <p><strong>El Congreso se llevará a cabo del 13 al 15 de mayo de 2026 en Tijuana, Baja California, México.</strong></p>
+      <h5 class="subtitulo subtituloPMin text-center">Requisitos para envío</h5>
+      <ul>
+        <li>El registro es exclusivamente para pósters científicos.</li>
+        <li>Los trabajos deben enviarse en formato PDF, con un tamaño máximo de 10 MB y resolución de 72 ppp.</li>
+        <li>Cada propuesta debe completarse en el formulario de registro correspondiente.</li>
+        <li>De ser seleccionado como ganador, te compartiremos los requisitos para la entrega de tu póster físico durante el Congreso Parques.</li>
+        <li>Los pósters seleccionados se exhibirán durante el congreso y formarán parte de la memoria académica del evento.</li>
+>>>>>>> convocatorias2025
       </ul>
       <p><strong>Póster Digital</strong>
         <ul>
@@ -169,15 +199,17 @@
               <input type="radio" name="Modalidad" value="1"  id="individual" required checked> No</input>
               <input type="radio" name="Modalidad" value="2" id="mesaPanel" required > Sí (2 participantes máximo)</input>
             </div>
-          </div><br>
-          <div class="ocultar" id="contenedorBtn">
-            <div class="row text-center" id="">
-              <div class="col">
-                <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
-                  <i class="fi-plus"></i> Añadir Participante</button>
-              </div>
-            </div>
           </div>
+          <!-- Antes: <div class="ocultar" id="contenedorBtn"> -->
+<div class="ocultar" id="contenedorBtn" style="display:none;">
+  <div class="row text-center">
+    <div class="col">
+      <button type="button" name="Autor" class="btn btn__primary" id="btnAgregar">
+        <i class="fi-plus"></i> Añadir Participante
+      </button>
+    </div>
+  </div>
+</div>
           <div class="nuevo">
           </div>
         </fieldset>
@@ -247,39 +279,102 @@
 </div>
 <?php include_once 'includes/templates/footer.php'; ?>
 <script type="text/javascript">
-  let maxNumUsuarios = 2;
-  let btnAgregar = document.querySelector('#btnAgregar');
-  let nuevoUsuario = document.querySelector('.nuevo');
-  let datosUsuario = document.querySelector('.datosUsuario').cloneNode(true);
-  let usuario = 1;
-  let mesaPanel = document.querySelector('#mesaPanel');
-  let individual = document.querySelector('#individual');
+(function () {
+  const maxNumUsuarios = 2;
 
-  //mostrar botón de gregar usuario extra
-  mesaPanel.onclick = mostrarBtn;
-  individual.onclick = ocultarBtn;
-  function mostrarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'block';
+  const btnAgregar    = document.querySelector('#btnAgregar');
+  const contenedorBtn = document.querySelector('#contenedorBtn');
+  const nuevoWrap     = document.querySelector('.nuevo');
+  const baseSection   = document.querySelector('.datosUsuario'); // bloque original
+  const radioSi       = document.querySelector('#mesaPanel');
+  const radioNo       = document.querySelector('#individual');
+
+  let usuarios = 1; // ya hay 1 participante (el bloque base)
+
+  // Asigna IDs únicos y limpia valores en el clon
+  function prepararClon(section, idx) {
+    const pairs = [
+      ['Nombre',            'Nombre_'],
+      ['apellidoPaterno',   'ApellidoPaterno_'],
+      ['apellidoMaterno',   'ApellidoMaterno_'],
+      ['email',             'Email_'],
+      ['emailAlternativo',  'EmailAlternativo_'],
+      ['telefono',          'Telefono_'],
+      ['empresa',           'Empresa_'],
+      ['cargo',             'Cargo_'],
+      ['pais',              'Pais_'],
+      ['ciudad',            'Ciudad_']
+    ];
+
+    pairs.forEach(([oldId, prefix]) => {
+      const input = section.querySelector('#' + oldId) || section.querySelector(`[id^="${prefix}"]`) || section.querySelector(`[name^="${prefix.replace('_','')}"]`);
+      if (input) {
+        const newId = prefix + idx;
+        // limpia valor para el clon
+        if (idx > 1 && 'value' in input) input.value = '';
+        // label asociado
+        const label = section.querySelector(`label[for="${input.id}"]`) || input.closest('.col, .row, div')?.querySelector('label');
+        input.id = newId;
+        if (label) label.setAttribute('for', newId);
+      }
+    });
   }
 
-  function ocultarBtn()
-  {
-    document.querySelector('.ocultar').style.display = 'none';
-    console.log("click en individual");
+  function mostrarBoton() {
+    contenedorBtn.style.display = 'block';
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
   }
 
-  btnAgregar.onclick = nuevoFormulario;
-
-  function nuevoFormulario()
-  {
-    if(usuario < maxNumUsuarios){
-      usuario++;
-      //insertar formulario
-      console.log('Click en el botón');
-      nuevoUsuario.append(datosUsuario);
-    }
-
+  function ocultarBotonYReset() {
+    contenedorBtn.style.display = 'none';
+    btnAgregar.disabled = true;
+    // si había un segundo participante, lo quitamos
+    nuevoWrap.innerHTML = '';
+    usuarios = 1;
   }
 
+  function agregarParticipante() {
+    if (usuarios >= maxNumUsuarios) return;
+
+    const clon = baseSection.cloneNode(true);
+    usuarios += 1;
+    prepararClon(clon, usuarios);
+
+    // encabezado + botón quitar
+    clon.insertAdjacentHTML('afterbegin', `<hr><h6>Participante ${usuarios}</h6>`);
+    const tools = document.createElement('div');
+    tools.className = 'mb-3 text-end';
+    tools.innerHTML = `<button type="button" class="btn btn-outline-danger btn-sm">Quitar participante</button>`;
+    clon.appendChild(tools);
+
+    tools.querySelector('button').addEventListener('click', () => {
+      clon.remove();
+      usuarios = 1;
+      btnAgregar.disabled = false; // vuelve a permitir añadir
+    });
+
+    // Garantizamos máximo 1 clon
+    nuevoWrap.innerHTML = '';
+    nuevoWrap.appendChild(clon);
+
+    // si ya hay 2, deshabilita el botón
+    btnAgregar.disabled = (usuarios >= maxNumUsuarios);
+  }
+
+  // Eventos de los radios
+  radioSi.addEventListener('change', () => {
+    if (radioSi.checked) mostrarBoton();
+  });
+  radioNo.addEventListener('change', () => {
+    if (radioNo.checked) ocultarBotonYReset();
+  });
+
+  // Botón agregar
+  btnAgregar.addEventListener('click', agregarParticipante);
+
+  // Estado inicial: botón oculto
+  ocultarBotonYReset();
+  // Asegura que el bloque base (participante 1) tenga IDs coherentes
+  prepararClon(baseSection, 1);
+})();
 </script>

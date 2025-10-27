@@ -58,16 +58,18 @@ $propuestas = new Propuesta();
                         <!--<td></td>-->";
                         
                         
-                        if( $valor['estatus'] == 0){
-                            echo "<td class='text-center'><a class='noAceptada button tiny' href='aceptarPropuesta.php?id=".$valor['id_ponencia']."'>Aceptar</a></td>";
-                        }
-                        else{
-                          echo "<td class='aceptada'>Aprobada</a></td>";
-                        }
+                     if ($valor['estatus'] == 0) {
+    echo "<td class='text-center'>
+            <a class='noAceptada button tiny' href='aceptarPropuesta.php?id=".$valor['id_ponencia']."' 
+               onclick=\"event.preventDefault(); aceptarPropuesta(this.href);\">Aceptar</a>
+          </td>";
+} else {
+    echo "<td class='aceptada'>Aprobada</td>";
+}
                   
                   echo "<td class='acciones text-center'>
                         <!--<a href='' target='_blank' class='link_encuesta'><i class='fi-check'></i> Calificar </a>-->
-                        <a href='eliminarPropuesta.php?id=".$valor['id_ponencia']."' title='Eliminar' class='eliminar'><i class='fi-x'></i></a> 
+                        <a href='rechazarPropuesta.php?id=".$valor['id_ponencia']."' title='Rechazar' class='eliminar''><i class='fi-x'></i></a>
                         <!--<a href='editarEnlace.php?id=".$valor['id_ponencia']."' title='Editar Enlace' class='editarEnlace'><i class='fi-link'></i> </a></td>-->
                         </tr>"
                         ;
@@ -125,7 +127,25 @@ $propuestas = new Propuesta();
 
 } );
 } );
+
   </script>
+
+  <script>
+function aceptarPropuesta(url) {
+  // Llama al PHP que acepta la propuesta
+  fetch(url)
+    .then(() => {
+      // Espera un poquito y recarga la página
+      setTimeout(() => {
+        location.reload();
+      }, 300);
+    })
+    .catch(err => {
+      console.error('Error al aceptar la propuesta:', err);
+      alert('Hubo un problema al aceptar la propuesta.');
+    });
+}
+</script>
 <?php require('inc/footer.php') ?>
 
   </body>

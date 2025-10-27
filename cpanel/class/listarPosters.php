@@ -1,11 +1,10 @@
-<?php 
+<?php
+session_start();
 
-// $evento = "<script>evento</script>";
-include "funciones.php";
+require_once __DIR__ . '/funciones.php';
+require_once __DIR__ . '/classPoster.php';
+
+$evento = isset($_SESSION['evento']) ? (int)$_SESSION['evento'] : 2;
+
 $posters = new Posters();
-$resultado = $posters->getPosters(3);
-
-
-
-
-?>
+$posters->getPosters($evento);

@@ -48,16 +48,31 @@ class Propuesta extends Conexion{
 
     }
 
-    public function listaPropuestas($evento){  //Lista de propuestas registradas en la convocatoria
-      $resultado = $this->conexion_db->query("SELECT * FROM conferencias 
-      LEFT JOIN ponencias 
-      ON conferencias.id_ponencia = ponencias.id
-      lEFT JOIN temas 
-      ON ponencias.id_tema = temas.id
-      WHERE ponencias.id_evento = $evento");
-      $respuesta = $resultado->fetch_all(MYSQLI_ASSOC);
-      return $respuesta;
-    }
+   public function listaPropuestas($evento){  //Lista de propuestas registradas en la convocatoria
+    $sql = "SELECT * 
+            FROM conferencias 
+            LEFT JOIN ponencias  ON conferencias.id_ponencia = ponencias.id
+            LEFT JOIN temas      ON ponencias.id_tema = temas.id
+            WHERE ponencias.id_evento = ? 
+              AND ponencias.estatus IS NOT NULL";
+
+    $stmt = $this->conexion_db->prepare($sql);
+    $stmt->bind_param('i', $evento);
+    $stmt->execute();
+    $resultado = $stmt->get_result();
+    $respuesta = $resultado->fetch_all(MYSQLI_ASSOC);
+    $stmt->close();
+
+    return $respuesta;
+}
+
+public function rechazar($id){
+    $stmt = $this->conexion_db->prepare("UPDATE ponencias SET estatus = NULL WHERE id = ?");
+    $stmt->bind_param('i', $id);
+    $ok = $stmt->execute();
+    $stmt->close();
+    return $ok;
+}
 
     //Asignasión de tema a usuario comité
     // public function propuestasAsignadas($id_tema){
@@ -108,16 +123,41 @@ class Propuesta extends Conexion{
     }
 
     //Aceptacion de propuesta registrada (cambio de status)
-    public function aceptarPropuesta($id_propuesta){
-      $sql= "UPDATE ponencias SET estatus = 1 WHERE id = $id_propuesta";
-      $consulta = $this->conexion_db->query($sql);
-      return $consulta;
+public function aceptarPropuesta($id_propuesta){
+    // Transacción para que ambos updates sean atómicos
+    $this->conexion_db->begin_transaction();
+
+    try {
+        // 1) Aceptar la ponencia
+        $sql1 = "UPDATE ponencias SET estatus = 1 WHERE id = ?";
+        $stmt1 = $this->conexion_db->prepare($sql1);
+        $stmt1->bind_param('i', $id_propuesta);
+        $stmt1->execute();
+        $stmt1->close();
+
+        // 2) Promover usuario(s) dueño(s) de esa ponencia: 5 -> 2
+        //    (usa la tabla puente usuarios_ponencias)
+        $sql2 = "
+            UPDATE usuarios u
+            JOIN usuarios_ponencias up ON up.id_usuario = u.id
+            SET u.id_categoria = 2
+            WHERE up.id_ponencia = ?
+              AND u.id_categoria = 5
+        ";
+        $stmt2 = $this->conexion_db->prepare($sql2);
+        $stmt2->bind_param('i', $id_propuesta);
+        $stmt2->execute();
+        $stmt2->close();
+
+        $this->conexion_db->commit();
+        return true;
+
+    } catch (Exception $e) {
+        $this->conexion_db->rollback();
+        return false;
     }
-    public function rechazarPropuesta($id_propuesta){
-      $sql= "UPDATE ponencias SET status = 2 WHERE id = $id_propuesta";
-      $consulta = $this->conexion_db->query($sql);
-      return $consulta;
-    }
+}
+
     
 
     public function eliminar ($id){
