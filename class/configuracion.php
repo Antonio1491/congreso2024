@@ -7,7 +7,7 @@
   //DEFINE('DB_CONTRASENA', 'Informatica14');
 
   //  DEFINE ('DB_NOMBRE', 'congresos');
-  DEFINE ('DB_NOMBRE', 'u506969443_congress');
+  DEFINE ('DB_NOMBRE', 'u951310947_congreso2023');
 
    DEFINE ('DB_SERVER', 'localhost');
   //DEFINE ('DB_SERVER', 'localhost');
