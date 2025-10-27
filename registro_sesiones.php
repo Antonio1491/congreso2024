@@ -15,8 +15,8 @@
     <div class="col-md-5 col-sm-12 bg-light p-4" style="font-size: 0.9rem;">
       <!-- Instrucciones -->
       <h5 class="subtitulo text-center subtituloPMin">¡La convocatoria para sesiones educativas está ABIERTA!</h5>
-      <p class="justify">¿Tienes una idea, proyecto o experiencia que pueda inspirar a la comunidad de parques? Este es el momento de compartirla. Te invitamos a enviar tu propuesta y ser parte del programa del <strong>Congreso Parques 2026</strong>Congreso Parques 2026, que se celebrará del <strong>26 de septiembre al 15 de mayo en Tijuana, Baja California, México.</strong></p>
-      <p>La convocatoria está abierta a todos los interesados, <strong> es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición.</p>
+      <p class="justify">¿Tienes una idea, proyecto o experiencia que pueda inspirar a la comunidad de parques? Este es el momento de compartirla. Te invitamos a enviar tu propuesta y ser parte del programa del <strong>Congreso Parques 2026</strong>, que se celebrará del <strong>26 de septiembre al 15 de mayo en Tijuana, Baja California, México.</strong></p>
+      <p>La convocatoria está abierta a todos los interesados, <strong> no es necesario ser miembro ANPR para participar</strong>. Buscamos propuestas que aporten innovación, conocimiento y experiencias en torno a los ejes temáticos de esta edición.</p>
       <h5 class="subtitulo text-center subtituloPMin">Perfil de los Ponentes</h5>
       <ul class="pt-2">
         <li>Arquitectos, urbanistas, paisajistas y diseñadores del hábitat.</li>

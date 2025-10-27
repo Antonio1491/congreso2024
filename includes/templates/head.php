@@ -32,7 +32,7 @@
 <?php include 'includes/templates/banner_header.php'; ?>
 <nav class="navbar sticky-top navbar-expand-md" style="">
     <div class="container">
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="https://www.congresoparques.com">
         <img src="./build/img/logo_congreso_parques_180x74.png" alt="Logotipo Congreso Parques" class="d-inline-block align-text-top">
       </a>
       <!-- <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPrincipal" aria-controls="navbarPrincipal" aria-expanded="false" aria-label="Toggle navigation">

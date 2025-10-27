@@ -26,10 +26,10 @@ $propuestas = new Propuesta();
       <?php include("inc/menuEvento.php") ?>
       </div>
       <section class="column medium-10">
- 
 
-
-      <?php require ("inc/header.php") ?>
+      <?php 
+      echo $_SESSION["evento"];
+      require ("inc/header.php") ?>
       <!--<div id="botones">-->
       <!--<a  id="preguntas" href="agregarTestimonial.php"  class="button margin-top-1" >Agregar Testimonial</a>-->
       <!--</div>-->

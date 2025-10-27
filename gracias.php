@@ -5,21 +5,21 @@
     <img src="img/linea.png" alt="">
   </div>
 </header>
-
+<br><br>
   <section class="container" style="height:40vh;">
     <div class="row mt-5 mb-5">
       <div class="col text-center">
-        <h2 class="subtitulo">¡Gracias!</h2>
+        <h2 class="animated fadeInDown pacifico subtituloPMin">¡Gracias!</h2>
       </div>
     </div>
     <div class="row justify-content-center" >
       <div class="col-sm-12 col-md-6">
           <p class="text-center">Hemos registrado correctamente tu propuesta para participar
-            en el Congreso Internacional de Parques Urbanos Mérida 2024.</p>
+            en el <strong>Congreso Internacional de Parques Urbanos Tijuana 2026</strong>.</p>
           <p class="text-center">
-            <strong>
-              <small>Para cualquier información: <a href="mailto:contenido@congresoparques.com">contenido@congresoparques.com</a></small>
-            </strong>
+              <i>Para cualquier información: 
+                <a href="mailto:info@congresoparques.com">info@congresoparques.com
+                </a></i>
           </p>
       </div>
       <div class="row">
