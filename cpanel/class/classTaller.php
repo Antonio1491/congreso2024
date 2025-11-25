@@ -2,120 +2,117 @@
 class Taller extends Conexion{
 
     public function __construct(){
-
-      parent::__construct();
-
+        parent::__construct();
     }
 
-
+    // ============================================
+    // LISTA DE TALLERES (solo activos)
+    // ============================================
     public function listaTalleres($evento){
-      $sql = "SELECT * FROM talleres 
-              WHERE id_evento = $evento
-              ORDER BY id_taller DESC";
-      $resultado = $this->conexion_db->query($sql);
-      $talleres = $resultado->fetch_all(MYSQLI_ASSOC);
-      return $talleres;
+        $evento = intval($evento);
+
+        $sql = "SELECT * FROM talleres 
+                WHERE id_evento = $evento
+                AND status = 1
+                ORDER BY id_taller DESC";
+
+        $resultado = $this->conexion_db->query($sql);
+        return $resultado->fetch_all(MYSQLI_ASSOC);
     }
-    
+
     public function talleristas($id_congreso){
-      $sql = "SELECT * FROM talleristas WHERE id_congreso = '$id_congreso' ";
-      $resultado = $this->conexion_db->query($sql);
-      $talleristas = $resultado->fetch_all(MYSQLI_ASSOC);
-      return $talleristas;
+        $sql = "SELECT * FROM talleristas WHERE id_congreso = '$id_congreso'";
+        $resultado = $this->conexion_db->query($sql);
+        return $resultado->fetch_all(MYSQLI_ASSOC);
     }
 
-  //Taller
-    public function registrarTaller($titulo,
-                    $subtitulo, $fecha,
-                    $inicio, $fin, $capacidad, $categoria,
-                     $descripcion, $fotografia, $evento){
+    // ============================================
+    // REGISTRAR TALLER
+    // ============================================
+    public function registrarTaller($titulo, $subtitulo, $fecha,
+                                    $inicio, $fin, $capacidad, 
+                                    $categoria, $descripcion, 
+                                    $fotografia, $evento){
 
-      $sql = "INSERT INTO talleres VALUES
-      (null, '$titulo','$subtitulo', '$descripcion',
-      '$fecha', '$inicio', '$fin', '$capacidad', '$categoria', '$fotografia',1, $evento )";
-      $resultado = $this->conexion_db->query($sql);
-      return $resultado;
+        $sql = "INSERT INTO talleres 
+                (id_taller, titulo, subtitulo, descripcion,
+                 fecha, inicio, fin, capacidad, categoria, 
+                 foto, disponible, status, id_evento)
+                VALUES
+                (NULL, '$titulo', '$subtitulo', '$descripcion',
+                '$fecha', '$inicio', '$fin', '$capacidad', 
+                '$categoria', '$fotografia', 1, 1, $evento)";
 
+        return $this->conexion_db->query($sql);
     }
 
     public function mostrarTaller($id){
-      $resultado = $this->conexion_db->query("SELECT *
-      FROM talleres
-      WHERE id_taller = '$id' ");
-      $respuesta = $resultado->fetch_all(MYSQLI_ASSOC);
-      return $respuesta;
+        $id = intval($id);
+        $resultado = $this->conexion_db->query("SELECT * FROM talleres WHERE id_taller = '$id'");
+        return $resultado->fetch_all(MYSQLI_ASSOC);
     }
 
-    public function eliminarFoto($id){
-      $sql = "SELECT foto FROM talleres WHERE id_taller = $id ";
-      $consulta = $this->conexion_db->query($sql);
-      $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+    // ============================================
+    // ACTUALIZAR TALLER CON FOTO
+    // ============================================
+    public function actualizarTaller($taller, $subtitulo, $fecha,
+                                     $inicio, $fin, $capacidad, $tipo,
+                                     $descripcion, $fotografia, $id){
 
-      foreach ($resultado as $valor) 
-      {
-        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['foto']);
+        $id = intval($id);
 
-        //servidor local
-        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
+        $sql = "UPDATE talleres SET
+                titulo = '$taller',
+                subtitulo = '$subtitulo',
+                descripcion = '$descripcion',
+                fecha = '$fecha',
+                inicio = '$inicio',
+                fin = '$fin',
+                capacidad = '$capacidad',
+                categoria = '$tipo',
+                foto = '$fotografia'
+                WHERE id_taller = '$id'";
 
-      }
+        return $this->conexion_db->query($sql);
     }
 
-    public function actualizarTaller($taller, $subtitulo, $fecha, $inicio, $fin, $capacidad, $tipo, $descripcion, $fotografia, $id){
+    // ============================================
+    // ACTUALIZAR TALLER SIN FOTO
+    // ============================================
+    public function actualizarSinFoto($titulo, $subtitulo, $fecha,
+                                      $inicio, $fin, $capacidad, 
+                                      $categoria, $descripcion, $id){
 
-      $eliminarFoto = $this->eliminarFoto($id);
+        $id = intval($id);
 
-      $sql = "UPDATE talleres SET
-              titulo = '$taller',
-              subtitulo = '$subtitulo',
-              descripcion = '$descripcion',
-              fecha = '$fecha',
-              inicio = '$inicio',
-              fin = '$fin',
-              capacidad = '$capacidad',
-              categoria = '$tipo',
-              foto = '$fotografia'
-              WHERE id_taller = '$id'
-              ";
-      $consultar = $this->conexion_db->query($sql);
+        $sql = "UPDATE talleres SET
+                titulo = '$titulo',
+                subtitulo = '$subtitulo',
+                descripcion = '$descripcion',
+                fecha = '$fecha',
+                inicio = '$inicio',
+                fin = '$fin',
+                capacidad = '$capacidad',
+                categoria = '$categoria'
+                WHERE id_taller = '$id'";
+
+        return $this->conexion_db->query($sql);
     }
 
-    public function actualizarSinFoto($titulo, $subtitulo, $fecha, $inicio, $fin, $capacidad, $categoria, $descripcion, $id){
-      $sql = "UPDATE talleres SET
-              titulo = '$titulo',
-              subtitulo = '$subtitulo',
-              descripcion = '$descripcion',
-              fecha = '$fecha',
-              inicio = '$inicio',
-              fin = '$fin',
-              capacidad = '$capacidad',
-              categoria = '$categoria'
-              WHERE id_taller = '$id'
-              ";
-      $consultar = $this->conexion_db->query($sql);
-    }
-
-
+    // ============================================
+    // BORRADO LÓGICO (NO BORRA LA FOTO)
+    // ============================================
     public function eliminar($id){
 
-      $sql = "SELECT foto FROM talleres WHERE id_taller = $id ";
-      $consulta = $this->conexion_db->query($sql);
-      $resultado = $consulta->fetch_all(MYSQLI_ASSOC);
+        $id = intval($id);
 
-      foreach ($resultado as $valor) 
-      {
-        unlink($_SERVER['DOCUMENT_ROOT']."/imagenes/".$valor['foto']);
+        // SOLO se actualiza el status = NULL
+        $sql = "UPDATE talleres
+                SET status = NULL
+                WHERE id_taller = $id";
 
-        //servidor local
-        // unlink($_SERVER['DOCUMENT_ROOT']."/congreso2024/imagenes/".$valor['foto']);
-
-      }
-
-     $sql = $this->conexion_db->query("DELETE FROM talleres
-    WHERE id_taller = $id ");
-     return $sql;
+        return $this->conexion_db->query($sql);
     }
 
-  }
-
- ?>
+}
+?>
