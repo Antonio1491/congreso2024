@@ -3,23 +3,17 @@ include('../class/funciones.php');
 
 $id = $_GET['id'];
 
-$eliminar = new Tallerista();
-
-$resultado = $eliminar->eliminar($id);
+$tallerista = new Tallerista();
+$resultado = $tallerista->eliminar($id);
 
 if ($resultado) {
-
-      echo "<script>window.history.go(-1);</script>";
-}
-else{
-  echo  '<script>
-  Swal.fire({ title: "Error al eliminar el registro ",
-      icon: "warning",customClass: "swal-wide",}).then(okay => {
-        if (okay) {
-          window.history.go(-1);
-      }
-    });
+    echo "<script>window.history.go(-1);</script>";
+} else {
+    echo '<script>
+        Swal.fire({
+            title: "Error al eliminar el registro",
+            icon: "warning",
+        }).then(() => window.history.go(-1));
     </script>';
-
 }
- ?>
+?>

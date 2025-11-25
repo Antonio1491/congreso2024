@@ -5,7 +5,8 @@ include('../class/funciones.php');
 
 $taller = new Taller();
 $array_talleres = $taller->listaTalleres($_SESSION["evento"]);
-$array_talleristas = $taller->talleristas($_SESSION["evento"]);
+$tallerista = new Tallerista();
+$array_talleristas = $tallerista->listarActivos($_SESSION["evento"]);
 ?>
 <!DOCTYPE html>
 <html>
