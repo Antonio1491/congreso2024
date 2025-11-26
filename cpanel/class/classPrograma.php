@@ -6,9 +6,15 @@ class Programa extends Conexion{
     parent::__construct();
   }
 
+  // ========================================================
+  //   MOSTRAR SOLO LOS BLOQUES CON status = 1 (VISIBLES)
+  // ========================================================
   public function programa($congreso)
   {
-    $sql = "SELECT * FROM programa WHERE id_congreso = '$congreso' ORDER BY fecha";
+    $sql = "SELECT * FROM programa 
+            WHERE id_congreso = '$congreso'
+            AND status = 1
+            ORDER BY fecha";
 
     $resultado = $this->conexion_db->query($sql);
 
@@ -17,7 +23,9 @@ class Programa extends Conexion{
     return json_encode($programa);
   }
 
-  //bloque del programa
+  // ========================================================
+  //   CONTENIDO DEL BLOQUE (NO CAMBIA NADA AQUÍ)
+  // ========================================================
   public function bloque($tipo, $fecha, $inicio, $fin, $congreso)
   {
 
@@ -25,19 +33,16 @@ class Programa extends Conexion{
     {
       $sql = "SELECT * FROM ponencias 
               WHERE fecha = '$fecha' 
-              AND hora_inicio 
-              BETWEEN '$inicio' 
-              AND '$fin' 
+              AND hora_inicio BETWEEN '$inicio' AND '$fin' 
               ORDER BY hora_inicio";
 
       $resultado =  $this->conexion_db->query($sql);
-
       $data = $resultado->fetch_all(MYSQLI_ASSOC);
 
       $contenido = "";
       
       foreach($data as $item){
-        $contenido .= "<li><span>Ti".$item["titulo"]."</span></li>";
+        $contenido .= "<li><span>".$item["titulo"]."</span></li>";
       }
 
       return $contenido;
@@ -45,23 +50,28 @@ class Programa extends Conexion{
     }
     elseif($tipo === 'Talleres')
     {
-      $sql = "SELECT * FROM talleres where fecha = '$fecha' AND inicio BETWEEN '$inicio' AND '$fin'  ORDER BY inicio";
+      $sql = "SELECT * FROM talleres 
+              WHERE fecha = '$fecha' 
+              AND inicio BETWEEN '$inicio' AND '$fin'  
+              ORDER BY inicio";
+
       $resultado =  $this->conexion_db->query($sql);
+      $data = $resultado->fetch_all(MYSQLI_ASSOC);
 
-    $data = $resultado->fetch_all(MYSQLI_ASSOC);
-    $contenido = "";
+      $contenido = "";
 
-     foreach($data as $item){
+      foreach($data as $item){
         $contenido .= "<li><span>".$item["titulo"]."</span></li>";
       }
 
-    return $contenido;
+      return $contenido;
     }
-
-    
 
   }
 
+  // ========================================================
+  //   GUARDAR BLOQUE (DEJA status COMO YA LO TIENES EN BD)
+  // ========================================================
   public function guardarBloque($data)
   {
     $data = json_decode($data);
@@ -73,6 +83,7 @@ class Programa extends Conexion{
       '$data->fin',
       '$data->bloque_ing', 
       '$data->tipo', 
+      1,                 -- status por defecto
       '$data->congreso'
       )"; 
 
@@ -81,6 +92,9 @@ class Programa extends Conexion{
     return $resultado;
   }
 
+  // ========================================================
+  //   ELIMINAR EVENTO SOCIAL (NO TOCAMOS ESTA FUNCIÓN)
+  // ========================================================
   public function eliminar($id)
   {
     $sql = $this->conexion_db->query("DELETE FROM eventos_sociales WHERE id_evento = '$id' ");
@@ -88,16 +102,17 @@ class Programa extends Conexion{
     return $sql;
   }
 
+  // ========================================================
+  //   BORRADO LÓGICO: status = NULL
+  // ========================================================
   public function eliminarBloquePrograma($id)
   {
-    $sql = $this->conexion_db->query("DELETE FROM programa 
-              WHERE id = '$id' ");
+    $sql = $this->conexion_db->query(
+      "UPDATE programa SET status = NULL WHERE id = '$id'"
+    );
 
     return $sql;
   }
 
-
-
-  }
-
- ?>
+}
+?>
